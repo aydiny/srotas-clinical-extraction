@@ -77,12 +77,10 @@ class ClinicalFact(BaseModel):
 
     @model_validator(mode='after')
     def validate_temporality_and_status(self) -> 'ClinicalFact':
-        # 'self' is the fully populated model instance
+        # Coerce instead of raising: structured-output parse must not abort the run
+        # when the model pairs historical temporality with active status.
         if self.temporality == "historical" and self.status == "active":
-            raise ValueError(
-                "Contradiction detected: A 'historical' event cannot have an 'active' status. "
-                "If the condition is ongoing, set temporality to 'current'."
-            )
+            return self.model_copy(update={"status": "historical"})
         return self
 
 # 4. The Top-Level Representation

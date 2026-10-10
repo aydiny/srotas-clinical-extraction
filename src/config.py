@@ -10,5 +10,6 @@ OUTPUT_DIR = PROJECT_ROOT / "outputs"
 MODEL = os.getenv("EXTRACTION_MODEL", "gpt-4o-mini")
 PROMPT_VERSION = "clinical_extraction_v6"
 TEMPERATURE = 0
-SECTION_HINTS=False
+SECTION_HINTS = False
+EXTRACT_BY_PAGE = True
 
