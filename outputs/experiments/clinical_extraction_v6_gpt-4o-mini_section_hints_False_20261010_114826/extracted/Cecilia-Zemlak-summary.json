@@ -1,0 +1,339 @@
+{
+  "patient_id": null,
+  "patient_name": "Cecilia Zemlak",
+  "age": 58,
+  "sex": "Female",
+  "clinical_facts": [
+    {
+      "fact_id": "fact_1",
+      "category": "condition",
+      "name": "Malignant Neoplasm of Breast",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [
+        {
+          "name": "stage",
+          "value": "2",
+          "unit": null
+        },
+        {
+          "name": "HER2 status",
+          "value": "positive",
+          "unit": null
+        },
+        {
+          "name": "ER status",
+          "value": "positive",
+          "unit": null
+        },
+        {
+          "name": "PR status",
+          "value": "positive",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "The patient carries a confirmed diagnosis of malignant neoplasm of breast (SNOMED CT 254837009), staged as 2 with positive HER2, ER, and PR status.",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 1
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_2",
+      "category": "procedure",
+      "name": "Surgical intervention (excision, biopsy)",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [],
+      "related_to_fact_ids": [
+        "fact_1"
+      ],
+      "provenance": [
+        {
+          "source_text_quote": "• Surgical intervention (excision, biopsy)",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 2
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_3",
+      "category": "condition",
+      "name": "Essential Hypertension",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "Essential Hypertension (Chronic, Confirmed)",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 2
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_4",
+      "category": "condition",
+      "name": "Chronic Intractable Migraine Without Aura",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [
+        {
+          "name": "associated symptoms",
+          "value": "sinus pain, nasal congestion, sore throat, facial swelling, photophobia, cough",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "Chronic Intractable Migraine Without Aura (Episodic, Confirmed)",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 2
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_5",
+      "category": "medication",
+      "name": "Penicillin",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "unknown",
+      "temporality": "current",
+      "date": null,
+      "attributes": [
+        {
+          "name": "indication",
+          "value": "infections",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "• Episodic antibiotics (penicillin, doxycycline) for infections",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 3
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_6",
+      "category": "medication",
+      "name": "Doxycycline",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "unknown",
+      "temporality": "current",
+      "date": null,
+      "attributes": [
+        {
+          "name": "indication",
+          "value": "infections",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "• Episodic antibiotics (penicillin, doxycycline) for infections",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 3
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_7",
+      "category": "medication",
+      "name": "Acetaminophen",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "unknown",
+      "temporality": "current",
+      "date": null,
+      "attributes": [
+        {
+          "name": "indication",
+          "value": "pain",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "• Analgesics (acetaminophen, meperidine) for pain",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 3
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_8",
+      "category": "medication",
+      "name": "Meperidine",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "unknown",
+      "temporality": "current",
+      "date": null,
+      "attributes": [
+        {
+          "name": "indication",
+          "value": "pain",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "• Analgesics (acetaminophen, meperidine) for pain",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 3
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_9",
+      "category": "observation",
+      "name": "Vital Signs",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "unknown",
+      "temporality": "current",
+      "date": null,
+      "attributes": [
+        {
+          "name": "blood pressure",
+          "value": "variable readings, occasionally elevated",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "Vital signs show variable readings, occasionally elevated, without treatment initiation in early records.",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 2
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_10",
+      "category": "observation",
+      "name": "CBC Trends",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [
+        {
+          "name": "result",
+          "value": "normal",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "Labs: CBC trends normal; later lipids, glucose variable but no abnormalities noted",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 3
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_11",
+      "category": "procedure",
+      "name": "X-rays for fractures",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "Imaging: X-rays for fractures, mammography for breast cancer",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 3
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_12",
+      "category": "procedure",
+      "name": "Mammography for breast cancer",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "Imaging: X-rays for fractures, mammography for breast cancer",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 3
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_13",
+      "category": "condition",
+      "name": "Active Smoking",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "Social history consistently notes active smoking and alcoholism, which may contribute to health risks.",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 1
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_14",
+      "category": "condition",
+      "name": "Alcoholism",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "Social history consistently notes active smoking and alcoholism, which may contribute to health risks.",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 1
+        }
+      ]
+    }
+  ]
+}

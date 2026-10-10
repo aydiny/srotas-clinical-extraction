@@ -1,0 +1,55 @@
+document,error_class,gold_fact_id,pred_fact_id,fact_name,gold_value,predicted_value,similarity
+442007316-DISCHARGE-SUMMARY.pdf,wrong_temporality,SM-CORE-01,fact_1,Lower oesophageal hiatus hernia,at_encounter,current,0.94
+442007316-DISCHARGE-SUMMARY.pdf,wrong_temporality,SM-CORE-02,fact_2,Inability to swallow food,at_encounter,current,1.0
+442007316-DISCHARGE-SUMMARY.pdf,wrong_or_missing_attribute,SM-CORE-02,fact_2,Inability to swallow food,duration=3,,1.0
+442007316-DISCHARGE-SUMMARY.pdf,wrong_or_missing_attribute,SM-CORE-02,fact_2,Inability to swallow food,phase=presentation,,1.0
+442007316-DISCHARGE-SUMMARY.pdf,wrong_temporality,SM-CORE-03,fact_3,Vomiting of undigested food particles,at_encounter,current,0.842
+442007316-DISCHARGE-SUMMARY.pdf,wrong_or_missing_attribute,SM-CORE-03,fact_3,Vomiting of undigested food particles,duration=3,,0.842
+442007316-DISCHARGE-SUMMARY.pdf,wrong_or_missing_attribute,SM-CORE-03,fact_3,Vomiting of undigested food particles,phase=presentation,,0.842
+442007316-DISCHARGE-SUMMARY.pdf,wrong_status,SM-CORE-04,fact_4,Blood pressure,unknown,active,1.0
+442007316-DISCHARGE-SUMMARY.pdf,wrong_temporality,SM-CORE-04,fact_4,Blood pressure,at_encounter,current,1.0
+442007316-DISCHARGE-SUMMARY.pdf,wrong_or_missing_attribute,SM-CORE-04,fact_4,Blood pressure,test_value=80/50,,1.0
+442007316-DISCHARGE-SUMMARY.pdf,wrong_status,SM-CORE-05,fact_5,Pulse rate,unknown,active,1.0
+442007316-DISCHARGE-SUMMARY.pdf,wrong_temporality,SM-CORE-05,fact_5,Pulse rate,at_encounter,current,1.0
+442007316-DISCHARGE-SUMMARY.pdf,wrong_or_missing_attribute,SM-CORE-05,fact_5,Pulse rate,test_value=56,,1.0
+442007316-DISCHARGE-SUMMARY.pdf,wrong_or_missing_attribute,SM-CORE-05,fact_5,Pulse rate,raw_unit=mints,,1.0
+442007316-DISCHARGE-SUMMARY.pdf,wrong_or_missing_attribute,SM-CORE-05,fact_5,Pulse rate,unit_status=requires review,,1.0
+442007316-DISCHARGE-SUMMARY.pdf,wrong_status,SM-CORE-10,fact_8,Antibiotics,unknown,active,0.85
+442007316-DISCHARGE-SUMMARY.pdf,wrong_temporality,SM-CORE-10,fact_8,Antibiotics,at_encounter,current,0.85
+442007316-DISCHARGE-SUMMARY.pdf,wrong_or_missing_attribute,SM-CORE-10,fact_8,Antibiotics,treatment_context=conservative treatment during hospital course,,0.85
+442007316-DISCHARGE-SUMMARY.pdf,wrong_or_missing_attribute,SM-CORE-10,fact_8,Antibiotics,specific_drug=not stated,,0.85
+442007316-DISCHARGE-SUMMARY.pdf,wrong_status,SM-CORE-11,fact_9,Antiemetics,unknown,active,0.85
+442007316-DISCHARGE-SUMMARY.pdf,wrong_temporality,SM-CORE-11,fact_9,Antiemetics,at_encounter,current,0.85
+442007316-DISCHARGE-SUMMARY.pdf,wrong_or_missing_attribute,SM-CORE-11,fact_9,Antiemetics,treatment_context=conservative treatment during hospital course,,0.85
+442007316-DISCHARGE-SUMMARY.pdf,wrong_or_missing_attribute,SM-CORE-11,fact_9,Antiemetics,specific_drug=not stated,,0.85
+442007316-DISCHARGE-SUMMARY.pdf,wrong_status,SM-CORE-12,fact_10,PPI,unknown,active,0.9
+442007316-DISCHARGE-SUMMARY.pdf,wrong_temporality,SM-CORE-12,fact_10,PPI,at_encounter,current,0.9
+442007316-DISCHARGE-SUMMARY.pdf,wrong_or_missing_attribute,SM-CORE-12,fact_10,PPI,treatment_context=conservative treatment during hospital course,,0.9
+442007316-DISCHARGE-SUMMARY.pdf,wrong_or_missing_attribute,SM-CORE-12,fact_10,PPI,specific_drug=not stated,,0.9
+442007316-DISCHARGE-SUMMARY.pdf,wrong_status,SM-CORE-20,fact_18,T. AZ1TH RA L,unknown,active,0.75
+442007316-DISCHARGE-SUMMARY.pdf,wrong_temporality,SM-CORE-20,fact_18,T. AZ1TH RA L,future_plan,current,0.75
+442007316-DISCHARGE-SUMMARY.pdf,wrong_or_missing_attribute,SM-CORE-20,fact_18,T. AZ1TH RA L,dose_schedule=0-0-1,,0.75
+442007316-DISCHARGE-SUMMARY.pdf,wrong_or_missing_attribute,SM-CORE-20,fact_18,T. AZ1TH RA L,normalised_ingredient=not established,,0.75
+442007316-DISCHARGE-SUMMARY.pdf,wrong_or_missing_attribute,SM-CORE-20,fact_18,T. AZ1TH RA L,administration_status=not documented as taken,,0.75
+442007316-DISCHARGE-SUMMARY.pdf,missed,SM-CORE-06,,Oxygen saturation,observation,,
+442007316-DISCHARGE-SUMMARY.pdf,missed,SM-CORE-07,,CT scan of chest and abdomen,procedure,,
+442007316-DISCHARGE-SUMMARY.pdf,missed,SM-CORE-08,,Oesophageal dilatation,observation,,
+442007316-DISCHARGE-SUMMARY.pdf,missed,SM-CORE-09,,Subcarinal oesophageal narrowing,observation,,
+442007316-DISCHARGE-SUMMARY.pdf,missed,SM-CORE-13,,Ability to swallow solid foods,observation,,
+442007316-DISCHARGE-SUMMARY.pdf,missed,SM-CORE-14,,Vomiting,symptom,,
+442007316-DISCHARGE-SUMMARY.pdf,missed,SM-CORE-15,,Endoscopy,procedure,,
+442007316-DISCHARGE-SUMMARY.pdf,missed,SM-CORE-16,,Biopsy,procedure,,
+442007316-DISCHARGE-SUMMARY.pdf,missed,SM-CORE-17,,Total white blood cell count,observation,,
+442007316-DISCHARGE-SUMMARY.pdf,missed,SM-CORE-18,,Haemoglobin,observation,,
+442007316-DISCHARGE-SUMMARY.pdf,missed,SM-CORE-19,,Follow-up review,procedure,,
+442007316-DISCHARGE-SUMMARY.pdf,extra_supported,,fact_6,SPO2,,observation,
+442007316-DISCHARGE-SUMMARY.pdf,extra_supported,,fact_7,CT scan findings,,observation,
+442007316-DISCHARGE-SUMMARY.pdf,extra_supported,,fact_11,Follow-up advice,,observation,
+442007316-DISCHARGE-SUMMARY.pdf,extra_supported,,fact_12,T.EM ESET,,medication,
+442007316-DISCHARGE-SUMMARY.pdf,extra_supported,,fact_13,T.YEES D,,medication,
+442007316-DISCHARGE-SUMMARY.pdf,extra_supported,,fact_14,T.DIGIPEN,,medication,
+442007316-DISCHARGE-SUMMARY.pdf,extra_supported,,fact_15,T.ACILOC,,medication,
+442007316-DISCHARGE-SUMMARY.pdf,extra_supported,,fact_16,T.MUCYST,,medication,
+442007316-DISCHARGE-SUMMARY.pdf,extra_supported,,fact_17,T.NEFTRON,,medication,
+442007316-DISCHARGE-SUMMARY.pdf,extra_supported,,fact_19,5YP.LUPIZ1ME PLUS,,medication,
+442007316-DISCHARGE-SUMMARY.pdf,extra_supported,,fact_20,5YP.SUCRAFIL PLUS,,medication,

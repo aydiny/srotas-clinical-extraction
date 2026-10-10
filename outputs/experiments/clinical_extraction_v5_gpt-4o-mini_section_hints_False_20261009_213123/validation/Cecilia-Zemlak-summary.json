@@ -1,0 +1,76 @@
+{
+  "summary": {
+    "unsupported_rate": 0.15384615384615385,
+    "graph_errors": []
+  },
+  "facts": {
+    "fact_1": [],
+    "fact_2": [],
+    "fact_3": [
+      [
+        "warn",
+        "quote_fuzzy_only"
+      ]
+    ],
+    "fact_4": [
+      [
+        "error",
+        "quote_not_found"
+      ]
+    ],
+    "fact_5": [
+      [
+        "error",
+        "quote_not_found"
+      ]
+    ],
+    "fact_6": [
+      [
+        "warn",
+        "quote_fuzzy_only"
+      ]
+    ],
+    "fact_7": [
+      [
+        "warn",
+        "quote_fuzzy_only"
+      ]
+    ],
+    "fact_8": [
+      [
+        "warn",
+        "quote_fuzzy_only"
+      ]
+    ],
+    "fact_9": [
+      [
+        "warn",
+        "quote_fuzzy_only"
+      ]
+    ],
+    "fact_10": [
+      [
+        "warn",
+        "quote_fuzzy_only"
+      ]
+    ],
+    "fact_11": [
+      [
+        "warn",
+        "quote_fuzzy_only"
+      ]
+    ],
+    "fact_12": [
+      [
+        "warn",
+        "quote_fuzzy_only"
+      ]
+    ],
+    "fact_13": [
+      [
+        "warn",
+        "quote_fuzzy_only"
+      ]
+    ]
+  }
+}

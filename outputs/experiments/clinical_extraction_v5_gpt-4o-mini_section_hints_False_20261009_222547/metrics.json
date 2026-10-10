@@ -1,0 +1,55 @@
+{
+  "overall": {
+    "gold_recall": 0.45,
+    "precision_vs_gold_subset": 0.45,
+    "precision_excluding_extra_supported": 1.0,
+    "extra_supported_facts": 11,
+    "unsupported_rate": 0.0,
+    "context_accuracy": {
+      "status": 0.3333333333333333,
+      "temporality": 0.0,
+      "certainty": 1.0,
+      "is_negated": 1.0
+    },
+    "attribute_recall_on_matched_facts": 0.0,
+    "counts": {
+      "predicted_facts": 20,
+      "gold_facts": 20,
+      "true_positives": 9,
+      "false_negatives": 11,
+      "unmatched_predictions": 11
+    }
+  },
+  "documents_failed": [],
+  "per_document": {
+    "442007316-DISCHARGE-SUMMARY.pdf": {
+      "status": "ok",
+      "facts": 20,
+      "validation": {
+        "unsupported_rate": 0.0,
+        "graph_errors": []
+      },
+      "counts": {
+        "predicted_facts": 20,
+        "gold_facts": 20,
+        "true_positives": 9,
+        "false_negatives": 11,
+        "unmatched_predictions": 11,
+        "extra_supported": 11,
+        "unsupported_unmatched": 0,
+        "unsupported_total": 0,
+        "context_correct": {
+          "status": 3,
+          "certainty": 9,
+          "is_negated": 9
+        },
+        "attributes_total": 17,
+        "attributes_correct": 0
+      }
+    }
+  },
+  "model_name": "gpt-4o-mini",
+  "prompt_version": "clinical_extraction_v5",
+  "section_hints": false,
+  "temperature": 0
+}

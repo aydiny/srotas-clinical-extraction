@@ -1,0 +1,16 @@
+[project]
+name = "srotas-clinical-extraction"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "dotenv>=0.9.9",
+    "openai>=3.26.1",
+    "pandas>=3.0.6",
+    "pydantic>=2.14.0",
+    "pypdf>=6.20.0",
+    "rapidfuzz>=3.14.6",
+    "requests>=2.34.2",
+    "scipy>=1.18.1",
+]

@@ -1,0 +1,297 @@
+{
+  "patient_id": null,
+  "patient_name": "Cecilia Zemlak",
+  "age": 58,
+  "sex": "Female",
+  "clinical_facts": [
+    {
+      "fact_id": "fact_2",
+      "category": "condition",
+      "name": "Essential Hypertension",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "Intermittent blood pressure elevations are noted, but no explicit diagnosis is documented in excerpts.",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 2
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_3",
+      "category": "condition",
+      "name": "Chronic Intractable Migraine Without Aura",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [
+        {
+          "name": "symptoms",
+          "value": "recurrent headaches with sinus pain, nasal congestion, sore throat, facial swelling, photophobia, and cough",
+          "unit": null
+        },
+        {
+          "name": "episodes",
+          "value": "recurrent",
+          "unit": null
+        },
+        {
+          "name": "response to treatments",
+          "value": "partial",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "Recurrent headaches with sinus pain, nasal congestion, sore throat, facial swelling, photophobia, and cough, consistent with migraine or sinus-related symptoms.",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 2
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_4",
+      "category": "medication",
+      "name": "Penicillin",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "unknown",
+      "temporality": "current",
+      "date": null,
+      "attributes": [
+        {
+          "name": "indication",
+          "value": "infections",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "Episodic antibiotics (penicillin, doxycycline) for infections.",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 3
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_5",
+      "category": "medication",
+      "name": "Doxycycline",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "unknown",
+      "temporality": "current",
+      "date": null,
+      "attributes": [
+        {
+          "name": "indication",
+          "value": "infections",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "Episodic antibiotics (penicillin, doxycycline) for infections.",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 3
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_6",
+      "category": "medication",
+      "name": "Acetaminophen",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "unknown",
+      "temporality": "current",
+      "date": null,
+      "attributes": [
+        {
+          "name": "indication",
+          "value": "pain",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "Analgesics (acetaminophen, meperidine) for pain.",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 3
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_7",
+      "category": "medication",
+      "name": "Meperidine",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "unknown",
+      "temporality": "current",
+      "date": null,
+      "attributes": [
+        {
+          "name": "indication",
+          "value": "pain",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "Analgesics (acetaminophen, meperidine) for pain.",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 3
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_8",
+      "category": "observation",
+      "name": "Vital Signs",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "unknown",
+      "temporality": "current",
+      "date": null,
+      "attributes": [
+        {
+          "name": "tracking",
+          "value": "tracked from infancy",
+          "unit": null
+        },
+        {
+          "name": "growth",
+          "value": "normal",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "Vital signs tracked from infancy (normal growth).",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 3
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_9",
+      "category": "observation",
+      "name": "CBC Trends",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "unknown",
+      "temporality": "current",
+      "date": null,
+      "attributes": [
+        {
+          "name": "results",
+          "value": "normal",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "Labs: CBC trends normal; later lipids, glucose variable but no abnormalities noted.",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 3
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_10",
+      "category": "observation",
+      "name": "Imaging",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "unknown",
+      "temporality": "current",
+      "date": null,
+      "attributes": [
+        {
+          "name": "type",
+          "value": "X-rays for fractures, mammography for breast cancer",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "Imaging: X-rays for fractures, mammography for breast cancer.",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 3
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_11",
+      "category": "condition",
+      "name": "Social History",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "unknown",
+      "temporality": "current",
+      "date": null,
+      "attributes": [
+        {
+          "name": "active smoking",
+          "value": "yes",
+          "unit": null
+        },
+        {
+          "name": "alcoholism",
+          "value": "yes",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "Social history consistently notes active smoking and alcoholism, which may contribute to health risks.",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 1
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_12",
+      "category": "condition",
+      "name": "No Documented History",
+      "status": "historical",
+      "is_negated": true,
+      "certainty": "confirmed",
+      "temporality": "historical",
+      "date": null,
+      "attributes": [
+        {
+          "name": "conditions",
+          "value": "Diabetes mellitus, Chronic kidney disease, Coronary artery disease, Autoimmune disorders",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "There is no documented history of: Diabetes mellitus, Chronic kidney disease, Coronary artery disease, Autoimmune disorders.",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 2
+        }
+      ]
+    }
+  ]
+}

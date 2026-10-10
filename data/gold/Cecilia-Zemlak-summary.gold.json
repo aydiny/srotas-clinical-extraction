@@ -1,0 +1,609 @@
+{
+  "patient_id": null,
+  "patient_name": "Cecilia Zemlak",
+  "age": 58,
+  "sex": "Female",
+  "clinical_facts": [
+    {
+      "fact_id": "CZ-01",
+      "category": "condition",
+      "name": "Malignant neoplasm of breast",
+      "status": "unknown",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "unknown",
+      "date": "2020",
+      "attributes": [
+        {
+          "name": "snomed_ct_code",
+          "value": "254837009",
+          "unit": null
+        },
+        {
+          "name": "stage",
+          "value": "2",
+          "unit": null
+        },
+        {
+          "name": "status_note",
+          "value": "Source headings say chronic/confirmed; assessment says history of breast cancer in remission; current activity not explicit",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "malignant neoplasm of breast (SNOMED CT \n254837009)",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 1
+        },
+        {
+          "source_text_quote": "staged as 2",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 1
+        },
+        {
+          "source_text_quote": "Diagnosed in 2020",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 1
+        }
+      ]
+    },
+    {
+      "fact_id": "CZ-02",
+      "category": "observation",
+      "name": "HER2 status",
+      "status": "unknown",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "historical",
+      "date": null,
+      "attributes": [
+        {
+          "name": "test_value",
+          "value": "positive",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [
+        "CZ-01"
+      ],
+      "provenance": [
+        {
+          "source_text_quote": "positive HER2, ER, and PR status",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 1
+        }
+      ]
+    },
+    {
+      "fact_id": "CZ-03",
+      "category": "observation",
+      "name": "Oestrogen receptor (ER) status",
+      "status": "unknown",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "historical",
+      "date": null,
+      "attributes": [
+        {
+          "name": "test_value",
+          "value": "positive",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [
+        "CZ-01"
+      ],
+      "provenance": [
+        {
+          "source_text_quote": "positive HER2, ER, and PR status",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 1
+        }
+      ]
+    },
+    {
+      "fact_id": "CZ-04",
+      "category": "observation",
+      "name": "Progesterone receptor (PR) status",
+      "status": "unknown",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "historical",
+      "date": null,
+      "attributes": [
+        {
+          "name": "test_value",
+          "value": "positive",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [
+        "CZ-01"
+      ],
+      "provenance": [
+        {
+          "source_text_quote": "positive HER2, ER, and PR status",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 1
+        }
+      ]
+    },
+    {
+      "fact_id": "CZ-05",
+      "category": "procedure",
+      "name": "Surgical intervention (excision, biopsy)",
+      "status": "historical",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "historical",
+      "date": null,
+      "attributes": [
+        {
+          "name": "detail",
+          "value": "excision, biopsy",
+          "unit": null
+        },
+        {
+          "name": "date_status",
+          "value": "not documented",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [
+        "CZ-01"
+      ],
+      "provenance": [
+        {
+          "source_text_quote": "Surgical intervention (excision, biopsy)",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 2
+        }
+      ]
+    },
+    {
+      "fact_id": "CZ-06",
+      "category": "condition",
+      "name": "Breast cancer recurrence",
+      "status": "unknown",
+      "is_negated": true,
+      "certainty": "confirmed",
+      "temporality": "unknown",
+      "date": null,
+      "attributes": [
+        {
+          "name": "assertion_scope",
+          "value": "no documented recurrence in follow-up; absence of documentation, not proof of absence",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [
+        "CZ-01"
+      ],
+      "provenance": [
+        {
+          "source_text_quote": "No documented recurrence or metastasis in follow-up",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 2
+        }
+      ]
+    },
+    {
+      "fact_id": "CZ-07",
+      "category": "condition",
+      "name": "Metastasis",
+      "status": "unknown",
+      "is_negated": true,
+      "certainty": "confirmed",
+      "temporality": "unknown",
+      "date": null,
+      "attributes": [
+        {
+          "name": "assertion_scope",
+          "value": "no documented metastasis in follow-up; absence of documentation, not proof of absence",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [
+        "CZ-01"
+      ],
+      "provenance": [
+        {
+          "source_text_quote": "No documented recurrence or metastasis in follow-up",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 2
+        }
+      ]
+    },
+    {
+      "fact_id": "CZ-08",
+      "category": "procedure",
+      "name": "Ongoing surveillance",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "suspected",
+      "temporality": "current",
+      "date": null,
+      "attributes": [
+        {
+          "name": "assertion",
+          "value": "implied, not explicitly documented",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [
+        "CZ-01"
+      ],
+      "provenance": [
+        {
+          "source_text_quote": "Ongoing surveillance implied",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 2
+        }
+      ]
+    },
+    {
+      "fact_id": "CZ-09",
+      "category": "observation",
+      "name": "Smoking",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [
+        {
+          "name": "smoking_status",
+          "value": "active",
+          "unit": null
+        },
+        {
+          "name": "category_note",
+          "value": "social history",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "active smoking and alcoholism",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 1
+        }
+      ]
+    },
+    {
+      "fact_id": "CZ-10",
+      "category": "observation",
+      "name": "Alcohol use disorder (documented as alcoholism)",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [
+        {
+          "name": "source_term",
+          "value": "alcoholism",
+          "unit": null
+        },
+        {
+          "name": "category_note",
+          "value": "social history",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "active smoking and alcoholism",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 1
+        }
+      ]
+    },
+    {
+      "fact_id": "CZ-11",
+      "category": "condition",
+      "name": "Essential hypertension",
+      "status": "unknown",
+      "is_negated": false,
+      "certainty": "unknown",
+      "temporality": "unknown",
+      "date": null,
+      "attributes": [
+        {
+          "name": "source_conflict",
+          "value": "Heading says Chronic, Confirmed; text says no explicit diagnosis is documented",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "Essential Hypertension (Chronic, Confirmed)",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 2
+        },
+        {
+          "source_text_quote": "no explicit diagnosis is documented in",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 2
+        }
+      ]
+    },
+    {
+      "fact_id": "CZ-12",
+      "category": "observation",
+      "name": "Blood pressure elevations",
+      "status": "unknown",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "historical",
+      "date": null,
+      "attributes": [
+        {
+          "name": "pattern",
+          "value": "intermittent",
+          "unit": null
+        },
+        {
+          "name": "numeric_values",
+          "value": "not documented",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [
+        "CZ-11"
+      ],
+      "provenance": [
+        {
+          "source_text_quote": "Intermittent blood pressure elevations are noted",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 2
+        }
+      ]
+    },
+    {
+      "fact_id": "CZ-13",
+      "category": "condition",
+      "name": "Chronic intractable migraine without aura",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [
+        {
+          "name": "pattern",
+          "value": "episodic",
+          "unit": null
+        },
+        {
+          "name": "source_hedge",
+          "value": "consistent with migraine or sinus-related symptoms",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "Chronic Intractable Migraine Without Aura (Episodic, Confirmed)",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 2
+        }
+      ]
+    },
+    {
+      "fact_id": "CZ-14",
+      "category": "symptom",
+      "name": "Recurrent headaches",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [
+        {
+          "name": "pattern",
+          "value": "recurrent",
+          "unit": null
+        },
+        {
+          "name": "associated_symptom",
+          "value": "sinus pain",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [
+        "CZ-13"
+      ],
+      "provenance": [
+        {
+          "source_text_quote": "Recurrent headaches with sinus pain",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 2
+        }
+      ]
+    },
+    {
+      "fact_id": "CZ-15",
+      "category": "symptom",
+      "name": "Photophobia",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [],
+      "related_to_fact_ids": [
+        "CZ-13"
+      ],
+      "provenance": [
+        {
+          "source_text_quote": "photophobia, and cough",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 2
+        }
+      ]
+    },
+    {
+      "fact_id": "CZ-16",
+      "category": "condition",
+      "name": "Diabetes mellitus",
+      "status": "unknown",
+      "is_negated": true,
+      "certainty": "confirmed",
+      "temporality": "unknown",
+      "date": null,
+      "attributes": [
+        {
+          "name": "assertion_scope",
+          "value": "no documented history; absence of documentation",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "There is no documented history of:",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 2
+        },
+        {
+          "source_text_quote": "Diabetes mellitus",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 2
+        }
+      ]
+    },
+    {
+      "fact_id": "CZ-17",
+      "category": "condition",
+      "name": "Chronic kidney disease",
+      "status": "unknown",
+      "is_negated": true,
+      "certainty": "confirmed",
+      "temporality": "unknown",
+      "date": null,
+      "attributes": [
+        {
+          "name": "assertion_scope",
+          "value": "no documented history; absence of documentation",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "There is no documented history of:",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 2
+        },
+        {
+          "source_text_quote": "Chronic kidney disease",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 2
+        }
+      ]
+    },
+    {
+      "fact_id": "CZ-18",
+      "category": "condition",
+      "name": "Preeclampsia",
+      "status": "historical",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "historical",
+      "date": null,
+      "attributes": [
+        {
+          "name": "context",
+          "value": "pregnancy complication",
+          "unit": null
+        },
+        {
+          "name": "date_status",
+          "value": "not documented",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "complicated by preeclampsia",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 2
+        }
+      ]
+    },
+    {
+      "fact_id": "CZ-19",
+      "category": "medication",
+      "name": "Penicillin",
+      "status": "historical",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "historical",
+      "date": null,
+      "attributes": [
+        {
+          "name": "pattern",
+          "value": "episodic",
+          "unit": null
+        },
+        {
+          "name": "indication",
+          "value": "infections",
+          "unit": null
+        },
+        {
+          "name": "dose",
+          "value": "not documented",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "Episodic antibiotics (penicillin, doxycycline) for infections",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 3
+        }
+      ]
+    },
+    {
+      "fact_id": "CZ-20",
+      "category": "procedure",
+      "name": "Mammography",
+      "status": "historical",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "historical",
+      "date": null,
+      "attributes": [
+        {
+          "name": "indication",
+          "value": "breast cancer",
+          "unit": null
+        },
+        {
+          "name": "date_status",
+          "value": "not documented",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [
+        "CZ-01"
+      ],
+      "provenance": [
+        {
+          "source_text_quote": "Imaging: X-rays for fractures, mammography for breast cancer",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 3
+        }
+      ]
+    }
+  ]
+}

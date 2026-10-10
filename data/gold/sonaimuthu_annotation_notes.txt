@@ -1,0 +1,25 @@
+SONAIMUTHU GOLD ANNOTATION NOTES — DRAFT FOR HUMAN REVIEW
+
+Scope: 65 clinical facts from pages 1–2 of 442007316-DISCHARGE-SUMMARY.pdf, using the supplied PatientRepresentation schema. Pages 3–5 are administrative evidence and are excluded from the primary clinical fact set. Demographics are stored at top level and are not counted among the 65 facts.
+
+Evidence: Every source_text_quote is an exact substring of the indicated page as extracted by pypdf in this environment. Extraction engines and versions may differ in whitespace or reading order. Validate against your own ingestion output before freezing the labels. Exact quote matching verifies quotation existence, not clinical entailment.
+
+Status: status describes the documented clinical state, not whether an event occurred sometime in the past relative to today. At-encounter measurements and completed procedures use status=unknown because the schema has no measured/completed status; completion is recorded in attributes. Future plans use status=unknown, temporality=future_plan, and explicit completion qualifiers.
+
+Dates: Individual facts have date=null unless an event-specific date is explicitly supplied. Admission/discharge dates describe the encounter, not the precise date of every laboratory measurement or treatment. Encounter dates are not turned into clinical facts to pad the count. MRN is not supplied, so patient_id=null. Age is age reported in the document, not present-day age.
+
+Certainty: confirmed means explicitly recorded in the supplied document; it is not independent clinical verification. Unknown is used where a corrupted result or unresolved label prevents confident normalisation. A prescribed brand string can be documented even though its ingredient is not established.
+
+Negative observations: Negative urine results are represented with attributes.test_value=negative and is_negated=false: the test/measurement exists, while its result is negative. Post-treatment vomiting uses is_negated=true. Apply this policy consistently in predictions and gold matching.
+
+Temporal symptom states: Presenting vomiting and later absence of vomiting are separate facts linked by related_to_fact_ids. Their phase qualifiers prevent a false contradiction. Do not score them as duplicates.
+
+Source ambiguity: Haemoglobin, platelet count and specific gravity retain raw strings without invented numeric repair. The SCOT label and unit are unresolved. MCV source unit is preserved, not medically corrected. Urine test specimen context follows table headings but requires visual review because extracted PDF text interleaves columns. Inspect the original page image before approving these labels.
+
+Medication scope: Three inpatient medication classes and nine discharge medication strings are included. No active ingredients, route, dosing times, or proof of administration are invented. Discharge medication instructions are future_plan; alternative representations may be acceptable if these semantics are preserved.
+
+Billing challenge cases: Prenatal screening, chemotherapy, radiotherapy, dialysis, blood transfusion and surgical charges must not automatically become clinical procedures. A zero charge does not prove clinical absence. Billing can inform reconciliation in a different workflow; exclusion here is task-specific, not a universal claim that billing has no value.
+
+Evaluation: This is a source-grounded draft annotation, NOT independent clinician-adjudicated ground truth. Review without consulting extractor predictions, record any changes and freeze an annotation version. The set is not exhaustive. Additional supported facts outside this set must not automatically be counted as false positives. Split merged model facts into atomic claims or permit one-to-many alignment; do not demand matching fact IDs or identical wording. Score entity/claim detection, attributes, temporality, assertion and evidence separately. Schema validity does not establish clinical correctness.
+
+Schema limitation: is_negated cannot represent all distinctions between explicit absence and absence of documentation. status cannot express prescribed/planned/performed. Attributes are used to preserve those distinctions. The validator that forbids historical+active can also reject a genuinely ongoing condition with historical onset; onset belongs in date/attributes while current disease temporality should be current.

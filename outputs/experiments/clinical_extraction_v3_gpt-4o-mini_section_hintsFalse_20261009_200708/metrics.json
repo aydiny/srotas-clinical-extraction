@@ -1,0 +1,55 @@
+{
+  "overall": {
+    "gold_recall": 0.2,
+    "precision_vs_gold_subset": 0.5714285714285714,
+    "precision_excluding_extra_supported": 1.0,
+    "extra_supported_facts": 3,
+    "unsupported_rate": 0.0,
+    "context_accuracy": {
+      "status": 0.25,
+      "temporality": 0.25,
+      "certainty": 0.75,
+      "is_negated": 1.0
+    },
+    "attribute_recall_on_matched_facts": 0.14285714285714285,
+    "counts": {
+      "predicted_facts": 7,
+      "gold_facts": 20,
+      "true_positives": 4,
+      "false_negatives": 16,
+      "unmatched_predictions": 3
+    }
+  },
+  "documents_failed": [],
+  "per_document": {
+    "Cecilia-Zemlak-summary.pdf": {
+      "status": "ok",
+      "facts": 7,
+      "validation": {
+        "unsupported_rate": 0.0,
+        "graph_errors": []
+      },
+      "counts": {
+        "predicted_facts": 7,
+        "gold_facts": 20,
+        "true_positives": 4,
+        "false_negatives": 16,
+        "unmatched_predictions": 3,
+        "extra_supported": 3,
+        "unsupported_unmatched": 0,
+        "unsupported_total": 0,
+        "context_correct": {
+          "certainty": 3,
+          "is_negated": 4,
+          "status": 1,
+          "temporality": 1
+        },
+        "attributes_total": 7,
+        "attributes_correct": 1
+      }
+    }
+  },
+  "model_name": "gpt-4o-mini",
+  "prompt_version": "clinical_extraction_v3",
+  "section_hints": false
+}

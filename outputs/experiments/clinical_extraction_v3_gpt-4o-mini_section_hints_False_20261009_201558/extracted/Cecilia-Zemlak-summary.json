@@ -1,0 +1,149 @@
+{
+  "patient_id": null,
+  "patient_name": "Cecilia Zemlak",
+  "age": 58,
+  "sex": "Female",
+  "clinical_facts": [
+    {
+      "fact_id": "fact_1",
+      "category": "condition",
+      "name": "Malignant Neoplasm of Breast",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [
+        {
+          "name": "stage",
+          "value": "2",
+          "unit": null
+        },
+        {
+          "name": "HER2 status",
+          "value": "positive",
+          "unit": null
+        },
+        {
+          "name": "ER status",
+          "value": "positive",
+          "unit": null
+        },
+        {
+          "name": "PR status",
+          "value": "positive",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "The patient carries a confirmed diagnosis of malignant neoplasm of breast (SNOMED CT 254837009), staged as 2 with positive HER2, ER, and PR status.",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 1
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_2",
+      "category": "condition",
+      "name": "Essential Hypertension",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "Intermittent blood pressure elevations are noted, but no explicit diagnosis is documented in excerpts.",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 2
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_3",
+      "category": "condition",
+      "name": "Chronic Intractable Migraine Without Aura",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [
+        {
+          "name": "symptoms",
+          "value": "recurrent headaches with sinus pain, nasal congestion, sore throat, facial swelling, photophobia, and cough",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "Recurrent headaches with sinus pain, nasal congestion, sore throat, facial swelling, photophobia, and cough, consistent with migraine or sinus-related symptoms.",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 2
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_4",
+      "category": "observation",
+      "name": "History of multiple pregnancies",
+      "status": "historical",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "historical",
+      "date": null,
+      "attributes": [],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "The record includes multiple pregnancies (normal and complicated by preeclampsia, tubal pregnancy, miscarriage).",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 2
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_5",
+      "category": "observation",
+      "name": "History of musculoskeletal injuries",
+      "status": "historical",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "historical",
+      "date": null,
+      "attributes": [],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "Pertinent Medical History The record includes multiple pregnancies (normal and complicated by preeclampsia, tubal pregnancy, miscarriage), musculoskeletal injuries (sprains, fractures of ankle, wrist, clavicle), respiratory infections (acute bronchitis, viral pharyngitis, sinusitis), and childhood normal development.",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 2
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_6",
+      "category": "observation",
+      "name": "History of respiratory infections",
+      "status": "historical",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "historical",
+      "date": null,
+      "attributes": [],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "The record includes multiple pregnancies (normal and complicated by preeclampsia, tubal pregnancy, miscarriage), musculoskeletal injuries (sprains, fractures of ankle, wrist, clavicle), respiratory infections (acute bronchitis, viral pharyngitis, sinusitis), and childhood normal development.",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 2
+        }
+      ]
+    }
+  ]
+}

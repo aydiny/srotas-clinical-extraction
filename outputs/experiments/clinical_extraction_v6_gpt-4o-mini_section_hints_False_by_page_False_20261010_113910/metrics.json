@@ -1,0 +1,32 @@
+{
+  "overall": null,
+  "extraction": {
+    "documents": 1,
+    "elapsed_seconds": 23.329,
+    "mean_elapsed_seconds": 23.329,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "total_tokens": 0
+  },
+  "documents_failed": [
+    "Cecilia-Zemlak-summary.pdf"
+  ],
+  "per_document": {
+    "Cecilia-Zemlak-summary.pdf": {
+      "status": "extraction_failed",
+      "error": "ValidationError: 8 validation errors for PatientRepresentation\nclinical_facts.4\n  Value error, Contradiction detected: A 'historical' event cannot have an 'active' status. If the condition is ongoing, set temporality to 'current'. [type=value_error, input_value={'fact_id': 'fact_5', 'ca...df', 'page_number': 3}]}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/value_error\nclinical_facts.5\n  Value error, Contradiction detected: A 'historical' event cannot have an 'active' status. If the condition is ongoing, set temporality to 'current'. [type=value_error, input_value={'fact_id': 'fact_6', 'ca...df', 'page_number': 3}]}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/value_error\nclinical_facts.6\n  Value error, Contradiction detected: A 'historical' event cannot have an 'active' status. If the condition is ongoing, set temporality to 'current'. [type=value_error, input_value={'fact_id': 'fact_7', 'ca...df', 'page_number': 3}]}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/value_error\nclinical_facts.7\n  Value error, Contradiction detected: A 'historical' event cannot have an 'active' status. If the condition is ongoing, set temporality to 'current'. [type=value_error, input_value={'fact_id': 'fact_8', 'ca...df', 'page_number': 3}]}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/value_error\nclinical_facts.8\n  Value error, Contradiction detected: A 'historical' event cannot have an 'active' status. If the condition is ongoing, set temporality to 'current'. [type=value_error, input_value={'fact_id': 'fact_9', 'ca...df', 'page_number': 3}]}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/value_error\nclinical_facts.9\n  Value error, Contradiction detected: A 'historical' event cannot have an 'active' status. If the condition is ongoing, set temporality to 'current'. [type=value_error, input_value={'fact_id': 'fact_10', 'c...df', 'page_number': 3}]}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/value_error\nclinical_facts.10\n  Value error, Contradiction detected: A 'historical' event cannot have an 'active' status. If the condition is ongoing, set temporality to 'current'. [type=value_error, input_value={'fact_id': 'fact_11', 'c...df', 'page_number': 3}]}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/value_error\nclinical_facts.11\n  Value error, Contradiction detected: A 'historical' event cannot have an 'active' status. If the condition is ongoing, set temporality to 'current'. [type=value_error, input_value={'fact_id': 'fact_12', 'c...df', 'page_number': 3}]}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/value_error",
+      "extraction": {
+        "elapsed_seconds": 23.329,
+        "attempts": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "total_tokens": 0
+      }
+    }
+  },
+  "model_name": "gpt-4o-mini",
+  "prompt_version": "clinical_extraction_v6",
+  "section_hints": false,
+  "extract_by_page": false,
+  "temperature": 0
+}

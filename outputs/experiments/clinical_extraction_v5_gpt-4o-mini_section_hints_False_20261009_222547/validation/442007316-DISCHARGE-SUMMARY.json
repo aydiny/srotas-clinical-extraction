@@ -1,0 +1,48 @@
+{
+  "summary": {
+    "unsupported_rate": 0.0,
+    "graph_errors": []
+  },
+  "facts": {
+    "fact_1": [],
+    "fact_2": [],
+    "fact_3": [],
+    "fact_4": [],
+    "fact_5": [],
+    "fact_6": [],
+    "fact_7": [],
+    "fact_8": [
+      [
+        "warn",
+        "quote_fuzzy_only"
+      ]
+    ],
+    "fact_9": [
+      [
+        "warn",
+        "quote_fuzzy_only"
+      ]
+    ],
+    "fact_10": [
+      [
+        "warn",
+        "quote_fuzzy_only"
+      ]
+    ],
+    "fact_11": [],
+    "fact_12": [],
+    "fact_13": [],
+    "fact_14": [],
+    "fact_15": [],
+    "fact_16": [],
+    "fact_17": [],
+    "fact_18": [
+      [
+        "warn",
+        "quote_fuzzy_only"
+      ]
+    ],
+    "fact_19": [],
+    "fact_20": []
+  }
+}

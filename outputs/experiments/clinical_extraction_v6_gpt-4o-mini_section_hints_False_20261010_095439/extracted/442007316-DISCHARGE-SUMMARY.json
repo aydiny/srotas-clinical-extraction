@@ -1,0 +1,522 @@
+{
+  "patient_id": null,
+  "patient_name": "Mr. SONAIMUTHU",
+  "age": 71,
+  "sex": "Male",
+  "clinical_facts": [
+    {
+      "fact_id": "fact_1",
+      "category": "condition",
+      "name": "Lower Oesophageal Hiatus Hernia",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "DIAGNOSIS: LOWER OESOPHAGEAL HIATUS HERNIA",
+          "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+          "page_number": 1
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_2",
+      "category": "symptom",
+      "name": "Inability to swallow food",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "Patient came to the hospital with complaints of inability to swallow food",
+          "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+          "page_number": 1
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_3",
+      "category": "symptom",
+      "name": "Vomiting of undigested food particles",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [
+        {
+          "name": "duration",
+          "value": "3 months",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "vomiting of undigested food particles for past 3 months",
+          "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+          "page_number": 1
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_4",
+      "category": "observation",
+      "name": "Blood Pressure",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [
+        {
+          "name": "value",
+          "value": "80/50",
+          "unit": "mm/hg"
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "B , P . 80/50 mm/hg",
+          "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+          "page_number": 1
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_5",
+      "category": "observation",
+      "name": "Pulse Rate",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [
+        {
+          "name": "value",
+          "value": "56",
+          "unit": "mints"
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "P.R 56mints",
+          "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+          "page_number": 1
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_6",
+      "category": "observation",
+      "name": "SPO2",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [
+        {
+          "name": "value",
+          "value": "97",
+          "unit": "%"
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "SPO2 97%",
+          "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+          "page_number": 1
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_7",
+      "category": "observation",
+      "name": "CT scan of chest and abdomen",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [
+        {
+          "name": "finding",
+          "value": "dilation of oesophagus with thin regular wall and air fluid level within, subcarinal oesophageal narrowing present small hiatus hernia",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "CT scan of chest and abdomen done revealed, dialation of oesophagus with thin regular wall and air fluid level within, subcarinal oesophageal narrowing present small hiatus hernia.",
+          "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+          "page_number": 1
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_8",
+      "category": "medication",
+      "name": "Antibiotics",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "Patient was treated conservatively with antibiotics",
+          "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+          "page_number": 1
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_9",
+      "category": "medication",
+      "name": "Antiemetics",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "Patient was treated conservatively with antibiotics, antiematics and ppi.",
+          "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+          "page_number": 1
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_10",
+      "category": "medication",
+      "name": "PPI",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "Patient was treated conservatively with antibiotics, antiematics and ppi.",
+          "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+          "page_number": 1
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_11",
+      "category": "observation",
+      "name": "Ability to swallow solid foods",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [
+        {
+          "name": "improvement",
+          "value": "improved symptomatically",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "Patient improved symptomatically with ability to swallow solid foods with no episodes of vomiting.",
+          "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+          "page_number": 1
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_12",
+      "category": "procedure",
+      "name": "Endoscopy and dilatation of oesophagus with biopsy",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "suspected",
+      "temporality": "future_plan",
+      "date": null,
+      "attributes": [],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "Patient was advised endoscopy and dilatation of oesophagus with biopsy at a later stage.",
+          "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+          "page_number": 1
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_17",
+      "category": "medication",
+      "name": "T.EM ESET",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [
+        {
+          "name": "dosage",
+          "value": "1-0-1",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "T.EM ESET: (1-0-1)",
+          "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+          "page_number": 2
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_18",
+      "category": "medication",
+      "name": "T.YEES D",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [
+        {
+          "name": "dosage",
+          "value": "1-0-1",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "T.YEES D: (1-0-1)",
+          "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+          "page_number": 2
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_19",
+      "category": "medication",
+      "name": "T.DIGIPEN",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [
+        {
+          "name": "dosage",
+          "value": "1-0-1",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "T.DIGIPEN: (1-0-1)",
+          "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+          "page_number": 2
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_20",
+      "category": "medication",
+      "name": "T.ACILOC",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [
+        {
+          "name": "dosage",
+          "value": "1-0-1",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "T.ACILOC: (1-0-1)",
+          "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+          "page_number": 2
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_21",
+      "category": "medication",
+      "name": "T.MUCYST",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [
+        {
+          "name": "dosage",
+          "value": "0-0-1",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "T.MUCYST: (0-0-1)",
+          "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+          "page_number": 2
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_22",
+      "category": "medication",
+      "name": "T.NEFTRON",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [
+        {
+          "name": "dosage",
+          "value": "1-0-1",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "T.NEFTRON: (1-0-1)",
+          "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+          "page_number": 2
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_23",
+      "category": "medication",
+      "name": "T.AZ1TH RA L",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [
+        {
+          "name": "dosage",
+          "value": "0-0-1",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "T.AZ1TH RA L: (0-0-1)",
+          "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+          "page_number": 2
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_24",
+      "category": "medication",
+      "name": "5YP.LUPIZ1ME PLUS",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [
+        {
+          "name": "dosage",
+          "value": "10ml",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "5YP.LUPIZ1ME PLUS: 10ml",
+          "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+          "page_number": 2
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_25",
+      "category": "medication",
+      "name": "5YP.SUCRAFIL PLUS",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [
+        {
+          "name": "dosage",
+          "value": "5ml",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "5YP.SUCRAFIL PLUS: 5ml",
+          "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+          "page_number": 2
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_26",
+      "category": "observation",
+      "name": "Follow Up",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "future_plan",
+      "date": null,
+      "attributes": [
+        {
+          "name": "timeframe",
+          "value": "5 days",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "ADVICE: FOLLOW UP AFTER 5 DAYS",
+          "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+          "page_number": 1
+        }
+      ]
+    }
+  ]
+}

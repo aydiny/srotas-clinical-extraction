@@ -1,0 +1,46 @@
+document,error_class,gold_fact_id,pred_fact_id,fact_name,gold_value,predicted_value,similarity
+Cecilia-Zemlak-summary.pdf,wrong_status,CZ-01,fact_1,Malignant neoplasm of breast,unknown,active,0.815
+Cecilia-Zemlak-summary.pdf,wrong_temporality,CZ-01,fact_1,Malignant neoplasm of breast,unknown,current,0.815
+Cecilia-Zemlak-summary.pdf,wrong_or_missing_attribute,CZ-01,fact_1,Malignant neoplasm of breast,snomed_ct_code=254837009,,0.815
+Cecilia-Zemlak-summary.pdf,wrong_or_missing_attribute,CZ-01,fact_1,Malignant neoplasm of breast,status_note=Source headings say chronic/confirmed; assessment says history of breast cancer in remission; current activity not explicit,,0.815
+Cecilia-Zemlak-summary.pdf,wrong_status,CZ-05,fact_2,"Surgical intervention (excision, biopsy)",historical,active,1.0
+Cecilia-Zemlak-summary.pdf,wrong_temporality,CZ-05,fact_2,"Surgical intervention (excision, biopsy)",historical,current,1.0
+Cecilia-Zemlak-summary.pdf,wrong_or_missing_attribute,CZ-05,fact_2,"Surgical intervention (excision, biopsy)","detail=excision, biopsy",,1.0
+Cecilia-Zemlak-summary.pdf,wrong_or_missing_attribute,CZ-05,fact_2,"Surgical intervention (excision, biopsy)",date_status=not documented,,1.0
+Cecilia-Zemlak-summary.pdf,wrong_status,CZ-11,fact_3,Essential hypertension,unknown,active,0.82
+Cecilia-Zemlak-summary.pdf,wrong_temporality,CZ-11,fact_3,Essential hypertension,unknown,current,0.82
+Cecilia-Zemlak-summary.pdf,wrong_certainty,CZ-11,fact_3,Essential hypertension,unknown,confirmed,0.82
+Cecilia-Zemlak-summary.pdf,wrong_or_missing_attribute,CZ-11,fact_3,Essential hypertension,"source_conflict=Heading says Chronic, Confirmed; text says no explicit diagnosis is documented",,0.82
+Cecilia-Zemlak-summary.pdf,wrong_or_missing_attribute,CZ-13,fact_4,Chronic intractable migraine without aura,pattern=episodic,,1.0
+Cecilia-Zemlak-summary.pdf,wrong_or_missing_attribute,CZ-13,fact_4,Chronic intractable migraine without aura,source_hedge=consistent with migraine or sinus-related symptoms,,1.0
+Cecilia-Zemlak-summary.pdf,wrong_status,CZ-19,fact_5,Penicillin,historical,active,1.0
+Cecilia-Zemlak-summary.pdf,wrong_temporality,CZ-19,fact_5,Penicillin,historical,current,1.0
+Cecilia-Zemlak-summary.pdf,wrong_certainty,CZ-19,fact_5,Penicillin,confirmed,unknown,1.0
+Cecilia-Zemlak-summary.pdf,wrong_or_missing_attribute,CZ-19,fact_5,Penicillin,pattern=episodic,,1.0
+Cecilia-Zemlak-summary.pdf,wrong_or_missing_attribute,CZ-19,fact_5,Penicillin,dose=not documented,,1.0
+Cecilia-Zemlak-summary.pdf,wrong_status,CZ-20,fact_12,Mammography,historical,active,1.0
+Cecilia-Zemlak-summary.pdf,wrong_temporality,CZ-20,fact_12,Mammography,historical,current,1.0
+Cecilia-Zemlak-summary.pdf,wrong_or_missing_attribute,CZ-20,fact_12,Mammography,indication=breast cancer,,1.0
+Cecilia-Zemlak-summary.pdf,wrong_or_missing_attribute,CZ-20,fact_12,Mammography,date_status=not documented,,1.0
+Cecilia-Zemlak-summary.pdf,wrong_or_missing_attribute,CZ-09,fact_13,Smoking,smoking_status=active,,0.586
+Cecilia-Zemlak-summary.pdf,wrong_or_missing_attribute,CZ-09,fact_13,Smoking,category_note=social history,,0.586
+Cecilia-Zemlak-summary.pdf,wrong_or_missing_attribute,CZ-10,fact_14,Alcohol use disorder (documented as alcoholism),source_term=alcoholism,,0.586
+Cecilia-Zemlak-summary.pdf,wrong_or_missing_attribute,CZ-10,fact_14,Alcohol use disorder (documented as alcoholism),category_note=social history,,0.586
+Cecilia-Zemlak-summary.pdf,missed,CZ-02,,HER2 status,observation,,
+Cecilia-Zemlak-summary.pdf,missed,CZ-03,,Oestrogen receptor (ER) status,observation,,
+Cecilia-Zemlak-summary.pdf,missed,CZ-04,,Progesterone receptor (PR) status,observation,,
+Cecilia-Zemlak-summary.pdf,missed,CZ-06,,Breast cancer recurrence,condition,,
+Cecilia-Zemlak-summary.pdf,missed,CZ-07,,Metastasis,condition,,
+Cecilia-Zemlak-summary.pdf,missed,CZ-08,,Ongoing surveillance,procedure,,
+Cecilia-Zemlak-summary.pdf,missed,CZ-12,,Blood pressure elevations,observation,,
+Cecilia-Zemlak-summary.pdf,missed,CZ-14,,Recurrent headaches,symptom,,
+Cecilia-Zemlak-summary.pdf,missed,CZ-15,,Photophobia,symptom,,
+Cecilia-Zemlak-summary.pdf,missed,CZ-16,,Diabetes mellitus,condition,,
+Cecilia-Zemlak-summary.pdf,missed,CZ-17,,Chronic kidney disease,condition,,
+Cecilia-Zemlak-summary.pdf,missed,CZ-18,,Preeclampsia,condition,,
+Cecilia-Zemlak-summary.pdf,extra_supported,,fact_6,Doxycycline,,medication,
+Cecilia-Zemlak-summary.pdf,extra_supported,,fact_7,Acetaminophen,,medication,
+Cecilia-Zemlak-summary.pdf,extra_supported,,fact_8,Meperidine,,medication,
+Cecilia-Zemlak-summary.pdf,extra_supported,,fact_9,Vital Signs,,observation,
+Cecilia-Zemlak-summary.pdf,extra_supported,,fact_10,CBC Trends,,observation,
+Cecilia-Zemlak-summary.pdf,extra_supported,,fact_11,X-rays for fractures,,procedure,

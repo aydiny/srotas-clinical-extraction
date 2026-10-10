@@ -1,0 +1,42 @@
+{
+  "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+  "model": "gpt-4o-mini-2024-07-18",
+  "prompt_version": "clinical_extraction_v5",
+  "attempts": [
+    {
+      "attempt": 1,
+      "failing_facts": 7,
+      "graph_errors": [],
+      "usage": {
+        "input_tokens": 3281,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 4456,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 7737
+      }
+    },
+    {
+      "attempt": 2,
+      "failing_facts": 0,
+      "graph_errors": [],
+      "usage": {
+        "input_tokens": 8064,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 3386,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 11450
+      }
+    }
+  ],
+  "timestamp_utc": "2026-10-09T21:26:48.488690+00:00"
+}

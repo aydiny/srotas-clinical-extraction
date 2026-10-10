@@ -1,0 +1,23 @@
+{
+  "summary": {
+    "unsupported_rate": 0.0,
+    "graph_errors": []
+  },
+  "facts": {
+    "fact_1": [],
+    "fact_2": [],
+    "fact_3": [],
+    "fact_4": [
+      [
+        "warn",
+        "quote_fuzzy_only"
+      ]
+    ],
+    "fact_7": [
+      [
+        "warn",
+        "quote_fuzzy_only"
+      ]
+    ]
+  }
+}

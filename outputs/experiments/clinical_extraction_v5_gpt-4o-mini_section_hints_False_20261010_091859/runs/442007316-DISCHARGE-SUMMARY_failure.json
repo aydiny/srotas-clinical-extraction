@@ -1,0 +1,11 @@
+{
+  "status": "extraction_failed",
+  "error": "ValidationError: 3 validation errors for PatientRepresentation\nclinical_facts.1\n  Value error, Contradiction detected: A 'historical' event cannot have an 'active' status. If the condition is ongoing, set temporality to 'current'. [type=value_error, input_value={'fact_id': 'fact_2', 'ca...df', 'page_number': 1}]}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/value_error\nclinical_facts.2\n  Value error, Contradiction detected: A 'historical' event cannot have an 'active' status. If the condition is ongoing, set temporality to 'current'. [type=value_error, input_value={'fact_id': 'fact_3', 'ca...df', 'page_number': 1}]}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/value_error\nclinical_facts.6\n  Value error, Contradiction detected: A 'historical' event cannot have an 'active' status. If the condition is ongoing, set temporality to 'current'. [type=value_error, input_value={'fact_id': 'fact_7', 'ca...df', 'page_number': 1}]}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/value_error",
+  "extraction": {
+    "elapsed_seconds": 32.449,
+    "attempts": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "total_tokens": 0
+  }
+}

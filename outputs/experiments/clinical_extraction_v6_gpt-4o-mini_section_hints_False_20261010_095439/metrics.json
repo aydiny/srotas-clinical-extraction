@@ -1,0 +1,71 @@
+{
+  "overall": {
+    "gold_recall": 0.65,
+    "precision_vs_gold_subset": 0.5909090909090909,
+    "precision_excluding_extra_supported": 1.0,
+    "extra_supported_facts": 9,
+    "unsupported_rate": 0.0,
+    "context_accuracy": {
+      "status": 0.23076923076923078,
+      "temporality": 0.15384615384615385,
+      "certainty": 0.9230769230769231,
+      "is_negated": 1.0
+    },
+    "attribute_recall_on_matched_facts": 0.0,
+    "counts": {
+      "predicted_facts": 22,
+      "gold_facts": 20,
+      "true_positives": 13,
+      "false_negatives": 7,
+      "unmatched_predictions": 9
+    }
+  },
+  "extraction": {
+    "documents": 1,
+    "elapsed_seconds": 69.003,
+    "mean_elapsed_seconds": 69.003,
+    "input_tokens": 11540,
+    "output_tokens": 8438,
+    "total_tokens": 19978
+  },
+  "documents_failed": [],
+  "per_document": {
+    "442007316-DISCHARGE-SUMMARY.pdf": {
+      "status": "ok",
+      "facts": 22,
+      "validation": {
+        "unsupported_rate": 0.0,
+        "graph_errors": []
+      },
+      "extraction": {
+        "elapsed_seconds": 69.003,
+        "attempts": 2,
+        "input_tokens": 11540,
+        "output_tokens": 8438,
+        "total_tokens": 19978
+      },
+      "counts": {
+        "predicted_facts": 22,
+        "gold_facts": 20,
+        "true_positives": 13,
+        "false_negatives": 7,
+        "unmatched_predictions": 9,
+        "extra_supported": 9,
+        "unsupported_unmatched": 0,
+        "unsupported_total": 0,
+        "context_correct": {
+          "status": 3,
+          "certainty": 12,
+          "is_negated": 13,
+          "temporality": 2
+        },
+        "attributes_total": 22,
+        "attributes_correct": 0
+      }
+    }
+  },
+  "model_name": "gpt-4o-mini",
+  "prompt_version": "clinical_extraction_v6",
+  "section_hints": false,
+  "temperature": 0
+}

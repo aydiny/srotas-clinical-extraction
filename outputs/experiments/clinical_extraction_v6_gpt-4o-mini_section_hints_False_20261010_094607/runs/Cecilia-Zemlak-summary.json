@@ -1,0 +1,50 @@
+{
+  "source_document": "Cecilia-Zemlak-summary.pdf",
+  "model": "gpt-4o-mini-2024-07-18",
+  "prompt_version": "clinical_extraction_v6",
+  "attempts": [
+    {
+      "attempt": 1,
+      "failing_facts": 4,
+      "graph_errors": [],
+      "elapsed_seconds": 22.989,
+      "usage": {
+        "input_tokens": 2639,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 2904,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 5543
+      }
+    },
+    {
+      "attempt": 2,
+      "failing_facts": 0,
+      "graph_errors": [],
+      "elapsed_seconds": 24.413,
+      "usage": {
+        "input_tokens": 5700,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 2482,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 8182
+      }
+    }
+  ],
+  "elapsed_seconds": 47.402,
+  "usage": {
+    "input_tokens": 8339,
+    "output_tokens": 5386,
+    "total_tokens": 13725
+  },
+  "timestamp_utc": "2026-10-10T08:46:55.761353+00:00"
+}
