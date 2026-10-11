@@ -1,0 +1,231 @@
+{
+  "summary": {
+    "unsupported_rate": 0.15384615384615385,
+    "graph_errors": [],
+    "fact_count": 39,
+    "unsupported_facts": 6,
+    "error_counts": {
+      "value_not_in_quote:Haemoglobin": 1,
+      "value_not_in_quote:Neutrophils": 1,
+      "value_not_in_quote:Lymphocytes": 1,
+      "value_not_in_quote:Eosinophils": 1,
+      "value_not_in_quote:RBC Count": 1,
+      "value_not_in_quote:Platelet Count": 1,
+      "quote_not_found": 4,
+      "value_not_in_quote:Specific Gravity": 1,
+      "date_not_in_quote": 1
+    }
+  },
+  "facts": {
+    "fact_1": {
+      "supported": true,
+      "flags": []
+    },
+    "fact_2": {
+      "supported": true,
+      "flags": []
+    },
+    "fact_3": {
+      "supported": true,
+      "flags": []
+    },
+    "fact_4": {
+      "supported": true,
+      "flags": []
+    },
+    "fact_5": {
+      "supported": true,
+      "flags": []
+    },
+    "fact_6": {
+      "supported": true,
+      "flags": []
+    },
+    "fact_7": {
+      "supported": true,
+      "flags": []
+    },
+    "fact_8": {
+      "supported": true,
+      "flags": []
+    },
+    "fact_9": {
+      "supported": true,
+      "flags": []
+    },
+    "fact_10": {
+      "supported": true,
+      "flags": []
+    },
+    "fact_11": {
+      "supported": true,
+      "flags": []
+    },
+    "fact_12": {
+      "supported": true,
+      "flags": []
+    },
+    "fact_13": {
+      "supported": false,
+      "flags": [
+        [
+          "error",
+          "value_not_in_quote:Haemoglobin"
+        ],
+        [
+          "error",
+          "value_not_in_quote:Neutrophils"
+        ],
+        [
+          "error",
+          "value_not_in_quote:Lymphocytes"
+        ],
+        [
+          "error",
+          "value_not_in_quote:Eosinophils"
+        ],
+        [
+          "error",
+          "value_not_in_quote:RBC Count"
+        ],
+        [
+          "error",
+          "value_not_in_quote:Platelet Count"
+        ]
+      ]
+    },
+    "fact_14": {
+      "supported": false,
+      "flags": [
+        [
+          "error",
+          "quote_not_found"
+        ]
+      ]
+    },
+    "fact_15": {
+      "supported": false,
+      "flags": [
+        [
+          "error",
+          "quote_not_found"
+        ]
+      ]
+    },
+    "fact_16": {
+      "supported": false,
+      "flags": [
+        [
+          "error",
+          "quote_not_found"
+        ]
+      ]
+    },
+    "fact_17": {
+      "supported": false,
+      "flags": [
+        [
+          "error",
+          "quote_not_found"
+        ],
+        [
+          "error",
+          "value_not_in_quote:Specific Gravity"
+        ]
+      ]
+    },
+    "fact_18": {
+      "supported": true,
+      "flags": []
+    },
+    "fact_19": {
+      "supported": true,
+      "flags": []
+    },
+    "fact_20": {
+      "supported": true,
+      "flags": []
+    },
+    "fact_21": {
+      "supported": true,
+      "flags": []
+    },
+    "fact_22": {
+      "supported": true,
+      "flags": []
+    },
+    "fact_23": {
+      "supported": true,
+      "flags": []
+    },
+    "fact_24": {
+      "supported": true,
+      "flags": []
+    },
+    "fact_25": {
+      "supported": true,
+      "flags": []
+    },
+    "fact_26": {
+      "supported": true,
+      "flags": []
+    },
+    "fact_27": {
+      "supported": true,
+      "flags": []
+    },
+    "fact_28": {
+      "supported": true,
+      "flags": []
+    },
+    "fact_29": {
+      "supported": true,
+      "flags": []
+    },
+    "fact_30": {
+      "supported": true,
+      "flags": []
+    },
+    "fact_31": {
+      "supported": true,
+      "flags": []
+    },
+    "fact_32": {
+      "supported": true,
+      "flags": []
+    },
+    "fact_33": {
+      "supported": true,
+      "flags": []
+    },
+    "fact_34": {
+      "supported": true,
+      "flags": []
+    },
+    "fact_35": {
+      "supported": true,
+      "flags": []
+    },
+    "fact_36": {
+      "supported": true,
+      "flags": []
+    },
+    "fact_37": {
+      "supported": true,
+      "flags": []
+    },
+    "fact_38": {
+      "supported": true,
+      "flags": []
+    },
+    "fact_39": {
+      "supported": false,
+      "flags": [
+        [
+          "error",
+          "date_not_in_quote"
+        ]
+      ]
+    }
+  }
+}

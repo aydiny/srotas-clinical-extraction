@@ -1,0 +1,353 @@
+{
+  "meta": {
+    "source_document": "Cecilia-Zemlak-summary.pdf",
+    "model": "qwen/qwen-2.5-7b-instruct",
+    "provider": "openrouter",
+    "prompt_version": "clinical_candidate_discovery",
+    "candidate_count": 19,
+    "pages_failed": [],
+    "evidence_not_found": 5,
+    "attempts": [
+      {
+        "page_number": 1,
+        "status": "ok",
+        "candidates": 3,
+        "evidence_not_found": 0,
+        "elapsed_seconds": 2.917,
+        "usage": {
+          "input_tokens": 639,
+          "output_tokens": 253,
+          "total_tokens": 892
+        }
+      },
+      {
+        "page_number": 2,
+        "status": "ok",
+        "candidates": 4,
+        "evidence_not_found": 0,
+        "elapsed_seconds": 1.56,
+        "usage": {
+          "input_tokens": 518,
+          "output_tokens": 219,
+          "total_tokens": 737
+        }
+      },
+      {
+        "page_number": 3,
+        "status": "ok",
+        "candidates": 9,
+        "evidence_not_found": 5,
+        "elapsed_seconds": 3.795,
+        "usage": {
+          "input_tokens": 458,
+          "output_tokens": 608,
+          "total_tokens": 1066
+        }
+      },
+      {
+        "page_number": 4,
+        "status": "ok",
+        "candidates": 3,
+        "evidence_not_found": 0,
+        "elapsed_seconds": 1.599,
+        "usage": {
+          "input_tokens": 287,
+          "output_tokens": 241,
+          "total_tokens": 528
+        }
+      }
+    ],
+    "elapsed_seconds": 9.871,
+    "usage": {
+      "input_tokens": 1902,
+      "output_tokens": 1321,
+      "total_tokens": 3223
+    },
+    "timestamp_utc": "2026-10-11T08:54:15.982661+00:00"
+  },
+  "candidates": [
+    {
+      "candidate_id": "candidate_1",
+      "category_hint": "condition",
+      "raw_name": "Malignant Neoplasm of Breast (Chronic, Confirmed)",
+      "page_number": 1,
+      "evidence_text": "The patient carries a confirmed diagnosis of malignant neoplasm of breast (SNOMED CT 254837009), staged as 2 with positive HER2, ER, and PR status."
+    },
+    {
+      "candidate_id": "candidate_2",
+      "category_hint": "symptom",
+      "raw_name": "chronic but non-progressive disease profile",
+      "page_number": 1,
+      "evidence_text": "Her clinical history reflects a chronic but non-progressive disease profile, characterized by recurrent acute issues without evidence of advanced systemic disease or major complications beyond her cancer diagnosis."
+    },
+    {
+      "candidate_id": "candidate_3",
+      "category_hint": "procedure",
+      "raw_name": "diagnosis of stage 2 breast cancer in 2020",
+      "page_number": 1,
+      "evidence_text": "A significant event is the diagnosis of stage 2 breast cancer in 2020, with subsequent treatment."
+    },
+    {
+      "candidate_id": "candidate_4",
+      "category_hint": "condition",
+      "raw_name": "Surgical intervention (excision, biopsy)",
+      "page_number": 2,
+      "evidence_text": "\u2022 Surgical intervention (excision, biopsy)"
+    },
+    {
+      "candidate_id": "candidate_5",
+      "category_hint": "condition",
+      "raw_name": "No documented recurrence or metastasis in follow-up",
+      "page_number": 2,
+      "evidence_text": "\u2022 No documented recurrence or metastasis in follow-up"
+    },
+    {
+      "candidate_id": "candidate_6",
+      "category_hint": "condition",
+      "raw_name": "Ongoing surveillance implied",
+      "page_number": 2,
+      "evidence_text": "\u2022 Ongoing surveillance implied"
+    },
+    {
+      "candidate_id": "candidate_7",
+      "category_hint": "condition",
+      "raw_name": "Essential Hypertension (Chronic, Confirmed)",
+      "page_number": 2,
+      "evidence_text": "Essential Hypertension (Chronic, Confirmed)"
+    },
+    {
+      "candidate_id": "candidate_8",
+      "category_hint": "condition",
+      "raw_name": "History of breast cancer in remission",
+      "page_number": 3,
+      "evidence_text": "Cecilia Zemlak represents a patient with: \u2022 History of breast cancer in remission"
+    },
+    {
+      "candidate_id": "candidate_9",
+      "category_hint": "symptom",
+      "raw_name": "Episodic infections and injuries",
+      "page_number": 3,
+      "evidence_text": "Cecilia Zemlak represents a patient with: \u2022 History of breast cancer in remission \u2022 Episodic infections and injuries"
+    },
+    {
+      "candidate_id": "candidate_10",
+      "category_hint": "medication",
+      "raw_name": "Episodic antibiotics (penicillin, doxycycline) for infections",
+      "page_number": 3,
+      "evidence_text": "Medication History and Adherence Patterns \u2022 Episodic antibiotics (penicillin, doxycycline) for infections"
+    },
+    {
+      "candidate_id": "candidate_11",
+      "category_hint": "medication",
+      "raw_name": "Analgesics (acetaminophen, meperidine) for pain",
+      "page_number": 3,
+      "evidence_text": "Medication History and Adherence Patterns \u2022 Analgesics (acetaminophen, meperidine) for pain"
+    },
+    {
+      "candidate_id": "candidate_12",
+      "category_hint": "procedure",
+      "raw_name": "X-rays for fractures",
+      "page_number": 3,
+      "evidence_text": "Diagnostics and Clinical Evaluations \u2022 Imaging: X-rays for fractures, mammography for breast cancer"
+    },
+    {
+      "candidate_id": "candidate_13",
+      "category_hint": "procedure",
+      "raw_name": "Mammography for breast cancer",
+      "page_number": 3,
+      "evidence_text": "Diagnostics and Clinical Evaluations \u2022 Imaging: X-rays for fractures, mammography for breast cancer"
+    },
+    {
+      "candidate_id": "candidate_14",
+      "category_hint": "observation",
+      "raw_name": "Vital signs tracked from infancy (normal growth)",
+      "page_number": 3,
+      "evidence_text": "Diagnostics and Clinical Evaluations \u2022 Vital signs tracked from infancy (normal growth)"
+    },
+    {
+      "candidate_id": "candidate_15",
+      "category_hint": "observation",
+      "raw_name": "CBC trends normal",
+      "page_number": 3,
+      "evidence_text": "Diagnostics and Clinical Evaluations \u2022 Labs: CBC trends normal; later lipids, glucose variable but no abnormalities noted"
+    },
+    {
+      "candidate_id": "candidate_16",
+      "category_hint": "observation",
+      "raw_name": "Lipids, glucose variable but no abnormalities noted",
+      "page_number": 3,
+      "evidence_text": "Diagnostics and Clinical Evaluations \u2022 Labs: CBC trends normal; later lipids, glucose variable but no abnormalities noted"
+    },
+    {
+      "candidate_id": "candidate_17",
+      "category_hint": "condition",
+      "raw_name": "stage 2 breast cancer",
+      "page_number": 4,
+      "evidence_text": "Cecilia Zemlak is a 58-year-old female with a history of stage 2 breast cancer managed surgically,"
+    },
+    {
+      "candidate_id": "candidate_18",
+      "category_hint": "symptom",
+      "raw_name": "episodic respiratory infections",
+      "page_number": 4,
+      "evidence_text": "Cecilia Zemlak is a 58-year-old female with a history of stage 2 breast cancer managed surgically, alongside episodic respiratory infections and musculoskeletal injuries,"
+    },
+    {
+      "candidate_id": "candidate_19",
+      "category_hint": "condition",
+      "raw_name": "musculoskeletal injuries",
+      "page_number": 4,
+      "evidence_text": "Cecilia Zemlak is a 58-year-old female with a history of stage 2 breast cancer managed surgically, alongside episodic respiratory infections and musculoskeletal injuries,"
+    }
+  ],
+  "evaluation": {
+    "name_recall": 0.45,
+    "category_precision": 0.6666666666666666,
+    "counts": {
+      "candidates": 19,
+      "gold_facts": 20,
+      "matched_gold": 9,
+      "category_correct": 6
+    },
+    "missed_gold": [
+      {
+        "gold_fact_id": "CZ-02",
+        "name": "HER2 status",
+        "category": "observation"
+      },
+      {
+        "gold_fact_id": "CZ-03",
+        "name": "Oestrogen receptor (ER) status",
+        "category": "observation"
+      },
+      {
+        "gold_fact_id": "CZ-04",
+        "name": "Progesterone receptor (PR) status",
+        "category": "observation"
+      },
+      {
+        "gold_fact_id": "CZ-09",
+        "name": "Smoking",
+        "category": "observation"
+      },
+      {
+        "gold_fact_id": "CZ-10",
+        "name": "Alcohol use disorder (documented as alcoholism)",
+        "category": "observation"
+      },
+      {
+        "gold_fact_id": "CZ-12",
+        "name": "Blood pressure elevations",
+        "category": "observation"
+      },
+      {
+        "gold_fact_id": "CZ-13",
+        "name": "Chronic intractable migraine without aura",
+        "category": "condition"
+      },
+      {
+        "gold_fact_id": "CZ-14",
+        "name": "Recurrent headaches",
+        "category": "symptom"
+      },
+      {
+        "gold_fact_id": "CZ-15",
+        "name": "Photophobia",
+        "category": "symptom"
+      },
+      {
+        "gold_fact_id": "CZ-16",
+        "name": "Diabetes mellitus",
+        "category": "condition"
+      },
+      {
+        "gold_fact_id": "CZ-18",
+        "name": "Preeclampsia",
+        "category": "condition"
+      }
+    ],
+    "matches": [
+      {
+        "candidate_id": "candidate_1",
+        "candidate_name": "Malignant Neoplasm of Breast (Chronic, Confirmed)",
+        "category_hint": "condition",
+        "gold_fact_id": "CZ-01",
+        "gold_name": "Malignant neoplasm of breast",
+        "gold_category": "condition",
+        "score": 1.01
+      },
+      {
+        "candidate_id": "candidate_2",
+        "candidate_name": "chronic but non-progressive disease profile",
+        "category_hint": "symptom",
+        "gold_fact_id": "CZ-17",
+        "gold_name": "Chronic kidney disease",
+        "gold_category": "condition",
+        "score": 0.811
+      },
+      {
+        "candidate_id": "candidate_4",
+        "candidate_name": "Surgical intervention (excision, biopsy)",
+        "category_hint": "condition",
+        "gold_fact_id": "CZ-05",
+        "gold_name": "Surgical intervention (excision, biopsy)",
+        "gold_category": "procedure",
+        "score": 1.0
+      },
+      {
+        "candidate_id": "candidate_5",
+        "candidate_name": "No documented recurrence or metastasis in follow-up",
+        "category_hint": "condition",
+        "gold_fact_id": "CZ-07",
+        "gold_name": "Metastasis",
+        "gold_category": "condition",
+        "score": 1.01
+      },
+      {
+        "candidate_id": "candidate_6",
+        "candidate_name": "Ongoing surveillance implied",
+        "category_hint": "condition",
+        "gold_fact_id": "CZ-08",
+        "gold_name": "Ongoing surveillance",
+        "gold_category": "procedure",
+        "score": 1.0
+      },
+      {
+        "candidate_id": "candidate_7",
+        "candidate_name": "Essential Hypertension (Chronic, Confirmed)",
+        "category_hint": "condition",
+        "gold_fact_id": "CZ-11",
+        "gold_name": "Essential hypertension",
+        "gold_category": "condition",
+        "score": 1.01
+      },
+      {
+        "candidate_id": "candidate_8",
+        "candidate_name": "History of breast cancer in remission",
+        "category_hint": "condition",
+        "gold_fact_id": "CZ-06",
+        "gold_name": "Breast cancer recurrence",
+        "gold_category": "condition",
+        "score": 0.713
+      },
+      {
+        "candidate_id": "candidate_10",
+        "candidate_name": "Episodic antibiotics (penicillin, doxycycline) for infections",
+        "category_hint": "medication",
+        "gold_fact_id": "CZ-19",
+        "gold_name": "Penicillin",
+        "gold_category": "medication",
+        "score": 1.01
+      },
+      {
+        "candidate_id": "candidate_13",
+        "candidate_name": "Mammography for breast cancer",
+        "category_hint": "procedure",
+        "gold_fact_id": "CZ-20",
+        "gold_name": "Mammography",
+        "gold_category": "procedure",
+        "score": 1.01
+      }
+    ]
+  }
+}

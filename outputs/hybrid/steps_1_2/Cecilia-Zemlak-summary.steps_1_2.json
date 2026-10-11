@@ -1,0 +1,4210 @@
+{
+  "source_document": "Cecilia-Zemlak-summary.pdf",
+  "scispacy_model": "en_core_sci_sm",
+  "elapsed_seconds": 0.211,
+  "summary": {
+    "pages": 4,
+    "chunks": 11,
+    "entities": 220,
+    "chunks_by_section": {
+      "preamble": 3,
+      "clinical_header": 4,
+      "section": 4
+    },
+    "negated_entities": 42,
+    "historical_entities": 11
+  },
+  "chunks": [
+    {
+      "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c0",
+      "source_document": "Cecilia-Zemlak-summary.pdf",
+      "page_number": 1,
+      "section": "preamble",
+      "section_heading": null,
+      "text": "Name: Cecilia Zemlak \n Sex: Female  \nYear of Birth: 1967  \nAge: 58  \nMedical Record Number (MRN): Not Specified \nPrimary Care Context: Outpatient and episodic emergency department encounters Source \nDocumentation: Longitudinal patient summary and encounter records \nCecilia Zemlak is a middle-aged female with a documented history of multiple pregnancies, \nmusculoskeletal injuries, respiratory infections, and later breast cancer, managed primarily in \noutpatient settings with intermittent utilization of acute care services.  \nHer clinical history reflects a chronic but non-progressive disease profile, characterized by \nrecurrent acute issues without evidence of advanced systemic disease or major complications \nbeyond her cancer diagnosis.",
+      "char_start": 0,
+      "char_end": 746,
+      "is_administrative": false,
+      "metadata": {
+        "step": 2,
+        "chunker": "section_aware_v1",
+        "entity_count": 33,
+        "negated_count": 5,
+        "historical_count": 2,
+        "context_engine": "local_v1"
+      },
+      "entities": [
+        {
+          "text": "Cecilia",
+          "label": "ENTITY",
+          "start_char": 6,
+          "end_char": 13,
+          "normalised": "cecilia",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c0",
+          "page_number": 1,
+          "section": "preamble"
+        },
+        {
+          "text": "Zemlak \n Sex",
+          "label": "ENTITY",
+          "start_char": 14,
+          "end_char": 26,
+          "normalised": "zemlak sex",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c0",
+          "page_number": 1,
+          "section": "preamble"
+        },
+        {
+          "text": "Female",
+          "label": "ENTITY",
+          "start_char": 28,
+          "end_char": 34,
+          "normalised": "female",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c0",
+          "page_number": 1,
+          "section": "preamble"
+        },
+        {
+          "text": "Birth",
+          "label": "ENTITY",
+          "start_char": 45,
+          "end_char": 50,
+          "normalised": "birth",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c0",
+          "page_number": 1,
+          "section": "preamble"
+        },
+        {
+          "text": "Age",
+          "label": "ENTITY",
+          "start_char": 59,
+          "end_char": 62,
+          "normalised": "age",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c0",
+          "page_number": 1,
+          "section": "preamble"
+        },
+        {
+          "text": "Medical Record Number",
+          "label": "ENTITY",
+          "start_char": 69,
+          "end_char": 90,
+          "normalised": "medical record number",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c0",
+          "page_number": 1,
+          "section": "preamble"
+        },
+        {
+          "text": "MRN",
+          "label": "ENTITY",
+          "start_char": 92,
+          "end_char": 95,
+          "normalised": "mrn",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c0",
+          "page_number": 1,
+          "section": "preamble"
+        },
+        {
+          "text": "Not Specified \nPrimary Care Context",
+          "label": "ENTITY",
+          "start_char": 98,
+          "end_char": 133,
+          "normalised": "not specified primary care context",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c0",
+          "page_number": 1,
+          "section": "preamble"
+        },
+        {
+          "text": "Outpatient",
+          "label": "ENTITY",
+          "start_char": 135,
+          "end_char": 145,
+          "normalised": "outpatient",
+          "context": {
+            "is_negated": true,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c0",
+          "page_number": 1,
+          "section": "preamble"
+        },
+        {
+          "text": "episodic emergency department encounters",
+          "label": "ENTITY",
+          "start_char": 150,
+          "end_char": 190,
+          "normalised": "episodic emergency department encounters",
+          "context": {
+            "is_negated": true,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c0",
+          "page_number": 1,
+          "section": "preamble"
+        },
+        {
+          "text": "Source \n",
+          "label": "ENTITY",
+          "start_char": 191,
+          "end_char": 199,
+          "normalised": "source",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c0",
+          "page_number": 1,
+          "section": "preamble"
+        },
+        {
+          "text": "Longitudinal patient summary",
+          "label": "ENTITY",
+          "start_char": 214,
+          "end_char": 242,
+          "normalised": "longitudinal patient summary",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c0",
+          "page_number": 1,
+          "section": "preamble"
+        },
+        {
+          "text": "encounter records \nCecilia",
+          "label": "ENTITY",
+          "start_char": 247,
+          "end_char": 273,
+          "normalised": "encounter records cecilia",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c0",
+          "page_number": 1,
+          "section": "preamble"
+        },
+        {
+          "text": "Zemlak",
+          "label": "ENTITY",
+          "start_char": 274,
+          "end_char": 280,
+          "normalised": "zemlak",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c0",
+          "page_number": 1,
+          "section": "preamble"
+        },
+        {
+          "text": "middle-aged",
+          "label": "ENTITY",
+          "start_char": 286,
+          "end_char": 297,
+          "normalised": "middle-aged",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c0",
+          "page_number": 1,
+          "section": "preamble"
+        },
+        {
+          "text": "female",
+          "label": "ENTITY",
+          "start_char": 298,
+          "end_char": 304,
+          "normalised": "female",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c0",
+          "page_number": 1,
+          "section": "preamble"
+        },
+        {
+          "text": "documented",
+          "label": "ENTITY",
+          "start_char": 312,
+          "end_char": 322,
+          "normalised": "documented",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c0",
+          "page_number": 1,
+          "section": "preamble"
+        },
+        {
+          "text": "history",
+          "label": "ENTITY",
+          "start_char": 323,
+          "end_char": 330,
+          "normalised": "history",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c0",
+          "page_number": 1,
+          "section": "preamble"
+        },
+        {
+          "text": "multiple",
+          "label": "ENTITY",
+          "start_char": 334,
+          "end_char": 342,
+          "normalised": "multiple",
+          "context": {
+            "is_negated": false,
+            "is_historical": true,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c0",
+          "page_number": 1,
+          "section": "preamble"
+        },
+        {
+          "text": "respiratory infections",
+          "label": "ENTITY",
+          "start_char": 383,
+          "end_char": 405,
+          "normalised": "respiratory infections",
+          "context": {
+            "is_negated": false,
+            "is_historical": true,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c0",
+          "page_number": 1,
+          "section": "preamble"
+        },
+        {
+          "text": "breast cancer",
+          "label": "ENTITY",
+          "start_char": 417,
+          "end_char": 430,
+          "normalised": "breast cancer",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c0",
+          "page_number": 1,
+          "section": "preamble"
+        },
+        {
+          "text": "intermittent",
+          "label": "ENTITY",
+          "start_char": 479,
+          "end_char": 491,
+          "normalised": "intermittent",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c0",
+          "page_number": 1,
+          "section": "preamble"
+        },
+        {
+          "text": "utilization",
+          "label": "ENTITY",
+          "start_char": 492,
+          "end_char": 503,
+          "normalised": "utilization",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c0",
+          "page_number": 1,
+          "section": "preamble"
+        },
+        {
+          "text": "acute care services",
+          "label": "ENTITY",
+          "start_char": 507,
+          "end_char": 526,
+          "normalised": "acute care services",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c0",
+          "page_number": 1,
+          "section": "preamble"
+        },
+        {
+          "text": "clinical history",
+          "label": "ENTITY",
+          "start_char": 534,
+          "end_char": 550,
+          "normalised": "clinical history",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c0",
+          "page_number": 1,
+          "section": "preamble"
+        },
+        {
+          "text": "chronic",
+          "label": "ENTITY",
+          "start_char": 562,
+          "end_char": 569,
+          "normalised": "chronic",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c0",
+          "page_number": 1,
+          "section": "preamble"
+        },
+        {
+          "text": "disease profile",
+          "label": "ENTITY",
+          "start_char": 590,
+          "end_char": 605,
+          "normalised": "disease profile",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c0",
+          "page_number": 1,
+          "section": "preamble"
+        },
+        {
+          "text": "characterized",
+          "label": "ENTITY",
+          "start_char": 607,
+          "end_char": 620,
+          "normalised": "characterized",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c0",
+          "page_number": 1,
+          "section": "preamble"
+        },
+        {
+          "text": "acute issues",
+          "label": "ENTITY",
+          "start_char": 635,
+          "end_char": 647,
+          "normalised": "acute issues",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c0",
+          "page_number": 1,
+          "section": "preamble"
+        },
+        {
+          "text": "evidence",
+          "label": "ENTITY",
+          "start_char": 656,
+          "end_char": 664,
+          "normalised": "evidence",
+          "context": {
+            "is_negated": true,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c0",
+          "page_number": 1,
+          "section": "preamble"
+        },
+        {
+          "text": "advanced systemic disease",
+          "label": "ENTITY",
+          "start_char": 668,
+          "end_char": 693,
+          "normalised": "advanced systemic disease",
+          "context": {
+            "is_negated": true,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c0",
+          "page_number": 1,
+          "section": "preamble"
+        },
+        {
+          "text": "complications",
+          "label": "ENTITY",
+          "start_char": 703,
+          "end_char": 716,
+          "normalised": "complications",
+          "context": {
+            "is_negated": true,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c0",
+          "page_number": 1,
+          "section": "preamble"
+        },
+        {
+          "text": "cancer diagnosis",
+          "label": "ENTITY",
+          "start_char": 729,
+          "end_char": 745,
+          "normalised": "cancer diagnosis",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c0",
+          "page_number": 1,
+          "section": "preamble"
+        }
+      ]
+    },
+    {
+      "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c1",
+      "source_document": "Cecilia-Zemlak-summary.pdf",
+      "page_number": 1,
+      "section": "clinical_header",
+      "section_heading": "Clinical Overview",
+      "text": "Over multiple years of documented care, starting from birth in 1967, the patient demonstrates a \ntrajectory of normal childhood development transitioning to episodic acute conditions in \nadulthood, including infections, injuries, and pregnancies. Healthcare utilization is consistent \nwith routine well-child visits early on, evolving to management of acute bronchitis, sinusitis, \nsprains, fractures, and pregnancy-related events. A significant event is the diagnosis of stage 2 \nbreast cancer in 2020, with subsequent treatment. \nThere is no evidence of prolonged hospitalization, intensive care utilization, or major \ncardiovascular events. The overall clinical course suggests moderate symptom burden with \npreserved functional status, allowing for ongoing ambulatory management. Social history \nconsistently notes active smoking and alcoholism, which may contribute to health risks.",
+      "char_start": 768,
+      "char_end": 1655,
+      "is_administrative": false,
+      "metadata": {
+        "step": 2,
+        "chunker": "section_aware_v1",
+        "entity_count": 39,
+        "negated_count": 4,
+        "historical_count": 0,
+        "context_engine": "local_v1"
+      },
+      "entities": [
+        {
+          "text": "years",
+          "label": "ENTITY",
+          "start_char": 14,
+          "end_char": 19,
+          "normalised": "years",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c1",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "documented",
+          "label": "ENTITY",
+          "start_char": 23,
+          "end_char": 33,
+          "normalised": "documented",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c1",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "birth",
+          "label": "ENTITY",
+          "start_char": 54,
+          "end_char": 59,
+          "normalised": "birth",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c1",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "patient",
+          "label": "ENTITY",
+          "start_char": 73,
+          "end_char": 80,
+          "normalised": "patient",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c1",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "trajectory",
+          "label": "ENTITY",
+          "start_char": 97,
+          "end_char": 107,
+          "normalised": "trajectory",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c1",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "normal childhood",
+          "label": "ENTITY",
+          "start_char": 111,
+          "end_char": 127,
+          "normalised": "normal childhood",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c1",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "development",
+          "label": "ENTITY",
+          "start_char": 128,
+          "end_char": 139,
+          "normalised": "development",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c1",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "episodic",
+          "label": "ENTITY",
+          "start_char": 157,
+          "end_char": 165,
+          "normalised": "episodic",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c1",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "acute conditions",
+          "label": "ENTITY",
+          "start_char": 166,
+          "end_char": 182,
+          "normalised": "acute conditions",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c1",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "infections",
+          "label": "ENTITY",
+          "start_char": 208,
+          "end_char": 218,
+          "normalised": "infections",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c1",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "injuries",
+          "label": "ENTITY",
+          "start_char": 220,
+          "end_char": 228,
+          "normalised": "injuries",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c1",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "pregnancies",
+          "label": "ENTITY",
+          "start_char": 234,
+          "end_char": 245,
+          "normalised": "pregnancies",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c1",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "Healthcare utilization",
+          "label": "ENTITY",
+          "start_char": 247,
+          "end_char": 269,
+          "normalised": "healthcare utilization",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c1",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "well-child",
+          "label": "ENTITY",
+          "start_char": 298,
+          "end_char": 308,
+          "normalised": "well-child",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c1",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "visits",
+          "label": "ENTITY",
+          "start_char": 309,
+          "end_char": 315,
+          "normalised": "visits",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c1",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "management",
+          "label": "ENTITY",
+          "start_char": 338,
+          "end_char": 348,
+          "normalised": "management",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c1",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "acute bronchitis",
+          "label": "ENTITY",
+          "start_char": 352,
+          "end_char": 368,
+          "normalised": "acute bronchitis",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c1",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "sinusitis",
+          "label": "ENTITY",
+          "start_char": 370,
+          "end_char": 379,
+          "normalised": "sinusitis",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c1",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "fractures",
+          "label": "ENTITY",
+          "start_char": 391,
+          "end_char": 400,
+          "normalised": "fractures",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c1",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "pregnancy-related events",
+          "label": "ENTITY",
+          "start_char": 406,
+          "end_char": 430,
+          "normalised": "pregnancy-related events",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c1",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "significant",
+          "label": "ENTITY",
+          "start_char": 434,
+          "end_char": 445,
+          "normalised": "significant",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c1",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "event",
+          "label": "ENTITY",
+          "start_char": 446,
+          "end_char": 451,
+          "normalised": "event",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c1",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "diagnosis",
+          "label": "ENTITY",
+          "start_char": 459,
+          "end_char": 468,
+          "normalised": "diagnosis",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c1",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "stage 2 \nbreast cancer",
+          "label": "ENTITY",
+          "start_char": 472,
+          "end_char": 494,
+          "normalised": "stage 2 breast cancer",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c1",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "treatment",
+          "label": "ENTITY",
+          "start_char": 520,
+          "end_char": 529,
+          "normalised": "treatment",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c1",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "prolonged",
+          "label": "ENTITY",
+          "start_char": 556,
+          "end_char": 565,
+          "normalised": "prolonged",
+          "context": {
+            "is_negated": true,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c1",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "hospitalization",
+          "label": "ENTITY",
+          "start_char": 566,
+          "end_char": 581,
+          "normalised": "hospitalization",
+          "context": {
+            "is_negated": true,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c1",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "intensive care utilization",
+          "label": "ENTITY",
+          "start_char": 583,
+          "end_char": 609,
+          "normalised": "intensive care utilization",
+          "context": {
+            "is_negated": true,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c1",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "cardiovascular events",
+          "label": "ENTITY",
+          "start_char": 621,
+          "end_char": 642,
+          "normalised": "cardiovascular events",
+          "context": {
+            "is_negated": true,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c1",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "clinical course",
+          "label": "ENTITY",
+          "start_char": 656,
+          "end_char": 671,
+          "normalised": "clinical course",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c1",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "moderate",
+          "label": "ENTITY",
+          "start_char": 681,
+          "end_char": 689,
+          "normalised": "moderate",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c1",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "symptom",
+          "label": "ENTITY",
+          "start_char": 690,
+          "end_char": 697,
+          "normalised": "symptom",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c1",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "burden",
+          "label": "ENTITY",
+          "start_char": 698,
+          "end_char": 704,
+          "normalised": "burden",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c1",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "ambulatory management",
+          "label": "ENTITY",
+          "start_char": 761,
+          "end_char": 782,
+          "normalised": "ambulatory management",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c1",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "Social history \n",
+          "label": "ENTITY",
+          "start_char": 784,
+          "end_char": 800,
+          "normalised": "social history",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c1",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "active smoking",
+          "label": "ENTITY",
+          "start_char": 819,
+          "end_char": 833,
+          "normalised": "active smoking",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c1",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "alcoholism",
+          "label": "ENTITY",
+          "start_char": 838,
+          "end_char": 848,
+          "normalised": "alcoholism",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c1",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "health",
+          "label": "ENTITY",
+          "start_char": 874,
+          "end_char": 880,
+          "normalised": "health",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c1",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "risks",
+          "label": "ENTITY",
+          "start_char": 881,
+          "end_char": 886,
+          "normalised": "risks",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c1",
+          "page_number": 1,
+          "section": "clinical_header"
+        }
+      ]
+    },
+    {
+      "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c2",
+      "source_document": "Cecilia-Zemlak-summary.pdf",
+      "page_number": 1,
+      "section": "clinical_header",
+      "section_heading": "Active and Chronic Medical Conditions",
+      "text": "Malignant Neoplasm of Breast (Chronic, Confirmed) \nThe patient carries a confirmed diagnosis of malignant neoplasm of breast (SNOMED CT \n254837009), staged as 2 with positive HER2, ER, and PR status.  \nDiagnosed in 2020, it involved tumor size documentation and lymph node involvement.",
+      "char_start": 1696,
+      "char_end": 1981,
+      "is_administrative": false,
+      "metadata": {
+        "step": 2,
+        "chunker": "section_aware_v1",
+        "entity_count": 16,
+        "negated_count": 0,
+        "historical_count": 0,
+        "context_engine": "local_v1"
+      },
+      "entities": [
+        {
+          "text": "Malignant Neoplasm of Breast",
+          "label": "ENTITY",
+          "start_char": 0,
+          "end_char": 28,
+          "normalised": "malignant neoplasm of breast",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c2",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "Chronic",
+          "label": "ENTITY",
+          "start_char": 30,
+          "end_char": 37,
+          "normalised": "chronic",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c2",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "patient",
+          "label": "ENTITY",
+          "start_char": 55,
+          "end_char": 62,
+          "normalised": "patient",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c2",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "diagnosis",
+          "label": "ENTITY",
+          "start_char": 83,
+          "end_char": 92,
+          "normalised": "diagnosis",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c2",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "malignant neoplasm of breast",
+          "label": "ENTITY",
+          "start_char": 96,
+          "end_char": 124,
+          "normalised": "malignant neoplasm of breast",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c2",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "SNOMED CT",
+          "label": "ENTITY",
+          "start_char": 126,
+          "end_char": 135,
+          "normalised": "snomed ct",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c2",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "staged",
+          "label": "ENTITY",
+          "start_char": 149,
+          "end_char": 155,
+          "normalised": "staged",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c2",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "positive",
+          "label": "ENTITY",
+          "start_char": 166,
+          "end_char": 174,
+          "normalised": "positive",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c2",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "HER2",
+          "label": "ENTITY",
+          "start_char": 175,
+          "end_char": 179,
+          "normalised": "her2",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c2",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "ER",
+          "label": "ENTITY",
+          "start_char": 181,
+          "end_char": 183,
+          "normalised": "er",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c2",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "PR",
+          "label": "ENTITY",
+          "start_char": 189,
+          "end_char": 191,
+          "normalised": "pr",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c2",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "Diagnosed",
+          "label": "ENTITY",
+          "start_char": 202,
+          "end_char": 211,
+          "normalised": "diagnosed",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c2",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "tumor size",
+          "label": "ENTITY",
+          "start_char": 233,
+          "end_char": 243,
+          "normalised": "tumor size",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c2",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "documentation",
+          "label": "ENTITY",
+          "start_char": 244,
+          "end_char": 257,
+          "normalised": "documentation",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c2",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "lymph node",
+          "label": "ENTITY",
+          "start_char": 262,
+          "end_char": 272,
+          "normalised": "lymph node",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c2",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "involvement",
+          "label": "ENTITY",
+          "start_char": 273,
+          "end_char": 284,
+          "normalised": "involvement",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p1::c2",
+          "page_number": 1,
+          "section": "clinical_header"
+        }
+      ]
+    },
+    {
+      "chunk_id": "Cecilia-Zemlak-summary.pdf::p2::c0",
+      "source_document": "Cecilia-Zemlak-summary.pdf",
+      "page_number": 2,
+      "section": "preamble",
+      "section_heading": null,
+      "text": "\u2022 Surgical intervention (excision, biopsy) \n\u2022 No documented recurrence or metastasis in follow-up \n\u2022 Ongoing surveillance implied \nThe cancer appears managed without current active complications. \nEssential Hypertension (Chronic, Confirmed) \nIntermittent blood pressure elevations are noted, but no explicit diagnosis is documented in \nexcerpts. Vital signs show variable readings, occasionally elevated, without treatment initiation \nin early records. \nChronic Intractable Migraine Without Aura (Episodic, Confirmed) \nRecurrent headaches with sinus pain, nasal congestion, sore throat, facial swelling, \nphotophobia, and cough, consistent with migraine or sinus-related symptoms.",
+      "char_start": 0,
+      "char_end": 680,
+      "is_administrative": false,
+      "metadata": {
+        "step": 2,
+        "chunker": "section_aware_v1",
+        "entity_count": 35,
+        "negated_count": 17,
+        "historical_count": 0,
+        "context_engine": "local_v1"
+      },
+      "entities": [
+        {
+          "text": "Surgical intervention",
+          "label": "ENTITY",
+          "start_char": 2,
+          "end_char": 23,
+          "normalised": "surgical intervention",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p2::c0",
+          "page_number": 2,
+          "section": "preamble"
+        },
+        {
+          "text": "excision",
+          "label": "ENTITY",
+          "start_char": 25,
+          "end_char": 33,
+          "normalised": "excision",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p2::c0",
+          "page_number": 2,
+          "section": "preamble"
+        },
+        {
+          "text": "biopsy",
+          "label": "ENTITY",
+          "start_char": 35,
+          "end_char": 41,
+          "normalised": "biopsy",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p2::c0",
+          "page_number": 2,
+          "section": "preamble"
+        },
+        {
+          "text": "No documented",
+          "label": "ENTITY",
+          "start_char": 46,
+          "end_char": 59,
+          "normalised": "no documented",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p2::c0",
+          "page_number": 2,
+          "section": "preamble"
+        },
+        {
+          "text": "recurrence",
+          "label": "ENTITY",
+          "start_char": 60,
+          "end_char": 70,
+          "normalised": "recurrence",
+          "context": {
+            "is_negated": true,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p2::c0",
+          "page_number": 2,
+          "section": "preamble"
+        },
+        {
+          "text": "metastasis",
+          "label": "ENTITY",
+          "start_char": 74,
+          "end_char": 84,
+          "normalised": "metastasis",
+          "context": {
+            "is_negated": true,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p2::c0",
+          "page_number": 2,
+          "section": "preamble"
+        },
+        {
+          "text": "follow-up \n",
+          "label": "ENTITY",
+          "start_char": 88,
+          "end_char": 99,
+          "normalised": "follow-up",
+          "context": {
+            "is_negated": true,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p2::c0",
+          "page_number": 2,
+          "section": "preamble"
+        },
+        {
+          "text": "Ongoing",
+          "label": "ENTITY",
+          "start_char": 101,
+          "end_char": 108,
+          "normalised": "ongoing",
+          "context": {
+            "is_negated": true,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p2::c0",
+          "page_number": 2,
+          "section": "preamble"
+        },
+        {
+          "text": "surveillance",
+          "label": "ENTITY",
+          "start_char": 109,
+          "end_char": 121,
+          "normalised": "surveillance",
+          "context": {
+            "is_negated": true,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p2::c0",
+          "page_number": 2,
+          "section": "preamble"
+        },
+        {
+          "text": "cancer",
+          "label": "ENTITY",
+          "start_char": 135,
+          "end_char": 141,
+          "normalised": "cancer",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p2::c0",
+          "page_number": 2,
+          "section": "preamble"
+        },
+        {
+          "text": "active complications",
+          "label": "ENTITY",
+          "start_char": 174,
+          "end_char": 194,
+          "normalised": "active complications",
+          "context": {
+            "is_negated": true,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p2::c0",
+          "page_number": 2,
+          "section": "preamble"
+        },
+        {
+          "text": "Chronic",
+          "label": "ENTITY",
+          "start_char": 221,
+          "end_char": 228,
+          "normalised": "chronic",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p2::c0",
+          "page_number": 2,
+          "section": "preamble"
+        },
+        {
+          "text": "Intermittent blood pressure elevations",
+          "label": "ENTITY",
+          "start_char": 242,
+          "end_char": 280,
+          "normalised": "intermittent blood pressure elevations",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p2::c0",
+          "page_number": 2,
+          "section": "preamble"
+        },
+        {
+          "text": "diagnosis",
+          "label": "ENTITY",
+          "start_char": 308,
+          "end_char": 317,
+          "normalised": "diagnosis",
+          "context": {
+            "is_negated": true,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p2::c0",
+          "page_number": 2,
+          "section": "preamble"
+        },
+        {
+          "text": "documented",
+          "label": "ENTITY",
+          "start_char": 321,
+          "end_char": 331,
+          "normalised": "documented",
+          "context": {
+            "is_negated": true,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p2::c0",
+          "page_number": 2,
+          "section": "preamble"
+        },
+        {
+          "text": "excerpts",
+          "label": "ENTITY",
+          "start_char": 336,
+          "end_char": 344,
+          "normalised": "excerpts",
+          "context": {
+            "is_negated": true,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p2::c0",
+          "page_number": 2,
+          "section": "preamble"
+        },
+        {
+          "text": "Vital signs",
+          "label": "ENTITY",
+          "start_char": 346,
+          "end_char": 357,
+          "normalised": "vital signs",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p2::c0",
+          "page_number": 2,
+          "section": "preamble"
+        },
+        {
+          "text": "variable",
+          "label": "ENTITY",
+          "start_char": 363,
+          "end_char": 371,
+          "normalised": "variable",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p2::c0",
+          "page_number": 2,
+          "section": "preamble"
+        },
+        {
+          "text": "readings",
+          "label": "ENTITY",
+          "start_char": 372,
+          "end_char": 380,
+          "normalised": "readings",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p2::c0",
+          "page_number": 2,
+          "section": "preamble"
+        },
+        {
+          "text": "elevated",
+          "label": "ENTITY",
+          "start_char": 395,
+          "end_char": 403,
+          "normalised": "elevated",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p2::c0",
+          "page_number": 2,
+          "section": "preamble"
+        },
+        {
+          "text": "treatment",
+          "label": "ENTITY",
+          "start_char": 413,
+          "end_char": 422,
+          "normalised": "treatment",
+          "context": {
+            "is_negated": true,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p2::c0",
+          "page_number": 2,
+          "section": "preamble"
+        },
+        {
+          "text": "early records",
+          "label": "ENTITY",
+          "start_char": 438,
+          "end_char": 451,
+          "normalised": "early records",
+          "context": {
+            "is_negated": true,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p2::c0",
+          "page_number": 2,
+          "section": "preamble"
+        },
+        {
+          "text": "Chronic Intractable Migraine",
+          "label": "ENTITY",
+          "start_char": 454,
+          "end_char": 482,
+          "normalised": "chronic intractable migraine",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p2::c0",
+          "page_number": 2,
+          "section": "preamble"
+        },
+        {
+          "text": "Aura",
+          "label": "ENTITY",
+          "start_char": 491,
+          "end_char": 495,
+          "normalised": "aura",
+          "context": {
+            "is_negated": true,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p2::c0",
+          "page_number": 2,
+          "section": "preamble"
+        },
+        {
+          "text": "Episodic",
+          "label": "ENTITY",
+          "start_char": 497,
+          "end_char": 505,
+          "normalised": "episodic",
+          "context": {
+            "is_negated": true,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p2::c0",
+          "page_number": 2,
+          "section": "preamble"
+        },
+        {
+          "text": "Recurrent",
+          "label": "ENTITY",
+          "start_char": 519,
+          "end_char": 528,
+          "normalised": "recurrent",
+          "context": {
+            "is_negated": true,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p2::c0",
+          "page_number": 2,
+          "section": "preamble"
+        },
+        {
+          "text": "headaches",
+          "label": "ENTITY",
+          "start_char": 529,
+          "end_char": 538,
+          "normalised": "headaches",
+          "context": {
+            "is_negated": true,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p2::c0",
+          "page_number": 2,
+          "section": "preamble"
+        },
+        {
+          "text": "sinus pain",
+          "label": "ENTITY",
+          "start_char": 544,
+          "end_char": 554,
+          "normalised": "sinus pain",
+          "context": {
+            "is_negated": true,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p2::c0",
+          "page_number": 2,
+          "section": "preamble"
+        },
+        {
+          "text": "nasal congestion",
+          "label": "ENTITY",
+          "start_char": 556,
+          "end_char": 572,
+          "normalised": "nasal congestion",
+          "context": {
+            "is_negated": true,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p2::c0",
+          "page_number": 2,
+          "section": "preamble"
+        },
+        {
+          "text": "sore throat",
+          "label": "ENTITY",
+          "start_char": 574,
+          "end_char": 585,
+          "normalised": "sore throat",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p2::c0",
+          "page_number": 2,
+          "section": "preamble"
+        },
+        {
+          "text": "facial swelling",
+          "label": "ENTITY",
+          "start_char": 587,
+          "end_char": 602,
+          "normalised": "facial swelling",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p2::c0",
+          "page_number": 2,
+          "section": "preamble"
+        },
+        {
+          "text": "cough",
+          "label": "ENTITY",
+          "start_char": 622,
+          "end_char": 627,
+          "normalised": "cough",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p2::c0",
+          "page_number": 2,
+          "section": "preamble"
+        },
+        {
+          "text": "consistent with",
+          "label": "ENTITY",
+          "start_char": 629,
+          "end_char": 644,
+          "normalised": "consistent with",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p2::c0",
+          "page_number": 2,
+          "section": "preamble"
+        },
+        {
+          "text": "migraine",
+          "label": "ENTITY",
+          "start_char": 645,
+          "end_char": 653,
+          "normalised": "migraine",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p2::c0",
+          "page_number": 2,
+          "section": "preamble"
+        },
+        {
+          "text": "sinus-related symptoms",
+          "label": "ENTITY",
+          "start_char": 657,
+          "end_char": 679,
+          "normalised": "sinus-related symptoms",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p2::c0",
+          "page_number": 2,
+          "section": "preamble"
+        }
+      ]
+    },
+    {
+      "chunk_id": "Cecilia-Zemlak-summary.pdf::p2::c1",
+      "source_document": "Cecilia-Zemlak-summary.pdf",
+      "page_number": 2,
+      "section": "section",
+      "section_heading": "Characterized by",
+      "text": "\u2022 Recurrent episodes \n\u2022 Associated symptoms \n\u2022 Partial response to treatments \n\u2022 No progressive neurologic disease",
+      "char_start": 701,
+      "char_end": 815,
+      "is_administrative": false,
+      "metadata": {
+        "step": 2,
+        "chunker": "section_aware_v1",
+        "entity_count": 5,
+        "negated_count": 1,
+        "historical_count": 0,
+        "context_engine": "local_v1"
+      },
+      "entities": [
+        {
+          "text": "Recurrent",
+          "label": "ENTITY",
+          "start_char": 2,
+          "end_char": 11,
+          "normalised": "recurrent",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p2::c1",
+          "page_number": 2,
+          "section": "section"
+        },
+        {
+          "text": "Associated symptoms \n",
+          "label": "ENTITY",
+          "start_char": 24,
+          "end_char": 45,
+          "normalised": "associated symptoms",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p2::c1",
+          "page_number": 2,
+          "section": "section"
+        },
+        {
+          "text": "Partial",
+          "label": "ENTITY",
+          "start_char": 47,
+          "end_char": 54,
+          "normalised": "partial",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p2::c1",
+          "page_number": 2,
+          "section": "section"
+        },
+        {
+          "text": "treatments",
+          "label": "ENTITY",
+          "start_char": 67,
+          "end_char": 77,
+          "normalised": "treatments",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p2::c1",
+          "page_number": 2,
+          "section": "section"
+        },
+        {
+          "text": "neurologic disease",
+          "label": "ENTITY",
+          "start_char": 96,
+          "end_char": 114,
+          "normalised": "neurologic disease",
+          "context": {
+            "is_negated": true,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p2::c1",
+          "page_number": 2,
+          "section": "section"
+        }
+      ]
+    },
+    {
+      "chunk_id": "Cecilia-Zemlak-summary.pdf::p2::c2",
+      "source_document": "Cecilia-Zemlak-summary.pdf",
+      "page_number": 2,
+      "section": "clinical_header",
+      "section_heading": "Pertinent Medical History",
+      "text": "The record includes multiple pregnancies (normal and complicated by preeclampsia, tubal \npregnancy, miscarriage), musculoskeletal injuries (sprains, fractures of ankle, wrist, clavicle), \nrespiratory infections (acute bronchitis, viral pharyngitis, sinusitis), and childhood normal \ndevelopment.  \nBreast cancer in 2020 is the major adult event, with no chronic sequelae from early issues \ndocumented.",
+      "char_start": 844,
+      "char_end": 1245,
+      "is_administrative": false,
+      "metadata": {
+        "step": 2,
+        "chunker": "section_aware_v1",
+        "entity_count": 22,
+        "negated_count": 0,
+        "historical_count": 0,
+        "context_engine": "local_v1"
+      },
+      "entities": [
+        {
+          "text": "record",
+          "label": "ENTITY",
+          "start_char": 4,
+          "end_char": 10,
+          "normalised": "record",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p2::c2",
+          "page_number": 2,
+          "section": "clinical_header"
+        },
+        {
+          "text": "multiple",
+          "label": "ENTITY",
+          "start_char": 20,
+          "end_char": 28,
+          "normalised": "multiple",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p2::c2",
+          "page_number": 2,
+          "section": "clinical_header"
+        },
+        {
+          "text": "pregnancies",
+          "label": "ENTITY",
+          "start_char": 29,
+          "end_char": 40,
+          "normalised": "pregnancies",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p2::c2",
+          "page_number": 2,
+          "section": "clinical_header"
+        },
+        {
+          "text": "normal",
+          "label": "ENTITY",
+          "start_char": 42,
+          "end_char": 48,
+          "normalised": "normal",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p2::c2",
+          "page_number": 2,
+          "section": "clinical_header"
+        },
+        {
+          "text": "complicated",
+          "label": "ENTITY",
+          "start_char": 53,
+          "end_char": 64,
+          "normalised": "complicated",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p2::c2",
+          "page_number": 2,
+          "section": "clinical_header"
+        },
+        {
+          "text": "preeclampsia",
+          "label": "ENTITY",
+          "start_char": 68,
+          "end_char": 80,
+          "normalised": "preeclampsia",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p2::c2",
+          "page_number": 2,
+          "section": "clinical_header"
+        },
+        {
+          "text": "tubal \n",
+          "label": "ENTITY",
+          "start_char": 82,
+          "end_char": 89,
+          "normalised": "tubal",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p2::c2",
+          "page_number": 2,
+          "section": "clinical_header"
+        },
+        {
+          "text": "miscarriage",
+          "label": "ENTITY",
+          "start_char": 100,
+          "end_char": 111,
+          "normalised": "miscarriage",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p2::c2",
+          "page_number": 2,
+          "section": "clinical_header"
+        },
+        {
+          "text": "musculoskeletal injuries",
+          "label": "ENTITY",
+          "start_char": 114,
+          "end_char": 138,
+          "normalised": "musculoskeletal injuries",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p2::c2",
+          "page_number": 2,
+          "section": "clinical_header"
+        },
+        {
+          "text": "sprains",
+          "label": "ENTITY",
+          "start_char": 140,
+          "end_char": 147,
+          "normalised": "sprains",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p2::c2",
+          "page_number": 2,
+          "section": "clinical_header"
+        },
+        {
+          "text": "fractures of",
+          "label": "ENTITY",
+          "start_char": 149,
+          "end_char": 161,
+          "normalised": "fractures of",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p2::c2",
+          "page_number": 2,
+          "section": "clinical_header"
+        },
+        {
+          "text": "ankle",
+          "label": "ENTITY",
+          "start_char": 162,
+          "end_char": 167,
+          "normalised": "ankle",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p2::c2",
+          "page_number": 2,
+          "section": "clinical_header"
+        },
+        {
+          "text": "wrist",
+          "label": "ENTITY",
+          "start_char": 169,
+          "end_char": 174,
+          "normalised": "wrist",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p2::c2",
+          "page_number": 2,
+          "section": "clinical_header"
+        },
+        {
+          "text": "clavicle",
+          "label": "ENTITY",
+          "start_char": 176,
+          "end_char": 184,
+          "normalised": "clavicle",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p2::c2",
+          "page_number": 2,
+          "section": "clinical_header"
+        },
+        {
+          "text": "acute bronchitis",
+          "label": "ENTITY",
+          "start_char": 212,
+          "end_char": 228,
+          "normalised": "acute bronchitis",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p2::c2",
+          "page_number": 2,
+          "section": "clinical_header"
+        },
+        {
+          "text": "viral pharyngitis",
+          "label": "ENTITY",
+          "start_char": 230,
+          "end_char": 247,
+          "normalised": "viral pharyngitis",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p2::c2",
+          "page_number": 2,
+          "section": "clinical_header"
+        },
+        {
+          "text": "sinusitis",
+          "label": "ENTITY",
+          "start_char": 249,
+          "end_char": 258,
+          "normalised": "sinusitis",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p2::c2",
+          "page_number": 2,
+          "section": "clinical_header"
+        },
+        {
+          "text": "childhood",
+          "label": "ENTITY",
+          "start_char": 265,
+          "end_char": 274,
+          "normalised": "childhood",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p2::c2",
+          "page_number": 2,
+          "section": "clinical_header"
+        },
+        {
+          "text": "Breast cancer",
+          "label": "ENTITY",
+          "start_char": 298,
+          "end_char": 311,
+          "normalised": "breast cancer",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p2::c2",
+          "page_number": 2,
+          "section": "clinical_header"
+        },
+        {
+          "text": "adult",
+          "label": "ENTITY",
+          "start_char": 333,
+          "end_char": 338,
+          "normalised": "adult",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p2::c2",
+          "page_number": 2,
+          "section": "clinical_header"
+        },
+        {
+          "text": "event",
+          "label": "ENTITY",
+          "start_char": 339,
+          "end_char": 344,
+          "normalised": "event",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p2::c2",
+          "page_number": 2,
+          "section": "clinical_header"
+        },
+        {
+          "text": "no chronic sequelae",
+          "label": "ENTITY",
+          "start_char": 351,
+          "end_char": 370,
+          "normalised": "no chronic sequelae",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p2::c2",
+          "page_number": 2,
+          "section": "clinical_header"
+        }
+      ]
+    },
+    {
+      "chunk_id": "Cecilia-Zemlak-summary.pdf::p2::c3",
+      "source_document": "Cecilia-Zemlak-summary.pdf",
+      "page_number": 2,
+      "section": "section",
+      "section_heading": "There is no documented history of",
+      "text": "\u2022 Diabetes mellitus \n\u2022 Chronic kidney disease \n\u2022 Coronary artery disease \n\u2022 Autoimmune disorders",
+      "char_start": 1283,
+      "char_end": 1379,
+      "is_administrative": false,
+      "metadata": {
+        "step": 2,
+        "chunker": "section_aware_v1",
+        "entity_count": 4,
+        "negated_count": 0,
+        "historical_count": 0,
+        "context_engine": "local_v1"
+      },
+      "entities": [
+        {
+          "text": "Diabetes mellitus \n",
+          "label": "ENTITY",
+          "start_char": 2,
+          "end_char": 21,
+          "normalised": "diabetes mellitus",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p2::c3",
+          "page_number": 2,
+          "section": "section"
+        },
+        {
+          "text": "Chronic kidney disease \n",
+          "label": "ENTITY",
+          "start_char": 23,
+          "end_char": 47,
+          "normalised": "chronic kidney disease",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p2::c3",
+          "page_number": 2,
+          "section": "section"
+        },
+        {
+          "text": "Coronary artery disease",
+          "label": "ENTITY",
+          "start_char": 49,
+          "end_char": 72,
+          "normalised": "coronary artery disease",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p2::c3",
+          "page_number": 2,
+          "section": "section"
+        },
+        {
+          "text": "Autoimmune disorders",
+          "label": "ENTITY",
+          "start_char": 76,
+          "end_char": 96,
+          "normalised": "autoimmune disorders",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p2::c3",
+          "page_number": 2,
+          "section": "section"
+        }
+      ]
+    },
+    {
+      "chunk_id": "Cecilia-Zemlak-summary.pdf::p3::c0",
+      "source_document": "Cecilia-Zemlak-summary.pdf",
+      "page_number": 3,
+      "section": "preamble",
+      "section_heading": null,
+      "text": "Medication History and Adherence Patterns \n\u2022 Episodic antibiotics (penicillin, doxycycline) for infections \n\u2022 Analgesics (acetaminophen, meperidine) for pain \n\u2022 No chronic therapy documented; no adherence issues noted \nDiagnostics and Clinical Evaluations \n\u2022 Vital signs tracked from infancy (normal growth) \n\u2022 Labs: CBC trends normal; later lipids, glucose variable but no abnormalities noted \n\u2022 Imaging: X-rays for fractures, mammography for breast cancer \nClinical Course and Longitudinal Trajectory \nThe patient's course reflects normal development with episodic acute events. Adult focus on \ninfections and injuries, culminating in breast cancer management. Stable trajectory without \nprogression. \nFunctional Status and Healthcare Utilization",
+      "char_start": 0,
+      "char_end": 748,
+      "is_administrative": false,
+      "metadata": {
+        "step": 2,
+        "chunker": "section_aware_v1",
+        "entity_count": 38,
+        "negated_count": 11,
+        "historical_count": 0,
+        "context_engine": "local_v1"
+      },
+      "entities": [
+        {
+          "text": "Medication History",
+          "label": "ENTITY",
+          "start_char": 0,
+          "end_char": 18,
+          "normalised": "medication history",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p3::c0",
+          "page_number": 3,
+          "section": "preamble"
+        },
+        {
+          "text": "Adherence Patterns \n",
+          "label": "ENTITY",
+          "start_char": 23,
+          "end_char": 43,
+          "normalised": "adherence patterns",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p3::c0",
+          "page_number": 3,
+          "section": "preamble"
+        },
+        {
+          "text": "Episodic antibiotics",
+          "label": "ENTITY",
+          "start_char": 45,
+          "end_char": 65,
+          "normalised": "episodic antibiotics",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p3::c0",
+          "page_number": 3,
+          "section": "preamble"
+        },
+        {
+          "text": "penicillin",
+          "label": "ENTITY",
+          "start_char": 67,
+          "end_char": 77,
+          "normalised": "penicillin",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p3::c0",
+          "page_number": 3,
+          "section": "preamble"
+        },
+        {
+          "text": "doxycycline",
+          "label": "ENTITY",
+          "start_char": 79,
+          "end_char": 90,
+          "normalised": "doxycycline",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p3::c0",
+          "page_number": 3,
+          "section": "preamble"
+        },
+        {
+          "text": "infections \n\u2022 Analgesics",
+          "label": "ENTITY",
+          "start_char": 96,
+          "end_char": 120,
+          "normalised": "infections analgesics",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p3::c0",
+          "page_number": 3,
+          "section": "preamble"
+        },
+        {
+          "text": "acetaminophen",
+          "label": "ENTITY",
+          "start_char": 122,
+          "end_char": 135,
+          "normalised": "acetaminophen",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p3::c0",
+          "page_number": 3,
+          "section": "preamble"
+        },
+        {
+          "text": "meperidine",
+          "label": "ENTITY",
+          "start_char": 137,
+          "end_char": 147,
+          "normalised": "meperidine",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p3::c0",
+          "page_number": 3,
+          "section": "preamble"
+        },
+        {
+          "text": "pain \n",
+          "label": "ENTITY",
+          "start_char": 153,
+          "end_char": 159,
+          "normalised": "pain",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p3::c0",
+          "page_number": 3,
+          "section": "preamble"
+        },
+        {
+          "text": "chronic therapy",
+          "label": "ENTITY",
+          "start_char": 164,
+          "end_char": 179,
+          "normalised": "chronic therapy",
+          "context": {
+            "is_negated": true,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p3::c0",
+          "page_number": 3,
+          "section": "preamble"
+        },
+        {
+          "text": "documented",
+          "label": "ENTITY",
+          "start_char": 180,
+          "end_char": 190,
+          "normalised": "documented",
+          "context": {
+            "is_negated": true,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p3::c0",
+          "page_number": 3,
+          "section": "preamble"
+        },
+        {
+          "text": "adherence",
+          "label": "ENTITY",
+          "start_char": 195,
+          "end_char": 204,
+          "normalised": "adherence",
+          "context": {
+            "is_negated": true,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p3::c0",
+          "page_number": 3,
+          "section": "preamble"
+        },
+        {
+          "text": "Diagnostics",
+          "label": "ENTITY",
+          "start_char": 219,
+          "end_char": 230,
+          "normalised": "diagnostics",
+          "context": {
+            "is_negated": true,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p3::c0",
+          "page_number": 3,
+          "section": "preamble"
+        },
+        {
+          "text": "Clinical Evaluations \n",
+          "label": "ENTITY",
+          "start_char": 235,
+          "end_char": 257,
+          "normalised": "clinical evaluations",
+          "context": {
+            "is_negated": true,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p3::c0",
+          "page_number": 3,
+          "section": "preamble"
+        },
+        {
+          "text": "signs tracked",
+          "label": "ENTITY",
+          "start_char": 265,
+          "end_char": 278,
+          "normalised": "signs tracked",
+          "context": {
+            "is_negated": true,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p3::c0",
+          "page_number": 3,
+          "section": "preamble"
+        },
+        {
+          "text": "infancy",
+          "label": "ENTITY",
+          "start_char": 284,
+          "end_char": 291,
+          "normalised": "infancy",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p3::c0",
+          "page_number": 3,
+          "section": "preamble"
+        },
+        {
+          "text": "normal growth",
+          "label": "ENTITY",
+          "start_char": 293,
+          "end_char": 306,
+          "normalised": "normal growth",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p3::c0",
+          "page_number": 3,
+          "section": "preamble"
+        },
+        {
+          "text": "CBC",
+          "label": "ENTITY",
+          "start_char": 317,
+          "end_char": 320,
+          "normalised": "cbc",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p3::c0",
+          "page_number": 3,
+          "section": "preamble"
+        },
+        {
+          "text": "normal",
+          "label": "ENTITY",
+          "start_char": 328,
+          "end_char": 334,
+          "normalised": "normal",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p3::c0",
+          "page_number": 3,
+          "section": "preamble"
+        },
+        {
+          "text": "lipids",
+          "label": "ENTITY",
+          "start_char": 342,
+          "end_char": 348,
+          "normalised": "lipids",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p3::c0",
+          "page_number": 3,
+          "section": "preamble"
+        },
+        {
+          "text": "glucose variable",
+          "label": "ENTITY",
+          "start_char": 350,
+          "end_char": 366,
+          "normalised": "glucose variable",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p3::c0",
+          "page_number": 3,
+          "section": "preamble"
+        },
+        {
+          "text": "X-rays",
+          "label": "ENTITY",
+          "start_char": 406,
+          "end_char": 412,
+          "normalised": "x-rays",
+          "context": {
+            "is_negated": true,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p3::c0",
+          "page_number": 3,
+          "section": "preamble"
+        },
+        {
+          "text": "fractures",
+          "label": "ENTITY",
+          "start_char": 417,
+          "end_char": 426,
+          "normalised": "fractures",
+          "context": {
+            "is_negated": true,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p3::c0",
+          "page_number": 3,
+          "section": "preamble"
+        },
+        {
+          "text": "mammography",
+          "label": "ENTITY",
+          "start_char": 428,
+          "end_char": 439,
+          "normalised": "mammography",
+          "context": {
+            "is_negated": true,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p3::c0",
+          "page_number": 3,
+          "section": "preamble"
+        },
+        {
+          "text": "breast cancer",
+          "label": "ENTITY",
+          "start_char": 444,
+          "end_char": 457,
+          "normalised": "breast cancer",
+          "context": {
+            "is_negated": true,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p3::c0",
+          "page_number": 3,
+          "section": "preamble"
+        },
+        {
+          "text": "Clinical Course",
+          "label": "ENTITY",
+          "start_char": 459,
+          "end_char": 474,
+          "normalised": "clinical course",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p3::c0",
+          "page_number": 3,
+          "section": "preamble"
+        },
+        {
+          "text": "Longitudinal Trajectory \n",
+          "label": "ENTITY",
+          "start_char": 479,
+          "end_char": 504,
+          "normalised": "longitudinal trajectory",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p3::c0",
+          "page_number": 3,
+          "section": "preamble"
+        },
+        {
+          "text": "patient's",
+          "label": "ENTITY",
+          "start_char": 508,
+          "end_char": 517,
+          "normalised": "patient s",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p3::c0",
+          "page_number": 3,
+          "section": "preamble"
+        },
+        {
+          "text": "normal development",
+          "label": "ENTITY",
+          "start_char": 534,
+          "end_char": 552,
+          "normalised": "normal development",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p3::c0",
+          "page_number": 3,
+          "section": "preamble"
+        },
+        {
+          "text": "episodic acute events",
+          "label": "ENTITY",
+          "start_char": 558,
+          "end_char": 579,
+          "normalised": "episodic acute events",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p3::c0",
+          "page_number": 3,
+          "section": "preamble"
+        },
+        {
+          "text": "Adult",
+          "label": "ENTITY",
+          "start_char": 581,
+          "end_char": 586,
+          "normalised": "adult",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p3::c0",
+          "page_number": 3,
+          "section": "preamble"
+        },
+        {
+          "text": "injuries",
+          "label": "ENTITY",
+          "start_char": 612,
+          "end_char": 620,
+          "normalised": "injuries",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p3::c0",
+          "page_number": 3,
+          "section": "preamble"
+        },
+        {
+          "text": "breast cancer",
+          "label": "ENTITY",
+          "start_char": 637,
+          "end_char": 650,
+          "normalised": "breast cancer",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p3::c0",
+          "page_number": 3,
+          "section": "preamble"
+        },
+        {
+          "text": "management",
+          "label": "ENTITY",
+          "start_char": 651,
+          "end_char": 661,
+          "normalised": "management",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p3::c0",
+          "page_number": 3,
+          "section": "preamble"
+        },
+        {
+          "text": "Stable trajectory",
+          "label": "ENTITY",
+          "start_char": 663,
+          "end_char": 680,
+          "normalised": "stable trajectory",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p3::c0",
+          "page_number": 3,
+          "section": "preamble"
+        },
+        {
+          "text": "progression",
+          "label": "ENTITY",
+          "start_char": 690,
+          "end_char": 701,
+          "normalised": "progression",
+          "context": {
+            "is_negated": true,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p3::c0",
+          "page_number": 3,
+          "section": "preamble"
+        },
+        {
+          "text": "Functional Status",
+          "label": "ENTITY",
+          "start_char": 704,
+          "end_char": 721,
+          "normalised": "functional status",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p3::c0",
+          "page_number": 3,
+          "section": "preamble"
+        },
+        {
+          "text": "Healthcare Utilization",
+          "label": "ENTITY",
+          "start_char": 726,
+          "end_char": 748,
+          "normalised": "healthcare utilization",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p3::c0",
+          "page_number": 3,
+          "section": "preamble"
+        }
+      ]
+    },
+    {
+      "chunk_id": "Cecilia-Zemlak-summary.pdf::p3::c1",
+      "source_document": "Cecilia-Zemlak-summary.pdf",
+      "page_number": 3,
+      "section": "section",
+      "section_heading": "Cecilia Zemlak appears to remain",
+      "text": "\u2022 Functionally independent \n\u2022 Ambulatory \n\u2022 Capable of routine follow-up \nUtilization is moderate, primarily outpatient.",
+      "char_start": 785,
+      "char_end": 905,
+      "is_administrative": false,
+      "metadata": {
+        "step": 2,
+        "chunker": "section_aware_v1",
+        "entity_count": 5,
+        "negated_count": 0,
+        "historical_count": 0,
+        "context_engine": "local_v1"
+      },
+      "entities": [
+        {
+          "text": "Ambulatory \n",
+          "label": "ENTITY",
+          "start_char": 30,
+          "end_char": 42,
+          "normalised": "ambulatory",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p3::c1",
+          "page_number": 3,
+          "section": "section"
+        },
+        {
+          "text": "follow-up",
+          "label": "ENTITY",
+          "start_char": 63,
+          "end_char": 72,
+          "normalised": "follow-up",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p3::c1",
+          "page_number": 3,
+          "section": "section"
+        },
+        {
+          "text": "Utilization",
+          "label": "ENTITY",
+          "start_char": 74,
+          "end_char": 85,
+          "normalised": "utilization",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p3::c1",
+          "page_number": 3,
+          "section": "section"
+        },
+        {
+          "text": "moderate",
+          "label": "ENTITY",
+          "start_char": 89,
+          "end_char": 97,
+          "normalised": "moderate",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p3::c1",
+          "page_number": 3,
+          "section": "section"
+        },
+        {
+          "text": "outpatient",
+          "label": "ENTITY",
+          "start_char": 109,
+          "end_char": 119,
+          "normalised": "outpatient",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p3::c1",
+          "page_number": 3,
+          "section": "section"
+        }
+      ]
+    },
+    {
+      "chunk_id": "Cecilia-Zemlak-summary.pdf::p3::c2",
+      "source_document": "Cecilia-Zemlak-summary.pdf",
+      "page_number": 3,
+      "section": "section",
+      "section_heading": "Cecilia Zemlak represents a patient with",
+      "text": "\u2022 History of breast cancer in remission \n\u2022 Episodic infections and injuries \n\u2022 No significant competing comorbidity \n\u2022 Stable status",
+      "char_start": 962,
+      "char_end": 1094,
+      "is_administrative": false,
+      "metadata": {
+        "step": 2,
+        "chunker": "section_aware_v1",
+        "entity_count": 7,
+        "negated_count": 2,
+        "historical_count": 5,
+        "context_engine": "local_v1"
+      },
+      "entities": [
+        {
+          "text": "breast cancer",
+          "label": "ENTITY",
+          "start_char": 13,
+          "end_char": 26,
+          "normalised": "breast cancer",
+          "context": {
+            "is_negated": false,
+            "is_historical": true,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p3::c2",
+          "page_number": 3,
+          "section": "section"
+        },
+        {
+          "text": "remission \n",
+          "label": "ENTITY",
+          "start_char": 30,
+          "end_char": 41,
+          "normalised": "remission",
+          "context": {
+            "is_negated": false,
+            "is_historical": true,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p3::c2",
+          "page_number": 3,
+          "section": "section"
+        },
+        {
+          "text": "Episodic infections",
+          "label": "ENTITY",
+          "start_char": 43,
+          "end_char": 62,
+          "normalised": "episodic infections",
+          "context": {
+            "is_negated": false,
+            "is_historical": true,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p3::c2",
+          "page_number": 3,
+          "section": "section"
+        },
+        {
+          "text": "injuries \n",
+          "label": "ENTITY",
+          "start_char": 67,
+          "end_char": 77,
+          "normalised": "injuries",
+          "context": {
+            "is_negated": false,
+            "is_historical": true,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p3::c2",
+          "page_number": 3,
+          "section": "section"
+        },
+        {
+          "text": "No significant",
+          "label": "ENTITY",
+          "start_char": 79,
+          "end_char": 93,
+          "normalised": "no significant",
+          "context": {
+            "is_negated": false,
+            "is_historical": true,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p3::c2",
+          "page_number": 3,
+          "section": "section"
+        },
+        {
+          "text": "comorbidity \n",
+          "label": "ENTITY",
+          "start_char": 104,
+          "end_char": 117,
+          "normalised": "comorbidity",
+          "context": {
+            "is_negated": true,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p3::c2",
+          "page_number": 3,
+          "section": "section"
+        },
+        {
+          "text": "Stable",
+          "label": "ENTITY",
+          "start_char": 119,
+          "end_char": 125,
+          "normalised": "stable",
+          "context": {
+            "is_negated": true,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p3::c2",
+          "page_number": 3,
+          "section": "section"
+        }
+      ]
+    },
+    {
+      "chunk_id": "Cecilia-Zemlak-summary.pdf::p4::c0",
+      "source_document": "Cecilia-Zemlak-summary.pdf",
+      "page_number": 4,
+      "section": "clinical_header",
+      "section_heading": "Summary Statement",
+      "text": "Cecilia Zemlak is a 58-year-old female with a history of stage 2 breast cancer managed surgically, \nalongside episodic respiratory infections and musculoskeletal injuries, without evidence of \nchronic progressive disease or complications. Her history reflects multiple pregnancies and low \nhealthcare needs beyond acute events.",
+      "char_start": 19,
+      "char_end": 346,
+      "is_administrative": false,
+      "metadata": {
+        "step": 2,
+        "chunker": "section_aware_v1",
+        "entity_count": 16,
+        "negated_count": 2,
+        "historical_count": 4,
+        "context_engine": "local_v1"
+      },
+      "entities": [
+        {
+          "text": "Cecilia",
+          "label": "ENTITY",
+          "start_char": 0,
+          "end_char": 7,
+          "normalised": "cecilia",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p4::c0",
+          "page_number": 4,
+          "section": "clinical_header"
+        },
+        {
+          "text": "Zemlak",
+          "label": "ENTITY",
+          "start_char": 8,
+          "end_char": 14,
+          "normalised": "zemlak",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p4::c0",
+          "page_number": 4,
+          "section": "clinical_header"
+        },
+        {
+          "text": "female",
+          "label": "ENTITY",
+          "start_char": 32,
+          "end_char": 38,
+          "normalised": "female",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p4::c0",
+          "page_number": 4,
+          "section": "clinical_header"
+        },
+        {
+          "text": "history of",
+          "label": "ENTITY",
+          "start_char": 46,
+          "end_char": 56,
+          "normalised": "history of",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p4::c0",
+          "page_number": 4,
+          "section": "clinical_header"
+        },
+        {
+          "text": "stage 2",
+          "label": "ENTITY",
+          "start_char": 57,
+          "end_char": 64,
+          "normalised": "stage 2",
+          "context": {
+            "is_negated": false,
+            "is_historical": true,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p4::c0",
+          "page_number": 4,
+          "section": "clinical_header"
+        },
+        {
+          "text": "breast cancer",
+          "label": "ENTITY",
+          "start_char": 65,
+          "end_char": 78,
+          "normalised": "breast cancer",
+          "context": {
+            "is_negated": false,
+            "is_historical": true,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p4::c0",
+          "page_number": 4,
+          "section": "clinical_header"
+        },
+        {
+          "text": "surgically",
+          "label": "ENTITY",
+          "start_char": 87,
+          "end_char": 97,
+          "normalised": "surgically",
+          "context": {
+            "is_negated": false,
+            "is_historical": true,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p4::c0",
+          "page_number": 4,
+          "section": "clinical_header"
+        },
+        {
+          "text": "episodic respiratory infections",
+          "label": "ENTITY",
+          "start_char": 110,
+          "end_char": 141,
+          "normalised": "episodic respiratory infections",
+          "context": {
+            "is_negated": false,
+            "is_historical": true,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p4::c0",
+          "page_number": 4,
+          "section": "clinical_header"
+        },
+        {
+          "text": "musculoskeletal injuries",
+          "label": "ENTITY",
+          "start_char": 146,
+          "end_char": 170,
+          "normalised": "musculoskeletal injuries",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p4::c0",
+          "page_number": 4,
+          "section": "clinical_header"
+        },
+        {
+          "text": "evidence",
+          "label": "ENTITY",
+          "start_char": 180,
+          "end_char": 188,
+          "normalised": "evidence",
+          "context": {
+            "is_negated": true,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p4::c0",
+          "page_number": 4,
+          "section": "clinical_header"
+        },
+        {
+          "text": "complications",
+          "label": "ENTITY",
+          "start_char": 224,
+          "end_char": 237,
+          "normalised": "complications",
+          "context": {
+            "is_negated": true,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p4::c0",
+          "page_number": 4,
+          "section": "clinical_header"
+        },
+        {
+          "text": "history",
+          "label": "ENTITY",
+          "start_char": 243,
+          "end_char": 250,
+          "normalised": "history",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p4::c0",
+          "page_number": 4,
+          "section": "clinical_header"
+        },
+        {
+          "text": "multiple",
+          "label": "ENTITY",
+          "start_char": 260,
+          "end_char": 268,
+          "normalised": "multiple",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p4::c0",
+          "page_number": 4,
+          "section": "clinical_header"
+        },
+        {
+          "text": "pregnancies",
+          "label": "ENTITY",
+          "start_char": 269,
+          "end_char": 280,
+          "normalised": "pregnancies",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p4::c0",
+          "page_number": 4,
+          "section": "clinical_header"
+        },
+        {
+          "text": "low",
+          "label": "ENTITY",
+          "start_char": 285,
+          "end_char": 288,
+          "normalised": "low",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p4::c0",
+          "page_number": 4,
+          "section": "clinical_header"
+        },
+        {
+          "text": "acute events",
+          "label": "ENTITY",
+          "start_char": 314,
+          "end_char": 326,
+          "normalised": "acute events",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "Cecilia-Zemlak-summary.pdf::p4::c0",
+          "page_number": 4,
+          "section": "clinical_header"
+        }
+      ]
+    }
+  ]
+}

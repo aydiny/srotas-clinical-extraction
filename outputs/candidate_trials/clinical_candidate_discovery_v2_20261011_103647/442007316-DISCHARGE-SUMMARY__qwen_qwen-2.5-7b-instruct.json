@@ -1,0 +1,385 @@
+{
+  "meta": {
+    "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+    "model": "qwen/qwen-2.5-7b-instruct",
+    "provider": "openrouter",
+    "prompt_version": "clinical_candidate_discovery_v2",
+    "candidate_count": 23,
+    "pages_failed": [],
+    "evidence_not_found": 1,
+    "attempts": [
+      {
+        "page_number": 1,
+        "status": "ok",
+        "candidates": 20,
+        "evidence_not_found": 1,
+        "elapsed_seconds": 7.596,
+        "usage": {
+          "input_tokens": 823,
+          "output_tokens": 1164,
+          "total_tokens": 1987
+        }
+      },
+      {
+        "page_number": 2,
+        "status": "ok",
+        "candidates": 3,
+        "evidence_not_found": 0,
+        "elapsed_seconds": 1.584,
+        "usage": {
+          "input_tokens": 459,
+          "output_tokens": 194,
+          "total_tokens": 653
+        }
+      },
+      {
+        "page_number": 3,
+        "status": "ok",
+        "candidates": 0,
+        "evidence_not_found": 0,
+        "elapsed_seconds": 0.278,
+        "usage": {
+          "input_tokens": 737,
+          "output_tokens": 7,
+          "total_tokens": 744
+        }
+      },
+      {
+        "page_number": 4,
+        "status": "ok",
+        "candidates": 0,
+        "evidence_not_found": 0,
+        "elapsed_seconds": 0.25,
+        "usage": {
+          "input_tokens": 445,
+          "output_tokens": 8,
+          "total_tokens": 453
+        }
+      },
+      {
+        "page_number": 5,
+        "status": "ok",
+        "candidates": 0,
+        "evidence_not_found": 0,
+        "elapsed_seconds": 0.352,
+        "usage": {
+          "input_tokens": 445,
+          "output_tokens": 10,
+          "total_tokens": 455
+        }
+      }
+    ],
+    "elapsed_seconds": 10.059,
+    "usage": {
+      "input_tokens": 2909,
+      "output_tokens": 1383,
+      "total_tokens": 4292
+    },
+    "timestamp_utc": "2026-10-11T09:39:15.971762+00:00"
+  },
+  "candidates": [
+    {
+      "candidate_id": "candidate_1",
+      "category_hint": "symptom",
+      "raw_name": "inability to swallow food and vomiting of undigested food particles for past 3 months",
+      "page_number": 1,
+      "evidence_text": "Patient came to the hospital with complaints of inability to swallow food and vomiting of undigested food particles for past 3 months."
+    },
+    {
+      "candidate_id": "candidate_2",
+      "category_hint": "procedure",
+      "raw_name": "CT scan of chest and abdomen",
+      "page_number": 1,
+      "evidence_text": "CT scan of chest and abdomen done revealed, dialation of oesophagus with thin regular wall and air fluid level within, subcarinal oesophageal narrowing present small hiatus hernia."
+    },
+    {
+      "candidate_id": "candidate_3",
+      "category_hint": "procedure",
+      "raw_name": "endoscopy and dilatation of oesophagus with biopsy",
+      "page_number": 1,
+      "evidence_text": "Patient was advised endoscopy and dilatation of oesophagus with biopsy at a later stage."
+    },
+    {
+      "candidate_id": "candidate_4",
+      "category_hint": "medication",
+      "raw_name": "antibiotics",
+      "page_number": 1,
+      "evidence_text": "Patient was treated conservatively with antibiotics, antiematics and ppi."
+    },
+    {
+      "candidate_id": "candidate_5",
+      "category_hint": "medication",
+      "raw_name": "antiematics",
+      "page_number": 1,
+      "evidence_text": "Patient was treated conservatively with antibiotics, antiematics and ppi."
+    },
+    {
+      "candidate_id": "candidate_6",
+      "category_hint": "medication",
+      "raw_name": "ppi",
+      "page_number": 1,
+      "evidence_text": "Patient was treated conservatively with antibiotics, antiematics and ppi."
+    },
+    {
+      "candidate_id": "candidate_7",
+      "category_hint": "procedure",
+      "raw_name": "complete blood cell count",
+      "page_number": 1,
+      "evidence_text": "COMPLETE BLOOD CELL COUNT:"
+    },
+    {
+      "candidate_id": "candidate_8",
+      "category_hint": "observation",
+      "raw_name": "haemoglobin 10.9 g/dl",
+      "page_number": 1,
+      "evidence_text": "Haemoglobin10.\u00a7,m/d1"
+    },
+    {
+      "candidate_id": "candidate_9",
+      "category_hint": "observation",
+      "raw_name": "total wbc count-8900 cells/cmm",
+      "page_number": 1,
+      "evidence_text": "Total wbc count-8900 Cells/cum"
+    },
+    {
+      "candidate_id": "candidate_10",
+      "category_hint": "observation",
+      "raw_name": "sgpt-27 iu/l",
+      "page_number": 1,
+      "evidence_text": "SGPT-27 Iu/l"
+    },
+    {
+      "candidate_id": "candidate_11",
+      "category_hint": "observation",
+      "raw_name": "bilrubin-negative",
+      "page_number": 1,
+      "evidence_text": "Billrubin-Negative"
+    },
+    {
+      "candidate_id": "candidate_12",
+      "category_hint": "observation",
+      "raw_name": "neutrophils-69%",
+      "page_number": 1,
+      "evidence_text": "Neu trophils-69%"
+    },
+    {
+      "candidate_id": "candidate_13",
+      "category_hint": "observation",
+      "raw_name": "lymphocyte-26%",
+      "page_number": 1,
+      "evidence_text": "Lymphocyte-26%"
+    },
+    {
+      "candidate_id": "candidate_14",
+      "category_hint": "observation",
+      "raw_name": "eosinophils-5%",
+      "page_number": 1,
+      "evidence_text": "Eosinophils-5%"
+    },
+    {
+      "candidate_id": "candidate_15",
+      "category_hint": "observation",
+      "raw_name": "globulin-2.6",
+      "page_number": 1,
+      "evidence_text": "Globulin-2.6"
+    },
+    {
+      "candidate_id": "candidate_16",
+      "category_hint": "observation",
+      "raw_name": "urine analysis negative",
+      "page_number": 1,
+      "evidence_text": "Urine Analysis Ldl cholesterol-128 Specific gravity:I.010 Ph-5 Vldi cholesterol-33 Nitrite-negative Protein-negative"
+    },
+    {
+      "candidate_id": "candidate_17",
+      "category_hint": "observation",
+      "raw_name": "liver function test normal",
+      "page_number": 1,
+      "evidence_text": "Glucose-Normal"
+    },
+    {
+      "candidate_id": "candidate_18",
+      "category_hint": "observation",
+      "raw_name": "total bilirubin 0.2 mg/dl",
+      "page_number": 1,
+      "evidence_text": "Total billiruhin0.2mg.d1"
+    },
+    {
+      "candidate_id": "candidate_19",
+      "category_hint": "observation",
+      "raw_name": "direct bilirubin 0.1 mg/dl",
+      "page_number": 1,
+      "evidence_text": "Direct billirubin- 0.1mg/dl"
+    },
+    {
+      "candidate_id": "candidate_20",
+      "category_hint": "procedure",
+      "raw_name": "follow up after 5 days",
+      "page_number": 1,
+      "evidence_text": "ADVICE: FOLLOW UP AFTER 5 DAYS"
+    },
+    {
+      "candidate_id": "candidate_21",
+      "category_hint": "medication",
+      "raw_name": "5YP.LUPIZ1ME PLUS: 10ml",
+      "page_number": 2,
+      "evidence_text": "5YP.LUPIZ1ME PLUS: 10ml"
+    },
+    {
+      "candidate_id": "candidate_22",
+      "category_hint": "medication",
+      "raw_name": "5YP.SUCRAFIL PLUS: 5ml",
+      "page_number": 2,
+      "evidence_text": "5YP.SUCRAFIL PLUS: 5ml"
+    },
+    {
+      "candidate_id": "candidate_23",
+      "category_hint": "procedure",
+      "raw_name": "Report in case of pain, bleeding and or other emergencies.",
+      "page_number": 2,
+      "evidence_text": "Report in case of  pain, bleeding and or other emergencies."
+    }
+  ],
+  "evaluation": {
+    "name_recall": 0.35,
+    "category_precision": 1.0,
+    "counts": {
+      "candidates": 23,
+      "gold_facts": 20,
+      "matched_gold": 7,
+      "category_correct": 7
+    },
+    "missed_gold": [
+      {
+        "gold_fact_id": "SM-CORE-01",
+        "name": "Lower oesophageal hiatus hernia",
+        "category": "condition"
+      },
+      {
+        "gold_fact_id": "SM-CORE-02",
+        "name": "Inability to swallow food",
+        "category": "symptom"
+      },
+      {
+        "gold_fact_id": "SM-CORE-03",
+        "name": "Vomiting of undigested food particles",
+        "category": "symptom"
+      },
+      {
+        "gold_fact_id": "SM-CORE-04",
+        "name": "Blood pressure",
+        "category": "observation"
+      },
+      {
+        "gold_fact_id": "SM-CORE-05",
+        "name": "Pulse rate",
+        "category": "observation"
+      },
+      {
+        "gold_fact_id": "SM-CORE-06",
+        "name": "Oxygen saturation",
+        "category": "observation"
+      },
+      {
+        "gold_fact_id": "SM-CORE-08",
+        "name": "Oesophageal dilatation",
+        "category": "observation"
+      },
+      {
+        "gold_fact_id": "SM-CORE-09",
+        "name": "Subcarinal oesophageal narrowing",
+        "category": "observation"
+      },
+      {
+        "gold_fact_id": "SM-CORE-13",
+        "name": "Ability to swallow solid foods",
+        "category": "observation"
+      },
+      {
+        "gold_fact_id": "SM-CORE-15",
+        "name": "Endoscopy",
+        "category": "procedure"
+      },
+      {
+        "gold_fact_id": "SM-CORE-17",
+        "name": "Total white blood cell count",
+        "category": "observation"
+      },
+      {
+        "gold_fact_id": "SM-CORE-19",
+        "name": "Follow-up review",
+        "category": "procedure"
+      },
+      {
+        "gold_fact_id": "SM-CORE-20",
+        "name": "T. AZ1TH RA L",
+        "category": "medication"
+      }
+    ],
+    "matches": [
+      {
+        "candidate_id": "candidate_1",
+        "candidate_name": "inability to swallow food and vomiting of undigested food particles for past 3 months",
+        "category_hint": "symptom",
+        "gold_fact_id": "SM-CORE-14",
+        "gold_name": "Vomiting",
+        "gold_category": "symptom",
+        "score": 1.01
+      },
+      {
+        "candidate_id": "candidate_2",
+        "candidate_name": "CT scan of chest and abdomen",
+        "category_hint": "procedure",
+        "gold_fact_id": "SM-CORE-07",
+        "gold_name": "CT scan of chest and abdomen",
+        "gold_category": "procedure",
+        "score": 1.01
+      },
+      {
+        "candidate_id": "candidate_3",
+        "candidate_name": "endoscopy and dilatation of oesophagus with biopsy",
+        "category_hint": "procedure",
+        "gold_fact_id": "SM-CORE-16",
+        "gold_name": "Biopsy",
+        "gold_category": "procedure",
+        "score": 1.01
+      },
+      {
+        "candidate_id": "candidate_4",
+        "candidate_name": "antibiotics",
+        "category_hint": "medication",
+        "gold_fact_id": "SM-CORE-10",
+        "gold_name": "Antibiotics",
+        "gold_category": "medication",
+        "score": 1.01
+      },
+      {
+        "candidate_id": "candidate_5",
+        "candidate_name": "antiematics",
+        "category_hint": "medication",
+        "gold_fact_id": "SM-CORE-11",
+        "gold_name": "Antiemetics",
+        "gold_category": "medication",
+        "score": 0.919
+      },
+      {
+        "candidate_id": "candidate_6",
+        "candidate_name": "ppi",
+        "category_hint": "medication",
+        "gold_fact_id": "SM-CORE-12",
+        "gold_name": "PPI",
+        "gold_category": "medication",
+        "score": 1.01
+      },
+      {
+        "candidate_id": "candidate_8",
+        "candidate_name": "haemoglobin 10.9 g/dl",
+        "category_hint": "observation",
+        "gold_fact_id": "SM-CORE-18",
+        "gold_name": "Haemoglobin",
+        "gold_category": "observation",
+        "score": 1.01
+      }
+    ]
+  }
+}

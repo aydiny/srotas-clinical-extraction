@@ -14,3 +14,14 @@ dependencies = [
     "requests>=2.34.2",
     "scipy>=1.18.1",
 ]
+
+[project.optional-dependencies]
+hybrid = [
+    # scispaCy NER on spaCy 3.7.x. Pin numpy 1.26 to avoid Windows thinc ABI
+    # clashes with numpy 2.x. medspaCy omitted (broken Windows builds); ConText
+    # uses src/hybrid/context_local.py instead.
+    "numpy==1.26.4",
+    "spacy==3.7.5",
+    "scispacy==0.5.5",
+    "click>=8.0",
+]

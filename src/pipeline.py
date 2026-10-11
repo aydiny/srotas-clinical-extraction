@@ -5,9 +5,17 @@ import sys
 import time
 from pathlib import Path
 
-from config import GOLD_DIR, INPUT_DIR, OUTPUT_DIR, SECTION_HINTS, TEMPERATURE
+from config import (
+    CANDIDATE_MODEL,
+    CANDIDATE_PROMPT_VERSION,
+    GOLD_DIR,
+    INPUT_DIR,
+    OUTPUT_DIR,
+    SECTION_HINTS,
+    TEMPERATURE,
+)
 from evaluate import aggregate, evaluate_patient
-from extract import extract_document
+from extract import extract_candidates, extract_document
 from ingest import ingest_dir
 from schemas import PatientRepresentation
 from validate import validate_patient
@@ -30,8 +38,8 @@ def _extraction_metrics(meta: dict) -> dict:
     }
 
 
-def _aggregate_extraction(per_doc: dict) -> dict:
-    rows = [doc["extraction"] for doc in per_doc.values() if "extraction" in doc]
+def _aggregate_usage(per_doc: dict, key: str) -> dict:
+    rows = [doc[key] for doc in per_doc.values() if key in doc]
     n = len(rows)
     elapsed = sum(r.get("elapsed_seconds") or 0 for r in rows)
     return {
@@ -45,7 +53,7 @@ def _aggregate_extraction(per_doc: dict) -> dict:
 
 
 def run(only: set[str] | None = None) -> dict:
-    for sub in ("extracted", "validation", "runs"):
+    for sub in ("candidates", "extracted", "validation", "runs"):
         (OUT / sub).mkdir(parents=True, exist_ok=True)
 
     documents = ingest_dir(INPUT_DIR)
@@ -55,8 +63,34 @@ def run(only: set[str] | None = None) -> dict:
         if only and name not in only:
             continue
         stem = Path(name).stem
-        print(f"Extracting {name} ...")
 
+        print(f"Discovering candidates in {name} ({CANDIDATE_MODEL}) ...")
+        cand_started = time.perf_counter()
+        try:
+            candidates, cmeta = extract_candidates(pages)
+            (OUT / "candidates" / f"{stem}.json").write_text(
+                candidates.model_dump_json(indent=2), encoding="utf-8")
+            (OUT / "runs" / f"{stem}.candidates.json").write_text(
+                json.dumps(cmeta, indent=2), encoding="utf-8")
+            candidate_summary = {
+                "status": "ok_with_page_failures" if cmeta["pages_failed"] else "ok",
+                "candidates": cmeta["candidate_count"],
+                "evidence_not_found": cmeta["evidence_not_found"],
+                "pages_failed": cmeta["pages_failed"],
+                **_extraction_metrics(cmeta),
+            }
+            print(f"  {cmeta['candidate_count']} candidates, "
+                  f"{cmeta['evidence_not_found']} with evidence not found on page, "
+                  f"pages failed: {cmeta['pages_failed'] or 'none'}")
+        except Exception as exc:
+            candidate_summary = {
+                "status": "failed",
+                "error": f"{type(exc).__name__}: {exc}",
+                "elapsed_seconds": round(time.perf_counter() - cand_started, 3),
+            }
+            print(f"  candidate discovery FAILED: {exc}")
+
+        print(f"Extracting {name} ...")
         started = time.perf_counter()
         try:
             patient, meta = extract_document(pages)
@@ -65,6 +99,7 @@ def run(only: set[str] | None = None) -> dict:
             per_doc[name] = {
                 "status": "extraction_failed",
                 "error": f"{type(exc).__name__}: {exc}",
+                "candidates": candidate_summary,
                 "extraction": {
                     "elapsed_seconds": round(time.perf_counter() - started, 3),
                     "attempts": 0,
@@ -91,6 +126,7 @@ def run(only: set[str] | None = None) -> dict:
             "status": "ok",
             "facts": len(patient.clinical_facts),
             "validation": vsum,
+            "candidates": candidate_summary,
             "extraction": _extraction_metrics(meta),
         }
 
@@ -108,11 +144,14 @@ def run(only: set[str] | None = None) -> dict:
 
     metrics = {
         "overall": aggregate(all_counts) if all_counts else None,
-        "extraction": _aggregate_extraction(per_doc),
+        "candidate_discovery": _aggregate_usage(per_doc, "candidates"),
+        "extraction": _aggregate_usage(per_doc, "extraction"),
         "documents_failed": failed,
         "per_document": per_doc,
         "model_name": MODEL,
         "prompt_version": PROMPT_VERSION,
+        "candidate_model": CANDIDATE_MODEL,
+        "candidate_prompt_version": CANDIDATE_PROMPT_VERSION,
         "section_hints": SECTION_HINTS,
         "temperature": TEMPERATURE,
     }

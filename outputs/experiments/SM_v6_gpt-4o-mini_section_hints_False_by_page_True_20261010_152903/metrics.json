@@ -1,0 +1,88 @@
+{
+  "overall": {
+    "gold_recall": 0.6,
+    "precision_vs_gold_subset": 0.3076923076923077,
+    "precision_excluding_extra_supported": 0.7058823529411765,
+    "extra_supported_facts": 22,
+    "unsupported_rate": 0.15384615384615385,
+    "context_accuracy": {
+      "status": 0.3333333333333333,
+      "temporality": 0.08333333333333333,
+      "certainty": 0.9166666666666666,
+      "is_negated": 1.0
+    },
+    "attribute_recall_on_matched_facts": 0.0,
+    "counts": {
+      "predicted_facts": 39,
+      "gold_facts": 20,
+      "true_positives": 12,
+      "false_negatives": 8,
+      "unmatched_predictions": 27
+    }
+  },
+  "extraction": {
+    "documents": 1,
+    "elapsed_seconds": 93.887,
+    "mean_elapsed_seconds": 93.887,
+    "input_tokens": 17764,
+    "output_tokens": 10252,
+    "total_tokens": 28016
+  },
+  "documents_failed": [],
+  "per_document": {
+    "442007316-DISCHARGE-SUMMARY.pdf": {
+      "status": "ok_with_validation_errors",
+      "facts": 39,
+      "validation": {
+        "unsupported_rate": 0.15384615384615385,
+        "graph_errors": [],
+        "fact_count": 39,
+        "unsupported_facts": 6,
+        "error_counts": {
+          "value_not_in_quote:Haemoglobin": 1,
+          "value_not_in_quote:Neutrophils": 1,
+          "value_not_in_quote:Lymphocytes": 1,
+          "value_not_in_quote:Eosinophils": 1,
+          "value_not_in_quote:RBC Count": 1,
+          "value_not_in_quote:Platelet Count": 1,
+          "quote_not_found": 4,
+          "value_not_in_quote:Specific Gravity": 1,
+          "date_not_in_quote": 1
+        }
+      },
+      "extraction": {
+        "elapsed_seconds": 93.887,
+        "attempts": 7,
+        "input_tokens": 17764,
+        "output_tokens": 10252,
+        "total_tokens": 28016,
+        "extract_by_page": true,
+        "pages": 5,
+        "pages_ok": 5
+      },
+      "counts": {
+        "predicted_facts": 39,
+        "gold_facts": 20,
+        "true_positives": 12,
+        "false_negatives": 8,
+        "unmatched_predictions": 27,
+        "extra_supported": 22,
+        "unsupported_unmatched": 5,
+        "unsupported_total": 6,
+        "context_correct": {
+          "status": 4,
+          "certainty": 11,
+          "is_negated": 12,
+          "temporality": 1
+        },
+        "attributes_total": 20,
+        "attributes_correct": 0
+      }
+    }
+  },
+  "model_name": "gpt-4o-mini",
+  "prompt_version": "clinical_extraction_v6",
+  "section_hints": false,
+  "extract_by_page": true,
+  "temperature": 0
+}

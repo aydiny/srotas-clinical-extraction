@@ -101,3 +101,29 @@ class PatientRepresentation(BaseModel):
         default_factory=list,
         description="The longitudinal history of patient facts extracted from the record."
     )
+
+class CandidateFact(BaseModel):
+    candidate_id: str = Field(
+        description="A unique identifier for this candidate fact (e.g., 'candidate_1') so other candidate facts can reference it."
+    )
+    category_hint: Literal[
+        "condition",
+        "symptom",
+        "observation",
+        "medication",
+        "procedure",
+        "unknown",
+    ]
+    raw_name: str = Field(
+        description="The raw name of the candidate fact (e.g., 'Non-small cell lung cancer')."
+    )
+    page_number: int = Field(
+        description="The page number in the source document."
+    )
+    evidence_text: str = Field(
+        description="The evidence text that supports this candidate fact."
+    )
+
+
+class CandidateFactInventory(BaseModel):
+    candidates: list[CandidateFact]

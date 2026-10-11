@@ -1,0 +1,1030 @@
+{
+  "patient_id": "null",
+  "patient_name": "Mr. SONAIMUTHU",
+  "age": 71,
+  "sex": "Male",
+  "clinical_facts": [
+    {
+      "fact_id": "fact_1",
+      "category": "condition",
+      "name": "Lower Oesophageal Hiatus Hernia",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "DIAGNOSIS: LOWER OESOPHAGEAL HIATUS HERNIA",
+          "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+          "page_number": 1
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_2",
+      "category": "symptom",
+      "name": "Inability to swallow food",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [
+        {
+          "name": "duration",
+          "value": "3 months",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "Patient came to the hospital with complaints of inability to swallow food and vomiting of undigested food particles for past 3 months.",
+          "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+          "page_number": 1
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_3",
+      "category": "symptom",
+      "name": "Vomiting of undigested food particles",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [
+        {
+          "name": "duration",
+          "value": "3 months",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "vomiting of undigested food particles for past 3 months.",
+          "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+          "page_number": 1
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_4",
+      "category": "observation",
+      "name": "Blood Pressure",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [
+        {
+          "name": "value",
+          "value": "80/50",
+          "unit": "mm/hg"
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "B , P . 80/50 mm/hg",
+          "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+          "page_number": 1
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_5",
+      "category": "observation",
+      "name": "Pulse Rate",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [
+        {
+          "name": "value",
+          "value": "56",
+          "unit": "mints"
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "P.R 56mints",
+          "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+          "page_number": 1
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_6",
+      "category": "observation",
+      "name": "SPO2",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [
+        {
+          "name": "value",
+          "value": "97",
+          "unit": "%"
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "SPO2 97%",
+          "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+          "page_number": 1
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_7",
+      "category": "observation",
+      "name": "CT scan findings",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [
+        {
+          "name": "finding",
+          "value": "dilation of oesophagus with thin regular wall and air fluid level within, subcarinal oesophageal narrowing present small hiatus hernia",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "CT scan of chest and abdomen done revealed, dialation of oesophagus with thin regular wall and air fluid level within, subcarinal oesophageal narrowing present small hiatus hernia.",
+          "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+          "page_number": 1
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_8",
+      "category": "medication",
+      "name": "Antibiotics",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "Patient was treated conservatively with antibiotics, antiematics and ppi.",
+          "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+          "page_number": 1
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_9",
+      "category": "medication",
+      "name": "Antiemetics",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "Patient was treated conservatively with antibiotics, antiematics and ppi.",
+          "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+          "page_number": 1
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_10",
+      "category": "medication",
+      "name": "PPI",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "Patient was treated conservatively with antibiotics, antiematics and ppi.",
+          "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+          "page_number": 1
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_11",
+      "category": "observation",
+      "name": "Ability to swallow solid foods",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "Patient improved symptomatically with ability to swallow solid foods with no episodes of vomiting.",
+          "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+          "page_number": 1
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_12",
+      "category": "procedure",
+      "name": "Endoscopy and dilatation of oesophagus with biopsy",
+      "status": "unknown",
+      "is_negated": false,
+      "certainty": "unknown",
+      "temporality": "future_plan",
+      "date": null,
+      "attributes": [],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "Patient was advised endoscopy and dilatation of oesophagus with biopsy at a later stage.",
+          "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+          "page_number": 1
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_13",
+      "category": "observation",
+      "name": "Complete Blood Cell Count",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [
+        {
+          "name": "Haemoglobin",
+          "value": "10.5",
+          "unit": "g/dl"
+        },
+        {
+          "name": "Total WBC Count",
+          "value": "8900",
+          "unit": "Cells/cum"
+        },
+        {
+          "name": "Neutrophils",
+          "value": "69",
+          "unit": "%"
+        },
+        {
+          "name": "Lymphocytes",
+          "value": "26",
+          "unit": "%"
+        },
+        {
+          "name": "Eosinophils",
+          "value": "5",
+          "unit": "%"
+        },
+        {
+          "name": "RBC Count",
+          "value": "3.9",
+          "unit": "million/cumm"
+        },
+        {
+          "name": "Platelet Count",
+          "value": "200000",
+          "unit": "1akhsl/cumm"
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "COMPLETE BLOOD CELL COUNT: HAEMATOLOGY SCOT-29 full Urobllinogen-Normal Haemoglobin10.§,m/d1 Total wbc count-8900 Cells/cum SGPT-27 Iu/l Billrubin-Negative",
+          "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+          "page_number": 1
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_14",
+      "category": "observation",
+      "name": "Liver Function Test",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [
+        {
+          "name": "Total Bilirubin",
+          "value": "0.2",
+          "unit": "mg/dl"
+        },
+        {
+          "name": "Direct Bilirubin",
+          "value": "0.1",
+          "unit": "mg/dl"
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "LIVER FUNCTION TEST Total billiruhin0.2mg.d1 Direct billirubin- 0.1mg/dl",
+          "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+          "page_number": 1
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_15",
+      "category": "observation",
+      "name": "Diabetic Profile",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [
+        {
+          "name": "FBS",
+          "value": "95",
+          "unit": null
+        },
+        {
+          "name": "PPBS",
+          "value": "159",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "DIABETIC PROFILE FBS-95 PPBS-159",
+          "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+          "page_number": 1
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_16",
+      "category": "observation",
+      "name": "Lipid Profile",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [
+        {
+          "name": "Cholesterol",
+          "value": "179",
+          "unit": null
+        },
+        {
+          "name": "HDL Cholesterol",
+          "value": "32",
+          "unit": null
+        },
+        {
+          "name": "LDL Cholesterol",
+          "value": "128",
+          "unit": null
+        },
+        {
+          "name": "VLDL Cholesterol",
+          "value": "33",
+          "unit": null
+        },
+        {
+          "name": "TC/HDL Ratio",
+          "value": "5",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "LIPID PROFILE Cholestrol- 179 HdI cholesterol-32 Ldl cholesterol-128 Vldl cholesterol-33 T.c/hdl ratio-5",
+          "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+          "page_number": 1
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_17",
+      "category": "observation",
+      "name": "Urine Analysis",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [
+        {
+          "name": "Specific Gravity",
+          "value": "1.010",
+          "unit": null
+        },
+        {
+          "name": "pH",
+          "value": "5",
+          "unit": null
+        },
+        {
+          "name": "Leukocytes",
+          "value": "negative",
+          "unit": null
+        },
+        {
+          "name": "Nitrite",
+          "value": "negative",
+          "unit": null
+        },
+        {
+          "name": "Protein",
+          "value": "negative",
+          "unit": null
+        },
+        {
+          "name": "Ketones",
+          "value": "negative",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "URINE ANALYSIS Specific gravity:I.010 Ph-5 I.eukocytes-negative Nitrite-negative Protein-negative Keytones-Negative",
+          "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+          "page_number": 1
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_18",
+      "category": "medication",
+      "name": "T.EM ESET",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [
+        {
+          "name": "dosage",
+          "value": "1-0-1",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "T.EM ESET: (1-0-1)",
+          "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+          "page_number": 2
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_19",
+      "category": "medication",
+      "name": "T.YEES D",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [
+        {
+          "name": "dosage",
+          "value": "1-0-1",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "T.YEES D: (1-0-1)",
+          "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+          "page_number": 2
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_20",
+      "category": "medication",
+      "name": "T.DIGIPEN",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [
+        {
+          "name": "dosage",
+          "value": "1-0-1",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "T.DIGIPEN: (1-0-1)",
+          "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+          "page_number": 2
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_21",
+      "category": "medication",
+      "name": "T.ACILOC",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [
+        {
+          "name": "dosage",
+          "value": "1-0-1",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "T.ACILOC: (1-0-1)",
+          "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+          "page_number": 2
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_22",
+      "category": "medication",
+      "name": "T.MUCYST",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [
+        {
+          "name": "dosage",
+          "value": "0-0-1",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "T.MUCYST: (0-0-1)",
+          "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+          "page_number": 2
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_23",
+      "category": "medication",
+      "name": "T.NEFTRON",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [
+        {
+          "name": "dosage",
+          "value": "1-0-1",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "T.NEFTRON: (1-0-1)",
+          "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+          "page_number": 2
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_24",
+      "category": "medication",
+      "name": "T. AZ1TH RA L",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [
+        {
+          "name": "dosage",
+          "value": "0-0-1",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "T. AZ1TH RA L: (0-0-1)",
+          "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+          "page_number": 2
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_25",
+      "category": "medication",
+      "name": "5YP.LUPIZ1ME PLUS",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [
+        {
+          "name": "dosage",
+          "value": "10ml",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "5YP.LUPIZ1ME PLUS: 10ml",
+          "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+          "page_number": 2
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_26",
+      "category": "medication",
+      "name": "5YP.SUCRAFIL PLUS",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [
+        {
+          "name": "dosage",
+          "value": "5ml",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "5YP.SUCRAFIL PLUS: 5ml",
+          "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+          "page_number": 2
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_27",
+      "category": "observation",
+      "name": "urgent care instructions",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "Report in case of pain, bleeding and or other emergencies.",
+          "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+          "page_number": 2
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_28",
+      "category": "condition",
+      "name": "Lower Oesophageal Hiatus Hernia",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "DIAGNOSIS: LOWER OESOPHAGEAL HIATUS HERNIA",
+          "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+          "page_number": 3
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_29",
+      "category": "observation",
+      "name": "Anesthesia Charges",
+      "status": "historical",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "historical",
+      "date": null,
+      "attributes": [
+        {
+          "name": "amount",
+          "value": "200",
+          "unit": "currency"
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "Anesthesia 200 1 200",
+          "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+          "page_number": 4
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_30",
+      "category": "observation",
+      "name": "Blood Charges",
+      "status": "historical",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "historical",
+      "date": null,
+      "attributes": [
+        {
+          "name": "amount",
+          "value": "1500",
+          "unit": "currency"
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "Blood 1500 1 1500",
+          "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+          "page_number": 4
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_31",
+      "category": "observation",
+      "name": "Oxygen Charges",
+      "status": "historical",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "historical",
+      "date": null,
+      "attributes": [
+        {
+          "name": "amount",
+          "value": "450",
+          "unit": "currency"
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "Oxygen 450 1 450",
+          "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+          "page_number": 4
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_32",
+      "category": "observation",
+      "name": "Operation Theater Charges",
+      "status": "historical",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "historical",
+      "date": null,
+      "attributes": [
+        {
+          "name": "amount",
+          "value": "2500",
+          "unit": "currency"
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "Operation Theater Charges 2500 1 2500",
+          "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+          "page_number": 4
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_33",
+      "category": "observation",
+      "name": "Surgical Appliances Charges",
+      "status": "historical",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "historical",
+      "date": null,
+      "attributes": [
+        {
+          "name": "amount",
+          "value": "670",
+          "unit": "currency"
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "Surgical Appliances 670 1 670",
+          "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+          "page_number": 4
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_34",
+      "category": "observation",
+      "name": "Medicines and Drugs Charges",
+      "status": "historical",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "historical",
+      "date": null,
+      "attributes": [
+        {
+          "name": "amount",
+          "value": "3210",
+          "unit": "currency"
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "Medicines and Drugs 3210 1 3210",
+          "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+          "page_number": 4
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_35",
+      "category": "observation",
+      "name": "Total of Other Expenses",
+      "status": "historical",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "historical",
+      "date": null,
+      "attributes": [
+        {
+          "name": "amount",
+          "value": "8530",
+          "unit": "currency"
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "Total of Other Expenses 8530",
+          "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+          "page_number": 4
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_36",
+      "category": "observation",
+      "name": "Grand Total Charges",
+      "status": "historical",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "historical",
+      "date": null,
+      "attributes": [
+        {
+          "name": "amount",
+          "value": "38130",
+          "unit": "currency"
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "Grand Total 38130",
+          "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+          "page_number": 4
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_37",
+      "category": "observation",
+      "name": "Patient Paid Amount",
+      "status": "historical",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "historical",
+      "date": null,
+      "attributes": [
+        {
+          "name": "amount",
+          "value": "25000",
+          "unit": "currency"
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "Patient Paid Amount 25000",
+          "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+          "page_number": 4
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_38",
+      "category": "observation",
+      "name": "Balance Amount",
+      "status": "historical",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "historical",
+      "date": null,
+      "attributes": [
+        {
+          "name": "amount",
+          "value": "13130",
+          "unit": "currency"
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "Balance 13130",
+          "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+          "page_number": 4
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_39",
+      "category": "observation",
+      "name": "Prenatal Screening",
+      "status": "historical",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "unknown",
+      "date": "null",
+      "attributes": [
+        {
+          "name": "Rate",
+          "value": "2780",
+          "unit": "null"
+        },
+        {
+          "name": "Quantity",
+          "value": "1",
+          "unit": "null"
+        },
+        {
+          "name": "Total Amount",
+          "value": "2780",
+          "unit": "null"
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "PRENATAL SCREENING 2780 1 2780",
+          "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+          "page_number": 5
+        }
+      ]
+    }
+  ]
+}

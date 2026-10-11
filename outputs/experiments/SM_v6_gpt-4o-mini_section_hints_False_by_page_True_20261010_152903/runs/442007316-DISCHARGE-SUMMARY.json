@@ -1,0 +1,517 @@
+{
+  "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+  "model": "gpt-4o-mini-2024-07-18",
+  "prompt_version": "clinical_extraction_v6",
+  "extract_by_page": true,
+  "pages": [
+    {
+      "page_number": 1,
+      "status": "ok_with_validation_errors",
+      "fact_count": 17,
+      "elapsed_seconds": 64.424,
+      "attempts": [
+        {
+          "attempt": 1,
+          "fact_count": 17,
+          "failing_facts": 6,
+          "graph_errors": [],
+          "error_counts": {
+            "value_not_in_quote:duration": 1,
+            "value_not_in_quote:Haemoglobin": 1,
+            "value_not_in_quote:Neutrophils": 1,
+            "value_not_in_quote:Lymphocytes": 1,
+            "value_not_in_quote:Eosinophils": 1,
+            "value_not_in_quote:RBC Count": 1,
+            "value_not_in_quote:Platelet Count": 1,
+            "quote_not_found": 4,
+            "value_not_in_quote:Specific Gravity": 1
+          },
+          "elapsed_seconds": 36.568,
+          "usage": {
+            "input_tokens": 2181,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 3342,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 5523
+          }
+        },
+        {
+          "attempt": 2,
+          "fact_count": 17,
+          "failing_facts": 5,
+          "graph_errors": [],
+          "error_counts": {
+            "value_not_in_quote:Haemoglobin": 1,
+            "value_not_in_quote:Neutrophils": 1,
+            "value_not_in_quote:Lymphocytes": 1,
+            "value_not_in_quote:Eosinophils": 1,
+            "value_not_in_quote:RBC Count": 1,
+            "value_not_in_quote:Platelet Count": 1,
+            "quote_not_found": 4,
+            "value_not_in_quote:Specific Gravity": 1
+          },
+          "elapsed_seconds": 27.854,
+          "usage": {
+            "input_tokens": 5869,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 3369,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 9238
+          }
+        }
+      ],
+      "usage": {
+        "input_tokens": 8050,
+        "output_tokens": 6711,
+        "total_tokens": 14761
+      },
+      "validation": {
+        "unsupported_rate": 0.29411764705882354,
+        "unsupported_facts": 5,
+        "graph_errors": [],
+        "error_counts": {
+          "value_not_in_quote:Haemoglobin": 1,
+          "value_not_in_quote:Neutrophils": 1,
+          "value_not_in_quote:Lymphocytes": 1,
+          "value_not_in_quote:Eosinophils": 1,
+          "value_not_in_quote:RBC Count": 1,
+          "value_not_in_quote:Platelet Count": 1,
+          "quote_not_found": 4,
+          "value_not_in_quote:Specific Gravity": 1
+        },
+        "fact_flags": {
+          "fact_13": [
+            [
+              "error",
+              "value_not_in_quote:Haemoglobin"
+            ],
+            [
+              "error",
+              "value_not_in_quote:Neutrophils"
+            ],
+            [
+              "error",
+              "value_not_in_quote:Lymphocytes"
+            ],
+            [
+              "error",
+              "value_not_in_quote:Eosinophils"
+            ],
+            [
+              "error",
+              "value_not_in_quote:RBC Count"
+            ],
+            [
+              "error",
+              "value_not_in_quote:Platelet Count"
+            ]
+          ],
+          "fact_14": [
+            [
+              "error",
+              "quote_not_found"
+            ]
+          ],
+          "fact_15": [
+            [
+              "error",
+              "quote_not_found"
+            ]
+          ],
+          "fact_16": [
+            [
+              "error",
+              "quote_not_found"
+            ]
+          ],
+          "fact_17": [
+            [
+              "error",
+              "quote_not_found"
+            ],
+            [
+              "error",
+              "value_not_in_quote:Specific Gravity"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "page_number": 2,
+      "status": "ok",
+      "fact_count": 10,
+      "elapsed_seconds": 13.076,
+      "attempts": [
+        {
+          "attempt": 1,
+          "fact_count": 10,
+          "failing_facts": 0,
+          "graph_errors": [],
+          "error_counts": {},
+          "elapsed_seconds": 13.076,
+          "usage": {
+            "input_tokens": 1866,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 1725,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 3591
+          }
+        }
+      ],
+      "usage": {
+        "input_tokens": 1866,
+        "output_tokens": 1725,
+        "total_tokens": 3591
+      },
+      "validation": {
+        "unsupported_rate": 0.0,
+        "unsupported_facts": 0,
+        "graph_errors": [],
+        "error_counts": {},
+        "fact_flags": {}
+      }
+    },
+    {
+      "page_number": 3,
+      "status": "ok",
+      "fact_count": 1,
+      "elapsed_seconds": 2.236,
+      "attempts": [
+        {
+          "attempt": 1,
+          "fact_count": 1,
+          "failing_facts": 0,
+          "graph_errors": [],
+          "error_counts": {},
+          "elapsed_seconds": 2.236,
+          "usage": {
+            "input_tokens": 2045,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 196,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 2241
+          }
+        }
+      ],
+      "usage": {
+        "input_tokens": 2045,
+        "output_tokens": 196,
+        "total_tokens": 2241
+      },
+      "validation": {
+        "unsupported_rate": 0.0,
+        "unsupported_facts": 0,
+        "graph_errors": [],
+        "error_counts": {},
+        "fact_flags": {}
+      }
+    },
+    {
+      "page_number": 4,
+      "status": "ok",
+      "fact_count": 10,
+      "elapsed_seconds": 8.308,
+      "attempts": [
+        {
+          "attempt": 1,
+          "fact_count": 10,
+          "failing_facts": 0,
+          "graph_errors": [],
+          "error_counts": {},
+          "elapsed_seconds": 8.308,
+          "usage": {
+            "input_tokens": 1814,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 1074,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 2888
+          }
+        }
+      ],
+      "usage": {
+        "input_tokens": 1814,
+        "output_tokens": 1074,
+        "total_tokens": 2888
+      },
+      "validation": {
+        "unsupported_rate": 0.0,
+        "unsupported_facts": 0,
+        "graph_errors": [],
+        "error_counts": {},
+        "fact_flags": {}
+      }
+    },
+    {
+      "page_number": 5,
+      "status": "ok_with_validation_errors",
+      "fact_count": 1,
+      "elapsed_seconds": 5.837,
+      "attempts": [
+        {
+          "attempt": 1,
+          "fact_count": 1,
+          "failing_facts": 1,
+          "graph_errors": [],
+          "error_counts": {
+            "date_not_in_quote": 1
+          },
+          "elapsed_seconds": 3.399,
+          "usage": {
+            "input_tokens": 1814,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 276,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 2090
+          }
+        },
+        {
+          "attempt": 2,
+          "fact_count": 1,
+          "failing_facts": 1,
+          "graph_errors": [],
+          "error_counts": {
+            "date_not_in_quote": 1
+          },
+          "elapsed_seconds": 2.438,
+          "usage": {
+            "input_tokens": 2175,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 270,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 2445
+          }
+        }
+      ],
+      "usage": {
+        "input_tokens": 3989,
+        "output_tokens": 546,
+        "total_tokens": 4535
+      },
+      "validation": {
+        "unsupported_rate": 1.0,
+        "unsupported_facts": 1,
+        "graph_errors": [],
+        "error_counts": {
+          "date_not_in_quote": 1
+        },
+        "fact_flags": {
+          "fact_1": [
+            [
+              "error",
+              "date_not_in_quote"
+            ]
+          ]
+        }
+      }
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "fact_count": 17,
+      "failing_facts": 6,
+      "graph_errors": [],
+      "error_counts": {
+        "value_not_in_quote:duration": 1,
+        "value_not_in_quote:Haemoglobin": 1,
+        "value_not_in_quote:Neutrophils": 1,
+        "value_not_in_quote:Lymphocytes": 1,
+        "value_not_in_quote:Eosinophils": 1,
+        "value_not_in_quote:RBC Count": 1,
+        "value_not_in_quote:Platelet Count": 1,
+        "quote_not_found": 4,
+        "value_not_in_quote:Specific Gravity": 1
+      },
+      "elapsed_seconds": 36.568,
+      "usage": {
+        "input_tokens": 2181,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 3342,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 5523
+      }
+    },
+    {
+      "attempt": 2,
+      "fact_count": 17,
+      "failing_facts": 5,
+      "graph_errors": [],
+      "error_counts": {
+        "value_not_in_quote:Haemoglobin": 1,
+        "value_not_in_quote:Neutrophils": 1,
+        "value_not_in_quote:Lymphocytes": 1,
+        "value_not_in_quote:Eosinophils": 1,
+        "value_not_in_quote:RBC Count": 1,
+        "value_not_in_quote:Platelet Count": 1,
+        "quote_not_found": 4,
+        "value_not_in_quote:Specific Gravity": 1
+      },
+      "elapsed_seconds": 27.854,
+      "usage": {
+        "input_tokens": 5869,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 3369,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 9238
+      }
+    },
+    {
+      "attempt": 1,
+      "fact_count": 10,
+      "failing_facts": 0,
+      "graph_errors": [],
+      "error_counts": {},
+      "elapsed_seconds": 13.076,
+      "usage": {
+        "input_tokens": 1866,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1725,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3591
+      }
+    },
+    {
+      "attempt": 1,
+      "fact_count": 1,
+      "failing_facts": 0,
+      "graph_errors": [],
+      "error_counts": {},
+      "elapsed_seconds": 2.236,
+      "usage": {
+        "input_tokens": 2045,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 196,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2241
+      }
+    },
+    {
+      "attempt": 1,
+      "fact_count": 10,
+      "failing_facts": 0,
+      "graph_errors": [],
+      "error_counts": {},
+      "elapsed_seconds": 8.308,
+      "usage": {
+        "input_tokens": 1814,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1074,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2888
+      }
+    },
+    {
+      "attempt": 1,
+      "fact_count": 1,
+      "failing_facts": 1,
+      "graph_errors": [],
+      "error_counts": {
+        "date_not_in_quote": 1
+      },
+      "elapsed_seconds": 3.399,
+      "usage": {
+        "input_tokens": 1814,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 276,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2090
+      }
+    },
+    {
+      "attempt": 2,
+      "fact_count": 1,
+      "failing_facts": 1,
+      "graph_errors": [],
+      "error_counts": {
+        "date_not_in_quote": 1
+      },
+      "elapsed_seconds": 2.438,
+      "usage": {
+        "input_tokens": 2175,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 270,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2445
+      }
+    }
+  ],
+  "elapsed_seconds": 93.887,
+  "usage": {
+    "input_tokens": 17764,
+    "output_tokens": 10252,
+    "total_tokens": 28016
+  },
+  "timestamp_utc": "2026-10-10T14:30:38.435467+00:00",
+  "pages_failed": []
+}

@@ -16,6 +16,7 @@ from validate import norm
 ALIGNMENT_THRESHOLD = 0.55
 MIN_NAME_SIMILARITY = 0.50
 ATTRIBUTE_VALUE_THRESHOLD = 85
+CANDIDATE_NAME_THRESHOLD = 0.70
 
 CONTEXT_FIELDS = [
     "status",
@@ -80,7 +81,25 @@ def pair_score(pred_fact, gold_fact) -> float:
     )
 
 
-def align(pred_facts, gold_facts, threshold: float = ALIGNMENT_THRESHOLD):
+def candidate_pair_score(candidate, gold_fact) -> float:
+    """
+    Score a CandidateFact against a gold ClinicalFact on name and category only.
+
+    Category is just a tie-breaker between equally named candidates, so
+    category precision is not inflated by the matching itself.
+    """
+    name_score = (
+        fuzz.token_set_ratio(
+            norm(candidate.raw_name),
+            norm(gold_fact.name),
+        )
+        / 100
+    )
+    category_bonus = 0.01 if candidate.category_hint == gold_fact.category else 0.0
+    return name_score + category_bonus
+
+
+def align(pred_facts, gold_facts, threshold: float = ALIGNMENT_THRESHOLD, scorer=pair_score):
     """
     Return one-to-one matches as:
         [(predicted_index, gold_index, similarity_score), ...]
@@ -93,7 +112,7 @@ def align(pred_facts, gold_facts, threshold: float = ALIGNMENT_THRESHOLD):
 
     similarity_matrix = np.array(
         [
-            [pair_score(pred, gold) for gold in gold_facts]
+            [scorer(pred, gold) for gold in gold_facts]
             for pred in pred_facts
         ]
     )
@@ -349,6 +368,51 @@ def evaluate_patient(pred, gold, reports, sidecar: dict | None = None):
     }
 
     return counts, errors
+
+
+def evaluate_candidates(candidates, gold, threshold: float = CANDIDATE_NAME_THRESHOLD) -> dict:
+    """
+    Compare discovered candidates with gold clinical facts by name and category.
+
+    name_recall: share of gold facts matched by a candidate name.
+    category_precision: share of matched candidates whose category hint
+    equals the gold category.
+    """
+    gold_facts = gold.clinical_facts
+    matches = align(candidates, gold_facts, threshold, scorer=candidate_pair_score)
+    matched_gold = {gold_index for _, gold_index, _ in matches}
+    category_correct = sum(
+        candidates[cand_index].category_hint == gold_facts[gold_index].category
+        for cand_index, gold_index, _ in matches
+    )
+
+    return {
+        "name_recall": len(matches) / max(len(gold_facts), 1),
+        "category_precision": category_correct / max(len(matches), 1),
+        "counts": {
+            "candidates": len(candidates),
+            "gold_facts": len(gold_facts),
+            "matched_gold": len(matches),
+            "category_correct": category_correct,
+        },
+        "missed_gold": [
+            {"gold_fact_id": fact.fact_id, "name": fact.name, "category": fact.category}
+            for index, fact in enumerate(gold_facts)
+            if index not in matched_gold
+        ],
+        "matches": [
+            {
+                "candidate_id": candidates[cand_index].candidate_id,
+                "candidate_name": candidates[cand_index].raw_name,
+                "category_hint": candidates[cand_index].category_hint,
+                "gold_fact_id": gold_facts[gold_index].fact_id,
+                "gold_name": gold_facts[gold_index].name,
+                "gold_category": gold_facts[gold_index].category,
+                "score": round(score, 3),
+            }
+            for cand_index, gold_index, score in matches
+        ],
+    }
 
 
 # ---------- Aggregate results across documents ----------

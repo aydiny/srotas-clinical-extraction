@@ -6,20 +6,75 @@ from datetime import datetime, timezone
 from dotenv import load_dotenv
 from openai import OpenAI
 
-from prompts import PROMPT_LIBRARY
-from config import PROMPT_VERSION, MODEL, SECTION_HINTS, TEMPERATURE
-from schemas import PatientRepresentation
-from validate import validate_patient
+from prompts import PROMPT_LIBRARY, CANDIDATE_DISCOVERY_PROMPTS
+from config import (
+    PROMPT_VERSION,
+    MODEL,
+    SECTION_HINTS,
+    TEMPERATURE,
+    CANDIDATE_PROMPT_VERSION,
+    CANDIDATE_MODEL,
+    CANDIDATE_MAX_OUTPUT_TOKENS,
+    OPENROUTER_BASE_URL,
+    resolve_provider,
+)
+from schemas import PatientRepresentation, CandidateFactInventory
+from validate import validate_patient, norm
 
 load_dotenv()
 
 EXTRACTION_INSTRUCTIONS = PROMPT_LIBRARY[PROMPT_VERSION]
+CANDIDATE_INSTRUCTIONS = CANDIDATE_DISCOVERY_PROMPTS[CANDIDATE_PROMPT_VERSION]
 
-def _client() -> OpenAI:
+
+def _client(model: str | None = None) -> OpenAI:
+    if resolve_provider(model) == "openrouter":
+        key = os.getenv("OPENROUTER_API_KEY")
+        if not key:
+            raise RuntimeError("OPENROUTER_API_KEY is not set (check your .env).")
+        return OpenAI(api_key=key, base_url=OPENROUTER_BASE_URL, timeout=120.0, max_retries=2)
     key = os.getenv("OPENAI_API_KEY")
     if not key:
         raise RuntimeError("OPENAI_API_KEY is not set (check your .env).")
     return OpenAI(api_key=key, timeout=120.0, max_retries=2)  # transient errors only
+
+
+def _parse(client: OpenAI, model: str, instructions: str, messages: list[dict],
+           text_format, max_output_tokens: int):
+    """Structured-output call. Returns (parsed, raw_text, usage, model_returned)."""
+    if resolve_provider(model) == "openrouter":
+        resp = client.chat.completions.parse(
+            model=model,
+            messages=[{"role": "system", "content": instructions}, *messages],
+            response_format=text_format,
+            temperature=TEMPERATURE,
+            max_tokens=max_output_tokens,
+            # Only route to OpenRouter providers that honour response_format.
+            extra_body={"provider": {"require_parameters": True}},
+        )
+        message = resp.choices[0].message
+        if message.parsed is None:
+            raise RuntimeError(f"No usable output: refusal={message.refusal!r}")
+        usage = {
+            "input_tokens": resp.usage.prompt_tokens if resp.usage else 0,
+            "output_tokens": resp.usage.completion_tokens if resp.usage else 0,
+            "total_tokens": resp.usage.total_tokens if resp.usage else 0,
+        }
+        return message.parsed, message.content, usage, resp.model
+
+    resp = client.responses.parse(
+        model=model,
+        instructions=instructions,
+        input=messages,
+        text_format=text_format,
+        temperature=TEMPERATURE,
+        max_output_tokens=max_output_tokens,
+        store=False,
+    )
+    if resp.status != "completed" or resp.output_parsed is None:
+        raise RuntimeError(f"No usable output: {resp.status}, {resp.incomplete_details}")
+    usage = resp.usage.model_dump() if resp.usage else None
+    return resp.output_parsed, resp.output_text, usage, resp.model
 
 
 def build_input(pages: list[dict]) -> str:
@@ -67,27 +122,19 @@ def _sum_usage(attempts: list[dict]) -> dict:
     }
 
 
-def extract_document(pages: list[dict], client: OpenAI | None = None):
-    client = client or _client()
+def extract_document(pages: list[dict], client: OpenAI | None = None, model: str | None = None):
+    model = model or MODEL
+    client = client or _client(model)
     messages = [{"role": "user", "content": build_input(pages)}]
     attempts = []
     started = time.perf_counter()
 
     for attempt in (1, 2):
         attempt_started = time.perf_counter()
-        resp = client.responses.parse(
-            model=MODEL, 
-            instructions=EXTRACTION_INSTRUCTIONS, 
-            input=messages,
-            text_format=PatientRepresentation, 
-            temperature=TEMPERATURE,
-            max_output_tokens=12000, 
-            store=False,
+        patient, raw_text, usage, model_returned = _parse(
+            client, model, EXTRACTION_INSTRUCTIONS, messages, PatientRepresentation, 12000,
         )
-        if resp.status != "completed" or resp.output_parsed is None:
-            raise RuntimeError(f"No usable output: {resp.status}, {resp.incomplete_details}")
 
-        patient = resp.output_parsed
         doc = pages[0]["source_document"]
         page_map = {p["page_number"]: p["raw_text"] for p in pages}
         reports, summary = validate_patient(patient, page_map, doc)
@@ -97,17 +144,18 @@ def extract_document(pages: list[dict], client: OpenAI | None = None):
             "failing_facts": len(failing),
             "graph_errors": summary["graph_errors"],
             "elapsed_seconds": round(time.perf_counter() - attempt_started, 3),
-            "usage": resp.usage.model_dump() if resp.usage else None,
+            "usage": usage,
         })
 
         if (not failing and not summary["graph_errors"]) or attempt == 2:
             break  # keep the best effort; remaining failures stay visible in the report
-        messages += [{"role": "assistant", "content": resp.output_text},
+        messages += [{"role": "assistant", "content": raw_text},
                      {"role": "user", "content": _feedback(patient, reports, summary["graph_errors"])}]
 
     meta = {
         "source_document": pages[0]["source_document"],
-        "model": resp.model,
+        "model": model_returned,
+        "provider": resolve_provider(model),
         "prompt_version": PROMPT_VERSION,
         "attempts": attempts,
         "elapsed_seconds": round(time.perf_counter() - started, 3),
@@ -115,3 +163,73 @@ def extract_document(pages: list[dict], client: OpenAI | None = None):
         "timestamp_utc": datetime.now(timezone.utc).isoformat(),
     }
     return patient, meta
+
+
+def extract_candidates(pages: list[dict], client: OpenAI | None = None, model: str | None = None):
+    """High-recall candidate discovery: one structured call per non-empty page."""
+    model = model or CANDIDATE_MODEL
+    client = client or _client(model)
+    candidates = []
+    page_runs = []
+    model_returned = model
+    started = time.perf_counter()
+
+    for page in sorted(pages, key=lambda p: p["page_number"]):
+        if not (page.get("raw_text") or "").strip():
+            continue
+        page_started = time.perf_counter()
+        try:
+            inventory, _, usage, model_returned = _parse(
+                client, model, CANDIDATE_INSTRUCTIONS,
+                [{"role": "user", "content": build_input([page])}],
+                CandidateFactInventory, CANDIDATE_MAX_OUTPUT_TOKENS,
+            )
+        except Exception as exc:
+            # Small models can loop until the token cap; keep the other pages.
+            page_runs.append({
+                "page_number": page["page_number"],
+                "status": "failed",
+                "error": f"{type(exc).__name__}: {str(exc)[:300]}",
+                "candidates": 0,
+                "evidence_not_found": 0,
+                "elapsed_seconds": round(time.perf_counter() - page_started, 3),
+                "usage": None,
+            })
+            continue
+
+        page_text = norm(page["raw_text"])
+        evidence_not_found = 0
+        for cand in inventory.candidates:
+            cand.page_number = page["page_number"]
+            cand.candidate_id = f"candidate_{len(candidates) + 1}"
+            if norm(cand.evidence_text) not in page_text:
+                evidence_not_found += 1
+            candidates.append(cand)
+
+        page_runs.append({
+            "page_number": page["page_number"],
+            "status": "ok",
+            "candidates": len(inventory.candidates),
+            "evidence_not_found": evidence_not_found,
+            "elapsed_seconds": round(time.perf_counter() - page_started, 3),
+            "usage": usage,
+        })
+
+    pages_failed = [r["page_number"] for r in page_runs if r["status"] == "failed"]
+    if page_runs and len(pages_failed) == len(page_runs):
+        raise RuntimeError(f"Candidate discovery failed on every page: {page_runs[-1]['error']}")
+
+    meta = {
+        "source_document": pages[0]["source_document"],
+        "model": model_returned,
+        "provider": resolve_provider(model),
+        "prompt_version": CANDIDATE_PROMPT_VERSION,
+        "candidate_count": len(candidates),
+        "pages_failed": pages_failed,
+        "evidence_not_found": sum(r["evidence_not_found"] for r in page_runs),
+        "attempts": page_runs,
+        "elapsed_seconds": round(time.perf_counter() - started, 3),
+        "usage": _sum_usage(page_runs),
+        "timestamp_utc": datetime.now(timezone.utc).isoformat(),
+    }
+    return CandidateFactInventory(candidates=candidates), meta

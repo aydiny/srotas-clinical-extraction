@@ -1,0 +1,79 @@
+document,error_class,gold_fact_id,pred_fact_id,fact_name,gold_value,predicted_value,similarity
+Cecilia-Zemlak-summary.pdf,wrong_status,CZ-01,fact_1,Malignant neoplasm of breast,unknown,active,0.722
+Cecilia-Zemlak-summary.pdf,wrong_temporality,CZ-01,fact_1,Malignant neoplasm of breast,unknown,current,0.722
+Cecilia-Zemlak-summary.pdf,wrong_or_missing_attribute,CZ-01,fact_1,Malignant neoplasm of breast,snomed_ct_code=254837009,,0.722
+Cecilia-Zemlak-summary.pdf,wrong_or_missing_attribute,CZ-01,fact_1,Malignant neoplasm of breast,status_note=Source headings say chronic/confirmed; assessment says history of breast cancer in remission; current activity not explicit,,0.722
+Cecilia-Zemlak-summary.pdf,unsupported_matched_fact,CZ-01,fact_1,Malignant Neoplasm of Breast,,,0.722
+Cecilia-Zemlak-summary.pdf,wrong_or_missing_attribute,CZ-09,fact_2,Smoking,smoking_status=active,,0.786
+Cecilia-Zemlak-summary.pdf,wrong_or_missing_attribute,CZ-09,fact_2,Smoking,category_note=social history,,0.786
+Cecilia-Zemlak-summary.pdf,wrong_or_missing_attribute,CZ-10,fact_3,Alcohol use disorder (documented as alcoholism),source_term=alcoholism,,0.786
+Cecilia-Zemlak-summary.pdf,wrong_or_missing_attribute,CZ-10,fact_3,Alcohol use disorder (documented as alcoholism),category_note=social history,,0.786
+Cecilia-Zemlak-summary.pdf,wrong_status,CZ-05,fact_6,"Surgical intervention (excision, biopsy)",historical,active,1.0
+Cecilia-Zemlak-summary.pdf,wrong_temporality,CZ-05,fact_6,"Surgical intervention (excision, biopsy)",historical,current,1.0
+Cecilia-Zemlak-summary.pdf,wrong_or_missing_attribute,CZ-05,fact_6,"Surgical intervention (excision, biopsy)","detail=excision, biopsy",,1.0
+Cecilia-Zemlak-summary.pdf,wrong_or_missing_attribute,CZ-05,fact_6,"Surgical intervention (excision, biopsy)",date_status=not documented,,1.0
+Cecilia-Zemlak-summary.pdf,wrong_status,CZ-07,fact_7,Metastasis,unknown,historical,1.0
+Cecilia-Zemlak-summary.pdf,wrong_temporality,CZ-07,fact_7,Metastasis,unknown,historical,1.0
+Cecilia-Zemlak-summary.pdf,wrong_is_negated,CZ-07,fact_7,Metastasis,True,False,1.0
+Cecilia-Zemlak-summary.pdf,wrong_or_missing_attribute,CZ-07,fact_7,Metastasis,"assertion_scope=no documented metastasis in follow-up; absence of documentation, not proof of absence",,1.0
+Cecilia-Zemlak-summary.pdf,wrong_status,CZ-11,fact_8,Essential hypertension,unknown,active,0.82
+Cecilia-Zemlak-summary.pdf,wrong_temporality,CZ-11,fact_8,Essential hypertension,unknown,current,0.82
+Cecilia-Zemlak-summary.pdf,wrong_certainty,CZ-11,fact_8,Essential hypertension,unknown,confirmed,0.82
+Cecilia-Zemlak-summary.pdf,wrong_or_missing_attribute,CZ-11,fact_8,Essential hypertension,"source_conflict=Heading says Chronic, Confirmed; text says no explicit diagnosis is documented",,0.82
+Cecilia-Zemlak-summary.pdf,wrong_status,CZ-12,fact_9,Blood pressure elevations,unknown,active,0.829
+Cecilia-Zemlak-summary.pdf,wrong_temporality,CZ-12,fact_9,Blood pressure elevations,historical,current,0.829
+Cecilia-Zemlak-summary.pdf,wrong_certainty,CZ-12,fact_9,Blood pressure elevations,confirmed,unknown,0.829
+Cecilia-Zemlak-summary.pdf,wrong_or_missing_attribute,CZ-12,fact_9,Blood pressure elevations,pattern=intermittent,,0.829
+Cecilia-Zemlak-summary.pdf,wrong_or_missing_attribute,CZ-12,fact_9,Blood pressure elevations,numeric_values=not documented,,0.829
+Cecilia-Zemlak-summary.pdf,wrong_or_missing_attribute,CZ-13,fact_10,Chronic intractable migraine without aura,pattern=episodic,,1.0
+Cecilia-Zemlak-summary.pdf,wrong_or_missing_attribute,CZ-13,fact_10,Chronic intractable migraine without aura,source_hedge=consistent with migraine or sinus-related symptoms,,1.0
+Cecilia-Zemlak-summary.pdf,wrong_status,CZ-06,fact_12,Breast cancer recurrence,unknown,historical,0.727
+Cecilia-Zemlak-summary.pdf,wrong_temporality,CZ-06,fact_12,Breast cancer recurrence,unknown,historical,0.727
+Cecilia-Zemlak-summary.pdf,wrong_is_negated,CZ-06,fact_12,Breast cancer recurrence,True,False,0.727
+Cecilia-Zemlak-summary.pdf,wrong_or_missing_attribute,CZ-06,fact_12,Breast cancer recurrence,"assertion_scope=no documented recurrence in follow-up; absence of documentation, not proof of absence",,0.727
+Cecilia-Zemlak-summary.pdf,wrong_status,CZ-16,fact_13,Diabetes mellitus,unknown,historical,1.0
+Cecilia-Zemlak-summary.pdf,wrong_temporality,CZ-16,fact_13,Diabetes mellitus,unknown,historical,1.0
+Cecilia-Zemlak-summary.pdf,wrong_or_missing_attribute,CZ-16,fact_13,Diabetes mellitus,assertion_scope=no documented history; absence of documentation,,1.0
+Cecilia-Zemlak-summary.pdf,wrong_status,CZ-17,fact_14,Chronic kidney disease,unknown,historical,1.0
+Cecilia-Zemlak-summary.pdf,wrong_temporality,CZ-17,fact_14,Chronic kidney disease,unknown,historical,1.0
+Cecilia-Zemlak-summary.pdf,wrong_or_missing_attribute,CZ-17,fact_14,Chronic kidney disease,assertion_scope=no documented history; absence of documentation,,1.0
+Cecilia-Zemlak-summary.pdf,unsupported_matched_fact,CZ-17,fact_14,No documented history of Chronic kidney disease,,,1.0
+Cecilia-Zemlak-summary.pdf,wrong_or_missing_attribute,CZ-19,fact_17,Penicillin,pattern=episodic,,1.0
+Cecilia-Zemlak-summary.pdf,wrong_or_missing_attribute,CZ-19,fact_17,Penicillin,indication=infections,,1.0
+Cecilia-Zemlak-summary.pdf,wrong_or_missing_attribute,CZ-19,fact_17,Penicillin,dose=not documented,,1.0
+Cecilia-Zemlak-summary.pdf,wrong_or_missing_attribute,CZ-20,fact_26,Mammography,indication=breast cancer,,1.0
+Cecilia-Zemlak-summary.pdf,wrong_or_missing_attribute,CZ-20,fact_26,Mammography,date_status=not documented,,1.0
+Cecilia-Zemlak-summary.pdf,wrong_status,CZ-02,fact_31,HER2 status,unknown,active,0.553
+Cecilia-Zemlak-summary.pdf,wrong_temporality,CZ-02,fact_31,HER2 status,historical,current,0.553
+Cecilia-Zemlak-summary.pdf,wrong_or_missing_attribute,CZ-02,fact_31,HER2 status,test_value=positive,,0.553
+Cecilia-Zemlak-summary.pdf,missed,CZ-03,,Oestrogen receptor (ER) status,observation,,
+Cecilia-Zemlak-summary.pdf,missed,CZ-04,,Progesterone receptor (PR) status,observation,,
+Cecilia-Zemlak-summary.pdf,missed,CZ-08,,Ongoing surveillance,procedure,,
+Cecilia-Zemlak-summary.pdf,missed,CZ-14,,Recurrent headaches,symptom,,
+Cecilia-Zemlak-summary.pdf,missed,CZ-15,,Photophobia,symptom,,
+Cecilia-Zemlak-summary.pdf,missed,CZ-18,,Preeclampsia,condition,,
+Cecilia-Zemlak-summary.pdf,extra_supported,,fact_4,Musculoskeletal Injuries,,condition,
+Cecilia-Zemlak-summary.pdf,extra_supported,,fact_5,Respiratory Infections,,condition,
+Cecilia-Zemlak-summary.pdf,extra_supported,,fact_11,Pertinent Medical History,,observation,
+Cecilia-Zemlak-summary.pdf,unsupported,,fact_15,No documented history of Coronary artery disease,,condition,
+Cecilia-Zemlak-summary.pdf,unsupported,,fact_16,No documented history of Autoimmune disorders,,condition,
+Cecilia-Zemlak-summary.pdf,extra_supported,,fact_18,doxycycline,,medication,
+Cecilia-Zemlak-summary.pdf,extra_supported,,fact_19,acetaminophen,,medication,
+Cecilia-Zemlak-summary.pdf,extra_supported,,fact_20,meperidine,,medication,
+Cecilia-Zemlak-summary.pdf,extra_supported,,fact_21,chronic therapy,,observation,
+Cecilia-Zemlak-summary.pdf,extra_supported,,fact_22,vital signs,,observation,
+Cecilia-Zemlak-summary.pdf,extra_supported,,fact_23,CBC trends,,observation,
+Cecilia-Zemlak-summary.pdf,extra_supported,,fact_24,lipids and glucose,,observation,
+Cecilia-Zemlak-summary.pdf,extra_supported,,fact_25,X-rays,,procedure,
+Cecilia-Zemlak-summary.pdf,extra_supported,,fact_27,breast cancer,,condition,
+Cecilia-Zemlak-summary.pdf,unsupported,,fact_28,infections,,condition,
+Cecilia-Zemlak-summary.pdf,unsupported,,fact_29,injuries,,condition,
+Cecilia-Zemlak-summary.pdf,extra_supported,,fact_30,comorbidity,,observation,
+Cecilia-Zemlak-summary.pdf,extra_supported,,fact_32,healthcare utilization,,observation,
+Cecilia-Zemlak-summary.pdf,extra_supported,,fact_33,stable status,,condition,
+Cecilia-Zemlak-summary.pdf,extra_supported,,fact_34,Stage 2 breast cancer,,condition,
+Cecilia-Zemlak-summary.pdf,extra_supported,,fact_35,Episodic respiratory infections,,condition,
+Cecilia-Zemlak-summary.pdf,extra_supported,,fact_36,Musculoskeletal injuries,,condition,
+Cecilia-Zemlak-summary.pdf,extra_supported,,fact_37,No evidence of chronic progressive disease or complications,,observation,
+Cecilia-Zemlak-summary.pdf,extra_supported,,fact_38,Multiple pregnancies,,observation,
+Cecilia-Zemlak-summary.pdf,extra_supported,,fact_39,Low healthcare needs beyond acute events,,observation,

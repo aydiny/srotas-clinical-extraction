@@ -1,0 +1,81 @@
+{
+  "overall": {
+    "gold_recall": 0.7,
+    "precision_vs_gold_subset": 0.358974358974359,
+    "precision_excluding_extra_supported": 0.7777777777777778,
+    "extra_supported_facts": 21,
+    "unsupported_rate": 0.15384615384615385,
+    "context_accuracy": {
+      "status": 0.35714285714285715,
+      "temporality": 0.35714285714285715,
+      "certainty": 0.8571428571428571,
+      "is_negated": 0.8571428571428571
+    },
+    "attribute_recall_on_matched_facts": 0.041666666666666664,
+    "counts": {
+      "predicted_facts": 39,
+      "gold_facts": 20,
+      "true_positives": 14,
+      "false_negatives": 6,
+      "unmatched_predictions": 25
+    }
+  },
+  "extraction": {
+    "documents": 1,
+    "elapsed_seconds": 93.255,
+    "mean_elapsed_seconds": 93.255,
+    "input_tokens": 19341,
+    "output_tokens": 12312,
+    "total_tokens": 31653
+  },
+  "documents_failed": [],
+  "per_document": {
+    "Cecilia-Zemlak-summary.pdf": {
+      "status": "ok_with_validation_errors",
+      "facts": 39,
+      "validation": {
+        "unsupported_rate": 0.15384615384615385,
+        "graph_errors": [],
+        "fact_count": 39,
+        "unsupported_facts": 6,
+        "error_counts": {
+          "value_not_in_quote:stage": 1,
+          "quote_not_found": 5
+        }
+      },
+      "extraction": {
+        "elapsed_seconds": 93.255,
+        "attempts": 7,
+        "input_tokens": 19341,
+        "output_tokens": 12312,
+        "total_tokens": 31653,
+        "extract_by_page": true,
+        "pages": 4,
+        "pages_ok": 4
+      },
+      "counts": {
+        "predicted_facts": 39,
+        "gold_facts": 20,
+        "true_positives": 14,
+        "false_negatives": 6,
+        "unmatched_predictions": 25,
+        "extra_supported": 21,
+        "unsupported_unmatched": 4,
+        "unsupported_total": 6,
+        "context_correct": {
+          "certainty": 12,
+          "is_negated": 12,
+          "status": 5,
+          "temporality": 5
+        },
+        "attributes_total": 24,
+        "attributes_correct": 1
+      }
+    }
+  },
+  "model_name": "gpt-4o-mini",
+  "prompt_version": "clinical_extraction_v6",
+  "section_hints": false,
+  "extract_by_page": true,
+  "temperature": 0
+}

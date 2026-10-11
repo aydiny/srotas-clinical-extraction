@@ -1,0 +1,921 @@
+{
+  "patient_id": null,
+  "patient_name": "Cecilia Zemlak",
+  "age": 58,
+  "sex": "Female",
+  "clinical_facts": [
+    {
+      "fact_id": "fact_1",
+      "category": "condition",
+      "name": "Malignant Neoplasm of Breast",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [
+        {
+          "name": "stage",
+          "value": "2",
+          "unit": null
+        },
+        {
+          "name": "HER2 status",
+          "value": "positive",
+          "unit": null
+        },
+        {
+          "name": "ER status",
+          "value": "positive",
+          "unit": null
+        },
+        {
+          "name": "PR status",
+          "value": "positive",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "Cecilia Zemlak is a middle-aged female with a documented history of multiple pregnancies, musculoskeletal injuries, respiratory infections, and later breast cancer, managed primarily in outpatient settings with intermittent utilization of acute care services.",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 1
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_2",
+      "category": "observation",
+      "name": "Active Smoking",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "Social history consistently notes active smoking and alcoholism, which may contribute to health risks.",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 1
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_3",
+      "category": "observation",
+      "name": "Alcoholism",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "Social history consistently notes active smoking and alcoholism, which may contribute to health risks.",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 1
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_4",
+      "category": "condition",
+      "name": "Musculoskeletal Injuries",
+      "status": "historical",
+      "is_negated": false,
+      "certainty": "unknown",
+      "temporality": "historical",
+      "date": null,
+      "attributes": [],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "Cecilia Zemlak is a middle-aged female with a documented history of multiple pregnancies, musculoskeletal injuries, respiratory infections, and later breast cancer, managed primarily in outpatient settings with intermittent utilization of acute care services.",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 1
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_5",
+      "category": "condition",
+      "name": "Respiratory Infections",
+      "status": "historical",
+      "is_negated": false,
+      "certainty": "unknown",
+      "temporality": "historical",
+      "date": null,
+      "attributes": [],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "Cecilia Zemlak is a middle-aged female with a documented history of multiple pregnancies, musculoskeletal injuries, respiratory infections, and later breast cancer, managed primarily in outpatient settings with intermittent utilization of acute care services.",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 1
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_6",
+      "category": "procedure",
+      "name": "Surgical intervention",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [
+        {
+          "name": "type",
+          "value": "excision, biopsy",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "Surgical intervention (excision, biopsy)",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 2
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_7",
+      "category": "condition",
+      "name": "No documented recurrence or metastasis",
+      "status": "historical",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "historical",
+      "date": null,
+      "attributes": [],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "No documented recurrence or metastasis in follow-up",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 2
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_8",
+      "category": "condition",
+      "name": "Essential Hypertension",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [
+        {
+          "name": "type",
+          "value": "Chronic",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "Essential Hypertension (Chronic, Confirmed)",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 2
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_9",
+      "category": "observation",
+      "name": "Intermittent blood pressure elevations",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "unknown",
+      "temporality": "current",
+      "date": null,
+      "attributes": [],
+      "related_to_fact_ids": [
+        "fact_8"
+      ],
+      "provenance": [
+        {
+          "source_text_quote": "Intermittent blood pressure elevations are noted, but no explicit diagnosis is documented in excerpts.",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 2
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_10",
+      "category": "condition",
+      "name": "Chronic Intractable Migraine Without Aura",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [
+        {
+          "name": "type",
+          "value": "Episodic",
+          "unit": null
+        },
+        {
+          "name": "associated symptoms",
+          "value": "Recurrent headaches with sinus pain, nasal congestion, sore throat, facial swelling, photophobia, and cough",
+          "unit": null
+        },
+        {
+          "name": "characteristics",
+          "value": "Recurrent episodes, Partial response to treatments, No progressive neurologic disease",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "Chronic Intractable Migraine Without Aura (Episodic, Confirmed)",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 2
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_11",
+      "category": "observation",
+      "name": "Pertinent Medical History",
+      "status": "historical",
+      "is_negated": false,
+      "certainty": "unknown",
+      "temporality": "historical",
+      "date": null,
+      "attributes": [
+        {
+          "name": "details",
+          "value": "multiple pregnancies (normal and complicated by preeclampsia, tubal pregnancy, miscarriage), musculoskeletal injuries (sprains, fractures of ankle, wrist, clavicle), respiratory infections (acute bronchitis, viral pharyngitis, sinusitis), and childhood normal development.",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "The record includes multiple pregnancies (normal and complicated by preeclampsia, tubal pregnancy, miscarriage), musculoskeletal injuries (sprains, fractures of ankle, wrist, clavicle), respiratory infections (acute bronchitis, viral pharyngitis, sinusitis), and childhood normal development.",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 2
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_12",
+      "category": "condition",
+      "name": "Breast cancer",
+      "status": "historical",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "historical",
+      "date": null,
+      "attributes": [
+        {
+          "name": "year",
+          "value": "2020",
+          "unit": null
+        },
+        {
+          "name": "outcome",
+          "value": "no chronic sequelae from early issues documented",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "Breast cancer in 2020 is the major adult event, with no chronic sequelae from early issues documented.",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 2
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_13",
+      "category": "condition",
+      "name": "No documented history of Diabetes mellitus",
+      "status": "historical",
+      "is_negated": true,
+      "certainty": "confirmed",
+      "temporality": "historical",
+      "date": null,
+      "attributes": [],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "There is no documented history of: Diabetes mellitus",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 2
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_14",
+      "category": "condition",
+      "name": "No documented history of Chronic kidney disease",
+      "status": "historical",
+      "is_negated": true,
+      "certainty": "confirmed",
+      "temporality": "historical",
+      "date": null,
+      "attributes": [],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "There is no documented history of: Chronic kidney disease",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 2
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_15",
+      "category": "condition",
+      "name": "No documented history of Coronary artery disease",
+      "status": "historical",
+      "is_negated": true,
+      "certainty": "confirmed",
+      "temporality": "historical",
+      "date": null,
+      "attributes": [],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "There is no documented history of: Coronary artery disease",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 2
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_16",
+      "category": "condition",
+      "name": "No documented history of Autoimmune disorders",
+      "status": "historical",
+      "is_negated": true,
+      "certainty": "confirmed",
+      "temporality": "historical",
+      "date": null,
+      "attributes": [],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "There is no documented history of: Autoimmune disorders",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 2
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_17",
+      "category": "medication",
+      "name": "penicillin",
+      "status": "historical",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "historical",
+      "date": null,
+      "attributes": [
+        {
+          "name": "type",
+          "value": "episodic antibiotics",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "Episodic antibiotics (penicillin, doxycycline) for infections",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 3
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_18",
+      "category": "medication",
+      "name": "doxycycline",
+      "status": "historical",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "historical",
+      "date": null,
+      "attributes": [
+        {
+          "name": "type",
+          "value": "episodic antibiotics",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "Episodic antibiotics (penicillin, doxycycline) for infections",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 3
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_19",
+      "category": "medication",
+      "name": "acetaminophen",
+      "status": "historical",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "historical",
+      "date": null,
+      "attributes": [
+        {
+          "name": "type",
+          "value": "analgesics",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "Analgesics (acetaminophen, meperidine) for pain",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 3
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_20",
+      "category": "medication",
+      "name": "meperidine",
+      "status": "historical",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "historical",
+      "date": null,
+      "attributes": [
+        {
+          "name": "type",
+          "value": "analgesics",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "Analgesics (acetaminophen, meperidine) for pain",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 3
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_21",
+      "category": "observation",
+      "name": "chronic therapy",
+      "status": "historical",
+      "is_negated": true,
+      "certainty": "confirmed",
+      "temporality": "historical",
+      "date": null,
+      "attributes": [],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "No chronic therapy documented; no adherence issues noted",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 3
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_22",
+      "category": "observation",
+      "name": "vital signs",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [
+        {
+          "name": "tracking",
+          "value": "from infancy",
+          "unit": null
+        },
+        {
+          "name": "status",
+          "value": "normal growth",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "Vital signs tracked from infancy (normal growth)",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 3
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_23",
+      "category": "observation",
+      "name": "CBC trends",
+      "status": "historical",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "historical",
+      "date": null,
+      "attributes": [
+        {
+          "name": "status",
+          "value": "normal",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "Labs: CBC trends normal; later lipids, glucose variable but no abnormalities noted",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 3
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_24",
+      "category": "observation",
+      "name": "lipids and glucose",
+      "status": "historical",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "historical",
+      "date": null,
+      "attributes": [
+        {
+          "name": "status",
+          "value": "variable but no abnormalities noted",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "Labs: CBC trends normal; later lipids, glucose variable but no abnormalities noted",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 3
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_25",
+      "category": "procedure",
+      "name": "X-rays",
+      "status": "historical",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "historical",
+      "date": null,
+      "attributes": [
+        {
+          "name": "purpose",
+          "value": "for fractures",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "Imaging: X-rays for fractures, mammography for breast cancer",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 3
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_26",
+      "category": "procedure",
+      "name": "mammography",
+      "status": "historical",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "historical",
+      "date": null,
+      "attributes": [
+        {
+          "name": "purpose",
+          "value": "for breast cancer",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "Imaging: X-rays for fractures, mammography for breast cancer",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 3
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_27",
+      "category": "condition",
+      "name": "breast cancer",
+      "status": "resolved",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "historical",
+      "date": null,
+      "attributes": [
+        {
+          "name": "status",
+          "value": "in remission",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "Cecilia Zemlak represents a patient with: History of breast cancer in remission",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 3
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_28",
+      "category": "condition",
+      "name": "infections",
+      "status": "historical",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "historical",
+      "date": null,
+      "attributes": [
+        {
+          "name": "type",
+          "value": "episodic",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "Cecilia Zemlak represents a patient with: Episodic infections and injuries",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 3
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_29",
+      "category": "condition",
+      "name": "injuries",
+      "status": "historical",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "historical",
+      "date": null,
+      "attributes": [
+        {
+          "name": "type",
+          "value": "episodic",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "Cecilia Zemlak represents a patient with: Episodic infections and injuries",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 3
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_30",
+      "category": "observation",
+      "name": "comorbidity",
+      "status": "historical",
+      "is_negated": true,
+      "certainty": "confirmed",
+      "temporality": "historical",
+      "date": null,
+      "attributes": [],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "No significant competing comorbidity",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 3
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_31",
+      "category": "observation",
+      "name": "functional status",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [
+        {
+          "name": "independence",
+          "value": "functionally independent",
+          "unit": null
+        },
+        {
+          "name": "ambulatory",
+          "value": "ambulatory",
+          "unit": null
+        },
+        {
+          "name": "follow-up capability",
+          "value": "capable of routine follow-up",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "Cecilia Zemlak appears to remain: Functionally independent, Ambulatory, Capable of routine follow-up",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 3
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_32",
+      "category": "observation",
+      "name": "healthcare utilization",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [
+        {
+          "name": "utilization level",
+          "value": "moderate",
+          "unit": null
+        },
+        {
+          "name": "type",
+          "value": "primarily outpatient",
+          "unit": null
+        }
+      ],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "Utilization is moderate, primarily outpatient.",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 3
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_33",
+      "category": "condition",
+      "name": "stable status",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "Stable trajectory without progression.",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 3
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_34",
+      "category": "condition",
+      "name": "Stage 2 breast cancer",
+      "status": "historical",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "historical",
+      "date": null,
+      "attributes": [],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "Cecilia Zemlak is a 58-year-old female with a history of stage 2 breast cancer managed surgically",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 4
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_35",
+      "category": "condition",
+      "name": "Episodic respiratory infections",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "alongside episodic respiratory infections",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 4
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_36",
+      "category": "condition",
+      "name": "Musculoskeletal injuries",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "musculoskeletal injuries",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 4
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_37",
+      "category": "observation",
+      "name": "No evidence of chronic progressive disease or complications",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "without evidence of chronic progressive disease or complications",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 4
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_38",
+      "category": "observation",
+      "name": "Multiple pregnancies",
+      "status": "historical",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "historical",
+      "date": null,
+      "attributes": [],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "Her history reflects multiple pregnancies",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 4
+        }
+      ]
+    },
+    {
+      "fact_id": "fact_39",
+      "category": "observation",
+      "name": "Low healthcare needs beyond acute events",
+      "status": "active",
+      "is_negated": false,
+      "certainty": "confirmed",
+      "temporality": "current",
+      "date": null,
+      "attributes": [],
+      "related_to_fact_ids": [],
+      "provenance": [
+        {
+          "source_text_quote": "low healthcare needs beyond acute events",
+          "source_document": "Cecilia-Zemlak-summary.pdf",
+          "page_number": 4
+        }
+      ]
+    }
+  ]
+}

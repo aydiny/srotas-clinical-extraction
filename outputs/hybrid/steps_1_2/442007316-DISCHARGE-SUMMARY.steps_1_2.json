@@ -1,0 +1,3529 @@
+{
+  "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+  "scispacy_model": "en_core_sci_sm",
+  "elapsed_seconds": 0.274,
+  "summary": {
+    "pages": 5,
+    "chunks": 11,
+    "entities": 182,
+    "chunks_by_section": {
+      "clinical_header": 2,
+      "section": 3,
+      "preamble": 2,
+      "administrative_billing": 2,
+      "unclassified": 1,
+      "laboratory_results": 1
+    },
+    "negated_entities": 9,
+    "historical_entities": 1
+  },
+  "chunks": [
+    {
+      "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c0",
+      "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+      "page_number": 1,
+      "section": "clinical_header",
+      "section_heading": "DISCHARGE SUMMARY",
+      "text": "NAME OF THE PATIENT:        Mr. SONAIMUTHU \nAGE / SEX:                                                  71 Yrs / Male \nADDRESS:                                        Manamadurai \nDATE OF ADMISSION :              21/01/2019 \nDATE OF DISCHARGE:              25/01/2019 \nCONSULTANT:                              DR. Anand MBBS, MD . \nDIAGNOSIS:                                   LOWER OESOPHAGEAL HIATUS HERNIA",
+      "char_start": 21,
+      "char_end": 429,
+      "is_administrative": false,
+      "metadata": {
+        "step": 2,
+        "chunker": "section_aware_v1",
+        "entity_count": 16,
+        "negated_count": 0,
+        "historical_count": 0,
+        "context_engine": "local_v1"
+      },
+      "entities": [
+        {
+          "text": "NAME",
+          "label": "ENTITY",
+          "start_char": 0,
+          "end_char": 4,
+          "normalised": "name",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c0",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "PATIENT",
+          "label": "ENTITY",
+          "start_char": 12,
+          "end_char": 19,
+          "normalised": "patient",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c0",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "SONAIMUTHU",
+          "label": "ENTITY",
+          "start_char": 32,
+          "end_char": 42,
+          "normalised": "sonaimuthu",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c0",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "AGE",
+          "label": "ENTITY",
+          "start_char": 44,
+          "end_char": 47,
+          "normalised": "age",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c0",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "SEX",
+          "label": "ENTITY",
+          "start_char": 50,
+          "end_char": 53,
+          "normalised": "sex",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c0",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "Yrs",
+          "label": "ENTITY",
+          "start_char": 107,
+          "end_char": 110,
+          "normalised": "yrs",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c0",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "Male \nADDRESS",
+          "label": "ENTITY",
+          "start_char": 113,
+          "end_char": 126,
+          "normalised": "male address",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c0",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "Manamadurai \nDATE OF ADMISSION",
+          "label": "ENTITY",
+          "start_char": 167,
+          "end_char": 197,
+          "normalised": "manamadurai date of admission",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c0",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "DISCHARGE",
+          "label": "ENTITY",
+          "start_char": 233,
+          "end_char": 242,
+          "normalised": "discharge",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c0",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "CONSULTANT",
+          "label": "ENTITY",
+          "start_char": 269,
+          "end_char": 279,
+          "normalised": "consultant",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c0",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "DR",
+          "label": "ENTITY",
+          "start_char": 310,
+          "end_char": 312,
+          "normalised": "dr",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c0",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "Anand MBBS",
+          "label": "ENTITY",
+          "start_char": 314,
+          "end_char": 324,
+          "normalised": "anand mbbs",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c0",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "MD",
+          "label": "ENTITY",
+          "start_char": 326,
+          "end_char": 328,
+          "normalised": "md",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c0",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "DIAGNOSIS",
+          "label": "ENTITY",
+          "start_char": 332,
+          "end_char": 341,
+          "normalised": "diagnosis",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c0",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "LOWER OESOPHAGEAL HIATUS",
+          "label": "ENTITY",
+          "start_char": 377,
+          "end_char": 401,
+          "normalised": "lower oesophageal hiatus",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c0",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "HERNIA",
+          "label": "ENTITY",
+          "start_char": 402,
+          "end_char": 408,
+          "normalised": "hernia",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c0",
+          "page_number": 1,
+          "section": "clinical_header"
+        }
+      ]
+    },
+    {
+      "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c1",
+      "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+      "page_number": 1,
+      "section": "clinical_header",
+      "section_heading": "CLINICAL SUMMARY",
+      "text": "Patient came to the hospital with complaints of inability to swallow food and vomiting of undigested food \nparticles for past 3 months. \nB ,  P . 80/50 mm/hg \nP.R 56mints \nSPO2 97%",
+      "char_start": 452,
+      "char_end": 632,
+      "is_administrative": false,
+      "metadata": {
+        "step": 2,
+        "chunker": "section_aware_v1",
+        "entity_count": 9,
+        "negated_count": 0,
+        "historical_count": 1,
+        "context_engine": "local_v1"
+      },
+      "entities": [
+        {
+          "text": "Patient",
+          "label": "ENTITY",
+          "start_char": 0,
+          "end_char": 7,
+          "normalised": "patient",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c1",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "hospital",
+          "label": "ENTITY",
+          "start_char": 20,
+          "end_char": 28,
+          "normalised": "hospital",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c1",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "complaints",
+          "label": "ENTITY",
+          "start_char": 34,
+          "end_char": 44,
+          "normalised": "complaints",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c1",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "inability",
+          "label": "ENTITY",
+          "start_char": 48,
+          "end_char": 57,
+          "normalised": "inability",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c1",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "swallow food",
+          "label": "ENTITY",
+          "start_char": 61,
+          "end_char": 73,
+          "normalised": "swallow food",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c1",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "vomiting",
+          "label": "ENTITY",
+          "start_char": 78,
+          "end_char": 86,
+          "normalised": "vomiting",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c1",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "undigested food \nparticles",
+          "label": "ENTITY",
+          "start_char": 90,
+          "end_char": 116,
+          "normalised": "undigested food particles",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c1",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "months",
+          "label": "ENTITY",
+          "start_char": 128,
+          "end_char": 134,
+          "normalised": "months",
+          "context": {
+            "is_negated": false,
+            "is_historical": true,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c1",
+          "page_number": 1,
+          "section": "clinical_header"
+        },
+        {
+          "text": "SPO2",
+          "label": "ENTITY",
+          "start_char": 172,
+          "end_char": 176,
+          "normalised": "spo2",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c1",
+          "page_number": 1,
+          "section": "clinical_header"
+        }
+      ]
+    },
+    {
+      "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c2",
+      "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+      "page_number": 1,
+      "section": "section",
+      "section_heading": "COURSE IN  HOSPITAL",
+      "text": "CT scan of chest and abdomen done revealed, dialation of oesophagus with thin regular wall and air fluid level within, \nsubcarinal oesophageal narrowing present small hiatus hernia. Patient was treated conservatively with antibiotics,  antiematics \nand ppi. Patient improved symptomatically with ability to swallow solid foods with no episodes of vomiting. Patient was \nadvised endoscopy and dilatation of oesophagus with biopsy at a later stage.",
+      "char_start": 659,
+      "char_end": 1105,
+      "is_administrative": false,
+      "metadata": {
+        "step": 2,
+        "chunker": "section_aware_v1",
+        "entity_count": 25,
+        "negated_count": 1,
+        "historical_count": 0,
+        "context_engine": "local_v1"
+      },
+      "entities": [
+        {
+          "text": "CT scan",
+          "label": "ENTITY",
+          "start_char": 0,
+          "end_char": 7,
+          "normalised": "ct scan",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c2",
+          "page_number": 1,
+          "section": "section"
+        },
+        {
+          "text": "chest",
+          "label": "ENTITY",
+          "start_char": 11,
+          "end_char": 16,
+          "normalised": "chest",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c2",
+          "page_number": 1,
+          "section": "section"
+        },
+        {
+          "text": "abdomen",
+          "label": "ENTITY",
+          "start_char": 21,
+          "end_char": 28,
+          "normalised": "abdomen",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c2",
+          "page_number": 1,
+          "section": "section"
+        },
+        {
+          "text": "revealed",
+          "label": "ENTITY",
+          "start_char": 34,
+          "end_char": 42,
+          "normalised": "revealed",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c2",
+          "page_number": 1,
+          "section": "section"
+        },
+        {
+          "text": "dialation",
+          "label": "ENTITY",
+          "start_char": 44,
+          "end_char": 53,
+          "normalised": "dialation",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c2",
+          "page_number": 1,
+          "section": "section"
+        },
+        {
+          "text": "oesophagus",
+          "label": "ENTITY",
+          "start_char": 57,
+          "end_char": 67,
+          "normalised": "oesophagus",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c2",
+          "page_number": 1,
+          "section": "section"
+        },
+        {
+          "text": "air fluid",
+          "label": "ENTITY",
+          "start_char": 95,
+          "end_char": 104,
+          "normalised": "air fluid",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c2",
+          "page_number": 1,
+          "section": "section"
+        },
+        {
+          "text": "level",
+          "label": "ENTITY",
+          "start_char": 105,
+          "end_char": 110,
+          "normalised": "level",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c2",
+          "page_number": 1,
+          "section": "section"
+        },
+        {
+          "text": "small hiatus",
+          "label": "ENTITY",
+          "start_char": 161,
+          "end_char": 173,
+          "normalised": "small hiatus",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c2",
+          "page_number": 1,
+          "section": "section"
+        },
+        {
+          "text": "Patient",
+          "label": "ENTITY",
+          "start_char": 182,
+          "end_char": 189,
+          "normalised": "patient",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c2",
+          "page_number": 1,
+          "section": "section"
+        },
+        {
+          "text": "treated",
+          "label": "ENTITY",
+          "start_char": 194,
+          "end_char": 201,
+          "normalised": "treated",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c2",
+          "page_number": 1,
+          "section": "section"
+        },
+        {
+          "text": "conservatively",
+          "label": "ENTITY",
+          "start_char": 202,
+          "end_char": 216,
+          "normalised": "conservatively",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c2",
+          "page_number": 1,
+          "section": "section"
+        },
+        {
+          "text": "antibiotics",
+          "label": "ENTITY",
+          "start_char": 222,
+          "end_char": 233,
+          "normalised": "antibiotics",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c2",
+          "page_number": 1,
+          "section": "section"
+        },
+        {
+          "text": "ppi",
+          "label": "ENTITY",
+          "start_char": 253,
+          "end_char": 256,
+          "normalised": "ppi",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c2",
+          "page_number": 1,
+          "section": "section"
+        },
+        {
+          "text": "Patient",
+          "label": "ENTITY",
+          "start_char": 258,
+          "end_char": 265,
+          "normalised": "patient",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c2",
+          "page_number": 1,
+          "section": "section"
+        },
+        {
+          "text": "symptomatically",
+          "label": "ENTITY",
+          "start_char": 275,
+          "end_char": 290,
+          "normalised": "symptomatically",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c2",
+          "page_number": 1,
+          "section": "section"
+        },
+        {
+          "text": "swallow",
+          "label": "ENTITY",
+          "start_char": 307,
+          "end_char": 314,
+          "normalised": "swallow",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c2",
+          "page_number": 1,
+          "section": "section"
+        },
+        {
+          "text": "solid foods",
+          "label": "ENTITY",
+          "start_char": 315,
+          "end_char": 326,
+          "normalised": "solid foods",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c2",
+          "page_number": 1,
+          "section": "section"
+        },
+        {
+          "text": "vomiting",
+          "label": "ENTITY",
+          "start_char": 347,
+          "end_char": 355,
+          "normalised": "vomiting",
+          "context": {
+            "is_negated": true,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c2",
+          "page_number": 1,
+          "section": "section"
+        },
+        {
+          "text": "Patient",
+          "label": "ENTITY",
+          "start_char": 357,
+          "end_char": 364,
+          "normalised": "patient",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c2",
+          "page_number": 1,
+          "section": "section"
+        },
+        {
+          "text": "endoscopy",
+          "label": "ENTITY",
+          "start_char": 378,
+          "end_char": 387,
+          "normalised": "endoscopy",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c2",
+          "page_number": 1,
+          "section": "section"
+        },
+        {
+          "text": "dilatation",
+          "label": "ENTITY",
+          "start_char": 392,
+          "end_char": 402,
+          "normalised": "dilatation",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c2",
+          "page_number": 1,
+          "section": "section"
+        },
+        {
+          "text": "oesophagus",
+          "label": "ENTITY",
+          "start_char": 406,
+          "end_char": 416,
+          "normalised": "oesophagus",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c2",
+          "page_number": 1,
+          "section": "section"
+        },
+        {
+          "text": "biopsy",
+          "label": "ENTITY",
+          "start_char": 422,
+          "end_char": 428,
+          "normalised": "biopsy",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c2",
+          "page_number": 1,
+          "section": "section"
+        },
+        {
+          "text": "stage",
+          "label": "ENTITY",
+          "start_char": 440,
+          "end_char": 445,
+          "normalised": "stage",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c2",
+          "page_number": 1,
+          "section": "section"
+        }
+      ]
+    },
+    {
+      "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c3",
+      "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+      "page_number": 1,
+      "section": "section",
+      "section_heading": "COMPLETE BLOOD CELL COUNT",
+      "text": "HAEMATOLOGY SCOT-29 full Urobllinogen-Normal Haemoglobin10.\u00a7,m/d1 \nTotal wbc count-8900 Cells/cum SGPT-27 Iu/l Billrubin-Negative \nNeu trophils-69% TOTAL PROTEIN-7.6 DIABETIC PROFILE FBS-95 \nLymphocyte-26% Serum Albumin-4.1 PPBS-159 \nEosinophils-5% Globulin-2.6 LIPID PROFILE Cholestrol- 179 \nRBC count- 3.9 million / cumm  Alk phosphatise-79 HdI cholesterol-32 \nPcv - 42% URINE ANALYSIS Ldl cholesterol-128 Specific gravity:I.010  \nMCV-74 cumm Ph-5 Vldl cholesterol-33 \nMCH -28pg I.eukocytes-negative T.c/hdl ratio-5 \nMCHC \u2013 32gm / dl Nitrite-negative   \nPlatelet count- 2,00.000 1akhsl / cumm Protein-negative   \nLIVER FUNCTION TEST Glucose-Normal   \nTotal billiruhin0.2mg.d1 \nDirect billirubin- 0.1mg/dl Keytones-Negative   \n \nADVICE: FOLLOW UP AFTER 5 DAYS",
+      "char_start": 1135,
+      "char_end": 1895,
+      "is_administrative": false,
+      "metadata": {
+        "step": 2,
+        "chunker": "section_aware_v1",
+        "entity_count": 25,
+        "negated_count": 0,
+        "historical_count": 0,
+        "context_engine": "local_v1"
+      },
+      "entities": [
+        {
+          "text": "HAEMATOLOGY",
+          "label": "ENTITY",
+          "start_char": 0,
+          "end_char": 11,
+          "normalised": "haematology",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c3",
+          "page_number": 1,
+          "section": "section"
+        },
+        {
+          "text": "SCOT-29",
+          "label": "ENTITY",
+          "start_char": 12,
+          "end_char": 19,
+          "normalised": "scot-29",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c3",
+          "page_number": 1,
+          "section": "section"
+        },
+        {
+          "text": "Cells/cum SGPT-27",
+          "label": "ENTITY",
+          "start_char": 88,
+          "end_char": 105,
+          "normalised": "cells/cum sgpt-27",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c3",
+          "page_number": 1,
+          "section": "section"
+        },
+        {
+          "text": "Billrubin-Negative \nNeu trophils-69% TOTAL PROTEIN-7.6",
+          "label": "ENTITY",
+          "start_char": 111,
+          "end_char": 165,
+          "normalised": "billrubin-negative neu trophils-69% total protein-7.6",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c3",
+          "page_number": 1,
+          "section": "section"
+        },
+        {
+          "text": "PROFILE",
+          "label": "ENTITY",
+          "start_char": 175,
+          "end_char": 182,
+          "normalised": "profile",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c3",
+          "page_number": 1,
+          "section": "section"
+        },
+        {
+          "text": "Serum Albumin-4.1",
+          "label": "ENTITY",
+          "start_char": 206,
+          "end_char": 223,
+          "normalised": "serum albumin-4.1",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c3",
+          "page_number": 1,
+          "section": "section"
+        },
+        {
+          "text": "PPBS-159 \nEosinophils-5% Globulin-2.6 LIPID PROFILE",
+          "label": "ENTITY",
+          "start_char": 224,
+          "end_char": 275,
+          "normalised": "ppbs-159 eosinophils-5% globulin-2.6 lipid profile",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c3",
+          "page_number": 1,
+          "section": "section"
+        },
+        {
+          "text": "RBC",
+          "label": "ENTITY",
+          "start_char": 293,
+          "end_char": 296,
+          "normalised": "rbc",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c3",
+          "page_number": 1,
+          "section": "section"
+        },
+        {
+          "text": "million",
+          "label": "ENTITY",
+          "start_char": 308,
+          "end_char": 315,
+          "normalised": "million",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c3",
+          "page_number": 1,
+          "section": "section"
+        },
+        {
+          "text": "cumm",
+          "label": "ENTITY",
+          "start_char": 318,
+          "end_char": 322,
+          "normalised": "cumm",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c3",
+          "page_number": 1,
+          "section": "section"
+        },
+        {
+          "text": "cholesterol-32 \n",
+          "label": "ENTITY",
+          "start_char": 347,
+          "end_char": 363,
+          "normalised": "cholesterol-32",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c3",
+          "page_number": 1,
+          "section": "section"
+        },
+        {
+          "text": "Pcv",
+          "label": "ENTITY",
+          "start_char": 363,
+          "end_char": 366,
+          "normalised": "pcv",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c3",
+          "page_number": 1,
+          "section": "section"
+        },
+        {
+          "text": "URINE ANALYSIS",
+          "label": "ENTITY",
+          "start_char": 373,
+          "end_char": 387,
+          "normalised": "urine analysis",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c3",
+          "page_number": 1,
+          "section": "section"
+        },
+        {
+          "text": "Ldl cholesterol-128 Specific gravity",
+          "label": "ENTITY",
+          "start_char": 388,
+          "end_char": 424,
+          "normalised": "ldl cholesterol-128 specific gravity",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c3",
+          "page_number": 1,
+          "section": "section"
+        },
+        {
+          "text": "MCV-74",
+          "label": "ENTITY",
+          "start_char": 433,
+          "end_char": 439,
+          "normalised": "mcv-74",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c3",
+          "page_number": 1,
+          "section": "section"
+        },
+        {
+          "text": "cholesterol-33 \n",
+          "label": "ENTITY",
+          "start_char": 455,
+          "end_char": 471,
+          "normalised": "cholesterol-33",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c3",
+          "page_number": 1,
+          "section": "section"
+        },
+        {
+          "text": "MCH",
+          "label": "ENTITY",
+          "start_char": 471,
+          "end_char": 474,
+          "normalised": "mch",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c3",
+          "page_number": 1,
+          "section": "section"
+        },
+        {
+          "text": "I.eukocytes-negative T.c/hdl ratio-5 \n",
+          "label": "ENTITY",
+          "start_char": 481,
+          "end_char": 519,
+          "normalised": "i.eukocytes-negative t.c/hdl ratio-5",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c3",
+          "page_number": 1,
+          "section": "section"
+        },
+        {
+          "text": "MCHC",
+          "label": "ENTITY",
+          "start_char": 519,
+          "end_char": 523,
+          "normalised": "mchc",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c3",
+          "page_number": 1,
+          "section": "section"
+        },
+        {
+          "text": "Nitrite-negative   \nPlatelet count- 2,00.000 1akhsl",
+          "label": "ENTITY",
+          "start_char": 536,
+          "end_char": 587,
+          "normalised": "nitrite-negative platelet count- 2 00.000 1akhsl",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c3",
+          "page_number": 1,
+          "section": "section"
+        },
+        {
+          "text": "cumm",
+          "label": "ENTITY",
+          "start_char": 590,
+          "end_char": 594,
+          "normalised": "cumm",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c3",
+          "page_number": 1,
+          "section": "section"
+        },
+        {
+          "text": "Protein-negative   \nLIVER FUNCTION TEST",
+          "label": "ENTITY",
+          "start_char": 595,
+          "end_char": 634,
+          "normalised": "protein-negative liver function test",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c3",
+          "page_number": 1,
+          "section": "section"
+        },
+        {
+          "text": "Glucose-Normal   \nTotal billiruhin0.2mg.d1 \nDirect billirubin- 0.1mg/dl Keytones-Negative   \n \nADVICE",
+          "label": "ENTITY",
+          "start_char": 635,
+          "end_char": 736,
+          "normalised": "glucose-normal total billiruhin0.2mg.d1 direct billirubin- 0.1mg/dl keytones-negative advice",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c3",
+          "page_number": 1,
+          "section": "section"
+        },
+        {
+          "text": "FOLLOW",
+          "label": "ENTITY",
+          "start_char": 738,
+          "end_char": 744,
+          "normalised": "follow",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c3",
+          "page_number": 1,
+          "section": "section"
+        },
+        {
+          "text": "DAYS",
+          "label": "ENTITY",
+          "start_char": 756,
+          "end_char": 760,
+          "normalised": "days",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p1::c3",
+          "page_number": 1,
+          "section": "section"
+        }
+      ]
+    },
+    {
+      "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p2::c0",
+      "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+      "page_number": 2,
+      "section": "preamble",
+      "section_heading": null,
+      "text": "T.EM ESET: (1-0-1) \nT.YEES D: (1-0-1) \nT.DIGIPEN: (1-0-1) \nT.ACILOC: (1-0-1) \nT.MUCYST: (0-0-1) \nT.NEFTRON: (1-0-1) \nT. AZ1TH RA L: (0-0-1) \n5YP.LUPIZ1ME PLUS: 10ml \n5YP.SUCRAFIL PLUS: 5ml",
+      "char_start": 4,
+      "char_end": 192,
+      "is_administrative": false,
+      "metadata": {
+        "step": 2,
+        "chunker": "section_aware_v1",
+        "entity_count": 7,
+        "negated_count": 0,
+        "historical_count": 0,
+        "context_engine": "local_v1"
+      },
+      "entities": [
+        {
+          "text": "ESET",
+          "label": "ENTITY",
+          "start_char": 5,
+          "end_char": 9,
+          "normalised": "eset",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p2::c0",
+          "page_number": 2,
+          "section": "preamble"
+        },
+        {
+          "text": "T.YEES D",
+          "label": "ENTITY",
+          "start_char": 20,
+          "end_char": 28,
+          "normalised": "t.yees d",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p2::c0",
+          "page_number": 2,
+          "section": "preamble"
+        },
+        {
+          "text": "T.MUCYST",
+          "label": "ENTITY",
+          "start_char": 78,
+          "end_char": 86,
+          "normalised": "t.mucyst",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p2::c0",
+          "page_number": 2,
+          "section": "preamble"
+        },
+        {
+          "text": "T. AZ1TH",
+          "label": "ENTITY",
+          "start_char": 117,
+          "end_char": 125,
+          "normalised": "t. az1th",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p2::c0",
+          "page_number": 2,
+          "section": "preamble"
+        },
+        {
+          "text": "RA",
+          "label": "ENTITY",
+          "start_char": 126,
+          "end_char": 128,
+          "normalised": "ra",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p2::c0",
+          "page_number": 2,
+          "section": "preamble"
+        },
+        {
+          "text": "L",
+          "label": "ENTITY",
+          "start_char": 129,
+          "end_char": 130,
+          "normalised": "l",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p2::c0",
+          "page_number": 2,
+          "section": "preamble"
+        },
+        {
+          "text": "PLUS",
+          "label": "ENTITY",
+          "start_char": 179,
+          "end_char": 183,
+          "normalised": "plus",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p2::c0",
+          "page_number": 2,
+          "section": "preamble"
+        }
+      ]
+    },
+    {
+      "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p2::c1",
+      "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+      "page_number": 2,
+      "section": "section",
+      "section_heading": "When and how to obtain urgent care",
+      "text": "Report in case of  pain, bleeding and or other emergencies. \nSummary Prepared By: Dr. Anand \n(This is not a legal document. This report is given to enable the patient to understand their disease nature, treatment and \nfollow up. Any clarification, if necessary should be discussed with the consultant) \nThe content of discharge summary and follow up instructions including drugs has been explained to me in my \nunderstandable language.",
+      "char_start": 232,
+      "char_end": 667,
+      "is_administrative": false,
+      "metadata": {
+        "step": 2,
+        "chunker": "section_aware_v1",
+        "entity_count": 19,
+        "negated_count": 1,
+        "historical_count": 0,
+        "context_engine": "local_v1"
+      },
+      "entities": [
+        {
+          "text": "Report",
+          "label": "ENTITY",
+          "start_char": 0,
+          "end_char": 6,
+          "normalised": "report",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p2::c1",
+          "page_number": 2,
+          "section": "section"
+        },
+        {
+          "text": "case",
+          "label": "ENTITY",
+          "start_char": 10,
+          "end_char": 14,
+          "normalised": "case",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p2::c1",
+          "page_number": 2,
+          "section": "section"
+        },
+        {
+          "text": "bleeding",
+          "label": "ENTITY",
+          "start_char": 25,
+          "end_char": 33,
+          "normalised": "bleeding",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p2::c1",
+          "page_number": 2,
+          "section": "section"
+        },
+        {
+          "text": "emergencies",
+          "label": "ENTITY",
+          "start_char": 47,
+          "end_char": 58,
+          "normalised": "emergencies",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p2::c1",
+          "page_number": 2,
+          "section": "section"
+        },
+        {
+          "text": "Prepared",
+          "label": "ENTITY",
+          "start_char": 69,
+          "end_char": 77,
+          "normalised": "prepared",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p2::c1",
+          "page_number": 2,
+          "section": "section"
+        },
+        {
+          "text": "Dr. Anand \n",
+          "label": "ENTITY",
+          "start_char": 82,
+          "end_char": 93,
+          "normalised": "dr. anand",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p2::c1",
+          "page_number": 2,
+          "section": "section"
+        },
+        {
+          "text": "legal document",
+          "label": "ENTITY",
+          "start_char": 108,
+          "end_char": 122,
+          "normalised": "legal document",
+          "context": {
+            "is_negated": true,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p2::c1",
+          "page_number": 2,
+          "section": "section"
+        },
+        {
+          "text": "report",
+          "label": "ENTITY",
+          "start_char": 129,
+          "end_char": 135,
+          "normalised": "report",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p2::c1",
+          "page_number": 2,
+          "section": "section"
+        },
+        {
+          "text": "patient",
+          "label": "ENTITY",
+          "start_char": 159,
+          "end_char": 166,
+          "normalised": "patient",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p2::c1",
+          "page_number": 2,
+          "section": "section"
+        },
+        {
+          "text": "disease nature",
+          "label": "ENTITY",
+          "start_char": 187,
+          "end_char": 201,
+          "normalised": "disease nature",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p2::c1",
+          "page_number": 2,
+          "section": "section"
+        },
+        {
+          "text": "treatment",
+          "label": "ENTITY",
+          "start_char": 203,
+          "end_char": 212,
+          "normalised": "treatment",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p2::c1",
+          "page_number": 2,
+          "section": "section"
+        },
+        {
+          "text": "clarification",
+          "label": "ENTITY",
+          "start_char": 233,
+          "end_char": 246,
+          "normalised": "clarification",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p2::c1",
+          "page_number": 2,
+          "section": "section"
+        },
+        {
+          "text": "consultant",
+          "label": "ENTITY",
+          "start_char": 290,
+          "end_char": 300,
+          "normalised": "consultant",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": true,
+            "is_conditional": true
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p2::c1",
+          "page_number": 2,
+          "section": "section"
+        },
+        {
+          "text": "content",
+          "label": "ENTITY",
+          "start_char": 307,
+          "end_char": 314,
+          "normalised": "content",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": true,
+            "is_conditional": true
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p2::c1",
+          "page_number": 2,
+          "section": "section"
+        },
+        {
+          "text": "discharge",
+          "label": "ENTITY",
+          "start_char": 318,
+          "end_char": 327,
+          "normalised": "discharge",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": true,
+            "is_conditional": true
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p2::c1",
+          "page_number": 2,
+          "section": "section"
+        },
+        {
+          "text": "follow up",
+          "label": "ENTITY",
+          "start_char": 340,
+          "end_char": 349,
+          "normalised": "follow up",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": true,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p2::c1",
+          "page_number": 2,
+          "section": "section"
+        },
+        {
+          "text": "instructions",
+          "label": "ENTITY",
+          "start_char": 350,
+          "end_char": 362,
+          "normalised": "instructions",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p2::c1",
+          "page_number": 2,
+          "section": "section"
+        },
+        {
+          "text": "drugs",
+          "label": "ENTITY",
+          "start_char": 373,
+          "end_char": 378,
+          "normalised": "drugs",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p2::c1",
+          "page_number": 2,
+          "section": "section"
+        },
+        {
+          "text": "language",
+          "label": "ENTITY",
+          "start_char": 426,
+          "end_char": 434,
+          "normalised": "language",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p2::c1",
+          "page_number": 2,
+          "section": "section"
+        }
+      ]
+    },
+    {
+      "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p3::c0",
+      "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+      "page_number": 3,
+      "section": "administrative_billing",
+      "section_heading": "Invoice",
+      "text": "Bill No: SH00012/102/19                                                                                         Bill Date: 23/07/2019 \nNAME OF THE PATIENT:        Mr. SONAIMUTHU \nAGE / SEX:                                                  71 Yrs / Male \nADDRESS:                                        74/36 New Street, Vadavalli, Manamadurai \nDATE OF ADMISSION :             21/01/2019 3.30PM \nDATE OF DISCHARGE:             25/01/2019 4.50PM \nCONSULTANT:                            DR. Anand MBBS, MD. \nDIAGNOSIS:                                  LOWER OESOPHAGEAL HIATUS HERNIA  \n DEPARTMENT:                        Critical care   \n Accommodation Type:              Special               \n Room  No :                                   102    \n \n \n \nCode Billing Heads Rate Quantity Amount in Rs.",
+      "char_start": 24,
+      "char_end": 823,
+      "is_administrative": true,
+      "metadata": {
+        "step": 2,
+        "chunker": "section_aware_v1",
+        "entity_count": 23,
+        "negated_count": 3,
+        "historical_count": 0,
+        "context_engine": "local_v1"
+      },
+      "entities": [
+        {
+          "text": "Bill",
+          "label": "ENTITY",
+          "start_char": 0,
+          "end_char": 4,
+          "normalised": "bill",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p3::c0",
+          "page_number": 3,
+          "section": "administrative_billing"
+        },
+        {
+          "text": "SH00012/102/19                                                                                         ",
+          "label": "ENTITY",
+          "start_char": 9,
+          "end_char": 112,
+          "normalised": "sh00012/102/19",
+          "context": {
+            "is_negated": true,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p3::c0",
+          "page_number": 3,
+          "section": "administrative_billing"
+        },
+        {
+          "text": "NAME",
+          "label": "ENTITY",
+          "start_char": 135,
+          "end_char": 139,
+          "normalised": "name",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p3::c0",
+          "page_number": 3,
+          "section": "administrative_billing"
+        },
+        {
+          "text": "PATIENT",
+          "label": "ENTITY",
+          "start_char": 147,
+          "end_char": 154,
+          "normalised": "patient",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p3::c0",
+          "page_number": 3,
+          "section": "administrative_billing"
+        },
+        {
+          "text": "SONAIMUTHU",
+          "label": "ENTITY",
+          "start_char": 167,
+          "end_char": 177,
+          "normalised": "sonaimuthu",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p3::c0",
+          "page_number": 3,
+          "section": "administrative_billing"
+        },
+        {
+          "text": "AGE",
+          "label": "ENTITY",
+          "start_char": 179,
+          "end_char": 182,
+          "normalised": "age",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p3::c0",
+          "page_number": 3,
+          "section": "administrative_billing"
+        },
+        {
+          "text": "SEX",
+          "label": "ENTITY",
+          "start_char": 185,
+          "end_char": 188,
+          "normalised": "sex",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p3::c0",
+          "page_number": 3,
+          "section": "administrative_billing"
+        },
+        {
+          "text": "Yrs",
+          "label": "ENTITY",
+          "start_char": 242,
+          "end_char": 245,
+          "normalised": "yrs",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p3::c0",
+          "page_number": 3,
+          "section": "administrative_billing"
+        },
+        {
+          "text": "Male \nADDRESS",
+          "label": "ENTITY",
+          "start_char": 248,
+          "end_char": 261,
+          "normalised": "male address",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p3::c0",
+          "page_number": 3,
+          "section": "administrative_billing"
+        },
+        {
+          "text": "New Street",
+          "label": "ENTITY",
+          "start_char": 308,
+          "end_char": 318,
+          "normalised": "new street",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p3::c0",
+          "page_number": 3,
+          "section": "administrative_billing"
+        },
+        {
+          "text": "Vadavalli",
+          "label": "ENTITY",
+          "start_char": 320,
+          "end_char": 329,
+          "normalised": "vadavalli",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p3::c0",
+          "page_number": 3,
+          "section": "administrative_billing"
+        },
+        {
+          "text": "Manamadurai \nDATE OF ADMISSION",
+          "label": "ENTITY",
+          "start_char": 331,
+          "end_char": 361,
+          "normalised": "manamadurai date of admission",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p3::c0",
+          "page_number": 3,
+          "section": "administrative_billing"
+        },
+        {
+          "text": "DISCHARGE",
+          "label": "ENTITY",
+          "start_char": 403,
+          "end_char": 412,
+          "normalised": "discharge",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p3::c0",
+          "page_number": 3,
+          "section": "administrative_billing"
+        },
+        {
+          "text": "DR",
+          "label": "ENTITY",
+          "start_char": 484,
+          "end_char": 486,
+          "normalised": "dr",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p3::c0",
+          "page_number": 3,
+          "section": "administrative_billing"
+        },
+        {
+          "text": "Anand MBBS",
+          "label": "ENTITY",
+          "start_char": 488,
+          "end_char": 498,
+          "normalised": "anand mbbs",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p3::c0",
+          "page_number": 3,
+          "section": "administrative_billing"
+        },
+        {
+          "text": "MD",
+          "label": "ENTITY",
+          "start_char": 500,
+          "end_char": 502,
+          "normalised": "md",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p3::c0",
+          "page_number": 3,
+          "section": "administrative_billing"
+        },
+        {
+          "text": "DIAGNOSIS",
+          "label": "ENTITY",
+          "start_char": 505,
+          "end_char": 514,
+          "normalised": "diagnosis",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p3::c0",
+          "page_number": 3,
+          "section": "administrative_billing"
+        },
+        {
+          "text": "Critical care",
+          "label": "ENTITY",
+          "start_char": 619,
+          "end_char": 632,
+          "normalised": "critical care",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p3::c0",
+          "page_number": 3,
+          "section": "administrative_billing"
+        },
+        {
+          "text": "Accommodation",
+          "label": "ENTITY",
+          "start_char": 637,
+          "end_char": 650,
+          "normalised": "accommodation",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p3::c0",
+          "page_number": 3,
+          "section": "administrative_billing"
+        },
+        {
+          "text": "Code Billing Heads",
+          "label": "ENTITY",
+          "start_char": 753,
+          "end_char": 771,
+          "normalised": "code billing heads",
+          "context": {
+            "is_negated": true,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p3::c0",
+          "page_number": 3,
+          "section": "administrative_billing"
+        },
+        {
+          "text": "Quantity",
+          "label": "ENTITY",
+          "start_char": 777,
+          "end_char": 785,
+          "normalised": "quantity",
+          "context": {
+            "is_negated": true,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p3::c0",
+          "page_number": 3,
+          "section": "administrative_billing"
+        },
+        {
+          "text": "Amount",
+          "label": "ENTITY",
+          "start_char": 786,
+          "end_char": 792,
+          "normalised": "amount",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p3::c0",
+          "page_number": 3,
+          "section": "administrative_billing"
+        },
+        {
+          "text": "Rs",
+          "label": "ENTITY",
+          "start_char": 796,
+          "end_char": 798,
+          "normalised": "rs",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p3::c0",
+          "page_number": 3,
+          "section": "administrative_billing"
+        }
+      ]
+    },
+    {
+      "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p3::c1",
+      "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+      "page_number": 3,
+      "section": "administrative_billing",
+      "section_heading": "Invoice",
+      "text": "1 Room Rent 1000 3 3000 \n2 Nursing Charges 100 10 1000 \n3 RMO Charges 200 3 600 \n4 IV Fluids Administration Charges 40 10 400 \n5 Blood Transfusion Administration Charges 0 0 0 \n6 Injection Charges 20 20 400 \n  Total Room Rent Services     5400 \n1 ICU Rent 3000 2 6000 \n2 ICU Nursing Expenses 500 2 1000 \n3 ICU RMO charges 500 2 1000 \n4 IV Fluids Administration Charges 40 5 200 \n5 Blood Transfusion Administration Charges 250 2 500 \n6 Injection Charges 20 20 400 \n  Total ICU Services     9100 \n1 Surgeon Charges 4500 2 9000 \n2 Anesthetist Charges 2000 1 2000 \n3 Medical Practitioner Charges 1000 2 2000 \n4 Consultants Charges 300 2 600 \n5 Specialist Charges 1500 1 1500 \n  Total Professional Fee     15100",
+      "char_start": 825,
+      "char_end": 1531,
+      "is_administrative": true,
+      "metadata": {
+        "step": 2,
+        "chunker": "section_aware_v1",
+        "entity_count": 20,
+        "negated_count": 0,
+        "historical_count": 0,
+        "context_engine": "local_v1"
+      },
+      "entities": [
+        {
+          "text": "Room",
+          "label": "ENTITY",
+          "start_char": 2,
+          "end_char": 6,
+          "normalised": "room",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p3::c1",
+          "page_number": 3,
+          "section": "administrative_billing"
+        },
+        {
+          "text": "Nursing Charges",
+          "label": "ENTITY",
+          "start_char": 27,
+          "end_char": 42,
+          "normalised": "nursing charges",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p3::c1",
+          "page_number": 3,
+          "section": "administrative_billing"
+        },
+        {
+          "text": "RMO",
+          "label": "ENTITY",
+          "start_char": 58,
+          "end_char": 61,
+          "normalised": "rmo",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p3::c1",
+          "page_number": 3,
+          "section": "administrative_billing"
+        },
+        {
+          "text": "Fluids Administration Charges",
+          "label": "ENTITY",
+          "start_char": 86,
+          "end_char": 115,
+          "normalised": "fluids administration charges",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p3::c1",
+          "page_number": 3,
+          "section": "administrative_billing"
+        },
+        {
+          "text": "Blood Transfusion",
+          "label": "ENTITY",
+          "start_char": 129,
+          "end_char": 146,
+          "normalised": "blood transfusion",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p3::c1",
+          "page_number": 3,
+          "section": "administrative_billing"
+        },
+        {
+          "text": "Administration Charges",
+          "label": "ENTITY",
+          "start_char": 147,
+          "end_char": 169,
+          "normalised": "administration charges",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p3::c1",
+          "page_number": 3,
+          "section": "administrative_billing"
+        },
+        {
+          "text": "Injection Charges",
+          "label": "ENTITY",
+          "start_char": 179,
+          "end_char": 196,
+          "normalised": "injection charges",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p3::c1",
+          "page_number": 3,
+          "section": "administrative_billing"
+        },
+        {
+          "text": "Total Room Rent Services     ",
+          "label": "ENTITY",
+          "start_char": 210,
+          "end_char": 239,
+          "normalised": "total room rent services",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p3::c1",
+          "page_number": 3,
+          "section": "administrative_billing"
+        },
+        {
+          "text": "RMO charges",
+          "label": "ENTITY",
+          "start_char": 310,
+          "end_char": 321,
+          "normalised": "rmo charges",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p3::c1",
+          "page_number": 3,
+          "section": "administrative_billing"
+        },
+        {
+          "text": "Fluids Administration Charges",
+          "label": "ENTITY",
+          "start_char": 339,
+          "end_char": 368,
+          "normalised": "fluids administration charges",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p3::c1",
+          "page_number": 3,
+          "section": "administrative_billing"
+        },
+        {
+          "text": "Blood Transfusion",
+          "label": "ENTITY",
+          "start_char": 381,
+          "end_char": 398,
+          "normalised": "blood transfusion",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p3::c1",
+          "page_number": 3,
+          "section": "administrative_billing"
+        },
+        {
+          "text": "Administration Charges",
+          "label": "ENTITY",
+          "start_char": 399,
+          "end_char": 421,
+          "normalised": "administration charges",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p3::c1",
+          "page_number": 3,
+          "section": "administrative_billing"
+        },
+        {
+          "text": "Injection Charges",
+          "label": "ENTITY",
+          "start_char": 435,
+          "end_char": 452,
+          "normalised": "injection charges",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p3::c1",
+          "page_number": 3,
+          "section": "administrative_billing"
+        },
+        {
+          "text": "Total ICU Services     ",
+          "label": "ENTITY",
+          "start_char": 466,
+          "end_char": 489,
+          "normalised": "total icu services",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p3::c1",
+          "page_number": 3,
+          "section": "administrative_billing"
+        },
+        {
+          "text": "Surgeon",
+          "label": "ENTITY",
+          "start_char": 497,
+          "end_char": 504,
+          "normalised": "surgeon",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p3::c1",
+          "page_number": 3,
+          "section": "administrative_billing"
+        },
+        {
+          "text": "Anesthetist",
+          "label": "ENTITY",
+          "start_char": 528,
+          "end_char": 539,
+          "normalised": "anesthetist",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p3::c1",
+          "page_number": 3,
+          "section": "administrative_billing"
+        },
+        {
+          "text": "Charges",
+          "label": "ENTITY",
+          "start_char": 540,
+          "end_char": 547,
+          "normalised": "charges",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p3::c1",
+          "page_number": 3,
+          "section": "administrative_billing"
+        },
+        {
+          "text": "Consultants",
+          "label": "ENTITY",
+          "start_char": 607,
+          "end_char": 618,
+          "normalised": "consultants",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p3::c1",
+          "page_number": 3,
+          "section": "administrative_billing"
+        },
+        {
+          "text": "Charges",
+          "label": "ENTITY",
+          "start_char": 619,
+          "end_char": 626,
+          "normalised": "charges",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p3::c1",
+          "page_number": 3,
+          "section": "administrative_billing"
+        },
+        {
+          "text": "Total Professional Fee     ",
+          "label": "ENTITY",
+          "start_char": 674,
+          "end_char": 701,
+          "normalised": "total professional fee",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p3::c1",
+          "page_number": 3,
+          "section": "administrative_billing"
+        }
+      ]
+    },
+    {
+      "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p4::c0",
+      "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+      "page_number": 4,
+      "section": "unclassified",
+      "section_heading": null,
+      "text": "1 Anesthesia 200 1 200 \n2 Blood 1500 1 1500 \n3 Oxygen 450 1 450 \n4 Operation Theater Charges 2500 1 2500 \n5 Surgical Appliances 670 1 670 \n6 Medicines and Drugs 3210 1 3210 \n7 Diagnostic Materials 0 0 0 \n8 General Investigations 0 0 0 \n9 Specialized Investigations 0 0 0 \n10 Dialysis 0 0 0 \n11 Chemotherapy 0 0 0 \n12 Radiotherapy 0 0 0 \n13 Cost of Artificial Limbs 0 0 0 \n14 Cost of Implants 0 0 0 \n  Total of Other Expenses     8530 \n  \nGrand Total 38130 \nPatient Paid Amount 25000 \nBalance 13130",
+      "char_start": 2,
+      "char_end": 499,
+      "is_administrative": true,
+      "metadata": {
+        "step": 2,
+        "chunker": "section_aware_v1",
+        "entity_count": 16,
+        "negated_count": 0,
+        "historical_count": 0,
+        "context_engine": "local_v1"
+      },
+      "entities": [
+        {
+          "text": "Anesthesia",
+          "label": "ENTITY",
+          "start_char": 2,
+          "end_char": 12,
+          "normalised": "anesthesia",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p4::c0",
+          "page_number": 4,
+          "section": "unclassified"
+        },
+        {
+          "text": "Medicines",
+          "label": "ENTITY",
+          "start_char": 141,
+          "end_char": 150,
+          "normalised": "medicines",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p4::c0",
+          "page_number": 4,
+          "section": "unclassified"
+        },
+        {
+          "text": "Drugs",
+          "label": "ENTITY",
+          "start_char": 155,
+          "end_char": 160,
+          "normalised": "drugs",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p4::c0",
+          "page_number": 4,
+          "section": "unclassified"
+        },
+        {
+          "text": "Diagnostic Materials",
+          "label": "ENTITY",
+          "start_char": 176,
+          "end_char": 196,
+          "normalised": "diagnostic materials",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p4::c0",
+          "page_number": 4,
+          "section": "unclassified"
+        },
+        {
+          "text": "General Investigations",
+          "label": "ENTITY",
+          "start_char": 206,
+          "end_char": 228,
+          "normalised": "general investigations",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p4::c0",
+          "page_number": 4,
+          "section": "unclassified"
+        },
+        {
+          "text": "Specialized",
+          "label": "ENTITY",
+          "start_char": 238,
+          "end_char": 249,
+          "normalised": "specialized",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p4::c0",
+          "page_number": 4,
+          "section": "unclassified"
+        },
+        {
+          "text": "Investigations",
+          "label": "ENTITY",
+          "start_char": 250,
+          "end_char": 264,
+          "normalised": "investigations",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p4::c0",
+          "page_number": 4,
+          "section": "unclassified"
+        },
+        {
+          "text": "Dialysis",
+          "label": "ENTITY",
+          "start_char": 275,
+          "end_char": 283,
+          "normalised": "dialysis",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p4::c0",
+          "page_number": 4,
+          "section": "unclassified"
+        },
+        {
+          "text": "Chemotherapy",
+          "label": "ENTITY",
+          "start_char": 294,
+          "end_char": 306,
+          "normalised": "chemotherapy",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p4::c0",
+          "page_number": 4,
+          "section": "unclassified"
+        },
+        {
+          "text": "Radiotherapy",
+          "label": "ENTITY",
+          "start_char": 317,
+          "end_char": 329,
+          "normalised": "radiotherapy",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p4::c0",
+          "page_number": 4,
+          "section": "unclassified"
+        },
+        {
+          "text": "Cost",
+          "label": "ENTITY",
+          "start_char": 340,
+          "end_char": 344,
+          "normalised": "cost",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p4::c0",
+          "page_number": 4,
+          "section": "unclassified"
+        },
+        {
+          "text": "Artificial Limbs",
+          "label": "ENTITY",
+          "start_char": 348,
+          "end_char": 364,
+          "normalised": "artificial limbs",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p4::c0",
+          "page_number": 4,
+          "section": "unclassified"
+        },
+        {
+          "text": "Cost",
+          "label": "ENTITY",
+          "start_char": 375,
+          "end_char": 379,
+          "normalised": "cost",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p4::c0",
+          "page_number": 4,
+          "section": "unclassified"
+        },
+        {
+          "text": "Implants",
+          "label": "ENTITY",
+          "start_char": 383,
+          "end_char": 391,
+          "normalised": "implants",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p4::c0",
+          "page_number": 4,
+          "section": "unclassified"
+        },
+        {
+          "text": "Total",
+          "label": "ENTITY",
+          "start_char": 401,
+          "end_char": 406,
+          "normalised": "total",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p4::c0",
+          "page_number": 4,
+          "section": "unclassified"
+        },
+        {
+          "text": "Patient",
+          "label": "ENTITY",
+          "start_char": 457,
+          "end_char": 464,
+          "normalised": "patient",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p4::c0",
+          "page_number": 4,
+          "section": "unclassified"
+        }
+      ]
+    },
+    {
+      "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p5::c0",
+      "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+      "page_number": 5,
+      "section": "preamble",
+      "section_heading": null,
+      "text": "Sangeetha Super Speciality Hospitals \n \nOP CASH BILL \n \n \nBill. No: SSH/000123/072019      Bill Date :   21/07/2019 \nPatient Name :      Mr. SONAIMUTHU                  Age / Sex:     71 Yrs / Male \n     Address :       Manamadurai   Lab Ref.No : OP/989859438 \n Consultant:     Dr.Anand \n  \n \nS.No Item Name Rate Qty Amount",
+      "char_start": 2,
+      "char_end": 325,
+      "is_administrative": true,
+      "metadata": {
+        "step": 2,
+        "chunker": "section_aware_v1",
+        "entity_count": 14,
+        "negated_count": 4,
+        "historical_count": 0,
+        "context_engine": "local_v1"
+      },
+      "entities": [
+        {
+          "text": "Sangeetha Super Speciality",
+          "label": "ENTITY",
+          "start_char": 0,
+          "end_char": 26,
+          "normalised": "sangeetha super speciality",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p5::c0",
+          "page_number": 5,
+          "section": "preamble"
+        },
+        {
+          "text": "Hospitals",
+          "label": "ENTITY",
+          "start_char": 27,
+          "end_char": 36,
+          "normalised": "hospitals",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p5::c0",
+          "page_number": 5,
+          "section": "preamble"
+        },
+        {
+          "text": "OP CASH",
+          "label": "ENTITY",
+          "start_char": 40,
+          "end_char": 47,
+          "normalised": "op cash",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p5::c0",
+          "page_number": 5,
+          "section": "preamble"
+        },
+        {
+          "text": "SSH/000123/072019      Bill",
+          "label": "ENTITY",
+          "start_char": 68,
+          "end_char": 95,
+          "normalised": "ssh/000123/072019 bill",
+          "context": {
+            "is_negated": true,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p5::c0",
+          "page_number": 5,
+          "section": "preamble"
+        },
+        {
+          "text": "Patient",
+          "label": "ENTITY",
+          "start_char": 117,
+          "end_char": 124,
+          "normalised": "patient",
+          "context": {
+            "is_negated": true,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p5::c0",
+          "page_number": 5,
+          "section": "preamble"
+        },
+        {
+          "text": "Mr. SONAIMUTHU                  Age",
+          "label": "ENTITY",
+          "start_char": 137,
+          "end_char": 172,
+          "normalised": "mr. sonaimuthu age",
+          "context": {
+            "is_negated": true,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p5::c0",
+          "page_number": 5,
+          "section": "preamble"
+        },
+        {
+          "text": "Sex",
+          "label": "ENTITY",
+          "start_char": 175,
+          "end_char": 178,
+          "normalised": "sex",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p5::c0",
+          "page_number": 5,
+          "section": "preamble"
+        },
+        {
+          "text": "Yrs",
+          "label": "ENTITY",
+          "start_char": 187,
+          "end_char": 190,
+          "normalised": "yrs",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p5::c0",
+          "page_number": 5,
+          "section": "preamble"
+        },
+        {
+          "text": "Male",
+          "label": "ENTITY",
+          "start_char": 193,
+          "end_char": 197,
+          "normalised": "male",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p5::c0",
+          "page_number": 5,
+          "section": "preamble"
+        },
+        {
+          "text": "Address",
+          "label": "ENTITY",
+          "start_char": 204,
+          "end_char": 211,
+          "normalised": "address",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p5::c0",
+          "page_number": 5,
+          "section": "preamble"
+        },
+        {
+          "text": "Manamadurai",
+          "label": "ENTITY",
+          "start_char": 220,
+          "end_char": 231,
+          "normalised": "manamadurai",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p5::c0",
+          "page_number": 5,
+          "section": "preamble"
+        },
+        {
+          "text": "Lab",
+          "label": "ENTITY",
+          "start_char": 234,
+          "end_char": 237,
+          "normalised": "lab",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p5::c0",
+          "page_number": 5,
+          "section": "preamble"
+        },
+        {
+          "text": "OP/989859438",
+          "label": "ENTITY",
+          "start_char": 247,
+          "end_char": 259,
+          "normalised": "op/989859438",
+          "context": {
+            "is_negated": true,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p5::c0",
+          "page_number": 5,
+          "section": "preamble"
+        },
+        {
+          "text": "S.No Item Name",
+          "label": "ENTITY",
+          "start_char": 293,
+          "end_char": 307,
+          "normalised": "s.no item name",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p5::c0",
+          "page_number": 5,
+          "section": "preamble"
+        }
+      ]
+    },
+    {
+      "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p5::c1",
+      "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+      "page_number": 5,
+      "section": "laboratory_results",
+      "section_heading": "INVESTIGATIONS",
+      "text": "1 PRENATAL SCREENING 2780 1 2780 \n          \n      Total 2780 \n \n(Rupees Two Thousand Seven Hundred And Eighty Rupees Only)      \nFor Sangeetha Hospitals \n \nPaid Date: 21/07/2019 Payment Mode: Cash \nBilled By : Kavitha  21/07/2019 12:32:56 PM",
+      "char_start": 343,
+      "char_end": 585,
+      "is_administrative": true,
+      "metadata": {
+        "step": 2,
+        "chunker": "section_aware_v1",
+        "entity_count": 8,
+        "negated_count": 0,
+        "historical_count": 0,
+        "context_engine": "local_v1"
+      },
+      "entities": [
+        {
+          "text": "PRENATAL",
+          "label": "ENTITY",
+          "start_char": 2,
+          "end_char": 10,
+          "normalised": "prenatal",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p5::c1",
+          "page_number": 5,
+          "section": "laboratory_results"
+        },
+        {
+          "text": "SCREENING",
+          "label": "ENTITY",
+          "start_char": 11,
+          "end_char": 20,
+          "normalised": "screening",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p5::c1",
+          "page_number": 5,
+          "section": "laboratory_results"
+        },
+        {
+          "text": "Sangeetha Hospitals",
+          "label": "ENTITY",
+          "start_char": 134,
+          "end_char": 153,
+          "normalised": "sangeetha hospitals",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p5::c1",
+          "page_number": 5,
+          "section": "laboratory_results"
+        },
+        {
+          "text": "Payment Mode",
+          "label": "ENTITY",
+          "start_char": 179,
+          "end_char": 191,
+          "normalised": "payment mode",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p5::c1",
+          "page_number": 5,
+          "section": "laboratory_results"
+        },
+        {
+          "text": "Cash \n",
+          "label": "ENTITY",
+          "start_char": 193,
+          "end_char": 199,
+          "normalised": "cash",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p5::c1",
+          "page_number": 5,
+          "section": "laboratory_results"
+        },
+        {
+          "text": "Billed",
+          "label": "ENTITY",
+          "start_char": 199,
+          "end_char": 205,
+          "normalised": "billed",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p5::c1",
+          "page_number": 5,
+          "section": "laboratory_results"
+        },
+        {
+          "text": "Kavitha  ",
+          "label": "ENTITY",
+          "start_char": 211,
+          "end_char": 220,
+          "normalised": "kavitha",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p5::c1",
+          "page_number": 5,
+          "section": "laboratory_results"
+        },
+        {
+          "text": "PM",
+          "label": "ENTITY",
+          "start_char": 240,
+          "end_char": 242,
+          "normalised": "pm",
+          "context": {
+            "is_negated": false,
+            "is_historical": false,
+            "is_uncertain": false,
+            "is_family": false,
+            "is_hypothetical": false,
+            "is_conditional": false
+          },
+          "chunk_id": "442007316-DISCHARGE-SUMMARY.pdf::p5::c1",
+          "page_number": 5,
+          "section": "laboratory_results"
+        }
+      ]
+    }
+  ]
+}

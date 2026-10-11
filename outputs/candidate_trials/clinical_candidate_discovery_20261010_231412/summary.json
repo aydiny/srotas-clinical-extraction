@@ -1,0 +1,36 @@
+{
+  "run": {
+    "started_utc": "2026-10-10T22:14:12.733816+00:00",
+    "finished_utc": "2026-10-10T22:14:18.179182+00:00",
+    "elapsed_seconds": 5.445,
+    "prompt_version": "clinical_candidate_discovery",
+    "temperature": 0,
+    "max_output_tokens": 4096,
+    "models": [
+      "qwen/qwen-2.5-7b-instruct"
+    ],
+    "documents": [
+      "Cecilia-Zemlak-summary.pdf"
+    ],
+    "input_tokens": 1918,
+    "output_tokens": 656,
+    "total_tokens": 2574
+  },
+  "results": [
+    {
+      "document": "Cecilia-Zemlak-summary.pdf",
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "provider": "openrouter",
+      "status": "ok",
+      "model_returned": "qwen/qwen-2.5-7b-instruct",
+      "candidates": 9,
+      "evidence_not_found": 0,
+      "pages_failed": [],
+      "elapsed_seconds": 5.102,
+      "input_tokens": 1918,
+      "output_tokens": 656,
+      "total_tokens": 2574,
+      "output_file": "Cecilia-Zemlak-summary__qwen_qwen-2.5-7b-instruct.json"
+    }
+  ]
+}

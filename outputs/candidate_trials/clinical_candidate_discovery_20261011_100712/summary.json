@@ -1,0 +1,86 @@
+{
+  "run": {
+    "started_utc": "2026-10-11T09:07:12.070230+00:00",
+    "finished_utc": "2026-10-11T09:08:44.747287+00:00",
+    "elapsed_seconds": 92.677,
+    "prompt_version": "clinical_candidate_discovery",
+    "temperature": 0,
+    "max_output_tokens": 4096,
+    "models": [
+      "meta-llama/llama-3.1-8b-instruct",
+      "qwen/qwen-2.5-7b-instruct",
+      "gpt-4o-mini"
+    ],
+    "documents": [
+      "442007316-DISCHARGE-SUMMARY.pdf"
+    ],
+    "input_tokens": 8805,
+    "output_tokens": 7545,
+    "total_tokens": 16350,
+    "name_match_threshold": 0.7
+  },
+  "results": [
+    {
+      "document": "442007316-DISCHARGE-SUMMARY.pdf",
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "provider": "openrouter",
+      "status": "ok_with_page_failures",
+      "model_returned": "meta-llama/llama-3.1-8b-instruct",
+      "candidates": 50,
+      "evidence_not_found": 0,
+      "pages_failed": [
+        3
+      ],
+      "elapsed_seconds": 50.25,
+      "input_tokens": 2136,
+      "output_tokens": 3237,
+      "total_tokens": 5373,
+      "output_file": "442007316-DISCHARGE-SUMMARY__meta-llama_llama-3.1-8b-instruct.json",
+      "name_recall": 0.7,
+      "category_precision": 0.786,
+      "gold_facts": 20,
+      "matched_gold": 14,
+      "category_correct": 11
+    },
+    {
+      "document": "442007316-DISCHARGE-SUMMARY.pdf",
+      "model": "qwen/qwen-2.5-7b-instruct",
+      "provider": "openrouter",
+      "status": "ok",
+      "model_returned": "qwen/qwen-2.5-7b-instruct",
+      "candidates": 27,
+      "evidence_not_found": 0,
+      "pages_failed": [],
+      "elapsed_seconds": 12.322,
+      "input_tokens": 2929,
+      "output_tokens": 1751,
+      "total_tokens": 4680,
+      "output_file": "442007316-DISCHARGE-SUMMARY__qwen_qwen-2.5-7b-instruct.json",
+      "name_recall": 0.45,
+      "category_precision": 0.889,
+      "gold_facts": 20,
+      "matched_gold": 9,
+      "category_correct": 8
+    },
+    {
+      "document": "442007316-DISCHARGE-SUMMARY.pdf",
+      "model": "gpt-4o-mini",
+      "provider": "openai",
+      "status": "ok",
+      "model_returned": "gpt-4o-mini-2024-07-18",
+      "candidates": 52,
+      "evidence_not_found": 30,
+      "pages_failed": [],
+      "elapsed_seconds": 29.57,
+      "input_tokens": 3740,
+      "output_tokens": 2557,
+      "total_tokens": 6297,
+      "output_file": "442007316-DISCHARGE-SUMMARY__gpt-4o-mini.json",
+      "name_recall": 0.45,
+      "category_precision": 1.0,
+      "gold_facts": 20,
+      "matched_gold": 9,
+      "category_correct": 9
+    }
+  ]
+}

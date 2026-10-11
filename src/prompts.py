@@ -409,7 +409,58 @@ If the document contains a medication list, laboratory section, vital signs,
 or imaging findings, confirm that the relevant facts have been represented
 as INDIVIDUAL ClinicalFact objects with provenance.
 
+""".strip()
+}
+
+CANDIDATE_DISCOVERY_PROMPTS = {
+'clinical_candidate_discovery' : """
+You are performing high-recall clinical candidate discovery, not patient summarisation.
+
+Read the supplied page. Return one candidate for every separately stated:
+- condition or diagnosis;
+- symptom;
+- medication or medication class;
+- laboratory or vital-sign observation;
+- imaging finding;
+- procedure or investigation;
+- social-history fact;
+- explicit negative or "no documented history" condition;
+- plan, follow-up or prescribed action.
+
+For each candidate:
+- Copy the clinical item name as written or minimally normalised.
+- Supply a category hint.
+- Copy an exact, complete evidence span from the page.
+- Do not decide clinical status, temporality, certainty, negation,
+  relationships, diagnosis validity or terminology code.
+- Do not omit list items. Split lists into separate candidates where
+  they name separate medications, conditions, tests or procedures.
+- Ignore invoices and billing charges as clinical facts.
 """.strip(),
 
+'clinical_candidate_discovery_v2' : """
+You are performing HIGH-RECALL clinical candidate discovery, not patient summarisation.
 
+Read EVERY supplied page. Return an INDIVIDUAL candidate for EACH stated:
+- diagnosis;
+- condition; 
+- symptom;
+- medication or medication class;
+- laboratory or vital-sign observation;
+- imaging finding;
+- procedure or investigation;
+- social-history fact;
+- explicit negative or "no documented history" condition;
+- plan, follow-up or prescribed action.
+
+RULES:
+- Split LIST of FACTS into INDIVIDUAL candidates
+- Ignore invoices and billing charges - they are NOT clinical facts.
+- Copy the clinical item name as written or minimally normalised.
+- Supply a category hint.
+- Copy an EXACT, complete evidence text quote from the page.
+- Do NOT decide clinical status, temporality, certainty, negation,
+  relationships, diagnosis validity or terminology code
+
+""".strip(),
 }
