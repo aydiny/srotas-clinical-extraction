@@ -1,0 +1,115 @@
+{
+  "run": {
+    "started_utc": "2026-10-11T12:39:24.663687+00:00",
+    "finished_utc": "2026-10-11T12:40:39.069160+00:00",
+    "elapsed_seconds": 74.406,
+    "prompt_version": "clinical_fact_enrichment_v1",
+    "temperature": 0,
+    "batch_size": 25,
+    "max_output_tokens": 12000,
+    "validation_retry": false,
+    "candidate_trial_dir": "D:\\AI_ML\\srotas-clinical-extraction\\outputs\\candidate_trials\\clinical_candidate_discovery_v2_20261011_103647",
+    "candidate_prompt_version": "clinical_candidate_discovery_v2",
+    "models": [
+      "gpt-4o-mini"
+    ],
+    "input_tokens": 13458,
+    "cached_input_tokens": 2944,
+    "output_tokens": 8785,
+    "total_tokens": 22243
+  },
+  "results": [
+    {
+      "document": "Cecilia-Zemlak-summary.pdf",
+      "candidate_model": "gpt-4o-mini",
+      "candidate_file": "Cecilia-Zemlak-summary__gpt-4o-mini.json",
+      "model": "gpt-4o-mini",
+      "provider": "openai",
+      "status": "ok",
+      "model_returned": "gpt-4o-mini-2024-07-18",
+      "candidates_in": 47,
+      "candidates_after_dedup": 45,
+      "batches": 2,
+      "batches_failed": [],
+      "facts": 45,
+      "rejected_candidates": 0,
+      "unaccounted_candidates": 0,
+      "elapsed_seconds": 49.955,
+      "input_tokens": 8893,
+      "cached_input_tokens": 2944,
+      "output_tokens": 6035,
+      "total_tokens": 14928,
+      "output_file": "Cecilia-Zemlak-summary__cand_gpt-4o-mini__enrich_gpt-4o-mini.json",
+      "unsupported_rate": 0.067,
+      "gold_recall": 0.7,
+      "precision_excluding_extra_supported": 0.875,
+      "context_accuracy": {
+        "status": 0.5,
+        "temporality": 0.429,
+        "certainty": 0.714,
+        "is_negated": 0.857
+      },
+      "attribute_recall_on_matched_facts": 0.12,
+      "gold_facts": 20,
+      "matched_gold": 14
+    },
+    {
+      "document": "442007316-DISCHARGE-SUMMARY.pdf",
+      "candidate_model": "gpt-4o-mini",
+      "candidate_file": "442007316-DISCHARGE-SUMMARY__gpt-4o-mini.json",
+      "model": "gpt-4o-mini",
+      "provider": "openai",
+      "status": "ok",
+      "model_returned": "gpt-4o-mini-2024-07-18",
+      "candidates_in": 22,
+      "candidates_after_dedup": 21,
+      "batches": 1,
+      "batches_failed": [],
+      "facts": 21,
+      "rejected_candidates": 0,
+      "unaccounted_candidates": 0,
+      "elapsed_seconds": 23.808,
+      "input_tokens": 4565,
+      "cached_input_tokens": 0,
+      "output_tokens": 2750,
+      "total_tokens": 7315,
+      "output_file": "442007316-DISCHARGE-SUMMARY__cand_gpt-4o-mini__enrich_gpt-4o-mini.json",
+      "unsupported_rate": 0.0,
+      "gold_recall": 0.5,
+      "precision_excluding_extra_supported": 1.0,
+      "context_accuracy": {
+        "status": 0.3,
+        "temporality": 0.3,
+        "certainty": 0.9,
+        "is_negated": 0.9
+      },
+      "attribute_recall_on_matched_facts": 0.0,
+      "gold_facts": 20,
+      "matched_gold": 10
+    }
+  ],
+  "aggregate": [
+    {
+      "candidate_model": "gpt-4o-mini",
+      "model": "gpt-4o-mini",
+      "documents": 2,
+      "gold_recall": 0.6,
+      "precision_excluding_extra_supported": 0.923,
+      "unsupported_rate": 0.045,
+      "context_accuracy": {
+        "status": 0.417,
+        "temporality": 0.375,
+        "certainty": 0.792,
+        "is_negated": 0.875
+      },
+      "attribute_recall_on_matched_facts": 0.07,
+      "counts": {
+        "predicted_facts": 66,
+        "gold_facts": 40,
+        "true_positives": 24,
+        "false_negatives": 16,
+        "unmatched_predictions": 42
+      }
+    }
+  ]
+}

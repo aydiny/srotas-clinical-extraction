@@ -40,8 +40,12 @@ def _client(model: str | None = None) -> OpenAI:
 
 
 def _parse(client: OpenAI, model: str, instructions: str, messages: list[dict],
-           text_format, max_output_tokens: int):
-    """Structured-output call. Returns (parsed, raw_text, usage, model_returned)."""
+           text_format, max_output_tokens: int, cache_key: str | None = None):
+    """Structured-output call. Returns (parsed, raw_text, usage, model_returned).
+
+    usage["cached_tokens"] counts input tokens served from the provider's prompt cache.
+    cache_key routes calls sharing a prefix to the same OpenAI cache (OpenAI only).
+    """
     if resolve_provider(model) == "openrouter":
         resp = client.chat.completions.parse(
             model=model,
@@ -55,8 +59,10 @@ def _parse(client: OpenAI, model: str, instructions: str, messages: list[dict],
         message = resp.choices[0].message
         if message.parsed is None:
             raise RuntimeError(f"No usable output: refusal={message.refusal!r}")
+        details = getattr(resp.usage, "prompt_tokens_details", None) if resp.usage else None
         usage = {
             "input_tokens": resp.usage.prompt_tokens if resp.usage else 0,
+            "cached_tokens": (getattr(details, "cached_tokens", 0) or 0) if details else 0,
             "output_tokens": resp.usage.completion_tokens if resp.usage else 0,
             "total_tokens": resp.usage.total_tokens if resp.usage else 0,
         }
@@ -70,10 +76,13 @@ def _parse(client: OpenAI, model: str, instructions: str, messages: list[dict],
         temperature=TEMPERATURE,
         max_output_tokens=max_output_tokens,
         store=False,
+        **({"prompt_cache_key": cache_key} if cache_key else {}),
     )
     if resp.status != "completed" or resp.output_parsed is None:
         raise RuntimeError(f"No usable output: {resp.status}, {resp.incomplete_details}")
     usage = resp.usage.model_dump() if resp.usage else None
+    if usage is not None:
+        usage["cached_tokens"] = (usage.get("input_tokens_details") or {}).get("cached_tokens") or 0
     return resp.output_parsed, resp.output_text, usage, resp.model
 
 
@@ -109,14 +118,16 @@ def _feedback(patient, reports, graph_errors) -> str:
 
 
 def _sum_usage(attempts: list[dict]) -> dict:
-    input_tokens = output_tokens = total_tokens = 0
+    input_tokens = cached_tokens = output_tokens = total_tokens = 0
     for attempt in attempts:
         usage = attempt.get("usage") or {}
         input_tokens += usage.get("input_tokens") or 0
+        cached_tokens += usage.get("cached_tokens") or 0
         output_tokens += usage.get("output_tokens") or 0
         total_tokens += usage.get("total_tokens") or 0
     return {
         "input_tokens": input_tokens,
+        "cached_input_tokens": cached_tokens,
         "output_tokens": output_tokens,
         "total_tokens": total_tokens,
     }

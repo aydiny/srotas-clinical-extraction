@@ -1,0 +1,1942 @@
+{
+  "meta": {
+    "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+    "model": "gpt-4o-mini-2024-07-18",
+    "provider": "openai",
+    "prompt_version": "clinical_fact_enrichment_v1",
+    "batch_size": 25,
+    "candidates_in": 45,
+    "candidates_after_dedup": 44,
+    "batches": 2,
+    "batches_failed": [],
+    "facts": 44,
+    "rejected_candidates": 0,
+    "unaccounted_candidates": 0,
+    "merged_cross_batch": 0,
+    "coerced_historical_active": 0,
+    "prompt_cache_key": "enrich-8b4ab9d21ca372886bbfd660",
+    "batch_runs": [
+      {
+        "batch": 1,
+        "candidate_ids": [
+          "candidate_1",
+          "candidate_10",
+          "candidate_11",
+          "candidate_12",
+          "candidate_13",
+          "candidate_14",
+          "candidate_15",
+          "candidate_16",
+          "candidate_17",
+          "candidate_18",
+          "candidate_19",
+          "candidate_2",
+          "candidate_20",
+          "candidate_21",
+          "candidate_22",
+          "candidate_23",
+          "candidate_24",
+          "candidate_25",
+          "candidate_3",
+          "candidate_4",
+          "candidate_5",
+          "candidate_6",
+          "candidate_7",
+          "candidate_8",
+          "candidate_9"
+        ],
+        "attempts": [
+          {
+            "attempt": 1,
+            "status": "ok",
+            "facts": 25,
+            "rejected": 0,
+            "failing_facts": 4,
+            "elapsed_seconds": 23.682,
+            "usage": {
+              "input_tokens": 4990,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0
+              },
+              "output_tokens": 3104,
+              "output_tokens_details": {
+                "reasoning_tokens": 0
+              },
+              "total_tokens": 8094,
+              "cached_tokens": 0
+            }
+          }
+        ],
+        "usage": {
+          "input_tokens": 4990,
+          "cached_input_tokens": 0,
+          "output_tokens": 3104,
+          "total_tokens": 8094
+        },
+        "elapsed_seconds": 23.682,
+        "status": "ok",
+        "facts": 25,
+        "rejected": 0,
+        "unaccounted_candidate_ids": []
+      },
+      {
+        "batch": 2,
+        "candidate_ids": [
+          "candidate_26",
+          "candidate_27",
+          "candidate_28",
+          "candidate_29",
+          "candidate_30",
+          "candidate_31",
+          "candidate_32",
+          "candidate_33",
+          "candidate_34",
+          "candidate_35",
+          "candidate_36",
+          "candidate_37",
+          "candidate_38",
+          "candidate_39",
+          "candidate_40",
+          "candidate_41",
+          "candidate_43",
+          "candidate_44",
+          "candidate_45"
+        ],
+        "attempts": [
+          {
+            "attempt": 1,
+            "status": "ok",
+            "facts": 19,
+            "rejected": 0,
+            "failing_facts": 0,
+            "elapsed_seconds": 20.465,
+            "usage": {
+              "input_tokens": 4801,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3968
+              },
+              "output_tokens": 2701,
+              "output_tokens_details": {
+                "reasoning_tokens": 0
+              },
+              "total_tokens": 7502,
+              "cached_tokens": 3968
+            }
+          }
+        ],
+        "usage": {
+          "input_tokens": 4801,
+          "cached_input_tokens": 3968,
+          "output_tokens": 2701,
+          "total_tokens": 7502
+        },
+        "elapsed_seconds": 20.465,
+        "status": "ok",
+        "facts": 19,
+        "rejected": 0,
+        "unaccounted_candidate_ids": []
+      }
+    ],
+    "elapsed_seconds": 44.149,
+    "usage": {
+      "input_tokens": 9791,
+      "cached_input_tokens": 3968,
+      "output_tokens": 5805,
+      "total_tokens": 15596
+    },
+    "timestamp_utc": "2026-10-11T13:53:19.222682+00:00"
+  },
+  "candidate_source": {
+    "trial_dir": "D:\\AI_ML\\srotas-clinical-extraction\\outputs\\candidate_trials\\clinical_candidate_discovery_20261011_144945",
+    "file": "442007316-DISCHARGE-SUMMARY__gpt-4o-mini.json"
+  },
+  "patient": {
+    "patient_id": null,
+    "patient_name": null,
+    "age": null,
+    "sex": "Unknown",
+    "clinical_facts": [
+      {
+        "fact_id": "fact_1",
+        "category": "condition",
+        "name": "LOWER OESOPHAGEAL HIATUS HERNIA",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "current",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "DIAGNOSIS: LOWER OESOPHAGEAL HIATUS HERNIA",
+            "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+            "page_number": 1
+          },
+          {
+            "source_text_quote": "DIAGNOSIS: LOWER OESOPHAGEAL HIATUS HERNIA",
+            "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+            "page_number": 3
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_2",
+        "category": "symptom",
+        "name": "inability to swallow food",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "current",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "Patient came to the hospital with complaints of inability to swallow food and vomiting of undigested food particles for past 3 months.",
+            "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+            "page_number": 1
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_3",
+        "category": "symptom",
+        "name": "vomiting of undigested food particles",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "current",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "Patient came to the hospital with complaints of inability to swallow food and vomiting of undigested food particles for past 3 months.",
+            "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+            "page_number": 1
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_4",
+        "category": "medication",
+        "name": "antibiotics",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "current",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "Patient was treated conservatively with antibiotics, antiematics and ppi.",
+            "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+            "page_number": 1
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_5",
+        "category": "medication",
+        "name": "antiematics",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "current",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "Patient was treated conservatively with antibiotics, antiematics and ppi.",
+            "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+            "page_number": 1
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_6",
+        "category": "medication",
+        "name": "ppi",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "current",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "Patient was treated conservatively with antibiotics, antiematics and ppi.",
+            "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+            "page_number": 1
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_7",
+        "category": "procedure",
+        "name": "endoscopy and dilatation of oesophagus with biopsy",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "future_plan",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "Patient was advised endoscopy and dilatation of oesophagus with biopsy at a later stage.",
+            "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+            "page_number": 1
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_8",
+        "category": "observation",
+        "name": "SPO2 97%",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "at_encounter",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "SPO2 97%.",
+            "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+            "page_number": 1
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_9",
+        "category": "observation",
+        "name": "B ,  P . 80/50 mm/hg",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "at_encounter",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "B ,  P . 80/50 mm/hg.",
+            "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+            "page_number": 1
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_10",
+        "category": "observation",
+        "name": "P.R 56mints",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "at_encounter",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "P.R 56mints.",
+            "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+            "page_number": 1
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_11",
+        "category": "observation",
+        "name": "Total wbc count-8900 Cells/cum",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "at_encounter",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "Total wbc count-8900 Cells/cum.",
+            "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+            "page_number": 1
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_12",
+        "category": "observation",
+        "name": "SGPT-27 Iu/l",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "at_encounter",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "SGPT-27 Iu/l.",
+            "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+            "page_number": 1
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_13",
+        "category": "observation",
+        "name": "Billrubin-Negative",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "at_encounter",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "Billrubin-Negative.",
+            "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+            "page_number": 1
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_14",
+        "category": "observation",
+        "name": "Total protein-7.6",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "at_encounter",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "Total protein-7.6.",
+            "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+            "page_number": 1
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_15",
+        "category": "observation",
+        "name": "FBS-95",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "at_encounter",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "FBS-95.",
+            "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+            "page_number": 1
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_16",
+        "category": "observation",
+        "name": "PPBS-159",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "at_encounter",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "PPBS-159.",
+            "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+            "page_number": 1
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_17",
+        "category": "observation",
+        "name": "Cholestrol- 179",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "at_encounter",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "Cholestrol- 179.",
+            "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+            "page_number": 1
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_18",
+        "category": "observation",
+        "name": "Alk phosphatise-79",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "at_encounter",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "Alk phosphatise-79.",
+            "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+            "page_number": 1
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_19",
+        "category": "observation",
+        "name": "HdI cholesterol-32",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "at_encounter",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "HdI cholesterol-32.",
+            "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+            "page_number": 1
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_20",
+        "category": "observation",
+        "name": "Ldl cholesterol-128",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "at_encounter",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "Ldl cholesterol-128.",
+            "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+            "page_number": 1
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_21",
+        "category": "observation",
+        "name": "Vldl cholesterol-33",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "at_encounter",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "Vldl cholesterol-33.",
+            "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+            "page_number": 1
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_22",
+        "category": "observation",
+        "name": "T.c/hdl ratio-5",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "at_encounter",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "T.c/hdl ratio-5.",
+            "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+            "page_number": 1
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_23",
+        "category": "observation",
+        "name": "Specific gravity:I.010",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "at_encounter",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "Specific gravity:I.010.",
+            "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+            "page_number": 1
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_24",
+        "category": "observation",
+        "name": "Ph-5",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "at_encounter",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "Ph-5.",
+            "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+            "page_number": 1
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_25",
+        "category": "observation",
+        "name": "Glucose-Normal",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "at_encounter",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "Glucose-Normal.",
+            "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+            "page_number": 1
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_26",
+        "category": "observation",
+        "name": "Total billiruhin",
+        "status": "unknown",
+        "is_negated": false,
+        "certainty": "unknown",
+        "temporality": "unknown",
+        "date": null,
+        "attributes": [
+          {
+            "name": "value",
+            "value": "0.2",
+            "unit": "mg/dl"
+          }
+        ],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "Total billiruhin0.2mg.d1.",
+            "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+            "page_number": 1
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_27",
+        "category": "observation",
+        "name": "Direct billirubin",
+        "status": "unknown",
+        "is_negated": false,
+        "certainty": "unknown",
+        "temporality": "unknown",
+        "date": null,
+        "attributes": [
+          {
+            "name": "value",
+            "value": "0.1",
+            "unit": "mg/dl"
+          }
+        ],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "Direct billirubin- 0.1mg/dl.",
+            "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+            "page_number": 1
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_28",
+        "category": "observation",
+        "name": "Keytones",
+        "status": "unknown",
+        "is_negated": true,
+        "certainty": "confirmed",
+        "temporality": "unknown",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "Keytones-Negative.",
+            "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+            "page_number": 1
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_29",
+        "category": "observation",
+        "name": "Follow Up",
+        "status": "unknown",
+        "is_negated": false,
+        "certainty": "unknown",
+        "temporality": "future_plan",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "ADVICE: FOLLOW UP AFTER 5 DAYS.",
+            "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+            "page_number": 1
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_30",
+        "category": "medication",
+        "name": "T.EM ESET",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "current",
+        "date": null,
+        "attributes": [
+          {
+            "name": "dose",
+            "value": "1-0-1",
+            "unit": null
+          }
+        ],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "T.EM ESET: (1-0-1)",
+            "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+            "page_number": 2
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_31",
+        "category": "medication",
+        "name": "T.YEES D",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "current",
+        "date": null,
+        "attributes": [
+          {
+            "name": "dose",
+            "value": "1-0-1",
+            "unit": null
+          }
+        ],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "T.YEES D: (1-0-1)",
+            "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+            "page_number": 2
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_32",
+        "category": "medication",
+        "name": "T.DIGIPEN",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "current",
+        "date": null,
+        "attributes": [
+          {
+            "name": "dose",
+            "value": "1-0-1",
+            "unit": null
+          }
+        ],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "T.DIGIPEN: (1-0-1)",
+            "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+            "page_number": 2
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_33",
+        "category": "medication",
+        "name": "T.ACILOC",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "current",
+        "date": null,
+        "attributes": [
+          {
+            "name": "dose",
+            "value": "1-0-1",
+            "unit": null
+          }
+        ],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "T.ACILOC: (1-0-1)",
+            "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+            "page_number": 2
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_34",
+        "category": "medication",
+        "name": "T.MUCYST",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "current",
+        "date": null,
+        "attributes": [
+          {
+            "name": "dose",
+            "value": "0-0-1",
+            "unit": null
+          }
+        ],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "T.MUCYST: (0-0-1)",
+            "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+            "page_number": 2
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_35",
+        "category": "medication",
+        "name": "T.NEFTRON",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "current",
+        "date": null,
+        "attributes": [
+          {
+            "name": "dose",
+            "value": "1-0-1",
+            "unit": null
+          }
+        ],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "T.NEFTRON: (1-0-1)",
+            "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+            "page_number": 2
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_36",
+        "category": "medication",
+        "name": "T. AZ1TH RA L",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "current",
+        "date": null,
+        "attributes": [
+          {
+            "name": "dose",
+            "value": "0-0-1",
+            "unit": null
+          }
+        ],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "T. AZ1TH RA L: (0-0-1)",
+            "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+            "page_number": 2
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_37",
+        "category": "medication",
+        "name": "5YP.LUPIZ1ME PLUS",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "current",
+        "date": null,
+        "attributes": [
+          {
+            "name": "dose",
+            "value": "10",
+            "unit": "ml"
+          }
+        ],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "5YP.LUPIZ1ME PLUS: 10ml",
+            "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+            "page_number": 2
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_38",
+        "category": "medication",
+        "name": "5YP.SUCRAFIL PLUS",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "current",
+        "date": null,
+        "attributes": [
+          {
+            "name": "dose",
+            "value": "5",
+            "unit": "ml"
+          }
+        ],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "5YP.SUCRAFIL PLUS: 5ml",
+            "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+            "page_number": 2
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_39",
+        "category": "procedure",
+        "name": "urgent care",
+        "status": "unknown",
+        "is_negated": false,
+        "certainty": "unknown",
+        "temporality": "future_plan",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "When and how to obtain urgent care :",
+            "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+            "page_number": 2
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_40",
+        "category": "symptom",
+        "name": "pain",
+        "status": "unknown",
+        "is_negated": false,
+        "certainty": "unknown",
+        "temporality": "unknown",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "Report in case of pain, bleeding and or other emergencies.",
+            "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+            "page_number": 2
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_41",
+        "category": "symptom",
+        "name": "bleeding",
+        "status": "unknown",
+        "is_negated": false,
+        "certainty": "unknown",
+        "temporality": "unknown",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "Report in case of pain, bleeding and or other emergencies.",
+            "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+            "page_number": 2
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_42",
+        "category": "procedure",
+        "name": "Anesthesia",
+        "status": "unknown",
+        "is_negated": false,
+        "certainty": "unknown",
+        "temporality": "unknown",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "1 Anesthesia 200 1 200",
+            "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+            "page_number": 4
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_43",
+        "category": "medication",
+        "name": "Medicines and Drugs",
+        "status": "unknown",
+        "is_negated": false,
+        "certainty": "unknown",
+        "temporality": "unknown",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "6 Medicines and Drugs 3210 1 3210",
+            "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+            "page_number": 4
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_44",
+        "category": "procedure",
+        "name": "PRENATAL SCREENING",
+        "status": "unknown",
+        "is_negated": false,
+        "certainty": "unknown",
+        "temporality": "unknown",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "1 PRENATAL SCREENING 2780 1 2780",
+            "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+            "page_number": 5
+          }
+        ]
+      }
+    ]
+  },
+  "rejected_candidates": [],
+  "validation": {
+    "summary": {
+      "unsupported_rate": 0.09090909090909091,
+      "graph_errors": []
+    },
+    "facts": {
+      "fact_1": [],
+      "fact_2": [],
+      "fact_3": [],
+      "fact_4": [],
+      "fact_5": [],
+      "fact_6": [],
+      "fact_7": [],
+      "fact_8": [
+        [
+          "error",
+          "quote_not_found"
+        ]
+      ],
+      "fact_9": [
+        [
+          "warn",
+          "quote_fuzzy_only"
+        ]
+      ],
+      "fact_10": [
+        [
+          "warn",
+          "quote_fuzzy_only"
+        ]
+      ],
+      "fact_11": [
+        [
+          "warn",
+          "quote_fuzzy_only"
+        ]
+      ],
+      "fact_12": [
+        [
+          "warn",
+          "quote_fuzzy_only"
+        ]
+      ],
+      "fact_13": [
+        [
+          "warn",
+          "quote_fuzzy_only"
+        ]
+      ],
+      "fact_14": [
+        [
+          "warn",
+          "quote_fuzzy_only"
+        ]
+      ],
+      "fact_15": [
+        [
+          "error",
+          "quote_not_found"
+        ]
+      ],
+      "fact_16": [
+        [
+          "error",
+          "quote_not_found"
+        ]
+      ],
+      "fact_17": [
+        [
+          "warn",
+          "quote_fuzzy_only"
+        ]
+      ],
+      "fact_18": [
+        [
+          "warn",
+          "quote_fuzzy_only"
+        ]
+      ],
+      "fact_19": [
+        [
+          "warn",
+          "quote_fuzzy_only"
+        ]
+      ],
+      "fact_20": [
+        [
+          "warn",
+          "quote_fuzzy_only"
+        ]
+      ],
+      "fact_21": [
+        [
+          "warn",
+          "quote_fuzzy_only"
+        ]
+      ],
+      "fact_22": [
+        [
+          "warn",
+          "quote_fuzzy_only"
+        ]
+      ],
+      "fact_23": [
+        [
+          "warn",
+          "quote_fuzzy_only"
+        ]
+      ],
+      "fact_24": [
+        [
+          "error",
+          "quote_not_found"
+        ]
+      ],
+      "fact_25": [
+        [
+          "warn",
+          "quote_fuzzy_only"
+        ]
+      ],
+      "fact_26": [
+        [
+          "warn",
+          "quote_fuzzy_only"
+        ]
+      ],
+      "fact_27": [
+        [
+          "warn",
+          "quote_fuzzy_only"
+        ]
+      ],
+      "fact_28": [
+        [
+          "warn",
+          "quote_fuzzy_only"
+        ]
+      ],
+      "fact_29": [
+        [
+          "warn",
+          "quote_fuzzy_only"
+        ]
+      ],
+      "fact_30": [],
+      "fact_31": [],
+      "fact_32": [],
+      "fact_33": [],
+      "fact_34": [],
+      "fact_35": [],
+      "fact_36": [],
+      "fact_37": [],
+      "fact_38": [],
+      "fact_39": [],
+      "fact_40": [],
+      "fact_41": [],
+      "fact_42": [],
+      "fact_43": [],
+      "fact_44": []
+    }
+  },
+  "evaluation": {
+    "metrics": {
+      "gold_recall": 0.45,
+      "precision_vs_gold_subset": 0.20454545454545456,
+      "precision_excluding_extra_supported": 0.6923076923076923,
+      "extra_supported_facts": 31,
+      "unsupported_rate": 0.09090909090909091,
+      "context_accuracy": {
+        "status": 0.3333333333333333,
+        "temporality": 0.2222222222222222,
+        "certainty": 1.0,
+        "is_negated": 1.0
+      },
+      "attribute_recall_on_matched_facts": 0.0,
+      "counts": {
+        "predicted_facts": 44,
+        "gold_facts": 20,
+        "true_positives": 9,
+        "false_negatives": 11,
+        "unmatched_predictions": 35
+      }
+    },
+    "counts": {
+      "predicted_facts": 44,
+      "gold_facts": 20,
+      "true_positives": 9,
+      "false_negatives": 11,
+      "unmatched_predictions": 35,
+      "extra_supported": 31,
+      "unsupported_unmatched": 4,
+      "unsupported_total": 4,
+      "context_correct": {
+        "status": 3,
+        "certainty": 9,
+        "is_negated": 9,
+        "temporality": 2
+      },
+      "attributes_total": 15,
+      "attributes_correct": 0
+    },
+    "errors": [
+      {
+        "error_class": "wrong_temporality",
+        "gold_fact_id": "SM-CORE-01",
+        "pred_fact_id": "fact_1",
+        "fact_name": "Lower oesophageal hiatus hernia",
+        "gold_value": "at_encounter",
+        "predicted_value": "current",
+        "similarity": 0.94
+      },
+      {
+        "error_class": "wrong_temporality",
+        "gold_fact_id": "SM-CORE-02",
+        "pred_fact_id": "fact_2",
+        "fact_name": "Inability to swallow food",
+        "gold_value": "at_encounter",
+        "predicted_value": "current",
+        "similarity": 1.0
+      },
+      {
+        "error_class": "wrong_or_missing_attribute",
+        "gold_fact_id": "SM-CORE-02",
+        "pred_fact_id": "fact_2",
+        "fact_name": "Inability to swallow food",
+        "gold_value": "duration=3",
+        "predicted_value": "",
+        "similarity": 1.0
+      },
+      {
+        "error_class": "wrong_or_missing_attribute",
+        "gold_fact_id": "SM-CORE-02",
+        "pred_fact_id": "fact_2",
+        "fact_name": "Inability to swallow food",
+        "gold_value": "phase=presentation",
+        "predicted_value": "",
+        "similarity": 1.0
+      },
+      {
+        "error_class": "wrong_temporality",
+        "gold_fact_id": "SM-CORE-03",
+        "pred_fact_id": "fact_3",
+        "fact_name": "Vomiting of undigested food particles",
+        "gold_value": "at_encounter",
+        "predicted_value": "current",
+        "similarity": 1.0
+      },
+      {
+        "error_class": "wrong_or_missing_attribute",
+        "gold_fact_id": "SM-CORE-03",
+        "pred_fact_id": "fact_3",
+        "fact_name": "Vomiting of undigested food particles",
+        "gold_value": "duration=3",
+        "predicted_value": "",
+        "similarity": 1.0
+      },
+      {
+        "error_class": "wrong_or_missing_attribute",
+        "gold_fact_id": "SM-CORE-03",
+        "pred_fact_id": "fact_3",
+        "fact_name": "Vomiting of undigested food particles",
+        "gold_value": "phase=presentation",
+        "predicted_value": "",
+        "similarity": 1.0
+      },
+      {
+        "error_class": "wrong_status",
+        "gold_fact_id": "SM-CORE-10",
+        "pred_fact_id": "fact_4",
+        "fact_name": "Antibiotics",
+        "gold_value": "unknown",
+        "predicted_value": "active",
+        "similarity": 1.0
+      },
+      {
+        "error_class": "wrong_temporality",
+        "gold_fact_id": "SM-CORE-10",
+        "pred_fact_id": "fact_4",
+        "fact_name": "Antibiotics",
+        "gold_value": "at_encounter",
+        "predicted_value": "current",
+        "similarity": 1.0
+      },
+      {
+        "error_class": "wrong_or_missing_attribute",
+        "gold_fact_id": "SM-CORE-10",
+        "pred_fact_id": "fact_4",
+        "fact_name": "Antibiotics",
+        "gold_value": "treatment_context=conservative treatment during hospital course",
+        "predicted_value": "",
+        "similarity": 1.0
+      },
+      {
+        "error_class": "wrong_or_missing_attribute",
+        "gold_fact_id": "SM-CORE-10",
+        "pred_fact_id": "fact_4",
+        "fact_name": "Antibiotics",
+        "gold_value": "specific_drug=not stated",
+        "predicted_value": "",
+        "similarity": 1.0
+      },
+      {
+        "error_class": "wrong_status",
+        "gold_fact_id": "SM-CORE-11",
+        "pred_fact_id": "fact_5",
+        "fact_name": "Antiemetics",
+        "gold_value": "unknown",
+        "predicted_value": "active",
+        "similarity": 0.955
+      },
+      {
+        "error_class": "wrong_temporality",
+        "gold_fact_id": "SM-CORE-11",
+        "pred_fact_id": "fact_5",
+        "fact_name": "Antiemetics",
+        "gold_value": "at_encounter",
+        "predicted_value": "current",
+        "similarity": 0.955
+      },
+      {
+        "error_class": "wrong_or_missing_attribute",
+        "gold_fact_id": "SM-CORE-11",
+        "pred_fact_id": "fact_5",
+        "fact_name": "Antiemetics",
+        "gold_value": "treatment_context=conservative treatment during hospital course",
+        "predicted_value": "",
+        "similarity": 0.955
+      },
+      {
+        "error_class": "wrong_or_missing_attribute",
+        "gold_fact_id": "SM-CORE-11",
+        "pred_fact_id": "fact_5",
+        "fact_name": "Antiemetics",
+        "gold_value": "specific_drug=not stated",
+        "predicted_value": "",
+        "similarity": 0.955
+      },
+      {
+        "error_class": "wrong_status",
+        "gold_fact_id": "SM-CORE-12",
+        "pred_fact_id": "fact_6",
+        "fact_name": "PPI",
+        "gold_value": "unknown",
+        "predicted_value": "active",
+        "similarity": 1.0
+      },
+      {
+        "error_class": "wrong_temporality",
+        "gold_fact_id": "SM-CORE-12",
+        "pred_fact_id": "fact_6",
+        "fact_name": "PPI",
+        "gold_value": "at_encounter",
+        "predicted_value": "current",
+        "similarity": 1.0
+      },
+      {
+        "error_class": "wrong_or_missing_attribute",
+        "gold_fact_id": "SM-CORE-12",
+        "pred_fact_id": "fact_6",
+        "fact_name": "PPI",
+        "gold_value": "treatment_context=conservative treatment during hospital course",
+        "predicted_value": "",
+        "similarity": 1.0
+      },
+      {
+        "error_class": "wrong_or_missing_attribute",
+        "gold_fact_id": "SM-CORE-12",
+        "pred_fact_id": "fact_6",
+        "fact_name": "PPI",
+        "gold_value": "specific_drug=not stated",
+        "predicted_value": "",
+        "similarity": 1.0
+      },
+      {
+        "error_class": "wrong_status",
+        "gold_fact_id": "SM-CORE-15",
+        "pred_fact_id": "fact_7",
+        "fact_name": "Endoscopy",
+        "gold_value": "unknown",
+        "predicted_value": "active",
+        "similarity": 0.957
+      },
+      {
+        "error_class": "wrong_or_missing_attribute",
+        "gold_fact_id": "SM-CORE-15",
+        "pred_fact_id": "fact_7",
+        "fact_name": "Endoscopy",
+        "gold_value": "completion_status=advised; completion not documented",
+        "predicted_value": "",
+        "similarity": 0.957
+      },
+      {
+        "error_class": "wrong_status",
+        "gold_fact_id": "SM-CORE-17",
+        "pred_fact_id": "fact_11",
+        "fact_name": "Total white blood cell count",
+        "gold_value": "unknown",
+        "predicted_value": "active",
+        "similarity": 0.69
+      },
+      {
+        "error_class": "wrong_or_missing_attribute",
+        "gold_fact_id": "SM-CORE-17",
+        "pred_fact_id": "fact_11",
+        "fact_name": "Total white blood cell count",
+        "gold_value": "test_value=8900",
+        "predicted_value": "",
+        "similarity": 0.69
+      },
+      {
+        "error_class": "wrong_status",
+        "gold_fact_id": "SM-CORE-20",
+        "pred_fact_id": "fact_36",
+        "fact_name": "T. AZ1TH RA L",
+        "gold_value": "unknown",
+        "predicted_value": "active",
+        "similarity": 1.0
+      },
+      {
+        "error_class": "wrong_temporality",
+        "gold_fact_id": "SM-CORE-20",
+        "pred_fact_id": "fact_36",
+        "fact_name": "T. AZ1TH RA L",
+        "gold_value": "future_plan",
+        "predicted_value": "current",
+        "similarity": 1.0
+      },
+      {
+        "error_class": "wrong_or_missing_attribute",
+        "gold_fact_id": "SM-CORE-20",
+        "pred_fact_id": "fact_36",
+        "fact_name": "T. AZ1TH RA L",
+        "gold_value": "dose_schedule=0-0-1",
+        "predicted_value": "",
+        "similarity": 1.0
+      },
+      {
+        "error_class": "wrong_or_missing_attribute",
+        "gold_fact_id": "SM-CORE-20",
+        "pred_fact_id": "fact_36",
+        "fact_name": "T. AZ1TH RA L",
+        "gold_value": "normalised_ingredient=not established",
+        "predicted_value": "",
+        "similarity": 1.0
+      },
+      {
+        "error_class": "wrong_or_missing_attribute",
+        "gold_fact_id": "SM-CORE-20",
+        "pred_fact_id": "fact_36",
+        "fact_name": "T. AZ1TH RA L",
+        "gold_value": "administration_status=not documented as taken",
+        "predicted_value": "",
+        "similarity": 1.0
+      },
+      {
+        "error_class": "missed",
+        "gold_fact_id": "SM-CORE-04",
+        "pred_fact_id": "",
+        "fact_name": "Blood pressure",
+        "gold_value": "observation",
+        "predicted_value": "",
+        "similarity": ""
+      },
+      {
+        "error_class": "missed",
+        "gold_fact_id": "SM-CORE-05",
+        "pred_fact_id": "",
+        "fact_name": "Pulse rate",
+        "gold_value": "observation",
+        "predicted_value": "",
+        "similarity": ""
+      },
+      {
+        "error_class": "missed",
+        "gold_fact_id": "SM-CORE-06",
+        "pred_fact_id": "",
+        "fact_name": "Oxygen saturation",
+        "gold_value": "observation",
+        "predicted_value": "",
+        "similarity": ""
+      },
+      {
+        "error_class": "missed",
+        "gold_fact_id": "SM-CORE-07",
+        "pred_fact_id": "",
+        "fact_name": "CT scan of chest and abdomen",
+        "gold_value": "procedure",
+        "predicted_value": "",
+        "similarity": ""
+      },
+      {
+        "error_class": "missed",
+        "gold_fact_id": "SM-CORE-08",
+        "pred_fact_id": "",
+        "fact_name": "Oesophageal dilatation",
+        "gold_value": "observation",
+        "predicted_value": "",
+        "similarity": ""
+      },
+      {
+        "error_class": "missed",
+        "gold_fact_id": "SM-CORE-09",
+        "pred_fact_id": "",
+        "fact_name": "Subcarinal oesophageal narrowing",
+        "gold_value": "observation",
+        "predicted_value": "",
+        "similarity": ""
+      },
+      {
+        "error_class": "missed",
+        "gold_fact_id": "SM-CORE-13",
+        "pred_fact_id": "",
+        "fact_name": "Ability to swallow solid foods",
+        "gold_value": "observation",
+        "predicted_value": "",
+        "similarity": ""
+      },
+      {
+        "error_class": "missed",
+        "gold_fact_id": "SM-CORE-14",
+        "pred_fact_id": "",
+        "fact_name": "Vomiting",
+        "gold_value": "symptom",
+        "predicted_value": "",
+        "similarity": ""
+      },
+      {
+        "error_class": "missed",
+        "gold_fact_id": "SM-CORE-16",
+        "pred_fact_id": "",
+        "fact_name": "Biopsy",
+        "gold_value": "procedure",
+        "predicted_value": "",
+        "similarity": ""
+      },
+      {
+        "error_class": "missed",
+        "gold_fact_id": "SM-CORE-18",
+        "pred_fact_id": "",
+        "fact_name": "Haemoglobin",
+        "gold_value": "observation",
+        "predicted_value": "",
+        "similarity": ""
+      },
+      {
+        "error_class": "missed",
+        "gold_fact_id": "SM-CORE-19",
+        "pred_fact_id": "",
+        "fact_name": "Follow-up review",
+        "gold_value": "procedure",
+        "predicted_value": "",
+        "similarity": ""
+      },
+      {
+        "error_class": "unsupported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_8",
+        "fact_name": "SPO2 97%",
+        "gold_value": "",
+        "predicted_value": "observation",
+        "similarity": ""
+      },
+      {
+        "error_class": "extra_supported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_9",
+        "fact_name": "B ,  P . 80/50 mm/hg",
+        "gold_value": "",
+        "predicted_value": "observation",
+        "similarity": ""
+      },
+      {
+        "error_class": "extra_supported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_10",
+        "fact_name": "P.R 56mints",
+        "gold_value": "",
+        "predicted_value": "observation",
+        "similarity": ""
+      },
+      {
+        "error_class": "extra_supported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_12",
+        "fact_name": "SGPT-27 Iu/l",
+        "gold_value": "",
+        "predicted_value": "observation",
+        "similarity": ""
+      },
+      {
+        "error_class": "extra_supported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_13",
+        "fact_name": "Billrubin-Negative",
+        "gold_value": "",
+        "predicted_value": "observation",
+        "similarity": ""
+      },
+      {
+        "error_class": "extra_supported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_14",
+        "fact_name": "Total protein-7.6",
+        "gold_value": "",
+        "predicted_value": "observation",
+        "similarity": ""
+      },
+      {
+        "error_class": "unsupported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_15",
+        "fact_name": "FBS-95",
+        "gold_value": "",
+        "predicted_value": "observation",
+        "similarity": ""
+      },
+      {
+        "error_class": "unsupported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_16",
+        "fact_name": "PPBS-159",
+        "gold_value": "",
+        "predicted_value": "observation",
+        "similarity": ""
+      },
+      {
+        "error_class": "extra_supported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_17",
+        "fact_name": "Cholestrol- 179",
+        "gold_value": "",
+        "predicted_value": "observation",
+        "similarity": ""
+      },
+      {
+        "error_class": "extra_supported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_18",
+        "fact_name": "Alk phosphatise-79",
+        "gold_value": "",
+        "predicted_value": "observation",
+        "similarity": ""
+      },
+      {
+        "error_class": "extra_supported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_19",
+        "fact_name": "HdI cholesterol-32",
+        "gold_value": "",
+        "predicted_value": "observation",
+        "similarity": ""
+      },
+      {
+        "error_class": "extra_supported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_20",
+        "fact_name": "Ldl cholesterol-128",
+        "gold_value": "",
+        "predicted_value": "observation",
+        "similarity": ""
+      },
+      {
+        "error_class": "extra_supported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_21",
+        "fact_name": "Vldl cholesterol-33",
+        "gold_value": "",
+        "predicted_value": "observation",
+        "similarity": ""
+      },
+      {
+        "error_class": "extra_supported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_22",
+        "fact_name": "T.c/hdl ratio-5",
+        "gold_value": "",
+        "predicted_value": "observation",
+        "similarity": ""
+      },
+      {
+        "error_class": "extra_supported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_23",
+        "fact_name": "Specific gravity:I.010",
+        "gold_value": "",
+        "predicted_value": "observation",
+        "similarity": ""
+      },
+      {
+        "error_class": "unsupported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_24",
+        "fact_name": "Ph-5",
+        "gold_value": "",
+        "predicted_value": "observation",
+        "similarity": ""
+      },
+      {
+        "error_class": "extra_supported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_25",
+        "fact_name": "Glucose-Normal",
+        "gold_value": "",
+        "predicted_value": "observation",
+        "similarity": ""
+      },
+      {
+        "error_class": "extra_supported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_26",
+        "fact_name": "Total billiruhin",
+        "gold_value": "",
+        "predicted_value": "observation",
+        "similarity": ""
+      },
+      {
+        "error_class": "extra_supported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_27",
+        "fact_name": "Direct billirubin",
+        "gold_value": "",
+        "predicted_value": "observation",
+        "similarity": ""
+      },
+      {
+        "error_class": "extra_supported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_28",
+        "fact_name": "Keytones",
+        "gold_value": "",
+        "predicted_value": "observation",
+        "similarity": ""
+      },
+      {
+        "error_class": "extra_supported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_29",
+        "fact_name": "Follow Up",
+        "gold_value": "",
+        "predicted_value": "observation",
+        "similarity": ""
+      },
+      {
+        "error_class": "extra_supported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_30",
+        "fact_name": "T.EM ESET",
+        "gold_value": "",
+        "predicted_value": "medication",
+        "similarity": ""
+      },
+      {
+        "error_class": "extra_supported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_31",
+        "fact_name": "T.YEES D",
+        "gold_value": "",
+        "predicted_value": "medication",
+        "similarity": ""
+      },
+      {
+        "error_class": "extra_supported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_32",
+        "fact_name": "T.DIGIPEN",
+        "gold_value": "",
+        "predicted_value": "medication",
+        "similarity": ""
+      },
+      {
+        "error_class": "extra_supported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_33",
+        "fact_name": "T.ACILOC",
+        "gold_value": "",
+        "predicted_value": "medication",
+        "similarity": ""
+      },
+      {
+        "error_class": "extra_supported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_34",
+        "fact_name": "T.MUCYST",
+        "gold_value": "",
+        "predicted_value": "medication",
+        "similarity": ""
+      },
+      {
+        "error_class": "extra_supported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_35",
+        "fact_name": "T.NEFTRON",
+        "gold_value": "",
+        "predicted_value": "medication",
+        "similarity": ""
+      },
+      {
+        "error_class": "extra_supported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_37",
+        "fact_name": "5YP.LUPIZ1ME PLUS",
+        "gold_value": "",
+        "predicted_value": "medication",
+        "similarity": ""
+      },
+      {
+        "error_class": "extra_supported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_38",
+        "fact_name": "5YP.SUCRAFIL PLUS",
+        "gold_value": "",
+        "predicted_value": "medication",
+        "similarity": ""
+      },
+      {
+        "error_class": "extra_supported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_39",
+        "fact_name": "urgent care",
+        "gold_value": "",
+        "predicted_value": "procedure",
+        "similarity": ""
+      },
+      {
+        "error_class": "extra_supported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_40",
+        "fact_name": "pain",
+        "gold_value": "",
+        "predicted_value": "symptom",
+        "similarity": ""
+      },
+      {
+        "error_class": "extra_supported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_41",
+        "fact_name": "bleeding",
+        "gold_value": "",
+        "predicted_value": "symptom",
+        "similarity": ""
+      },
+      {
+        "error_class": "extra_supported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_42",
+        "fact_name": "Anesthesia",
+        "gold_value": "",
+        "predicted_value": "procedure",
+        "similarity": ""
+      },
+      {
+        "error_class": "extra_supported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_43",
+        "fact_name": "Medicines and Drugs",
+        "gold_value": "",
+        "predicted_value": "medication",
+        "similarity": ""
+      },
+      {
+        "error_class": "extra_supported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_44",
+        "fact_name": "PRENATAL SCREENING",
+        "gold_value": "",
+        "predicted_value": "procedure",
+        "similarity": ""
+      }
+    ]
+  }
+}

@@ -1,0 +1,1106 @@
+{
+  "meta": {
+    "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+    "model": "gpt-4o-mini-2024-07-18",
+    "provider": "openai",
+    "prompt_version": "clinical_fact_enrichment_v1",
+    "batch_size": 25,
+    "candidates_in": 22,
+    "candidates_after_dedup": 21,
+    "batches": 1,
+    "batches_failed": [],
+    "facts": 21,
+    "rejected_candidates": 0,
+    "unaccounted_candidates": 0,
+    "merged_cross_batch": 0,
+    "coerced_historical_active": 0,
+    "prompt_cache_key": "enrich-f66d74ddc95d5fa7f027a1ef",
+    "batch_runs": [
+      {
+        "batch": 1,
+        "candidate_ids": [
+          "candidate_1",
+          "candidate_10",
+          "candidate_11",
+          "candidate_12",
+          "candidate_13",
+          "candidate_14",
+          "candidate_15",
+          "candidate_16",
+          "candidate_17",
+          "candidate_18",
+          "candidate_19",
+          "candidate_2",
+          "candidate_20",
+          "candidate_22",
+          "candidate_3",
+          "candidate_4",
+          "candidate_5",
+          "candidate_6",
+          "candidate_7",
+          "candidate_8",
+          "candidate_9"
+        ],
+        "attempts": [
+          {
+            "attempt": 1,
+            "status": "ok",
+            "facts": 21,
+            "rejected": 0,
+            "failing_facts": 0,
+            "elapsed_seconds": 23.806,
+            "usage": {
+              "input_tokens": 4565,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0
+              },
+              "output_tokens": 2750,
+              "output_tokens_details": {
+                "reasoning_tokens": 0
+              },
+              "total_tokens": 7315,
+              "cached_tokens": 0
+            }
+          }
+        ],
+        "usage": {
+          "input_tokens": 4565,
+          "cached_input_tokens": 0,
+          "output_tokens": 2750,
+          "total_tokens": 7315
+        },
+        "elapsed_seconds": 23.806,
+        "status": "ok",
+        "facts": 21,
+        "rejected": 0,
+        "unaccounted_candidate_ids": []
+      }
+    ],
+    "elapsed_seconds": 23.808,
+    "usage": {
+      "input_tokens": 4565,
+      "cached_input_tokens": 0,
+      "output_tokens": 2750,
+      "total_tokens": 7315
+    },
+    "timestamp_utc": "2026-10-11T12:40:39.068105+00:00"
+  },
+  "candidate_source": {
+    "trial_dir": "D:\\AI_ML\\srotas-clinical-extraction\\outputs\\candidate_trials\\clinical_candidate_discovery_v2_20261011_103647",
+    "file": "442007316-DISCHARGE-SUMMARY__gpt-4o-mini.json"
+  },
+  "patient": {
+    "patient_id": null,
+    "patient_name": null,
+    "age": null,
+    "sex": "Unknown",
+    "clinical_facts": [
+      {
+        "fact_id": "fact_1",
+        "category": "condition",
+        "name": "Lower oesophageal hiatus hernia",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "current",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "DIAGNOSIS: LOWER OESOPHAGEAL HIATUS HERNIA",
+            "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+            "page_number": 1
+          },
+          {
+            "source_text_quote": "DIAGNOSIS: LOWER OESOPHAGEAL HIATUS HERNIA",
+            "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+            "page_number": 3
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_2",
+        "category": "symptom",
+        "name": "Inability to swallow food",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "current",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "Patient came to the hospital with complaints of inability to swallow food and vomiting of undigested food particles for past 3 months.",
+            "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+            "page_number": 1
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_3",
+        "category": "symptom",
+        "name": "Vomiting of undigested food particles",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "current",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "Patient came to the hospital with complaints of inability to swallow food and vomiting of undigested food particles for past 3 months.",
+            "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+            "page_number": 1
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_4",
+        "category": "procedure",
+        "name": "Endoscopy and dilatation of oesophagus with biopsy",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "future_plan",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "Patient was advised endoscopy and dilatation of oesophagus with biopsy at a later stage.",
+            "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+            "page_number": 1
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_5",
+        "category": "medication",
+        "name": "Antibiotics",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "current",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [
+          "fact_1"
+        ],
+        "provenance": [
+          {
+            "source_text_quote": "Patient was treated conservatively with antibiotics, antiemetics and ppi.",
+            "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+            "page_number": 1
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_6",
+        "category": "medication",
+        "name": "Antiemetics",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "current",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [
+          "fact_1"
+        ],
+        "provenance": [
+          {
+            "source_text_quote": "Patient was treated conservatively with antibiotics, antiemetics and ppi.",
+            "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+            "page_number": 1
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_7",
+        "category": "medication",
+        "name": "PPI",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "current",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [
+          "fact_1"
+        ],
+        "provenance": [
+          {
+            "source_text_quote": "Patient was treated conservatively with antibiotics, antiemetics and ppi.",
+            "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+            "page_number": 1
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_8",
+        "category": "observation",
+        "name": "Blood pressure 80/50 mm/hg",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "at_encounter",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "B , P . 80/50 mm/hg",
+            "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+            "page_number": 1
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_9",
+        "category": "observation",
+        "name": "Pulse rate 56 mints",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "at_encounter",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "P.R 56mints",
+            "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+            "page_number": 1
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_10",
+        "category": "observation",
+        "name": "SPO2 97%",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "at_encounter",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "SPO2 97%",
+            "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+            "page_number": 1
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_11",
+        "category": "medication",
+        "name": "T.EM ESET",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "unknown",
+        "temporality": "current",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "T.EM ESET: (1-0-1)",
+            "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+            "page_number": 2
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_12",
+        "category": "medication",
+        "name": "T.YEES D",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "unknown",
+        "temporality": "current",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "T.YEES D: (1-0-1)",
+            "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+            "page_number": 2
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_13",
+        "category": "medication",
+        "name": "T.DIGIPEN",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "unknown",
+        "temporality": "current",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "T.DIGIPEN: (1-0-1)",
+            "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+            "page_number": 2
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_14",
+        "category": "medication",
+        "name": "T.ACILOC",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "unknown",
+        "temporality": "current",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "T.ACILOC: (1-0-1)",
+            "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+            "page_number": 2
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_15",
+        "category": "medication",
+        "name": "T.MUCYST",
+        "status": "active",
+        "is_negated": true,
+        "certainty": "unknown",
+        "temporality": "current",
+        "date": null,
+        "attributes": [
+          {
+            "name": "assertion_scope",
+            "value": "no documented history; absence of documentation",
+            "unit": null
+          }
+        ],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "T.MUCYST: (0-0-1)",
+            "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+            "page_number": 2
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_16",
+        "category": "medication",
+        "name": "T.NEFTRON",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "unknown",
+        "temporality": "current",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "T.NEFTRON: (1-0-1)",
+            "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+            "page_number": 2
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_17",
+        "category": "medication",
+        "name": "T. AZ1TH RA L",
+        "status": "active",
+        "is_negated": true,
+        "certainty": "unknown",
+        "temporality": "current",
+        "date": null,
+        "attributes": [
+          {
+            "name": "assertion_scope",
+            "value": "no documented history; absence of documentation",
+            "unit": null
+          }
+        ],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "T. AZ1TH RA L: (0-0-1)",
+            "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+            "page_number": 2
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_18",
+        "category": "medication",
+        "name": "5YP.LUPIZ1ME PLUS",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "unknown",
+        "temporality": "current",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "5YP.LUPIZ1ME PLUS: 10ml",
+            "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+            "page_number": 2
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_19",
+        "category": "medication",
+        "name": "5YP.SUCRAFIL PLUS",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "unknown",
+        "temporality": "current",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "5YP.SUCRAFIL PLUS: 5ml",
+            "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+            "page_number": 2
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_20",
+        "category": "procedure",
+        "name": "urgent care",
+        "status": "unknown",
+        "is_negated": false,
+        "certainty": "unknown",
+        "temporality": "unknown",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "When and how to obtain urgent care : Report in case of pain, bleeding and or other emergencies.",
+            "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+            "page_number": 2
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_21",
+        "category": "procedure",
+        "name": "Prenatal Screening",
+        "status": "unknown",
+        "is_negated": false,
+        "certainty": "unknown",
+        "temporality": "unknown",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "1 PRENATAL SCREENING 2780 1 2780",
+            "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+            "page_number": 5
+          }
+        ]
+      }
+    ]
+  },
+  "rejected_candidates": [],
+  "validation": {
+    "summary": {
+      "unsupported_rate": 0.0,
+      "graph_errors": []
+    },
+    "facts": {
+      "fact_1": [],
+      "fact_2": [],
+      "fact_3": [],
+      "fact_4": [],
+      "fact_5": [
+        [
+          "warn",
+          "quote_fuzzy_only"
+        ]
+      ],
+      "fact_6": [
+        [
+          "warn",
+          "quote_fuzzy_only"
+        ]
+      ],
+      "fact_7": [
+        [
+          "warn",
+          "quote_fuzzy_only"
+        ]
+      ],
+      "fact_8": [],
+      "fact_9": [],
+      "fact_10": [],
+      "fact_11": [],
+      "fact_12": [],
+      "fact_13": [],
+      "fact_14": [],
+      "fact_15": [],
+      "fact_16": [],
+      "fact_17": [],
+      "fact_18": [],
+      "fact_19": [],
+      "fact_20": [],
+      "fact_21": []
+    }
+  },
+  "evaluation": {
+    "metrics": {
+      "gold_recall": 0.5,
+      "precision_vs_gold_subset": 0.47619047619047616,
+      "precision_excluding_extra_supported": 1.0,
+      "extra_supported_facts": 11,
+      "unsupported_rate": 0.0,
+      "context_accuracy": {
+        "status": 0.3,
+        "temporality": 0.3,
+        "certainty": 0.9,
+        "is_negated": 0.9
+      },
+      "attribute_recall_on_matched_facts": 0.0,
+      "counts": {
+        "predicted_facts": 21,
+        "gold_facts": 20,
+        "true_positives": 10,
+        "false_negatives": 10,
+        "unmatched_predictions": 11
+      }
+    },
+    "counts": {
+      "predicted_facts": 21,
+      "gold_facts": 20,
+      "true_positives": 10,
+      "false_negatives": 10,
+      "unmatched_predictions": 11,
+      "extra_supported": 11,
+      "unsupported_unmatched": 0,
+      "unsupported_total": 0,
+      "context_correct": {
+        "status": 3,
+        "certainty": 9,
+        "is_negated": 9,
+        "temporality": 3
+      },
+      "attributes_total": 18,
+      "attributes_correct": 0
+    },
+    "errors": [
+      {
+        "error_class": "wrong_temporality",
+        "gold_fact_id": "SM-CORE-01",
+        "pred_fact_id": "fact_1",
+        "fact_name": "Lower oesophageal hiatus hernia",
+        "gold_value": "at_encounter",
+        "predicted_value": "current",
+        "similarity": 0.94
+      },
+      {
+        "error_class": "wrong_temporality",
+        "gold_fact_id": "SM-CORE-02",
+        "pred_fact_id": "fact_2",
+        "fact_name": "Inability to swallow food",
+        "gold_value": "at_encounter",
+        "predicted_value": "current",
+        "similarity": 1.0
+      },
+      {
+        "error_class": "wrong_or_missing_attribute",
+        "gold_fact_id": "SM-CORE-02",
+        "pred_fact_id": "fact_2",
+        "fact_name": "Inability to swallow food",
+        "gold_value": "duration=3",
+        "predicted_value": "",
+        "similarity": 1.0
+      },
+      {
+        "error_class": "wrong_or_missing_attribute",
+        "gold_fact_id": "SM-CORE-02",
+        "pred_fact_id": "fact_2",
+        "fact_name": "Inability to swallow food",
+        "gold_value": "phase=presentation",
+        "predicted_value": "",
+        "similarity": 1.0
+      },
+      {
+        "error_class": "wrong_temporality",
+        "gold_fact_id": "SM-CORE-03",
+        "pred_fact_id": "fact_3",
+        "fact_name": "Vomiting of undigested food particles",
+        "gold_value": "at_encounter",
+        "predicted_value": "current",
+        "similarity": 1.0
+      },
+      {
+        "error_class": "wrong_or_missing_attribute",
+        "gold_fact_id": "SM-CORE-03",
+        "pred_fact_id": "fact_3",
+        "fact_name": "Vomiting of undigested food particles",
+        "gold_value": "duration=3",
+        "predicted_value": "",
+        "similarity": 1.0
+      },
+      {
+        "error_class": "wrong_or_missing_attribute",
+        "gold_fact_id": "SM-CORE-03",
+        "pred_fact_id": "fact_3",
+        "fact_name": "Vomiting of undigested food particles",
+        "gold_value": "phase=presentation",
+        "predicted_value": "",
+        "similarity": 1.0
+      },
+      {
+        "error_class": "wrong_status",
+        "gold_fact_id": "SM-CORE-15",
+        "pred_fact_id": "fact_4",
+        "fact_name": "Endoscopy",
+        "gold_value": "unknown",
+        "predicted_value": "active",
+        "similarity": 0.957
+      },
+      {
+        "error_class": "wrong_or_missing_attribute",
+        "gold_fact_id": "SM-CORE-15",
+        "pred_fact_id": "fact_4",
+        "fact_name": "Endoscopy",
+        "gold_value": "completion_status=advised; completion not documented",
+        "predicted_value": "",
+        "similarity": 0.957
+      },
+      {
+        "error_class": "wrong_status",
+        "gold_fact_id": "SM-CORE-10",
+        "pred_fact_id": "fact_5",
+        "fact_name": "Antibiotics",
+        "gold_value": "unknown",
+        "predicted_value": "active",
+        "similarity": 0.94
+      },
+      {
+        "error_class": "wrong_temporality",
+        "gold_fact_id": "SM-CORE-10",
+        "pred_fact_id": "fact_5",
+        "fact_name": "Antibiotics",
+        "gold_value": "at_encounter",
+        "predicted_value": "current",
+        "similarity": 0.94
+      },
+      {
+        "error_class": "wrong_or_missing_attribute",
+        "gold_fact_id": "SM-CORE-10",
+        "pred_fact_id": "fact_5",
+        "fact_name": "Antibiotics",
+        "gold_value": "treatment_context=conservative treatment during hospital course",
+        "predicted_value": "",
+        "similarity": 0.94
+      },
+      {
+        "error_class": "wrong_or_missing_attribute",
+        "gold_fact_id": "SM-CORE-10",
+        "pred_fact_id": "fact_5",
+        "fact_name": "Antibiotics",
+        "gold_value": "specific_drug=not stated",
+        "predicted_value": "",
+        "similarity": 0.94
+      },
+      {
+        "error_class": "wrong_status",
+        "gold_fact_id": "SM-CORE-11",
+        "pred_fact_id": "fact_6",
+        "fact_name": "Antiemetics",
+        "gold_value": "unknown",
+        "predicted_value": "active",
+        "similarity": 0.94
+      },
+      {
+        "error_class": "wrong_temporality",
+        "gold_fact_id": "SM-CORE-11",
+        "pred_fact_id": "fact_6",
+        "fact_name": "Antiemetics",
+        "gold_value": "at_encounter",
+        "predicted_value": "current",
+        "similarity": 0.94
+      },
+      {
+        "error_class": "wrong_or_missing_attribute",
+        "gold_fact_id": "SM-CORE-11",
+        "pred_fact_id": "fact_6",
+        "fact_name": "Antiemetics",
+        "gold_value": "treatment_context=conservative treatment during hospital course",
+        "predicted_value": "",
+        "similarity": 0.94
+      },
+      {
+        "error_class": "wrong_or_missing_attribute",
+        "gold_fact_id": "SM-CORE-11",
+        "pred_fact_id": "fact_6",
+        "fact_name": "Antiemetics",
+        "gold_value": "specific_drug=not stated",
+        "predicted_value": "",
+        "similarity": 0.94
+      },
+      {
+        "error_class": "wrong_status",
+        "gold_fact_id": "SM-CORE-12",
+        "pred_fact_id": "fact_7",
+        "fact_name": "PPI",
+        "gold_value": "unknown",
+        "predicted_value": "active",
+        "similarity": 0.94
+      },
+      {
+        "error_class": "wrong_temporality",
+        "gold_fact_id": "SM-CORE-12",
+        "pred_fact_id": "fact_7",
+        "fact_name": "PPI",
+        "gold_value": "at_encounter",
+        "predicted_value": "current",
+        "similarity": 0.94
+      },
+      {
+        "error_class": "wrong_or_missing_attribute",
+        "gold_fact_id": "SM-CORE-12",
+        "pred_fact_id": "fact_7",
+        "fact_name": "PPI",
+        "gold_value": "treatment_context=conservative treatment during hospital course",
+        "predicted_value": "",
+        "similarity": 0.94
+      },
+      {
+        "error_class": "wrong_or_missing_attribute",
+        "gold_fact_id": "SM-CORE-12",
+        "pred_fact_id": "fact_7",
+        "fact_name": "PPI",
+        "gold_value": "specific_drug=not stated",
+        "predicted_value": "",
+        "similarity": 0.94
+      },
+      {
+        "error_class": "wrong_status",
+        "gold_fact_id": "SM-CORE-04",
+        "pred_fact_id": "fact_8",
+        "fact_name": "Blood pressure",
+        "gold_value": "unknown",
+        "predicted_value": "active",
+        "similarity": 1.0
+      },
+      {
+        "error_class": "wrong_or_missing_attribute",
+        "gold_fact_id": "SM-CORE-04",
+        "pred_fact_id": "fact_8",
+        "fact_name": "Blood pressure",
+        "gold_value": "test_value=80/50",
+        "predicted_value": "",
+        "similarity": 1.0
+      },
+      {
+        "error_class": "wrong_status",
+        "gold_fact_id": "SM-CORE-05",
+        "pred_fact_id": "fact_9",
+        "fact_name": "Pulse rate",
+        "gold_value": "unknown",
+        "predicted_value": "active",
+        "similarity": 1.0
+      },
+      {
+        "error_class": "wrong_or_missing_attribute",
+        "gold_fact_id": "SM-CORE-05",
+        "pred_fact_id": "fact_9",
+        "fact_name": "Pulse rate",
+        "gold_value": "test_value=56",
+        "predicted_value": "",
+        "similarity": 1.0
+      },
+      {
+        "error_class": "wrong_or_missing_attribute",
+        "gold_fact_id": "SM-CORE-05",
+        "pred_fact_id": "fact_9",
+        "fact_name": "Pulse rate",
+        "gold_value": "raw_unit=mints",
+        "predicted_value": "",
+        "similarity": 1.0
+      },
+      {
+        "error_class": "wrong_or_missing_attribute",
+        "gold_fact_id": "SM-CORE-05",
+        "pred_fact_id": "fact_9",
+        "fact_name": "Pulse rate",
+        "gold_value": "unit_status=requires review",
+        "predicted_value": "",
+        "similarity": 1.0
+      },
+      {
+        "error_class": "wrong_status",
+        "gold_fact_id": "SM-CORE-20",
+        "pred_fact_id": "fact_17",
+        "fact_name": "T. AZ1TH RA L",
+        "gold_value": "unknown",
+        "predicted_value": "active",
+        "similarity": 1.0
+      },
+      {
+        "error_class": "wrong_temporality",
+        "gold_fact_id": "SM-CORE-20",
+        "pred_fact_id": "fact_17",
+        "fact_name": "T. AZ1TH RA L",
+        "gold_value": "future_plan",
+        "predicted_value": "current",
+        "similarity": 1.0
+      },
+      {
+        "error_class": "wrong_certainty",
+        "gold_fact_id": "SM-CORE-20",
+        "pred_fact_id": "fact_17",
+        "fact_name": "T. AZ1TH RA L",
+        "gold_value": "confirmed",
+        "predicted_value": "unknown",
+        "similarity": 1.0
+      },
+      {
+        "error_class": "wrong_is_negated",
+        "gold_fact_id": "SM-CORE-20",
+        "pred_fact_id": "fact_17",
+        "fact_name": "T. AZ1TH RA L",
+        "gold_value": false,
+        "predicted_value": true,
+        "similarity": 1.0
+      },
+      {
+        "error_class": "wrong_or_missing_attribute",
+        "gold_fact_id": "SM-CORE-20",
+        "pred_fact_id": "fact_17",
+        "fact_name": "T. AZ1TH RA L",
+        "gold_value": "dose_schedule=0-0-1",
+        "predicted_value": "",
+        "similarity": 1.0
+      },
+      {
+        "error_class": "wrong_or_missing_attribute",
+        "gold_fact_id": "SM-CORE-20",
+        "pred_fact_id": "fact_17",
+        "fact_name": "T. AZ1TH RA L",
+        "gold_value": "normalised_ingredient=not established",
+        "predicted_value": "",
+        "similarity": 1.0
+      },
+      {
+        "error_class": "wrong_or_missing_attribute",
+        "gold_fact_id": "SM-CORE-20",
+        "pred_fact_id": "fact_17",
+        "fact_name": "T. AZ1TH RA L",
+        "gold_value": "administration_status=not documented as taken",
+        "predicted_value": "",
+        "similarity": 1.0
+      },
+      {
+        "error_class": "missed",
+        "gold_fact_id": "SM-CORE-06",
+        "pred_fact_id": "",
+        "fact_name": "Oxygen saturation",
+        "gold_value": "observation",
+        "predicted_value": "",
+        "similarity": ""
+      },
+      {
+        "error_class": "missed",
+        "gold_fact_id": "SM-CORE-07",
+        "pred_fact_id": "",
+        "fact_name": "CT scan of chest and abdomen",
+        "gold_value": "procedure",
+        "predicted_value": "",
+        "similarity": ""
+      },
+      {
+        "error_class": "missed",
+        "gold_fact_id": "SM-CORE-08",
+        "pred_fact_id": "",
+        "fact_name": "Oesophageal dilatation",
+        "gold_value": "observation",
+        "predicted_value": "",
+        "similarity": ""
+      },
+      {
+        "error_class": "missed",
+        "gold_fact_id": "SM-CORE-09",
+        "pred_fact_id": "",
+        "fact_name": "Subcarinal oesophageal narrowing",
+        "gold_value": "observation",
+        "predicted_value": "",
+        "similarity": ""
+      },
+      {
+        "error_class": "missed",
+        "gold_fact_id": "SM-CORE-13",
+        "pred_fact_id": "",
+        "fact_name": "Ability to swallow solid foods",
+        "gold_value": "observation",
+        "predicted_value": "",
+        "similarity": ""
+      },
+      {
+        "error_class": "missed",
+        "gold_fact_id": "SM-CORE-14",
+        "pred_fact_id": "",
+        "fact_name": "Vomiting",
+        "gold_value": "symptom",
+        "predicted_value": "",
+        "similarity": ""
+      },
+      {
+        "error_class": "missed",
+        "gold_fact_id": "SM-CORE-16",
+        "pred_fact_id": "",
+        "fact_name": "Biopsy",
+        "gold_value": "procedure",
+        "predicted_value": "",
+        "similarity": ""
+      },
+      {
+        "error_class": "missed",
+        "gold_fact_id": "SM-CORE-17",
+        "pred_fact_id": "",
+        "fact_name": "Total white blood cell count",
+        "gold_value": "observation",
+        "predicted_value": "",
+        "similarity": ""
+      },
+      {
+        "error_class": "missed",
+        "gold_fact_id": "SM-CORE-18",
+        "pred_fact_id": "",
+        "fact_name": "Haemoglobin",
+        "gold_value": "observation",
+        "predicted_value": "",
+        "similarity": ""
+      },
+      {
+        "error_class": "missed",
+        "gold_fact_id": "SM-CORE-19",
+        "pred_fact_id": "",
+        "fact_name": "Follow-up review",
+        "gold_value": "procedure",
+        "predicted_value": "",
+        "similarity": ""
+      },
+      {
+        "error_class": "extra_supported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_10",
+        "fact_name": "SPO2 97%",
+        "gold_value": "",
+        "predicted_value": "observation",
+        "similarity": ""
+      },
+      {
+        "error_class": "extra_supported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_11",
+        "fact_name": "T.EM ESET",
+        "gold_value": "",
+        "predicted_value": "medication",
+        "similarity": ""
+      },
+      {
+        "error_class": "extra_supported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_12",
+        "fact_name": "T.YEES D",
+        "gold_value": "",
+        "predicted_value": "medication",
+        "similarity": ""
+      },
+      {
+        "error_class": "extra_supported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_13",
+        "fact_name": "T.DIGIPEN",
+        "gold_value": "",
+        "predicted_value": "medication",
+        "similarity": ""
+      },
+      {
+        "error_class": "extra_supported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_14",
+        "fact_name": "T.ACILOC",
+        "gold_value": "",
+        "predicted_value": "medication",
+        "similarity": ""
+      },
+      {
+        "error_class": "extra_supported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_15",
+        "fact_name": "T.MUCYST",
+        "gold_value": "",
+        "predicted_value": "medication",
+        "similarity": ""
+      },
+      {
+        "error_class": "extra_supported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_16",
+        "fact_name": "T.NEFTRON",
+        "gold_value": "",
+        "predicted_value": "medication",
+        "similarity": ""
+      },
+      {
+        "error_class": "extra_supported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_18",
+        "fact_name": "5YP.LUPIZ1ME PLUS",
+        "gold_value": "",
+        "predicted_value": "medication",
+        "similarity": ""
+      },
+      {
+        "error_class": "extra_supported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_19",
+        "fact_name": "5YP.SUCRAFIL PLUS",
+        "gold_value": "",
+        "predicted_value": "medication",
+        "similarity": ""
+      },
+      {
+        "error_class": "extra_supported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_20",
+        "fact_name": "urgent care",
+        "gold_value": "",
+        "predicted_value": "procedure",
+        "similarity": ""
+      },
+      {
+        "error_class": "extra_supported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_21",
+        "fact_name": "Prenatal Screening",
+        "gold_value": "",
+        "predicted_value": "procedure",
+        "similarity": ""
+      }
+    ]
+  }
+}

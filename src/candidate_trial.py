@@ -28,8 +28,8 @@ from ingest import ingest_pdf
 from schemas import CandidateFactInventory, PatientRepresentation
 
 DEFAULT_MODELS = [
-    "meta-llama/llama-3.1-8b-instruct",
-    "qwen/qwen-2.5-7b-instruct",
+    #"meta-llama/llama-3.1-8b-instruct",
+    #"qwen/qwen-2.5-7b-instruct",
     "gpt-4o-mini",
 ]
 DEFAULT_DOCS = ["Cecilia-Zemlak-summary.pdf", "442007316-DISCHARGE-SUMMARY.pdf"]

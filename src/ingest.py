@@ -3,6 +3,8 @@ import re
 from pathlib import Path
 from pypdf import PdfReader
 from config import SECTION_HINTS
+import pymupdf4llm
+
 
 # Strong billing signals only; generic words like "rate" or "balance" occur in clinical text.
 BILLING_TERMS = re.compile(
@@ -97,7 +99,7 @@ def is_administrative(text: str, min_hits: int = 2) -> bool:
     hits = {m.group(0).lower() for m in BILLING_TERMS.finditer(text)}
     return len(hits) >= min_hits
 
-
+'''
 def ingest_pdf(pdf_path: Path) -> list[dict]:
     reader = PdfReader(str(pdf_path))
     pages = []
@@ -117,6 +119,33 @@ def ingest_pdf(pdf_path: Path) -> list[dict]:
                 "raw_text": raw,
                 "is_administrative": is_administrative(raw),
         })
+    return pages
+'''
+
+
+def ingest_pdf(pdf_path: Path) -> list[dict]:
+    # to_markdown with page_chunks=True returns a list of dictionaries, one per page.
+    chunks = pymupdf4llm.to_markdown(str(pdf_path), page_chunks=True)
+    
+    pages = []
+    # Enumerate ensures your page_number output stays exactly the same (1-indexed)
+    for number, chunk in enumerate(chunks, start=1):
+        # 'text' now contains clean, layout-aware Markdown (tables, headings, etc.)
+        raw = chunk.get("text", "")
+        
+        page_data = {
+            "source_document": pdf_path.name,
+            "page_number": number,
+            "raw_text": raw,
+        }
+        
+        if SECTION_HINTS:
+            page_data["detected_sections"] = detect_sections(raw)
+        else:
+            page_data["is_administrative"] = is_administrative(raw)
+            
+        pages.append(page_data)
+        
     return pages
 
 

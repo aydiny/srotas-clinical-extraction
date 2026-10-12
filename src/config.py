@@ -13,9 +13,16 @@ TEMPERATURE = 0
 SECTION_HINTS = False
 
 # Candidate discovery (high-recall pass; may use a different model/provider)
-CANDIDATE_PROMPT_VERSION = "clinical_candidate_discovery_v2"
+CANDIDATE_PROMPT_VERSION = "clinical_candidate_discovery"
 CANDIDATE_MODEL = os.getenv("CANDIDATE_MODEL", MODEL)
 CANDIDATE_MAX_OUTPUT_TOKENS = int(os.getenv("CANDIDATE_MAX_OUTPUT_TOKENS", "4096"))
+# Enrichment (second pass: candidates -> full ClinicalFacts over the whole document)
+ENRICH_PROMPT_VERSION = "clinical_fact_enrichment_v1"
+ENRICH_MODEL = os.getenv("ENRICH_MODEL", "gpt-4o-mini")
+ENRICH_BATCH_SIZE = int(os.getenv("ENRICH_BATCH_SIZE", "25"))
+ENRICH_MAX_OUTPUT_TOKENS = int(os.getenv("ENRICH_MAX_OUTPUT_TOKENS", "12000"))
+ENRICH_VALIDATION_RETRY = os.getenv("ENRICH_VALIDATION_RETRY", "false").lower() == "true"
+
 # openai | openrouter | auto (slash in model id => openrouter)
 LLM_PROVIDER = os.getenv("LLM_PROVIDER", "auto").strip().lower()
 OPENROUTER_BASE_URL = os.getenv("OPENROUTER_BASE_URL", "https://openrouter.ai/api/v1")

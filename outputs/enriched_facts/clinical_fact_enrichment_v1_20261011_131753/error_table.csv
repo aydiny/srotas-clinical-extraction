@@ -1,0 +1,82 @@
+document,candidate_model,model,error_class,gold_fact_id,pred_fact_id,fact_name,gold_value,predicted_value,similarity
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_status,CZ-01,fact_1,Malignant neoplasm of breast,unknown,active,0.815
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_temporality,CZ-01,fact_1,Malignant neoplasm of breast,unknown,current,0.815
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_or_missing_attribute,CZ-01,fact_1,Malignant neoplasm of breast,snomed_ct_code=254837009,,0.815
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_or_missing_attribute,CZ-01,fact_1,Malignant neoplasm of breast,status_note=Source headings say chronic/confirmed; assessment says history of breast cancer in remission; current activity not explicit,,0.815
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_or_missing_attribute,CZ-09,fact_5,Smoking,smoking_status=active,,0.586
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_or_missing_attribute,CZ-09,fact_5,Smoking,category_note=social history,,0.586
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_or_missing_attribute,CZ-10,fact_6,Alcohol use disorder (documented as alcoholism),source_term=alcoholism,,0.586
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_or_missing_attribute,CZ-10,fact_6,Alcohol use disorder (documented as alcoholism),category_note=social history,,0.586
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_status,CZ-05,fact_17,"Surgical intervention (excision, biopsy)",historical,active,1.0
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_temporality,CZ-05,fact_17,"Surgical intervention (excision, biopsy)",historical,current,1.0
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_or_missing_attribute,CZ-05,fact_17,"Surgical intervention (excision, biopsy)","detail=excision, biopsy",,1.0
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_or_missing_attribute,CZ-05,fact_17,"Surgical intervention (excision, biopsy)",date_status=not documented,,1.0
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_status,CZ-07,fact_18,Metastasis,unknown,active,0.8
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_temporality,CZ-07,fact_18,Metastasis,unknown,current,0.8
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_is_negated,CZ-07,fact_18,Metastasis,True,False,0.8
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_or_missing_attribute,CZ-07,fact_18,Metastasis,"assertion_scope=no documented metastasis in follow-up; absence of documentation, not proof of absence",,0.8
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_status,CZ-11,fact_19,Essential hypertension,unknown,active,0.82
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_temporality,CZ-11,fact_19,Essential hypertension,unknown,current,0.82
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_certainty,CZ-11,fact_19,Essential hypertension,unknown,confirmed,0.82
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_or_missing_attribute,CZ-11,fact_19,Essential hypertension,"source_conflict=Heading says Chronic, Confirmed; text says no explicit diagnosis is documented",,0.82
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_temporality,CZ-12,fact_20,Blood pressure elevations,historical,unknown,0.629
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_certainty,CZ-12,fact_20,Blood pressure elevations,confirmed,unknown,0.629
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_or_missing_attribute,CZ-12,fact_20,Blood pressure elevations,pattern=intermittent,,0.629
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_or_missing_attribute,CZ-12,fact_20,Blood pressure elevations,numeric_values=not documented,,0.629
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_or_missing_attribute,CZ-13,fact_21,Chronic intractable migraine without aura,pattern=episodic,,1.0
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_or_missing_attribute,CZ-13,fact_21,Chronic intractable migraine without aura,source_hedge=consistent with migraine or sinus-related symptoms,,1.0
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_or_missing_attribute,CZ-14,fact_22,Recurrent headaches,pattern=recurrent,,0.779
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_or_missing_attribute,CZ-14,fact_22,Recurrent headaches,associated_symptom=sinus pain,,0.779
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_certainty,CZ-16,fact_24,Diabetes mellitus,confirmed,unknown,0.8
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_certainty,CZ-17,fact_25,Chronic kidney disease,confirmed,unknown,0.8
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,unsupported_matched_fact,CZ-17,fact_25,no documented history of Chronic kidney disease,,,0.8
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_status,CZ-19,fact_28,Penicillin,historical,active,1.0
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_temporality,CZ-19,fact_28,Penicillin,historical,current,1.0
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_or_missing_attribute,CZ-19,fact_28,Penicillin,pattern=episodic,,1.0
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_or_missing_attribute,CZ-19,fact_28,Penicillin,indication=infections,,1.0
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_or_missing_attribute,CZ-19,fact_28,Penicillin,dose=not documented,,1.0
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_status,CZ-06,fact_32,Breast cancer recurrence,unknown,resolved,0.725
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_temporality,CZ-06,fact_32,Breast cancer recurrence,unknown,historical,0.725
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_is_negated,CZ-06,fact_32,Breast cancer recurrence,True,False,0.725
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_or_missing_attribute,CZ-06,fact_32,Breast cancer recurrence,"assertion_scope=no documented recurrence in follow-up; absence of documentation, not proof of absence",,0.725
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_status,CZ-20,fact_38,Mammography,historical,active,0.8
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_temporality,CZ-20,fact_38,Mammography,historical,current,0.8
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_or_missing_attribute,CZ-20,fact_38,Mammography,indication=breast cancer,,0.8
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_or_missing_attribute,CZ-20,fact_38,Mammography,date_status=not documented,,0.8
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,missed,CZ-02,,HER2 status,observation,,
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,missed,CZ-03,,Oestrogen receptor (ER) status,observation,,
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,missed,CZ-04,,Progesterone receptor (PR) status,observation,,
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,missed,CZ-08,,Ongoing surveillance,procedure,,
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,missed,CZ-15,,Photophobia,symptom,,
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,missed,CZ-18,,Preeclampsia,condition,,
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_2,chronic but non-progressive disease profile,,symptom,
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_3,moderate symptom burden,,symptom,
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_4,routine well-child visits,,procedure,
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_7,multiple pregnancies,,condition,
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_8,musculoskeletal injuries,,condition,
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_9,respiratory infections,,condition,
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_10,acute bronchitis,,condition,
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_11,sinusitis,,condition,
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_12,sprains,,condition,
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_13,fractures,,condition,
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_14,pregnancy-related events,,condition,
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_15,stage 2 breast cancer,,condition,
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_16,no evidence of prolonged hospitalization,,observation,
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_23,Breast cancer in 2020,,condition,
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,unsupported,,fact_26,No documented history of Coronary artery disease,,condition,
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,unsupported,,fact_27,No documented history of Autoimmune disorders,,condition,
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_29,doxycycline,,medication,
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_30,acetaminophen,,medication,
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_31,meperidine,,medication,
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_33,episodic infections,,condition,
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_34,injuries,,condition,
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_35,vital signs,,observation,
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_36,CBC trends,,observation,
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_37,X-rays for fractures,,observation,
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_39,routine follow-up,,procedure,
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_40,no significant competing comorbidity,,condition,
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_41,no chronic therapy documented,,condition,
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_42,episodic respiratory infections,,condition,
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_43,no evidence of chronic progressive disease or complications,,observation,
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_44,multiple pregnancies,,condition,
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_45,low healthcare needs,,condition,

@@ -127,3 +127,39 @@ class CandidateFact(BaseModel):
 
 class CandidateFactInventory(BaseModel):
     candidates: list[CandidateFact]
+
+
+# Enrichment pass output. Fact IDs and source_document are assigned in code.
+class EnrichedProvenance(BaseModel):
+    page_number: int = Field(description="The page number the quote is copied from.")
+    source_text_quote: str = Field(
+        description="The EXACT verbatim quote from that page that proves this fact. Must not be altered."
+    )
+
+
+class EnrichedFact(BaseModel):
+    candidate_ids: list[str] = Field(
+        description="BATCH candidate_ids this fact covers (several when merging duplicates)."
+    )
+    category: Literal["condition", "symptom", "observation", "medication", "procedure"]
+    name: str = Field(description="Concise clinical name of the entity.")
+    status: Literal["active", "historical", "resolved", "unknown"]
+    is_negated: bool
+    certainty: Literal["confirmed", "suspected", "unknown"]
+    temporality: Literal["current", "historical", "at_encounter", "future_plan", "unknown"]
+    date: str | None = Field(description="Date or year as written in the quote, otherwise null.")
+    attributes: list[Attribute]
+    related_candidate_ids: list[str] = Field(
+        description="CANDIDATE INDEX ids this fact is clinically linked to."
+    )
+    provenance: list[EnrichedProvenance]
+
+
+class RejectedCandidate(BaseModel):
+    candidate_id: str
+    reason: str = Field(description="Short reason, e.g. 'billing line', 'family history'.")
+
+
+class EnrichmentBatch(BaseModel):
+    facts: list[EnrichedFact]
+    rejected_candidates: list[RejectedCandidate]

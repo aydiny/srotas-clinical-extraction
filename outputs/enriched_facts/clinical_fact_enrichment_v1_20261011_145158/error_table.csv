@@ -1,0 +1,159 @@
+document,candidate_model,model,error_class,gold_fact_id,pred_fact_id,fact_name,gold_value,predicted_value,similarity
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_status,CZ-01,fact_1,Malignant neoplasm of breast,unknown,active,0.815
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_temporality,CZ-01,fact_1,Malignant neoplasm of breast,unknown,current,0.815
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_or_missing_attribute,CZ-01,fact_1,Malignant neoplasm of breast,snomed_ct_code=254837009,,0.815
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_or_missing_attribute,CZ-01,fact_1,Malignant neoplasm of breast,status_note=Source headings say chronic/confirmed; assessment says history of breast cancer in remission; current activity not explicit,,0.815
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_or_missing_attribute,CZ-09,fact_6,Smoking,smoking_status=active,,0.786
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_or_missing_attribute,CZ-09,fact_6,Smoking,category_note=social history,,0.786
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_or_missing_attribute,CZ-10,fact_7,Alcohol use disorder (documented as alcoholism),source_term=alcoholism,,0.786
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_or_missing_attribute,CZ-10,fact_7,Alcohol use disorder (documented as alcoholism),category_note=social history,,0.786
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_status,CZ-05,fact_10,"Surgical intervention (excision, biopsy)",historical,active,1.0
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_temporality,CZ-05,fact_10,"Surgical intervention (excision, biopsy)",historical,current,1.0
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_or_missing_attribute,CZ-05,fact_10,"Surgical intervention (excision, biopsy)","detail=excision, biopsy",,1.0
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_or_missing_attribute,CZ-05,fact_10,"Surgical intervention (excision, biopsy)",date_status=not documented,,1.0
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_status,CZ-07,fact_11,Metastasis,unknown,historical,1.0
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_temporality,CZ-07,fact_11,Metastasis,unknown,historical,1.0
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_is_negated,CZ-07,fact_11,Metastasis,True,False,1.0
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_or_missing_attribute,CZ-07,fact_11,Metastasis,"assertion_scope=no documented metastasis in follow-up; absence of documentation, not proof of absence",,1.0
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_status,CZ-11,fact_12,Essential hypertension,unknown,active,0.82
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_temporality,CZ-11,fact_12,Essential hypertension,unknown,current,0.82
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_certainty,CZ-11,fact_12,Essential hypertension,unknown,confirmed,0.82
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_or_missing_attribute,CZ-11,fact_12,Essential hypertension,"source_conflict=Heading says Chronic, Confirmed; text says no explicit diagnosis is documented",,0.82
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_status,CZ-12,fact_13,Blood pressure elevations,unknown,active,0.629
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_temporality,CZ-12,fact_13,Blood pressure elevations,historical,current,0.629
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_certainty,CZ-12,fact_13,Blood pressure elevations,confirmed,unknown,0.629
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_or_missing_attribute,CZ-12,fact_13,Blood pressure elevations,pattern=intermittent,,0.629
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_or_missing_attribute,CZ-12,fact_13,Blood pressure elevations,numeric_values=not documented,,0.629
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_or_missing_attribute,CZ-13,fact_14,Chronic intractable migraine without aura,pattern=episodic,,1.0
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_or_missing_attribute,CZ-13,fact_14,Chronic intractable migraine without aura,source_hedge=consistent with migraine or sinus-related symptoms,,1.0
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_status,CZ-06,fact_16,Breast cancer recurrence,unknown,historical,0.722
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_temporality,CZ-06,fact_16,Breast cancer recurrence,unknown,historical,0.722
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_is_negated,CZ-06,fact_16,Breast cancer recurrence,True,False,0.722
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_or_missing_attribute,CZ-06,fact_16,Breast cancer recurrence,"assertion_scope=no documented recurrence in follow-up; absence of documentation, not proof of absence",,0.722
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_status,CZ-16,fact_17,Diabetes mellitus,unknown,historical,1.0
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_temporality,CZ-16,fact_17,Diabetes mellitus,unknown,historical,1.0
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_certainty,CZ-16,fact_17,Diabetes mellitus,confirmed,unknown,1.0
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_status,CZ-17,fact_18,Chronic kidney disease,unknown,historical,1.0
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_temporality,CZ-17,fact_18,Chronic kidney disease,unknown,historical,1.0
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_certainty,CZ-17,fact_18,Chronic kidney disease,confirmed,unknown,1.0
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,unsupported_matched_fact,CZ-17,fact_18,No documented history of Chronic kidney disease,,,1.0
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_status,CZ-19,fact_21,Penicillin,historical,active,1.0
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_temporality,CZ-19,fact_21,Penicillin,historical,current,1.0
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_certainty,CZ-19,fact_21,Penicillin,confirmed,unknown,1.0
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_or_missing_attribute,CZ-19,fact_21,Penicillin,pattern=episodic,,1.0
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_or_missing_attribute,CZ-19,fact_21,Penicillin,indication=infections,,1.0
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_or_missing_attribute,CZ-19,fact_21,Penicillin,dose=not documented,,1.0
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_status,CZ-20,fact_29,Mammography,historical,unknown,1.0
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_temporality,CZ-20,fact_29,Mammography,historical,unknown,1.0
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_certainty,CZ-20,fact_29,Mammography,confirmed,unknown,1.0
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_or_missing_attribute,CZ-20,fact_29,Mammography,indication=breast cancer,,1.0
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_or_missing_attribute,CZ-20,fact_29,Mammography,date_status=not documented,,1.0
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_temporality,CZ-02,fact_34,HER2 status,historical,unknown,0.576
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_certainty,CZ-02,fact_34,HER2 status,confirmed,unknown,0.576
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,wrong_or_missing_attribute,CZ-02,fact_34,HER2 status,test_value=positive,,0.576
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,unsupported_matched_fact,CZ-02,fact_34,stable status,,,0.576
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,missed,CZ-03,,Oestrogen receptor (ER) status,observation,,
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,missed,CZ-04,,Progesterone receptor (PR) status,observation,,
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,missed,CZ-08,,Ongoing surveillance,procedure,,
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,missed,CZ-14,,Recurrent headaches,symptom,,
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,missed,CZ-18,,Preeclampsia,condition,,
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_2,acute bronchitis,,symptom,
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_3,sinusitis,,symptom,
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_4,well-child visits,,procedure,
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_5,management of acute care services,,procedure,
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_8,no evidence of prolonged hospitalization,,condition,
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_9,no evidence of advanced systemic disease,,condition,
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,unsupported,,fact_19,No documented history of Coronary artery disease,,condition,
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,unsupported,,fact_20,No documented history of Autoimmune disorders,,condition,
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_22,doxycycline,,medication,
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_23,acetaminophen,,medication,
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_24,meperidine,,medication,
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_25,history of breast cancer in remission,,condition,
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,unsupported,,fact_26,episodic infections,,condition,
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_27,CBC trends normal,,observation,
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_28,vital signs tracked from infancy,,observation,
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_30,X-rays,,procedure,
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_31,normal growth,,observation,
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_32,no chronic therapy documented,,condition,
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_33,no adherence issues noted,,condition,
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_35,stage 2 breast cancer,,condition,
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_36,episodic respiratory infections,,condition,
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_37,musculoskeletal injuries,,condition,
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_38,chronic progressive disease,,condition,
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_39,surgically managed,,procedure,
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_40,multiple pregnancies,,observation,
+Cecilia-Zemlak-summary.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_41,low healthcare needs,,condition,
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,wrong_temporality,SM-CORE-01,fact_1,Lower oesophageal hiatus hernia,at_encounter,current,0.94
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,wrong_temporality,SM-CORE-02,fact_2,Inability to swallow food,at_encounter,current,1.0
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,wrong_or_missing_attribute,SM-CORE-02,fact_2,Inability to swallow food,duration=3,,1.0
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,wrong_or_missing_attribute,SM-CORE-02,fact_2,Inability to swallow food,phase=presentation,,1.0
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,wrong_temporality,SM-CORE-03,fact_3,Vomiting of undigested food particles,at_encounter,current,1.0
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,wrong_or_missing_attribute,SM-CORE-03,fact_3,Vomiting of undigested food particles,duration=3,,1.0
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,wrong_or_missing_attribute,SM-CORE-03,fact_3,Vomiting of undigested food particles,phase=presentation,,1.0
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,wrong_status,SM-CORE-10,fact_4,Antibiotics,unknown,active,1.0
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,wrong_temporality,SM-CORE-10,fact_4,Antibiotics,at_encounter,current,1.0
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,wrong_or_missing_attribute,SM-CORE-10,fact_4,Antibiotics,treatment_context=conservative treatment during hospital course,,1.0
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,wrong_or_missing_attribute,SM-CORE-10,fact_4,Antibiotics,specific_drug=not stated,,1.0
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,wrong_status,SM-CORE-11,fact_5,Antiemetics,unknown,active,0.955
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,wrong_temporality,SM-CORE-11,fact_5,Antiemetics,at_encounter,current,0.955
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,wrong_or_missing_attribute,SM-CORE-11,fact_5,Antiemetics,treatment_context=conservative treatment during hospital course,,0.955
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,wrong_or_missing_attribute,SM-CORE-11,fact_5,Antiemetics,specific_drug=not stated,,0.955
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,wrong_status,SM-CORE-12,fact_6,PPI,unknown,active,1.0
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,wrong_temporality,SM-CORE-12,fact_6,PPI,at_encounter,current,1.0
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,wrong_or_missing_attribute,SM-CORE-12,fact_6,PPI,treatment_context=conservative treatment during hospital course,,1.0
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,wrong_or_missing_attribute,SM-CORE-12,fact_6,PPI,specific_drug=not stated,,1.0
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,wrong_status,SM-CORE-15,fact_7,Endoscopy,unknown,active,0.957
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,wrong_or_missing_attribute,SM-CORE-15,fact_7,Endoscopy,completion_status=advised; completion not documented,,0.957
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,wrong_status,SM-CORE-17,fact_11,Total white blood cell count,unknown,active,0.69
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,wrong_or_missing_attribute,SM-CORE-17,fact_11,Total white blood cell count,test_value=8900,,0.69
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,wrong_status,SM-CORE-20,fact_36,T. AZ1TH RA L,unknown,active,1.0
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,wrong_temporality,SM-CORE-20,fact_36,T. AZ1TH RA L,future_plan,current,1.0
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,wrong_or_missing_attribute,SM-CORE-20,fact_36,T. AZ1TH RA L,dose_schedule=0-0-1,,1.0
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,wrong_or_missing_attribute,SM-CORE-20,fact_36,T. AZ1TH RA L,normalised_ingredient=not established,,1.0
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,wrong_or_missing_attribute,SM-CORE-20,fact_36,T. AZ1TH RA L,administration_status=not documented as taken,,1.0
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,missed,SM-CORE-04,,Blood pressure,observation,,
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,missed,SM-CORE-05,,Pulse rate,observation,,
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,missed,SM-CORE-06,,Oxygen saturation,observation,,
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,missed,SM-CORE-07,,CT scan of chest and abdomen,procedure,,
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,missed,SM-CORE-08,,Oesophageal dilatation,observation,,
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,missed,SM-CORE-09,,Subcarinal oesophageal narrowing,observation,,
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,missed,SM-CORE-13,,Ability to swallow solid foods,observation,,
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,missed,SM-CORE-14,,Vomiting,symptom,,
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,missed,SM-CORE-16,,Biopsy,procedure,,
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,missed,SM-CORE-18,,Haemoglobin,observation,,
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,missed,SM-CORE-19,,Follow-up review,procedure,,
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,unsupported,,fact_8,SPO2 97%,,observation,
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_9,"B ,  P . 80/50 mm/hg",,observation,
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_10,P.R 56mints,,observation,
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_12,SGPT-27 Iu/l,,observation,
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_13,Billrubin-Negative,,observation,
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_14,Total protein-7.6,,observation,
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,unsupported,,fact_15,FBS-95,,observation,
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,unsupported,,fact_16,PPBS-159,,observation,
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_17,Cholestrol- 179,,observation,
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_18,Alk phosphatise-79,,observation,
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_19,HdI cholesterol-32,,observation,
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_20,Ldl cholesterol-128,,observation,
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_21,Vldl cholesterol-33,,observation,
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_22,T.c/hdl ratio-5,,observation,
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_23,Specific gravity:I.010,,observation,
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,unsupported,,fact_24,Ph-5,,observation,
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_25,Glucose-Normal,,observation,
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_26,Total billiruhin,,observation,
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_27,Direct billirubin,,observation,
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_28,Keytones,,observation,
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_29,Follow Up,,observation,
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_30,T.EM ESET,,medication,
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_31,T.YEES D,,medication,
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_32,T.DIGIPEN,,medication,
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_33,T.ACILOC,,medication,
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_34,T.MUCYST,,medication,
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_35,T.NEFTRON,,medication,
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_37,5YP.LUPIZ1ME PLUS,,medication,
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_38,5YP.SUCRAFIL PLUS,,medication,
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_39,urgent care,,procedure,
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_40,pain,,symptom,
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_41,bleeding,,symptom,
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_42,Anesthesia,,procedure,
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_43,Medicines and Drugs,,medication,
+442007316-DISCHARGE-SUMMARY.pdf,gpt-4o-mini,gpt-4o-mini,extra_supported,,fact_44,PRENATAL SCREENING,,procedure,

@@ -1,0 +1,1974 @@
+{
+  "meta": {
+    "source_document": "Cecilia-Zemlak-summary.pdf",
+    "model": "gpt-4o-mini-2024-07-18",
+    "provider": "openai",
+    "prompt_version": "clinical_fact_enrichment_v1",
+    "batch_size": 25,
+    "candidates_in": 47,
+    "candidates_after_dedup": 45,
+    "batches": 2,
+    "batches_failed": [],
+    "facts": 45,
+    "rejected_candidates": 0,
+    "unaccounted_candidates": 0,
+    "merged_cross_batch": 0,
+    "coerced_historical_active": 0,
+    "prompt_cache_key": "enrich-85921cc841e8bc4566474d3f",
+    "batch_runs": [
+      {
+        "batch": 1,
+        "candidate_ids": [
+          "candidate_1",
+          "candidate_10",
+          "candidate_11",
+          "candidate_12",
+          "candidate_13",
+          "candidate_14",
+          "candidate_15",
+          "candidate_16",
+          "candidate_17",
+          "candidate_18",
+          "candidate_19",
+          "candidate_2",
+          "candidate_20",
+          "candidate_21",
+          "candidate_22",
+          "candidate_23",
+          "candidate_24",
+          "candidate_25",
+          "candidate_3",
+          "candidate_4",
+          "candidate_5",
+          "candidate_6",
+          "candidate_7",
+          "candidate_8",
+          "candidate_9"
+        ],
+        "attempts": [
+          {
+            "attempt": 1,
+            "status": "ok",
+            "facts": 25,
+            "rejected": 0,
+            "failing_facts": 1,
+            "elapsed_seconds": 28.637,
+            "usage": {
+              "input_tokens": 4693,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0
+              },
+              "output_tokens": 3620,
+              "output_tokens_details": {
+                "reasoning_tokens": 0
+              },
+              "total_tokens": 8313,
+              "cached_tokens": 0
+            }
+          },
+          {
+            "attempt": 2,
+            "status": "ok",
+            "facts": 25,
+            "rejected": 0,
+            "failing_facts": 1,
+            "elapsed_seconds": 30.34,
+            "usage": {
+              "input_tokens": 8416,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 8192
+              },
+              "output_tokens": 3620,
+              "output_tokens_details": {
+                "reasoning_tokens": 0
+              },
+              "total_tokens": 12036,
+              "cached_tokens": 8192
+            }
+          }
+        ],
+        "usage": {
+          "input_tokens": 13109,
+          "cached_input_tokens": 8192,
+          "output_tokens": 7240,
+          "total_tokens": 20349
+        },
+        "elapsed_seconds": 58.977,
+        "status": "ok",
+        "facts": 25,
+        "rejected": 0,
+        "unaccounted_candidate_ids": []
+      },
+      {
+        "batch": 2,
+        "candidate_ids": [
+          "candidate_26",
+          "candidate_27",
+          "candidate_28",
+          "candidate_29",
+          "candidate_30",
+          "candidate_31",
+          "candidate_32",
+          "candidate_33",
+          "candidate_34",
+          "candidate_35",
+          "candidate_36",
+          "candidate_37",
+          "candidate_38",
+          "candidate_39",
+          "candidate_40",
+          "candidate_41",
+          "candidate_43",
+          "candidate_45",
+          "candidate_46",
+          "candidate_47"
+        ],
+        "attempts": [
+          {
+            "attempt": 1,
+            "status": "ok",
+            "facts": 20,
+            "rejected": 0,
+            "failing_facts": 2,
+            "elapsed_seconds": 19.89,
+            "usage": {
+              "input_tokens": 4200,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 2944
+              },
+              "output_tokens": 2452,
+              "output_tokens_details": {
+                "reasoning_tokens": 0
+              },
+              "total_tokens": 6652,
+              "cached_tokens": 2944
+            }
+          },
+          {
+            "attempt": 2,
+            "status": "ok",
+            "facts": 20,
+            "rejected": 0,
+            "failing_facts": 2,
+            "elapsed_seconds": 17.809,
+            "usage": {
+              "input_tokens": 6792,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 6528
+              },
+              "output_tokens": 2452,
+              "output_tokens_details": {
+                "reasoning_tokens": 0
+              },
+              "total_tokens": 9244,
+              "cached_tokens": 6528
+            }
+          }
+        ],
+        "usage": {
+          "input_tokens": 10992,
+          "cached_input_tokens": 9472,
+          "output_tokens": 4904,
+          "total_tokens": 15896
+        },
+        "elapsed_seconds": 37.699,
+        "status": "ok",
+        "facts": 20,
+        "rejected": 0,
+        "unaccounted_candidate_ids": []
+      }
+    ],
+    "elapsed_seconds": 96.681,
+    "usage": {
+      "input_tokens": 24101,
+      "cached_input_tokens": 17664,
+      "output_tokens": 12144,
+      "total_tokens": 36245
+    },
+    "timestamp_utc": "2026-10-11T12:19:30.559344+00:00"
+  },
+  "candidate_source": {
+    "trial_dir": "D:\\AI_ML\\srotas-clinical-extraction\\outputs\\candidate_trials\\clinical_candidate_discovery_v2_20261011_103647",
+    "file": "Cecilia-Zemlak-summary__gpt-4o-mini.json"
+  },
+  "patient": {
+    "patient_id": null,
+    "patient_name": null,
+    "age": null,
+    "sex": "Unknown",
+    "clinical_facts": [
+      {
+        "fact_id": "fact_1",
+        "category": "condition",
+        "name": "Malignant Neoplasm of Breast",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "current",
+        "date": null,
+        "attributes": [
+          {
+            "name": "stage",
+            "value": "2",
+            "unit": null
+          },
+          {
+            "name": "HER2 status",
+            "value": "positive",
+            "unit": null
+          },
+          {
+            "name": "ER status",
+            "value": "positive",
+            "unit": null
+          },
+          {
+            "name": "PR status",
+            "value": "positive",
+            "unit": null
+          }
+        ],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "The patient carries a confirmed diagnosis of malignant neoplasm of breast (SNOMED CT 254837009), staged as 2 with positive HER2, ER, and PR status.",
+            "source_document": "Cecilia-Zemlak-summary.pdf",
+            "page_number": 1
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_2",
+        "category": "symptom",
+        "name": "chronic but non-progressive disease profile",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "current",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "Her clinical history reflects a chronic but non-progressive disease profile, characterized by recurrent acute issues without evidence of advanced systemic disease or major complications beyond her cancer diagnosis.",
+            "source_document": "Cecilia-Zemlak-summary.pdf",
+            "page_number": 1
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_3",
+        "category": "symptom",
+        "name": "moderate symptom burden",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "current",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "The overall clinical course suggests moderate symptom burden with preserved functional status, allowing for ongoing ambulatory management.",
+            "source_document": "Cecilia-Zemlak-summary.pdf",
+            "page_number": 1
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_4",
+        "category": "procedure",
+        "name": "routine well-child visits",
+        "status": "historical",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "historical",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "Healthcare utilization is consistent with routine well-child visits early on, evolving to management of acute bronchitis, sinusitis, sprains, fractures, and pregnancy-related events.",
+            "source_document": "Cecilia-Zemlak-summary.pdf",
+            "page_number": 1
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_5",
+        "category": "condition",
+        "name": "active smoking",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "current",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "Social history consistently notes active smoking and alcoholism, which may contribute to health risks.",
+            "source_document": "Cecilia-Zemlak-summary.pdf",
+            "page_number": 1
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_6",
+        "category": "condition",
+        "name": "alcoholism",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "current",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "Social history consistently notes active smoking and alcoholism, which may contribute to health risks.",
+            "source_document": "Cecilia-Zemlak-summary.pdf",
+            "page_number": 1
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_7",
+        "category": "condition",
+        "name": "multiple pregnancies",
+        "status": "historical",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "historical",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "Cecilia Zemlak is a middle-aged female with a documented history of multiple pregnancies.",
+            "source_document": "Cecilia-Zemlak-summary.pdf",
+            "page_number": 1
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_8",
+        "category": "condition",
+        "name": "musculoskeletal injuries",
+        "status": "historical",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "historical",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "Cecilia Zemlak is a middle-aged female with a documented history of multiple pregnancies, musculoskeletal injuries, respiratory infections, and later breast cancer.",
+            "source_document": "Cecilia-Zemlak-summary.pdf",
+            "page_number": 1
+          },
+          {
+            "source_text_quote": "Cecilia Zemlak is a 58-year-old female with a history of stage 2 breast cancer managed surgically, alongside episodic respiratory infections and musculoskeletal injuries.",
+            "source_document": "Cecilia-Zemlak-summary.pdf",
+            "page_number": 4
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_9",
+        "category": "condition",
+        "name": "respiratory infections",
+        "status": "historical",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "historical",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "Cecilia Zemlak is a middle-aged female with a documented history of multiple pregnancies, musculoskeletal injuries, respiratory infections, and later breast cancer.",
+            "source_document": "Cecilia-Zemlak-summary.pdf",
+            "page_number": 1
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_10",
+        "category": "condition",
+        "name": "acute bronchitis",
+        "status": "historical",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "historical",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "Healthcare utilization is consistent with routine well-child visits early on, evolving to management of acute bronchitis, sinusitis, sprains, fractures, and pregnancy-related events.",
+            "source_document": "Cecilia-Zemlak-summary.pdf",
+            "page_number": 1
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_11",
+        "category": "condition",
+        "name": "sinusitis",
+        "status": "historical",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "historical",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "Healthcare utilization is consistent with routine well-child visits early on, evolving to management of acute bronchitis, sinusitis, sprains, fractures, and pregnancy-related events.",
+            "source_document": "Cecilia-Zemlak-summary.pdf",
+            "page_number": 1
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_12",
+        "category": "condition",
+        "name": "sprains",
+        "status": "historical",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "historical",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "Healthcare utilization is consistent with routine well-child visits early on, evolving to management of acute bronchitis, sinusitis, sprains, fractures, and pregnancy-related events.",
+            "source_document": "Cecilia-Zemlak-summary.pdf",
+            "page_number": 1
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_13",
+        "category": "condition",
+        "name": "fractures",
+        "status": "historical",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "historical",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "Healthcare utilization is consistent with routine well-child visits early on, evolving to management of acute bronchitis, sinusitis, sprains, fractures, and pregnancy-related events.",
+            "source_document": "Cecilia-Zemlak-summary.pdf",
+            "page_number": 1
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_14",
+        "category": "condition",
+        "name": "pregnancy-related events",
+        "status": "historical",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "historical",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "Healthcare utilization is consistent with routine well-child visits early on, evolving to management of acute bronchitis, sinusitis, sprains, fractures, and pregnancy-related events.",
+            "source_document": "Cecilia-Zemlak-summary.pdf",
+            "page_number": 1
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_15",
+        "category": "condition",
+        "name": "stage 2 breast cancer",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "current",
+        "date": "2020",
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "A significant event is the diagnosis of stage 2 breast cancer in 2020, with subsequent treatment.",
+            "source_document": "Cecilia-Zemlak-summary.pdf",
+            "page_number": 1
+          },
+          {
+            "source_text_quote": "Cecilia Zemlak is a 58-year-old female with a history of stage 2 breast cancer managed surgically.",
+            "source_document": "Cecilia-Zemlak-summary.pdf",
+            "page_number": 4
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_16",
+        "category": "observation",
+        "name": "no evidence of prolonged hospitalization",
+        "status": "unknown",
+        "is_negated": false,
+        "certainty": "unknown",
+        "temporality": "unknown",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "There is no evidence of prolonged hospitalization, intensive care utilization, or major cardiovascular events.",
+            "source_document": "Cecilia-Zemlak-summary.pdf",
+            "page_number": 1
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_17",
+        "category": "procedure",
+        "name": "Surgical intervention (excision, biopsy)",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "current",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "\u2022 Surgical intervention (excision, biopsy)",
+            "source_document": "Cecilia-Zemlak-summary.pdf",
+            "page_number": 2
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_18",
+        "category": "observation",
+        "name": "No documented recurrence or metastasis in follow-up",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "current",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "\u2022 No documented recurrence or metastasis in follow-up",
+            "source_document": "Cecilia-Zemlak-summary.pdf",
+            "page_number": 2
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_19",
+        "category": "condition",
+        "name": "Essential Hypertension (Chronic, Confirmed)",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "current",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "Essential Hypertension (Chronic, Confirmed)",
+            "source_document": "Cecilia-Zemlak-summary.pdf",
+            "page_number": 2
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_20",
+        "category": "symptom",
+        "name": "Intermittent blood pressure elevations",
+        "status": "unknown",
+        "is_negated": false,
+        "certainty": "unknown",
+        "temporality": "unknown",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "Intermittent blood pressure elevations are noted, but no explicit diagnosis is documented in excerpts.",
+            "source_document": "Cecilia-Zemlak-summary.pdf",
+            "page_number": 2
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_21",
+        "category": "condition",
+        "name": "Chronic Intractable Migraine Without Aura (Episodic, Confirmed)",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "current",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "Chronic Intractable Migraine Without Aura (Episodic, Confirmed)",
+            "source_document": "Cecilia-Zemlak-summary.pdf",
+            "page_number": 2
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_22",
+        "category": "symptom",
+        "name": "Recurrent headaches with sinus pain, nasal congestion, sore throat, facial swelling, photophobia, and cough",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "current",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "Recurrent headaches with sinus pain, nasal congestion, sore throat, facial swelling, photophobia, and cough, consistent with migraine or sinus-related symptoms.",
+            "source_document": "Cecilia-Zemlak-summary.pdf",
+            "page_number": 2
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_23",
+        "category": "condition",
+        "name": "Breast cancer in 2020",
+        "status": "historical",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "historical",
+        "date": "2020",
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "Breast cancer in 2020 is the major adult event, with no chronic sequelae from early issues documented.",
+            "source_document": "Cecilia-Zemlak-summary.pdf",
+            "page_number": 2
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_24",
+        "category": "observation",
+        "name": "no documented history of Diabetes mellitus",
+        "status": "unknown",
+        "is_negated": true,
+        "certainty": "unknown",
+        "temporality": "unknown",
+        "date": null,
+        "attributes": [
+          {
+            "name": "assertion_scope",
+            "value": "no documented history; absence of documentation",
+            "unit": null
+          }
+        ],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "There is no documented history of: \u2022 Diabetes mellitus",
+            "source_document": "Cecilia-Zemlak-summary.pdf",
+            "page_number": 2
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_25",
+        "category": "observation",
+        "name": "no documented history of Chronic kidney disease",
+        "status": "unknown",
+        "is_negated": true,
+        "certainty": "unknown",
+        "temporality": "unknown",
+        "date": null,
+        "attributes": [
+          {
+            "name": "assertion_scope",
+            "value": "no documented history; absence of documentation",
+            "unit": null
+          }
+        ],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "There is no documented history of: \u2022 Chronic kidney disease",
+            "source_document": "Cecilia-Zemlak-summary.pdf",
+            "page_number": 2
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_26",
+        "category": "condition",
+        "name": "No documented history of Coronary artery disease",
+        "status": "unknown",
+        "is_negated": true,
+        "certainty": "confirmed",
+        "temporality": "unknown",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "There is no documented history of: \u2022 Coronary artery disease",
+            "source_document": "Cecilia-Zemlak-summary.pdf",
+            "page_number": 2
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_27",
+        "category": "condition",
+        "name": "No documented history of Autoimmune disorders",
+        "status": "unknown",
+        "is_negated": true,
+        "certainty": "confirmed",
+        "temporality": "unknown",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "There is no documented history of: \u2022 Autoimmune disorders",
+            "source_document": "Cecilia-Zemlak-summary.pdf",
+            "page_number": 2
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_28",
+        "category": "medication",
+        "name": "penicillin",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "current",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "Episodic antibiotics (penicillin, doxycycline) for infections",
+            "source_document": "Cecilia-Zemlak-summary.pdf",
+            "page_number": 3
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_29",
+        "category": "medication",
+        "name": "doxycycline",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "current",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "Episodic antibiotics (penicillin, doxycycline) for infections",
+            "source_document": "Cecilia-Zemlak-summary.pdf",
+            "page_number": 3
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_30",
+        "category": "medication",
+        "name": "acetaminophen",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "current",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "Analgesics (acetaminophen, meperidine) for pain",
+            "source_document": "Cecilia-Zemlak-summary.pdf",
+            "page_number": 3
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_31",
+        "category": "medication",
+        "name": "meperidine",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "current",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "Analgesics (acetaminophen, meperidine) for pain",
+            "source_document": "Cecilia-Zemlak-summary.pdf",
+            "page_number": 3
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_32",
+        "category": "condition",
+        "name": "breast cancer",
+        "status": "resolved",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "historical",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "History of breast cancer in remission",
+            "source_document": "Cecilia-Zemlak-summary.pdf",
+            "page_number": 3
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_33",
+        "category": "condition",
+        "name": "episodic infections",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "current",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "Episodic infections and injuries",
+            "source_document": "Cecilia-Zemlak-summary.pdf",
+            "page_number": 3
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_34",
+        "category": "condition",
+        "name": "injuries",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "current",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "Episodic infections and injuries",
+            "source_document": "Cecilia-Zemlak-summary.pdf",
+            "page_number": 3
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_35",
+        "category": "observation",
+        "name": "vital signs",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "current",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "Vital signs tracked from infancy (normal growth)",
+            "source_document": "Cecilia-Zemlak-summary.pdf",
+            "page_number": 3
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_36",
+        "category": "observation",
+        "name": "CBC trends",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "current",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "Labs: CBC trends normal; later lipids, glucose variable but no abnormalities noted",
+            "source_document": "Cecilia-Zemlak-summary.pdf",
+            "page_number": 3
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_37",
+        "category": "observation",
+        "name": "X-rays for fractures",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "current",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "Imaging: X-rays for fractures, mammography for breast cancer",
+            "source_document": "Cecilia-Zemlak-summary.pdf",
+            "page_number": 3
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_38",
+        "category": "observation",
+        "name": "mammography",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "current",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "Imaging: X-rays for fractures, mammography for breast cancer",
+            "source_document": "Cecilia-Zemlak-summary.pdf",
+            "page_number": 3
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_39",
+        "category": "procedure",
+        "name": "routine follow-up",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "current",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "Capable of routine follow-up",
+            "source_document": "Cecilia-Zemlak-summary.pdf",
+            "page_number": 3
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_40",
+        "category": "condition",
+        "name": "no significant competing comorbidity",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "current",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "No significant competing comorbidity",
+            "source_document": "Cecilia-Zemlak-summary.pdf",
+            "page_number": 3
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_41",
+        "category": "condition",
+        "name": "no chronic therapy documented",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "current",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "No chronic therapy documented; no adherence issues noted",
+            "source_document": "Cecilia-Zemlak-summary.pdf",
+            "page_number": 3
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_42",
+        "category": "condition",
+        "name": "episodic respiratory infections",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "current",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "Cecilia Zemlak is a 58-year-old female with a history of stage 2 breast cancer managed surgically, alongside episodic respiratory infections.",
+            "source_document": "Cecilia-Zemlak-summary.pdf",
+            "page_number": 4
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_43",
+        "category": "observation",
+        "name": "no evidence of chronic progressive disease or complications",
+        "status": "active",
+        "is_negated": false,
+        "certainty": "confirmed",
+        "temporality": "current",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "Cecilia Zemlak is a 58-year-old female with a history of stage 2 breast cancer managed surgically, alongside episodic respiratory infections and musculoskeletal injuries, without evidence of chronic progressive disease or complications.",
+            "source_document": "Cecilia-Zemlak-summary.pdf",
+            "page_number": 4
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_44",
+        "category": "condition",
+        "name": "multiple pregnancies",
+        "status": "unknown",
+        "is_negated": false,
+        "certainty": "unknown",
+        "temporality": "unknown",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "Her history reflects multiple pregnancies and low healthcare needs beyond acute events.",
+            "source_document": "Cecilia-Zemlak-summary.pdf",
+            "page_number": 4
+          }
+        ]
+      },
+      {
+        "fact_id": "fact_45",
+        "category": "condition",
+        "name": "low healthcare needs",
+        "status": "unknown",
+        "is_negated": false,
+        "certainty": "unknown",
+        "temporality": "unknown",
+        "date": null,
+        "attributes": [],
+        "related_to_fact_ids": [],
+        "provenance": [
+          {
+            "source_text_quote": "Her history reflects multiple pregnancies and low healthcare needs beyond acute events.",
+            "source_document": "Cecilia-Zemlak-summary.pdf",
+            "page_number": 4
+          }
+        ]
+      }
+    ]
+  },
+  "rejected_candidates": [],
+  "validation": {
+    "summary": {
+      "unsupported_rate": 0.06666666666666667,
+      "graph_errors": []
+    },
+    "facts": {
+      "fact_1": [],
+      "fact_2": [],
+      "fact_3": [],
+      "fact_4": [],
+      "fact_5": [],
+      "fact_6": [],
+      "fact_7": [
+        [
+          "warn",
+          "quote_fuzzy_only"
+        ]
+      ],
+      "fact_8": [
+        [
+          "warn",
+          "quote_fuzzy_only"
+        ],
+        [
+          "warn",
+          "quote_fuzzy_only"
+        ]
+      ],
+      "fact_9": [
+        [
+          "warn",
+          "quote_fuzzy_only"
+        ]
+      ],
+      "fact_10": [],
+      "fact_11": [],
+      "fact_12": [],
+      "fact_13": [],
+      "fact_14": [],
+      "fact_15": [
+        [
+          "warn",
+          "quote_fuzzy_only"
+        ]
+      ],
+      "fact_16": [],
+      "fact_17": [],
+      "fact_18": [],
+      "fact_19": [],
+      "fact_20": [],
+      "fact_21": [],
+      "fact_22": [],
+      "fact_23": [],
+      "fact_24": [],
+      "fact_25": [
+        [
+          "error",
+          "quote_not_found"
+        ]
+      ],
+      "fact_26": [
+        [
+          "error",
+          "quote_not_found"
+        ]
+      ],
+      "fact_27": [
+        [
+          "error",
+          "quote_not_found"
+        ]
+      ],
+      "fact_28": [],
+      "fact_29": [],
+      "fact_30": [],
+      "fact_31": [],
+      "fact_32": [],
+      "fact_33": [],
+      "fact_34": [],
+      "fact_35": [],
+      "fact_36": [],
+      "fact_37": [],
+      "fact_38": [],
+      "fact_39": [],
+      "fact_40": [],
+      "fact_41": [],
+      "fact_42": [
+        [
+          "warn",
+          "quote_fuzzy_only"
+        ]
+      ],
+      "fact_43": [],
+      "fact_44": [],
+      "fact_45": []
+    }
+  },
+  "evaluation": {
+    "metrics": {
+      "gold_recall": 0.7,
+      "precision_vs_gold_subset": 0.3111111111111111,
+      "precision_excluding_extra_supported": 0.875,
+      "extra_supported_facts": 29,
+      "unsupported_rate": 0.06666666666666667,
+      "context_accuracy": {
+        "status": 0.5,
+        "temporality": 0.42857142857142855,
+        "certainty": 0.7142857142857143,
+        "is_negated": 0.8571428571428571
+      },
+      "attribute_recall_on_matched_facts": 0.12,
+      "counts": {
+        "predicted_facts": 45,
+        "gold_facts": 20,
+        "true_positives": 14,
+        "false_negatives": 6,
+        "unmatched_predictions": 31
+      }
+    },
+    "counts": {
+      "predicted_facts": 45,
+      "gold_facts": 20,
+      "true_positives": 14,
+      "false_negatives": 6,
+      "unmatched_predictions": 31,
+      "extra_supported": 29,
+      "unsupported_unmatched": 2,
+      "unsupported_total": 3,
+      "context_correct": {
+        "certainty": 10,
+        "is_negated": 12,
+        "status": 7,
+        "temporality": 6
+      },
+      "attributes_total": 25,
+      "attributes_correct": 3
+    },
+    "errors": [
+      {
+        "error_class": "wrong_status",
+        "gold_fact_id": "CZ-01",
+        "pred_fact_id": "fact_1",
+        "fact_name": "Malignant neoplasm of breast",
+        "gold_value": "unknown",
+        "predicted_value": "active",
+        "similarity": 0.815
+      },
+      {
+        "error_class": "wrong_temporality",
+        "gold_fact_id": "CZ-01",
+        "pred_fact_id": "fact_1",
+        "fact_name": "Malignant neoplasm of breast",
+        "gold_value": "unknown",
+        "predicted_value": "current",
+        "similarity": 0.815
+      },
+      {
+        "error_class": "wrong_or_missing_attribute",
+        "gold_fact_id": "CZ-01",
+        "pred_fact_id": "fact_1",
+        "fact_name": "Malignant neoplasm of breast",
+        "gold_value": "snomed_ct_code=254837009",
+        "predicted_value": "",
+        "similarity": 0.815
+      },
+      {
+        "error_class": "wrong_or_missing_attribute",
+        "gold_fact_id": "CZ-01",
+        "pred_fact_id": "fact_1",
+        "fact_name": "Malignant neoplasm of breast",
+        "gold_value": "status_note=Source headings say chronic/confirmed; assessment says history of breast cancer in remission; current activity not explicit",
+        "predicted_value": "",
+        "similarity": 0.815
+      },
+      {
+        "error_class": "wrong_or_missing_attribute",
+        "gold_fact_id": "CZ-09",
+        "pred_fact_id": "fact_5",
+        "fact_name": "Smoking",
+        "gold_value": "smoking_status=active",
+        "predicted_value": "",
+        "similarity": 0.586
+      },
+      {
+        "error_class": "wrong_or_missing_attribute",
+        "gold_fact_id": "CZ-09",
+        "pred_fact_id": "fact_5",
+        "fact_name": "Smoking",
+        "gold_value": "category_note=social history",
+        "predicted_value": "",
+        "similarity": 0.586
+      },
+      {
+        "error_class": "wrong_or_missing_attribute",
+        "gold_fact_id": "CZ-10",
+        "pred_fact_id": "fact_6",
+        "fact_name": "Alcohol use disorder (documented as alcoholism)",
+        "gold_value": "source_term=alcoholism",
+        "predicted_value": "",
+        "similarity": 0.586
+      },
+      {
+        "error_class": "wrong_or_missing_attribute",
+        "gold_fact_id": "CZ-10",
+        "pred_fact_id": "fact_6",
+        "fact_name": "Alcohol use disorder (documented as alcoholism)",
+        "gold_value": "category_note=social history",
+        "predicted_value": "",
+        "similarity": 0.586
+      },
+      {
+        "error_class": "wrong_status",
+        "gold_fact_id": "CZ-05",
+        "pred_fact_id": "fact_17",
+        "fact_name": "Surgical intervention (excision, biopsy)",
+        "gold_value": "historical",
+        "predicted_value": "active",
+        "similarity": 1.0
+      },
+      {
+        "error_class": "wrong_temporality",
+        "gold_fact_id": "CZ-05",
+        "pred_fact_id": "fact_17",
+        "fact_name": "Surgical intervention (excision, biopsy)",
+        "gold_value": "historical",
+        "predicted_value": "current",
+        "similarity": 1.0
+      },
+      {
+        "error_class": "wrong_or_missing_attribute",
+        "gold_fact_id": "CZ-05",
+        "pred_fact_id": "fact_17",
+        "fact_name": "Surgical intervention (excision, biopsy)",
+        "gold_value": "detail=excision, biopsy",
+        "predicted_value": "",
+        "similarity": 1.0
+      },
+      {
+        "error_class": "wrong_or_missing_attribute",
+        "gold_fact_id": "CZ-05",
+        "pred_fact_id": "fact_17",
+        "fact_name": "Surgical intervention (excision, biopsy)",
+        "gold_value": "date_status=not documented",
+        "predicted_value": "",
+        "similarity": 1.0
+      },
+      {
+        "error_class": "wrong_status",
+        "gold_fact_id": "CZ-07",
+        "pred_fact_id": "fact_18",
+        "fact_name": "Metastasis",
+        "gold_value": "unknown",
+        "predicted_value": "active",
+        "similarity": 0.8
+      },
+      {
+        "error_class": "wrong_temporality",
+        "gold_fact_id": "CZ-07",
+        "pred_fact_id": "fact_18",
+        "fact_name": "Metastasis",
+        "gold_value": "unknown",
+        "predicted_value": "current",
+        "similarity": 0.8
+      },
+      {
+        "error_class": "wrong_is_negated",
+        "gold_fact_id": "CZ-07",
+        "pred_fact_id": "fact_18",
+        "fact_name": "Metastasis",
+        "gold_value": true,
+        "predicted_value": false,
+        "similarity": 0.8
+      },
+      {
+        "error_class": "wrong_or_missing_attribute",
+        "gold_fact_id": "CZ-07",
+        "pred_fact_id": "fact_18",
+        "fact_name": "Metastasis",
+        "gold_value": "assertion_scope=no documented metastasis in follow-up; absence of documentation, not proof of absence",
+        "predicted_value": "",
+        "similarity": 0.8
+      },
+      {
+        "error_class": "wrong_status",
+        "gold_fact_id": "CZ-11",
+        "pred_fact_id": "fact_19",
+        "fact_name": "Essential hypertension",
+        "gold_value": "unknown",
+        "predicted_value": "active",
+        "similarity": 0.82
+      },
+      {
+        "error_class": "wrong_temporality",
+        "gold_fact_id": "CZ-11",
+        "pred_fact_id": "fact_19",
+        "fact_name": "Essential hypertension",
+        "gold_value": "unknown",
+        "predicted_value": "current",
+        "similarity": 0.82
+      },
+      {
+        "error_class": "wrong_certainty",
+        "gold_fact_id": "CZ-11",
+        "pred_fact_id": "fact_19",
+        "fact_name": "Essential hypertension",
+        "gold_value": "unknown",
+        "predicted_value": "confirmed",
+        "similarity": 0.82
+      },
+      {
+        "error_class": "wrong_or_missing_attribute",
+        "gold_fact_id": "CZ-11",
+        "pred_fact_id": "fact_19",
+        "fact_name": "Essential hypertension",
+        "gold_value": "source_conflict=Heading says Chronic, Confirmed; text says no explicit diagnosis is documented",
+        "predicted_value": "",
+        "similarity": 0.82
+      },
+      {
+        "error_class": "wrong_temporality",
+        "gold_fact_id": "CZ-12",
+        "pred_fact_id": "fact_20",
+        "fact_name": "Blood pressure elevations",
+        "gold_value": "historical",
+        "predicted_value": "unknown",
+        "similarity": 0.629
+      },
+      {
+        "error_class": "wrong_certainty",
+        "gold_fact_id": "CZ-12",
+        "pred_fact_id": "fact_20",
+        "fact_name": "Blood pressure elevations",
+        "gold_value": "confirmed",
+        "predicted_value": "unknown",
+        "similarity": 0.629
+      },
+      {
+        "error_class": "wrong_or_missing_attribute",
+        "gold_fact_id": "CZ-12",
+        "pred_fact_id": "fact_20",
+        "fact_name": "Blood pressure elevations",
+        "gold_value": "pattern=intermittent",
+        "predicted_value": "",
+        "similarity": 0.629
+      },
+      {
+        "error_class": "wrong_or_missing_attribute",
+        "gold_fact_id": "CZ-12",
+        "pred_fact_id": "fact_20",
+        "fact_name": "Blood pressure elevations",
+        "gold_value": "numeric_values=not documented",
+        "predicted_value": "",
+        "similarity": 0.629
+      },
+      {
+        "error_class": "wrong_or_missing_attribute",
+        "gold_fact_id": "CZ-13",
+        "pred_fact_id": "fact_21",
+        "fact_name": "Chronic intractable migraine without aura",
+        "gold_value": "pattern=episodic",
+        "predicted_value": "",
+        "similarity": 1.0
+      },
+      {
+        "error_class": "wrong_or_missing_attribute",
+        "gold_fact_id": "CZ-13",
+        "pred_fact_id": "fact_21",
+        "fact_name": "Chronic intractable migraine without aura",
+        "gold_value": "source_hedge=consistent with migraine or sinus-related symptoms",
+        "predicted_value": "",
+        "similarity": 1.0
+      },
+      {
+        "error_class": "wrong_or_missing_attribute",
+        "gold_fact_id": "CZ-14",
+        "pred_fact_id": "fact_22",
+        "fact_name": "Recurrent headaches",
+        "gold_value": "pattern=recurrent",
+        "predicted_value": "",
+        "similarity": 0.779
+      },
+      {
+        "error_class": "wrong_or_missing_attribute",
+        "gold_fact_id": "CZ-14",
+        "pred_fact_id": "fact_22",
+        "fact_name": "Recurrent headaches",
+        "gold_value": "associated_symptom=sinus pain",
+        "predicted_value": "",
+        "similarity": 0.779
+      },
+      {
+        "error_class": "wrong_certainty",
+        "gold_fact_id": "CZ-16",
+        "pred_fact_id": "fact_24",
+        "fact_name": "Diabetes mellitus",
+        "gold_value": "confirmed",
+        "predicted_value": "unknown",
+        "similarity": 0.8
+      },
+      {
+        "error_class": "wrong_certainty",
+        "gold_fact_id": "CZ-17",
+        "pred_fact_id": "fact_25",
+        "fact_name": "Chronic kidney disease",
+        "gold_value": "confirmed",
+        "predicted_value": "unknown",
+        "similarity": 0.8
+      },
+      {
+        "error_class": "unsupported_matched_fact",
+        "gold_fact_id": "CZ-17",
+        "pred_fact_id": "fact_25",
+        "fact_name": "no documented history of Chronic kidney disease",
+        "gold_value": "",
+        "predicted_value": "",
+        "similarity": 0.8
+      },
+      {
+        "error_class": "wrong_status",
+        "gold_fact_id": "CZ-19",
+        "pred_fact_id": "fact_28",
+        "fact_name": "Penicillin",
+        "gold_value": "historical",
+        "predicted_value": "active",
+        "similarity": 1.0
+      },
+      {
+        "error_class": "wrong_temporality",
+        "gold_fact_id": "CZ-19",
+        "pred_fact_id": "fact_28",
+        "fact_name": "Penicillin",
+        "gold_value": "historical",
+        "predicted_value": "current",
+        "similarity": 1.0
+      },
+      {
+        "error_class": "wrong_or_missing_attribute",
+        "gold_fact_id": "CZ-19",
+        "pred_fact_id": "fact_28",
+        "fact_name": "Penicillin",
+        "gold_value": "pattern=episodic",
+        "predicted_value": "",
+        "similarity": 1.0
+      },
+      {
+        "error_class": "wrong_or_missing_attribute",
+        "gold_fact_id": "CZ-19",
+        "pred_fact_id": "fact_28",
+        "fact_name": "Penicillin",
+        "gold_value": "indication=infections",
+        "predicted_value": "",
+        "similarity": 1.0
+      },
+      {
+        "error_class": "wrong_or_missing_attribute",
+        "gold_fact_id": "CZ-19",
+        "pred_fact_id": "fact_28",
+        "fact_name": "Penicillin",
+        "gold_value": "dose=not documented",
+        "predicted_value": "",
+        "similarity": 1.0
+      },
+      {
+        "error_class": "wrong_status",
+        "gold_fact_id": "CZ-06",
+        "pred_fact_id": "fact_32",
+        "fact_name": "Breast cancer recurrence",
+        "gold_value": "unknown",
+        "predicted_value": "resolved",
+        "similarity": 0.725
+      },
+      {
+        "error_class": "wrong_temporality",
+        "gold_fact_id": "CZ-06",
+        "pred_fact_id": "fact_32",
+        "fact_name": "Breast cancer recurrence",
+        "gold_value": "unknown",
+        "predicted_value": "historical",
+        "similarity": 0.725
+      },
+      {
+        "error_class": "wrong_is_negated",
+        "gold_fact_id": "CZ-06",
+        "pred_fact_id": "fact_32",
+        "fact_name": "Breast cancer recurrence",
+        "gold_value": true,
+        "predicted_value": false,
+        "similarity": 0.725
+      },
+      {
+        "error_class": "wrong_or_missing_attribute",
+        "gold_fact_id": "CZ-06",
+        "pred_fact_id": "fact_32",
+        "fact_name": "Breast cancer recurrence",
+        "gold_value": "assertion_scope=no documented recurrence in follow-up; absence of documentation, not proof of absence",
+        "predicted_value": "",
+        "similarity": 0.725
+      },
+      {
+        "error_class": "wrong_status",
+        "gold_fact_id": "CZ-20",
+        "pred_fact_id": "fact_38",
+        "fact_name": "Mammography",
+        "gold_value": "historical",
+        "predicted_value": "active",
+        "similarity": 0.8
+      },
+      {
+        "error_class": "wrong_temporality",
+        "gold_fact_id": "CZ-20",
+        "pred_fact_id": "fact_38",
+        "fact_name": "Mammography",
+        "gold_value": "historical",
+        "predicted_value": "current",
+        "similarity": 0.8
+      },
+      {
+        "error_class": "wrong_or_missing_attribute",
+        "gold_fact_id": "CZ-20",
+        "pred_fact_id": "fact_38",
+        "fact_name": "Mammography",
+        "gold_value": "indication=breast cancer",
+        "predicted_value": "",
+        "similarity": 0.8
+      },
+      {
+        "error_class": "wrong_or_missing_attribute",
+        "gold_fact_id": "CZ-20",
+        "pred_fact_id": "fact_38",
+        "fact_name": "Mammography",
+        "gold_value": "date_status=not documented",
+        "predicted_value": "",
+        "similarity": 0.8
+      },
+      {
+        "error_class": "missed",
+        "gold_fact_id": "CZ-02",
+        "pred_fact_id": "",
+        "fact_name": "HER2 status",
+        "gold_value": "observation",
+        "predicted_value": "",
+        "similarity": ""
+      },
+      {
+        "error_class": "missed",
+        "gold_fact_id": "CZ-03",
+        "pred_fact_id": "",
+        "fact_name": "Oestrogen receptor (ER) status",
+        "gold_value": "observation",
+        "predicted_value": "",
+        "similarity": ""
+      },
+      {
+        "error_class": "missed",
+        "gold_fact_id": "CZ-04",
+        "pred_fact_id": "",
+        "fact_name": "Progesterone receptor (PR) status",
+        "gold_value": "observation",
+        "predicted_value": "",
+        "similarity": ""
+      },
+      {
+        "error_class": "missed",
+        "gold_fact_id": "CZ-08",
+        "pred_fact_id": "",
+        "fact_name": "Ongoing surveillance",
+        "gold_value": "procedure",
+        "predicted_value": "",
+        "similarity": ""
+      },
+      {
+        "error_class": "missed",
+        "gold_fact_id": "CZ-15",
+        "pred_fact_id": "",
+        "fact_name": "Photophobia",
+        "gold_value": "symptom",
+        "predicted_value": "",
+        "similarity": ""
+      },
+      {
+        "error_class": "missed",
+        "gold_fact_id": "CZ-18",
+        "pred_fact_id": "",
+        "fact_name": "Preeclampsia",
+        "gold_value": "condition",
+        "predicted_value": "",
+        "similarity": ""
+      },
+      {
+        "error_class": "extra_supported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_2",
+        "fact_name": "chronic but non-progressive disease profile",
+        "gold_value": "",
+        "predicted_value": "symptom",
+        "similarity": ""
+      },
+      {
+        "error_class": "extra_supported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_3",
+        "fact_name": "moderate symptom burden",
+        "gold_value": "",
+        "predicted_value": "symptom",
+        "similarity": ""
+      },
+      {
+        "error_class": "extra_supported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_4",
+        "fact_name": "routine well-child visits",
+        "gold_value": "",
+        "predicted_value": "procedure",
+        "similarity": ""
+      },
+      {
+        "error_class": "extra_supported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_7",
+        "fact_name": "multiple pregnancies",
+        "gold_value": "",
+        "predicted_value": "condition",
+        "similarity": ""
+      },
+      {
+        "error_class": "extra_supported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_8",
+        "fact_name": "musculoskeletal injuries",
+        "gold_value": "",
+        "predicted_value": "condition",
+        "similarity": ""
+      },
+      {
+        "error_class": "extra_supported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_9",
+        "fact_name": "respiratory infections",
+        "gold_value": "",
+        "predicted_value": "condition",
+        "similarity": ""
+      },
+      {
+        "error_class": "extra_supported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_10",
+        "fact_name": "acute bronchitis",
+        "gold_value": "",
+        "predicted_value": "condition",
+        "similarity": ""
+      },
+      {
+        "error_class": "extra_supported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_11",
+        "fact_name": "sinusitis",
+        "gold_value": "",
+        "predicted_value": "condition",
+        "similarity": ""
+      },
+      {
+        "error_class": "extra_supported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_12",
+        "fact_name": "sprains",
+        "gold_value": "",
+        "predicted_value": "condition",
+        "similarity": ""
+      },
+      {
+        "error_class": "extra_supported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_13",
+        "fact_name": "fractures",
+        "gold_value": "",
+        "predicted_value": "condition",
+        "similarity": ""
+      },
+      {
+        "error_class": "extra_supported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_14",
+        "fact_name": "pregnancy-related events",
+        "gold_value": "",
+        "predicted_value": "condition",
+        "similarity": ""
+      },
+      {
+        "error_class": "extra_supported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_15",
+        "fact_name": "stage 2 breast cancer",
+        "gold_value": "",
+        "predicted_value": "condition",
+        "similarity": ""
+      },
+      {
+        "error_class": "extra_supported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_16",
+        "fact_name": "no evidence of prolonged hospitalization",
+        "gold_value": "",
+        "predicted_value": "observation",
+        "similarity": ""
+      },
+      {
+        "error_class": "extra_supported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_23",
+        "fact_name": "Breast cancer in 2020",
+        "gold_value": "",
+        "predicted_value": "condition",
+        "similarity": ""
+      },
+      {
+        "error_class": "unsupported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_26",
+        "fact_name": "No documented history of Coronary artery disease",
+        "gold_value": "",
+        "predicted_value": "condition",
+        "similarity": ""
+      },
+      {
+        "error_class": "unsupported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_27",
+        "fact_name": "No documented history of Autoimmune disorders",
+        "gold_value": "",
+        "predicted_value": "condition",
+        "similarity": ""
+      },
+      {
+        "error_class": "extra_supported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_29",
+        "fact_name": "doxycycline",
+        "gold_value": "",
+        "predicted_value": "medication",
+        "similarity": ""
+      },
+      {
+        "error_class": "extra_supported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_30",
+        "fact_name": "acetaminophen",
+        "gold_value": "",
+        "predicted_value": "medication",
+        "similarity": ""
+      },
+      {
+        "error_class": "extra_supported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_31",
+        "fact_name": "meperidine",
+        "gold_value": "",
+        "predicted_value": "medication",
+        "similarity": ""
+      },
+      {
+        "error_class": "extra_supported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_33",
+        "fact_name": "episodic infections",
+        "gold_value": "",
+        "predicted_value": "condition",
+        "similarity": ""
+      },
+      {
+        "error_class": "extra_supported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_34",
+        "fact_name": "injuries",
+        "gold_value": "",
+        "predicted_value": "condition",
+        "similarity": ""
+      },
+      {
+        "error_class": "extra_supported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_35",
+        "fact_name": "vital signs",
+        "gold_value": "",
+        "predicted_value": "observation",
+        "similarity": ""
+      },
+      {
+        "error_class": "extra_supported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_36",
+        "fact_name": "CBC trends",
+        "gold_value": "",
+        "predicted_value": "observation",
+        "similarity": ""
+      },
+      {
+        "error_class": "extra_supported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_37",
+        "fact_name": "X-rays for fractures",
+        "gold_value": "",
+        "predicted_value": "observation",
+        "similarity": ""
+      },
+      {
+        "error_class": "extra_supported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_39",
+        "fact_name": "routine follow-up",
+        "gold_value": "",
+        "predicted_value": "procedure",
+        "similarity": ""
+      },
+      {
+        "error_class": "extra_supported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_40",
+        "fact_name": "no significant competing comorbidity",
+        "gold_value": "",
+        "predicted_value": "condition",
+        "similarity": ""
+      },
+      {
+        "error_class": "extra_supported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_41",
+        "fact_name": "no chronic therapy documented",
+        "gold_value": "",
+        "predicted_value": "condition",
+        "similarity": ""
+      },
+      {
+        "error_class": "extra_supported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_42",
+        "fact_name": "episodic respiratory infections",
+        "gold_value": "",
+        "predicted_value": "condition",
+        "similarity": ""
+      },
+      {
+        "error_class": "extra_supported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_43",
+        "fact_name": "no evidence of chronic progressive disease or complications",
+        "gold_value": "",
+        "predicted_value": "observation",
+        "similarity": ""
+      },
+      {
+        "error_class": "extra_supported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_44",
+        "fact_name": "multiple pregnancies",
+        "gold_value": "",
+        "predicted_value": "condition",
+        "similarity": ""
+      },
+      {
+        "error_class": "extra_supported",
+        "gold_fact_id": "",
+        "pred_fact_id": "fact_45",
+        "fact_name": "low healthcare needs",
+        "gold_value": "",
+        "predicted_value": "condition",
+        "similarity": ""
+      }
+    ]
+  }
+}

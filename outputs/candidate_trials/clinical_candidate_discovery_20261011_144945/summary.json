@@ -1,0 +1,65 @@
+{
+  "run": {
+    "started_utc": "2026-10-11T13:49:45.434931+00:00",
+    "finished_utc": "2026-10-11T13:50:25.186222+00:00",
+    "elapsed_seconds": 39.752,
+    "prompt_version": "clinical_candidate_discovery",
+    "temperature": 0,
+    "max_output_tokens": 4096,
+    "models": [
+      "gpt-4o-mini"
+    ],
+    "documents": [
+      "Cecilia-Zemlak-summary.pdf",
+      "442007316-DISCHARGE-SUMMARY.pdf"
+    ],
+    "input_tokens": 6434,
+    "output_tokens": 4373,
+    "total_tokens": 10807,
+    "name_match_threshold": 0.7
+  },
+  "results": [
+    {
+      "document": "Cecilia-Zemlak-summary.pdf",
+      "model": "gpt-4o-mini",
+      "provider": "openai",
+      "status": "ok",
+      "model_returned": "gpt-4o-mini-2024-07-18",
+      "candidates": 42,
+      "evidence_not_found": 11,
+      "pages_failed": [],
+      "elapsed_seconds": 19.212,
+      "input_tokens": 2694,
+      "cached_input_tokens": 0,
+      "output_tokens": 2140,
+      "total_tokens": 4834,
+      "output_file": "Cecilia-Zemlak-summary__gpt-4o-mini.json",
+      "name_recall": 0.75,
+      "category_precision": 0.8,
+      "gold_facts": 20,
+      "matched_gold": 15,
+      "category_correct": 12
+    },
+    {
+      "document": "442007316-DISCHARGE-SUMMARY.pdf",
+      "model": "gpt-4o-mini",
+      "provider": "openai",
+      "status": "ok",
+      "model_returned": "gpt-4o-mini-2024-07-18",
+      "candidates": 45,
+      "evidence_not_found": 22,
+      "pages_failed": [],
+      "elapsed_seconds": 19.901,
+      "input_tokens": 3740,
+      "cached_input_tokens": 0,
+      "output_tokens": 2233,
+      "total_tokens": 5973,
+      "output_file": "442007316-DISCHARGE-SUMMARY__gpt-4o-mini.json",
+      "name_recall": 0.4,
+      "category_precision": 1.0,
+      "gold_facts": 20,
+      "matched_gold": 8,
+      "category_correct": 8
+    }
+  ]
+}

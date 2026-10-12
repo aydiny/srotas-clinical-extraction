@@ -1,0 +1,584 @@
+{
+  "meta": {
+    "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+    "model": "gpt-4o-mini-2024-07-18",
+    "provider": "openai",
+    "prompt_version": "clinical_candidate_discovery",
+    "candidate_count": 45,
+    "pages_failed": [],
+    "evidence_not_found": 22,
+    "attempts": [
+      {
+        "page_number": 1,
+        "status": "ok",
+        "candidates": 29,
+        "evidence_not_found": 22,
+        "elapsed_seconds": 9.69,
+        "usage": {
+          "input_tokens": 985,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 1275,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 2260,
+          "cached_tokens": 0
+        }
+      },
+      {
+        "page_number": 2,
+        "status": "ok",
+        "candidates": 12,
+        "evidence_not_found": 0,
+        "elapsed_seconds": 6.604,
+        "usage": {
+          "input_tokens": 670,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 756,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 1426,
+          "cached_tokens": 0
+        }
+      },
+      {
+        "page_number": 3,
+        "status": "ok",
+        "candidates": 1,
+        "evidence_not_found": 0,
+        "elapsed_seconds": 1.114,
+        "usage": {
+          "input_tokens": 849,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 63,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 912,
+          "cached_tokens": 0
+        }
+      },
+      {
+        "page_number": 4,
+        "status": "ok",
+        "candidates": 2,
+        "evidence_not_found": 0,
+        "elapsed_seconds": 1.519,
+        "usage": {
+          "input_tokens": 618,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 87,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 705,
+          "cached_tokens": 0
+        }
+      },
+      {
+        "page_number": 5,
+        "status": "ok",
+        "candidates": 1,
+        "evidence_not_found": 0,
+        "elapsed_seconds": 0.975,
+        "usage": {
+          "input_tokens": 618,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 52,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 670,
+          "cached_tokens": 0
+        }
+      }
+    ],
+    "elapsed_seconds": 19.901,
+    "usage": {
+      "input_tokens": 3740,
+      "cached_input_tokens": 0,
+      "output_tokens": 2233,
+      "total_tokens": 5973
+    },
+    "timestamp_utc": "2026-10-11T13:50:25.184217+00:00"
+  },
+  "candidates": [
+    {
+      "candidate_id": "candidate_1",
+      "category_hint": "condition",
+      "raw_name": "LOWER OESOPHAGEAL HIATUS HERNIA",
+      "page_number": 1,
+      "evidence_text": "DIAGNOSIS: LOWER OESOPHAGEAL HIATUS HERNIA"
+    },
+    {
+      "candidate_id": "candidate_2",
+      "category_hint": "symptom",
+      "raw_name": "inability to swallow food",
+      "page_number": 1,
+      "evidence_text": "Patient came to the hospital with complaints of inability to swallow food and vomiting of undigested food particles for past 3 months."
+    },
+    {
+      "candidate_id": "candidate_3",
+      "category_hint": "symptom",
+      "raw_name": "vomiting of undigested food particles",
+      "page_number": 1,
+      "evidence_text": "Patient came to the hospital with complaints of inability to swallow food and vomiting of undigested food particles for past 3 months."
+    },
+    {
+      "candidate_id": "candidate_4",
+      "category_hint": "medication",
+      "raw_name": "antibiotics",
+      "page_number": 1,
+      "evidence_text": "Patient was treated conservatively with antibiotics, antiematics and ppi."
+    },
+    {
+      "candidate_id": "candidate_5",
+      "category_hint": "medication",
+      "raw_name": "antiematics",
+      "page_number": 1,
+      "evidence_text": "Patient was treated conservatively with antibiotics, antiematics and ppi."
+    },
+    {
+      "candidate_id": "candidate_6",
+      "category_hint": "medication",
+      "raw_name": "ppi",
+      "page_number": 1,
+      "evidence_text": "Patient was treated conservatively with antibiotics, antiematics and ppi."
+    },
+    {
+      "candidate_id": "candidate_7",
+      "category_hint": "procedure",
+      "raw_name": "endoscopy and dilatation of oesophagus with biopsy",
+      "page_number": 1,
+      "evidence_text": "Patient was advised endoscopy and dilatation of oesophagus with biopsy at a later stage."
+    },
+    {
+      "candidate_id": "candidate_8",
+      "category_hint": "observation",
+      "raw_name": "SPO2 97%",
+      "page_number": 1,
+      "evidence_text": "SPO2 97%."
+    },
+    {
+      "candidate_id": "candidate_9",
+      "category_hint": "observation",
+      "raw_name": "B ,  P . 80/50 mm/hg",
+      "page_number": 1,
+      "evidence_text": "B ,  P . 80/50 mm/hg."
+    },
+    {
+      "candidate_id": "candidate_10",
+      "category_hint": "observation",
+      "raw_name": "P.R 56mints",
+      "page_number": 1,
+      "evidence_text": "P.R 56mints."
+    },
+    {
+      "candidate_id": "candidate_11",
+      "category_hint": "observation",
+      "raw_name": "Total wbc count-8900 Cells/cum",
+      "page_number": 1,
+      "evidence_text": "Total wbc count-8900 Cells/cum."
+    },
+    {
+      "candidate_id": "candidate_12",
+      "category_hint": "observation",
+      "raw_name": "SGPT-27 Iu/l",
+      "page_number": 1,
+      "evidence_text": "SGPT-27 Iu/l."
+    },
+    {
+      "candidate_id": "candidate_13",
+      "category_hint": "observation",
+      "raw_name": "Billrubin-Negative",
+      "page_number": 1,
+      "evidence_text": "Billrubin-Negative."
+    },
+    {
+      "candidate_id": "candidate_14",
+      "category_hint": "observation",
+      "raw_name": "Total protein-7.6",
+      "page_number": 1,
+      "evidence_text": "Total protein-7.6."
+    },
+    {
+      "candidate_id": "candidate_15",
+      "category_hint": "observation",
+      "raw_name": "FBS-95",
+      "page_number": 1,
+      "evidence_text": "FBS-95."
+    },
+    {
+      "candidate_id": "candidate_16",
+      "category_hint": "observation",
+      "raw_name": "PPBS-159",
+      "page_number": 1,
+      "evidence_text": "PPBS-159."
+    },
+    {
+      "candidate_id": "candidate_17",
+      "category_hint": "observation",
+      "raw_name": "Cholestrol- 179",
+      "page_number": 1,
+      "evidence_text": "Cholestrol- 179."
+    },
+    {
+      "candidate_id": "candidate_18",
+      "category_hint": "observation",
+      "raw_name": "Alk phosphatise-79",
+      "page_number": 1,
+      "evidence_text": "Alk phosphatise-79."
+    },
+    {
+      "candidate_id": "candidate_19",
+      "category_hint": "observation",
+      "raw_name": "HdI cholesterol-32",
+      "page_number": 1,
+      "evidence_text": "HdI cholesterol-32."
+    },
+    {
+      "candidate_id": "candidate_20",
+      "category_hint": "observation",
+      "raw_name": "Ldl cholesterol-128",
+      "page_number": 1,
+      "evidence_text": "Ldl cholesterol-128."
+    },
+    {
+      "candidate_id": "candidate_21",
+      "category_hint": "observation",
+      "raw_name": "Vldl cholesterol-33",
+      "page_number": 1,
+      "evidence_text": "Vldl cholesterol-33."
+    },
+    {
+      "candidate_id": "candidate_22",
+      "category_hint": "observation",
+      "raw_name": "T.c/hdl ratio-5",
+      "page_number": 1,
+      "evidence_text": "T.c/hdl ratio-5."
+    },
+    {
+      "candidate_id": "candidate_23",
+      "category_hint": "observation",
+      "raw_name": "Specific gravity:I.010",
+      "page_number": 1,
+      "evidence_text": "Specific gravity:I.010."
+    },
+    {
+      "candidate_id": "candidate_24",
+      "category_hint": "observation",
+      "raw_name": "Ph-5",
+      "page_number": 1,
+      "evidence_text": "Ph-5."
+    },
+    {
+      "candidate_id": "candidate_25",
+      "category_hint": "observation",
+      "raw_name": "Glucose-Normal",
+      "page_number": 1,
+      "evidence_text": "Glucose-Normal."
+    },
+    {
+      "candidate_id": "candidate_26",
+      "category_hint": "observation",
+      "raw_name": "Total billiruhin0.2mg.d1",
+      "page_number": 1,
+      "evidence_text": "Total billiruhin0.2mg.d1."
+    },
+    {
+      "candidate_id": "candidate_27",
+      "category_hint": "observation",
+      "raw_name": "Direct billirubin- 0.1mg/dl",
+      "page_number": 1,
+      "evidence_text": "Direct billirubin- 0.1mg/dl."
+    },
+    {
+      "candidate_id": "candidate_28",
+      "category_hint": "observation",
+      "raw_name": "Keytones-Negative",
+      "page_number": 1,
+      "evidence_text": "Keytones-Negative."
+    },
+    {
+      "candidate_id": "candidate_29",
+      "category_hint": "unknown",
+      "raw_name": "FOLLOW UP AFTER 5 DAYS",
+      "page_number": 1,
+      "evidence_text": "ADVICE: FOLLOW UP AFTER 5 DAYS."
+    },
+    {
+      "candidate_id": "candidate_30",
+      "category_hint": "medication",
+      "raw_name": "T.EM ESET",
+      "page_number": 2,
+      "evidence_text": "T.EM ESET: (1-0-1)"
+    },
+    {
+      "candidate_id": "candidate_31",
+      "category_hint": "medication",
+      "raw_name": "T.YEES D",
+      "page_number": 2,
+      "evidence_text": "T.YEES D: (1-0-1)"
+    },
+    {
+      "candidate_id": "candidate_32",
+      "category_hint": "medication",
+      "raw_name": "T.DIGIPEN",
+      "page_number": 2,
+      "evidence_text": "T.DIGIPEN: (1-0-1)"
+    },
+    {
+      "candidate_id": "candidate_33",
+      "category_hint": "medication",
+      "raw_name": "T.ACILOC",
+      "page_number": 2,
+      "evidence_text": "T.ACILOC: (1-0-1)"
+    },
+    {
+      "candidate_id": "candidate_34",
+      "category_hint": "medication",
+      "raw_name": "T.MUCYST",
+      "page_number": 2,
+      "evidence_text": "T.MUCYST: (0-0-1)"
+    },
+    {
+      "candidate_id": "candidate_35",
+      "category_hint": "medication",
+      "raw_name": "T.NEFTRON",
+      "page_number": 2,
+      "evidence_text": "T.NEFTRON: (1-0-1)"
+    },
+    {
+      "candidate_id": "candidate_36",
+      "category_hint": "medication",
+      "raw_name": "T. AZ1TH RA L",
+      "page_number": 2,
+      "evidence_text": "T. AZ1TH RA L: (0-0-1)"
+    },
+    {
+      "candidate_id": "candidate_37",
+      "category_hint": "medication",
+      "raw_name": "5YP.LUPIZ1ME PLUS",
+      "page_number": 2,
+      "evidence_text": "5YP.LUPIZ1ME PLUS: 10ml"
+    },
+    {
+      "candidate_id": "candidate_38",
+      "category_hint": "medication",
+      "raw_name": "5YP.SUCRAFIL PLUS",
+      "page_number": 2,
+      "evidence_text": "5YP.SUCRAFIL PLUS: 5ml"
+    },
+    {
+      "candidate_id": "candidate_39",
+      "category_hint": "procedure",
+      "raw_name": "urgent care",
+      "page_number": 2,
+      "evidence_text": "When and how to obtain urgent care :"
+    },
+    {
+      "candidate_id": "candidate_40",
+      "category_hint": "symptom",
+      "raw_name": "pain",
+      "page_number": 2,
+      "evidence_text": "Report in case of pain, bleeding and or other emergencies."
+    },
+    {
+      "candidate_id": "candidate_41",
+      "category_hint": "symptom",
+      "raw_name": "bleeding",
+      "page_number": 2,
+      "evidence_text": "Report in case of pain, bleeding and or other emergencies."
+    },
+    {
+      "candidate_id": "candidate_42",
+      "category_hint": "condition",
+      "raw_name": "LOWER OESOPHAGEAL HIATUS HERNIA",
+      "page_number": 3,
+      "evidence_text": "DIAGNOSIS: LOWER OESOPHAGEAL HIATUS HERNIA"
+    },
+    {
+      "candidate_id": "candidate_43",
+      "category_hint": "procedure",
+      "raw_name": "Anesthesia",
+      "page_number": 4,
+      "evidence_text": "1 Anesthesia 200 1 200"
+    },
+    {
+      "candidate_id": "candidate_44",
+      "category_hint": "medication",
+      "raw_name": "Medicines and Drugs",
+      "page_number": 4,
+      "evidence_text": "6 Medicines and Drugs 3210 1 3210"
+    },
+    {
+      "candidate_id": "candidate_45",
+      "category_hint": "procedure",
+      "raw_name": "PRENATAL SCREENING",
+      "page_number": 5,
+      "evidence_text": "1 PRENATAL SCREENING 2780 1 2780"
+    }
+  ],
+  "evaluation": {
+    "name_recall": 0.4,
+    "category_precision": 1.0,
+    "counts": {
+      "candidates": 45,
+      "gold_facts": 20,
+      "matched_gold": 8,
+      "category_correct": 8
+    },
+    "missed_gold": [
+      {
+        "gold_fact_id": "SM-CORE-04",
+        "name": "Blood pressure",
+        "category": "observation"
+      },
+      {
+        "gold_fact_id": "SM-CORE-05",
+        "name": "Pulse rate",
+        "category": "observation"
+      },
+      {
+        "gold_fact_id": "SM-CORE-06",
+        "name": "Oxygen saturation",
+        "category": "observation"
+      },
+      {
+        "gold_fact_id": "SM-CORE-07",
+        "name": "CT scan of chest and abdomen",
+        "category": "procedure"
+      },
+      {
+        "gold_fact_id": "SM-CORE-08",
+        "name": "Oesophageal dilatation",
+        "category": "observation"
+      },
+      {
+        "gold_fact_id": "SM-CORE-09",
+        "name": "Subcarinal oesophageal narrowing",
+        "category": "observation"
+      },
+      {
+        "gold_fact_id": "SM-CORE-13",
+        "name": "Ability to swallow solid foods",
+        "category": "observation"
+      },
+      {
+        "gold_fact_id": "SM-CORE-14",
+        "name": "Vomiting",
+        "category": "symptom"
+      },
+      {
+        "gold_fact_id": "SM-CORE-16",
+        "name": "Biopsy",
+        "category": "procedure"
+      },
+      {
+        "gold_fact_id": "SM-CORE-17",
+        "name": "Total white blood cell count",
+        "category": "observation"
+      },
+      {
+        "gold_fact_id": "SM-CORE-18",
+        "name": "Haemoglobin",
+        "category": "observation"
+      },
+      {
+        "gold_fact_id": "SM-CORE-19",
+        "name": "Follow-up review",
+        "category": "procedure"
+      }
+    ],
+    "matches": [
+      {
+        "candidate_id": "candidate_1",
+        "candidate_name": "LOWER OESOPHAGEAL HIATUS HERNIA",
+        "category_hint": "condition",
+        "gold_fact_id": "SM-CORE-01",
+        "gold_name": "Lower oesophageal hiatus hernia",
+        "gold_category": "condition",
+        "score": 1.01
+      },
+      {
+        "candidate_id": "candidate_2",
+        "candidate_name": "inability to swallow food",
+        "category_hint": "symptom",
+        "gold_fact_id": "SM-CORE-02",
+        "gold_name": "Inability to swallow food",
+        "gold_category": "symptom",
+        "score": 1.01
+      },
+      {
+        "candidate_id": "candidate_3",
+        "candidate_name": "vomiting of undigested food particles",
+        "category_hint": "symptom",
+        "gold_fact_id": "SM-CORE-03",
+        "gold_name": "Vomiting of undigested food particles",
+        "gold_category": "symptom",
+        "score": 1.01
+      },
+      {
+        "candidate_id": "candidate_4",
+        "candidate_name": "antibiotics",
+        "category_hint": "medication",
+        "gold_fact_id": "SM-CORE-10",
+        "gold_name": "Antibiotics",
+        "gold_category": "medication",
+        "score": 1.01
+      },
+      {
+        "candidate_id": "candidate_5",
+        "candidate_name": "antiematics",
+        "category_hint": "medication",
+        "gold_fact_id": "SM-CORE-11",
+        "gold_name": "Antiemetics",
+        "gold_category": "medication",
+        "score": 0.919
+      },
+      {
+        "candidate_id": "candidate_6",
+        "candidate_name": "ppi",
+        "category_hint": "medication",
+        "gold_fact_id": "SM-CORE-12",
+        "gold_name": "PPI",
+        "gold_category": "medication",
+        "score": 1.01
+      },
+      {
+        "candidate_id": "candidate_7",
+        "candidate_name": "endoscopy and dilatation of oesophagus with biopsy",
+        "category_hint": "procedure",
+        "gold_fact_id": "SM-CORE-15",
+        "gold_name": "Endoscopy",
+        "gold_category": "procedure",
+        "score": 1.01
+      },
+      {
+        "candidate_id": "candidate_36",
+        "candidate_name": "T. AZ1TH RA L",
+        "category_hint": "medication",
+        "gold_fact_id": "SM-CORE-20",
+        "gold_name": "T. AZ1TH RA L",
+        "gold_category": "medication",
+        "score": 1.01
+      }
+    ]
+  }
+}

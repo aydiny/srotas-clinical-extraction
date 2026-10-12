@@ -1,0 +1,81 @@
+{
+  "run": {
+    "started_utc": "2026-10-11T12:17:53.596895+00:00",
+    "finished_utc": "2026-10-11T12:19:30.562349+00:00",
+    "elapsed_seconds": 96.965,
+    "prompt_version": "clinical_fact_enrichment_v1",
+    "temperature": 0,
+    "batch_size": 25,
+    "max_output_tokens": 12000,
+    "validation_retry": true,
+    "candidate_trial_dir": "D:\\AI_ML\\srotas-clinical-extraction\\outputs\\candidate_trials\\clinical_candidate_discovery_v2_20261011_103647",
+    "candidate_prompt_version": "clinical_candidate_discovery_v2",
+    "models": [
+      "gpt-4o-mini"
+    ],
+    "input_tokens": 24101,
+    "cached_input_tokens": 17664,
+    "output_tokens": 12144,
+    "total_tokens": 36245
+  },
+  "results": [
+    {
+      "document": "Cecilia-Zemlak-summary.pdf",
+      "candidate_model": "gpt-4o-mini",
+      "candidate_file": "Cecilia-Zemlak-summary__gpt-4o-mini.json",
+      "model": "gpt-4o-mini",
+      "provider": "openai",
+      "status": "ok",
+      "model_returned": "gpt-4o-mini-2024-07-18",
+      "candidates_in": 47,
+      "candidates_after_dedup": 45,
+      "batches": 2,
+      "batches_failed": [],
+      "facts": 45,
+      "rejected_candidates": 0,
+      "unaccounted_candidates": 0,
+      "elapsed_seconds": 96.681,
+      "input_tokens": 24101,
+      "cached_input_tokens": 17664,
+      "output_tokens": 12144,
+      "total_tokens": 36245,
+      "output_file": "Cecilia-Zemlak-summary__cand_gpt-4o-mini__enrich_gpt-4o-mini.json",
+      "unsupported_rate": 0.067,
+      "gold_recall": 0.7,
+      "precision_excluding_extra_supported": 0.875,
+      "context_accuracy": {
+        "status": 0.5,
+        "temporality": 0.429,
+        "certainty": 0.714,
+        "is_negated": 0.857
+      },
+      "attribute_recall_on_matched_facts": 0.12,
+      "gold_facts": 20,
+      "matched_gold": 14
+    }
+  ],
+  "aggregate": [
+    {
+      "candidate_model": "gpt-4o-mini",
+      "model": "gpt-4o-mini",
+      "documents": 1,
+      "gold_recall": 0.7,
+      "precision_excluding_extra_supported": 0.875,
+      "unsupported_rate": 0.067,
+      "context_accuracy": {
+        "status": 0.5,
+        "temporality": 0.429,
+        "certainty": 0.714,
+        "is_negated": 0.857
+      },
+      "attribute_recall_on_matched_facts": 0.12,
+      "counts": {
+        "predicted_facts": 45,
+        "gold_facts": 20,
+        "true_positives": 14,
+        "false_negatives": 6,
+        "unmatched_predictions": 31
+      }
+    }
+  ]
+}
