@@ -1,0 +1,342 @@
+{
+  "meta": {
+    "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+    "model": "meta-llama/llama-3.1-8b-instruct",
+    "provider": "openrouter",
+    "prompt_version": "clinical_candidate_discovery",
+    "candidate_count": 20,
+    "pages_failed": [
+      1,
+      2,
+      3
+    ],
+    "evidence_not_found": 0,
+    "attempts": [
+      {
+        "page_number": 1,
+        "status": "failed",
+        "error": "LengthFinishReasonError: Could not parse response content as the length limit was reached - CompletionUsage(completion_tokens=4096, prompt_tokens=891, total_tokens=4987, completion_tokens_details=CompletionTokensDetails(accepted_prediction_tokens=None, audio_tokens=0, reasoning_tokens=0, rejected_prediction_tokens=None, tex",
+        "candidates": 0,
+        "evidence_not_found": 0,
+        "elapsed_seconds": 27.579,
+        "usage": null
+      },
+      {
+        "page_number": 2,
+        "status": "failed",
+        "error": "LengthFinishReasonError: Could not parse response content as the length limit was reached - CompletionUsage(completion_tokens=4096, prompt_tokens=486, total_tokens=4582, completion_tokens_details=CompletionTokensDetails(accepted_prediction_tokens=None, audio_tokens=0, reasoning_tokens=0, rejected_prediction_tokens=None, tex",
+        "candidates": 0,
+        "evidence_not_found": 0,
+        "elapsed_seconds": 27.829,
+        "usage": null
+      },
+      {
+        "page_number": 3,
+        "status": "failed",
+        "error": "LengthFinishReasonError: Could not parse response content as the length limit was reached - CompletionUsage(completion_tokens=4096, prompt_tokens=790, total_tokens=4886, completion_tokens_details=CompletionTokensDetails(accepted_prediction_tokens=None, audio_tokens=0, reasoning_tokens=0, rejected_prediction_tokens=None, tex",
+        "candidates": 0,
+        "evidence_not_found": 0,
+        "elapsed_seconds": 27.136,
+        "usage": null
+      },
+      {
+        "page_number": 4,
+        "status": "ok",
+        "candidates": 19,
+        "evidence_not_found": 0,
+        "elapsed_seconds": 7.436,
+        "usage": {
+          "input_tokens": 518,
+          "cached_tokens": 0,
+          "output_tokens": 970,
+          "total_tokens": 1488
+        }
+      },
+      {
+        "page_number": 5,
+        "status": "ok",
+        "candidates": 1,
+        "evidence_not_found": 0,
+        "elapsed_seconds": 0.86,
+        "usage": {
+          "input_tokens": 484,
+          "cached_tokens": 0,
+          "output_tokens": 71,
+          "total_tokens": 555
+        }
+      }
+    ],
+    "elapsed_seconds": 90.841,
+    "usage": {
+      "input_tokens": 1002,
+      "cached_input_tokens": 0,
+      "output_tokens": 1041,
+      "total_tokens": 2043
+    },
+    "timestamp_utc": "2026-10-12T14:20:05.881417+00:00"
+  },
+  "candidates": [
+    {
+      "candidate_id": "candidate_1",
+      "category_hint": "medication",
+      "raw_name": "Anesthesia",
+      "page_number": 4,
+      "evidence_text": "Anesthesia|200|1|200"
+    },
+    {
+      "candidate_id": "candidate_2",
+      "category_hint": "medication",
+      "raw_name": "Blood",
+      "page_number": 4,
+      "evidence_text": "Blood|1500|1|1500"
+    },
+    {
+      "candidate_id": "candidate_3",
+      "category_hint": "medication",
+      "raw_name": "Oxygen",
+      "page_number": 4,
+      "evidence_text": "Oxygen|450|1|450"
+    },
+    {
+      "candidate_id": "candidate_4",
+      "category_hint": "medication",
+      "raw_name": "<sup>Operation Theater</sup><br>Charges",
+      "page_number": 4,
+      "evidence_text": "<sup>Operation Theater</sup><br>Charges|2500|1|2500"
+    },
+    {
+      "candidate_id": "candidate_5",
+      "category_hint": "medication",
+      "raw_name": "Surgical Appliances",
+      "page_number": 4,
+      "evidence_text": "Surgical Appliances|670|1|670"
+    },
+    {
+      "candidate_id": "candidate_6",
+      "category_hint": "medication",
+      "raw_name": "Medicines and Drugs",
+      "page_number": 4,
+      "evidence_text": "Medicines and Drugs|3210|1|3210"
+    },
+    {
+      "candidate_id": "candidate_7",
+      "category_hint": "medication",
+      "raw_name": "Diagnostic Materials",
+      "page_number": 4,
+      "evidence_text": "Diagnostic Materials|0|0|0"
+    },
+    {
+      "candidate_id": "candidate_8",
+      "category_hint": "medication",
+      "raw_name": "General Investigations",
+      "page_number": 4,
+      "evidence_text": "General Investigations|0|0|0"
+    },
+    {
+      "candidate_id": "candidate_9",
+      "category_hint": "medication",
+      "raw_name": "<sup>Specialized</sup><br>Investigations",
+      "page_number": 4,
+      "evidence_text": "<sup>Specialized</sup><br>Investigations|0|0|0"
+    },
+    {
+      "candidate_id": "candidate_10",
+      "category_hint": "medication",
+      "raw_name": "Dialysis",
+      "page_number": 4,
+      "evidence_text": "Dialysis|0|0|0"
+    },
+    {
+      "candidate_id": "candidate_11",
+      "category_hint": "medication",
+      "raw_name": "Chemotherapy",
+      "page_number": 4,
+      "evidence_text": "Chemotherapy|0|0|0"
+    },
+    {
+      "candidate_id": "candidate_12",
+      "category_hint": "medication",
+      "raw_name": "Radiotherapy",
+      "page_number": 4,
+      "evidence_text": "Radiotherapy|0|0|0"
+    },
+    {
+      "candidate_id": "candidate_13",
+      "category_hint": "medication",
+      "raw_name": "Cost of Artificial Limbs",
+      "page_number": 4,
+      "evidence_text": "Cost of Artificial Limbs|0|0|0"
+    },
+    {
+      "candidate_id": "candidate_14",
+      "category_hint": "medication",
+      "raw_name": "Cost of Implants",
+      "page_number": 4,
+      "evidence_text": "Cost of Implants|0|0|0"
+    },
+    {
+      "candidate_id": "candidate_15",
+      "category_hint": "medication",
+      "raw_name": "Total of Other<br>Expenses",
+      "page_number": 4,
+      "evidence_text": "**Total of Other**<br>**Expenses**"
+    },
+    {
+      "candidate_id": "candidate_16",
+      "category_hint": "medication",
+      "raw_name": "Grand Total",
+      "page_number": 4,
+      "evidence_text": "**Grand Total**"
+    },
+    {
+      "candidate_id": "candidate_17",
+      "category_hint": "medication",
+      "raw_name": "Patien",
+      "page_number": 4,
+      "evidence_text": "**Patien**"
+    },
+    {
+      "candidate_id": "candidate_18",
+      "category_hint": "medication",
+      "raw_name": "t Paid Amount",
+      "page_number": 4,
+      "evidence_text": "**t Paid Amount**"
+    },
+    {
+      "candidate_id": "candidate_19",
+      "category_hint": "medication",
+      "raw_name": "Balance",
+      "page_number": 4,
+      "evidence_text": "**Balance**"
+    },
+    {
+      "candidate_id": "candidate_20",
+      "category_hint": "procedure",
+      "raw_name": "PRENATAL SCREENING",
+      "page_number": 5,
+      "evidence_text": "PRENATAL SCREENING 2780 1 2780"
+    }
+  ],
+  "evaluation": {
+    "name_recall": 0.1,
+    "category_precision": 0.0,
+    "counts": {
+      "candidates": 20,
+      "gold_facts": 20,
+      "matched_gold": 2,
+      "category_correct": 0
+    },
+    "missed_gold": [
+      {
+        "gold_fact_id": "SM-CORE-01",
+        "name": "Lower oesophageal hiatus hernia",
+        "category": "condition"
+      },
+      {
+        "gold_fact_id": "SM-CORE-02",
+        "name": "Inability to swallow food",
+        "category": "symptom"
+      },
+      {
+        "gold_fact_id": "SM-CORE-03",
+        "name": "Vomiting of undigested food particles",
+        "category": "symptom"
+      },
+      {
+        "gold_fact_id": "SM-CORE-05",
+        "name": "Pulse rate",
+        "category": "observation"
+      },
+      {
+        "gold_fact_id": "SM-CORE-07",
+        "name": "CT scan of chest and abdomen",
+        "category": "procedure"
+      },
+      {
+        "gold_fact_id": "SM-CORE-08",
+        "name": "Oesophageal dilatation",
+        "category": "observation"
+      },
+      {
+        "gold_fact_id": "SM-CORE-09",
+        "name": "Subcarinal oesophageal narrowing",
+        "category": "observation"
+      },
+      {
+        "gold_fact_id": "SM-CORE-10",
+        "name": "Antibiotics",
+        "category": "medication"
+      },
+      {
+        "gold_fact_id": "SM-CORE-11",
+        "name": "Antiemetics",
+        "category": "medication"
+      },
+      {
+        "gold_fact_id": "SM-CORE-12",
+        "name": "PPI",
+        "category": "medication"
+      },
+      {
+        "gold_fact_id": "SM-CORE-13",
+        "name": "Ability to swallow solid foods",
+        "category": "observation"
+      },
+      {
+        "gold_fact_id": "SM-CORE-14",
+        "name": "Vomiting",
+        "category": "symptom"
+      },
+      {
+        "gold_fact_id": "SM-CORE-15",
+        "name": "Endoscopy",
+        "category": "procedure"
+      },
+      {
+        "gold_fact_id": "SM-CORE-16",
+        "name": "Biopsy",
+        "category": "procedure"
+      },
+      {
+        "gold_fact_id": "SM-CORE-17",
+        "name": "Total white blood cell count",
+        "category": "observation"
+      },
+      {
+        "gold_fact_id": "SM-CORE-18",
+        "name": "Haemoglobin",
+        "category": "observation"
+      },
+      {
+        "gold_fact_id": "SM-CORE-19",
+        "name": "Follow-up review",
+        "category": "procedure"
+      },
+      {
+        "gold_fact_id": "SM-CORE-20",
+        "name": "T. AZ1TH RA L",
+        "category": "medication"
+      }
+    ],
+    "matches": [
+      {
+        "candidate_id": "candidate_2",
+        "candidate_name": "Blood",
+        "category_hint": "medication",
+        "gold_fact_id": "SM-CORE-04",
+        "gold_name": "Blood pressure",
+        "gold_category": "observation",
+        "score": 1.0
+      },
+      {
+        "candidate_id": "candidate_3",
+        "candidate_name": "Oxygen",
+        "category_hint": "medication",
+        "gold_fact_id": "SM-CORE-06",
+        "gold_name": "Oxygen saturation",
+        "gold_category": "observation",
+        "score": 1.0
+      }
+    ]
+  }
+}

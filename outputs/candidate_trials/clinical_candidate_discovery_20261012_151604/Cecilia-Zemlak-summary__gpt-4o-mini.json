@@ -1,0 +1,528 @@
+{
+  "meta": {
+    "source_document": "Cecilia-Zemlak-summary.pdf",
+    "model": "gpt-4o-mini-2024-07-18",
+    "provider": "openai",
+    "prompt_version": "clinical_candidate_discovery",
+    "candidate_count": 37,
+    "pages_failed": [],
+    "evidence_not_found": 8,
+    "attempts": [
+      {
+        "page_number": 1,
+        "status": "ok",
+        "candidates": 9,
+        "evidence_not_found": 1,
+        "elapsed_seconds": 10.85,
+        "usage": {
+          "input_tokens": 820,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 608,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 1428,
+          "cached_tokens": 0
+        }
+      },
+      {
+        "page_number": 2,
+        "status": "ok",
+        "candidates": 10,
+        "evidence_not_found": 3,
+        "elapsed_seconds": 6.354,
+        "usage": {
+          "input_tokens": 713,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 521,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 1234,
+          "cached_tokens": 0
+        }
+      },
+      {
+        "page_number": 3,
+        "status": "ok",
+        "candidates": 12,
+        "evidence_not_found": 0,
+        "elapsed_seconds": 9.324,
+        "usage": {
+          "input_tokens": 661,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 726,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 1387,
+          "cached_tokens": 0
+        }
+      },
+      {
+        "page_number": 4,
+        "status": "ok",
+        "candidates": 6,
+        "evidence_not_found": 4,
+        "elapsed_seconds": 2.653,
+        "usage": {
+          "input_tokens": 493,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 258,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 751,
+          "cached_tokens": 0
+        }
+      }
+    ],
+    "elapsed_seconds": 29.182,
+    "usage": {
+      "input_tokens": 2687,
+      "cached_input_tokens": 0,
+      "output_tokens": 2113,
+      "total_tokens": 4800
+    },
+    "timestamp_utc": "2026-10-12T14:18:32.454048+00:00"
+  },
+  "candidates": [
+    {
+      "candidate_id": "candidate_1",
+      "category_hint": "condition",
+      "raw_name": "Malignant Neoplasm of Breast",
+      "page_number": 1,
+      "evidence_text": "The patient carries a confirmed diagnosis of malignant neoplasm of breast (SNOMED CT 254837009), staged as 2 with positive HER2, ER, and PR status."
+    },
+    {
+      "candidate_id": "candidate_2",
+      "category_hint": "symptom",
+      "raw_name": "acute bronchitis",
+      "page_number": 1,
+      "evidence_text": "management of acute bronchitis, sinusitis, sprains, fractures, and pregnancy-related events."
+    },
+    {
+      "candidate_id": "candidate_3",
+      "category_hint": "symptom",
+      "raw_name": "sinusitis",
+      "page_number": 1,
+      "evidence_text": "management of acute bronchitis, sinusitis, sprains, fractures, and pregnancy-related events."
+    },
+    {
+      "candidate_id": "candidate_4",
+      "category_hint": "procedure",
+      "raw_name": "well-child visits",
+      "page_number": 1,
+      "evidence_text": "Healthcare utilization is consistent with routine well-child visits early on."
+    },
+    {
+      "candidate_id": "candidate_5",
+      "category_hint": "procedure",
+      "raw_name": "treatment for breast cancer",
+      "page_number": 1,
+      "evidence_text": "subsequent treatment."
+    },
+    {
+      "candidate_id": "candidate_6",
+      "category_hint": "observation",
+      "raw_name": "active smoking",
+      "page_number": 1,
+      "evidence_text": "Social history consistently notes active smoking and alcoholism, which may contribute to health risks."
+    },
+    {
+      "candidate_id": "candidate_7",
+      "category_hint": "observation",
+      "raw_name": "alcoholism",
+      "page_number": 1,
+      "evidence_text": "Social history consistently notes active smoking and alcoholism, which may contribute to health risks."
+    },
+    {
+      "candidate_id": "candidate_8",
+      "category_hint": "unknown",
+      "raw_name": "no evidence of prolonged hospitalization",
+      "page_number": 1,
+      "evidence_text": "There is no evidence of prolonged hospitalization, intensive care utilization, or major cardiovascular events."
+    },
+    {
+      "candidate_id": "candidate_9",
+      "category_hint": "unknown",
+      "raw_name": "no evidence of advanced systemic disease",
+      "page_number": 1,
+      "evidence_text": "the overall clinical course suggests moderate symptom burden with preserved functional status, allowing for ongoing ambulatory management."
+    },
+    {
+      "candidate_id": "candidate_10",
+      "category_hint": "procedure",
+      "raw_name": "Surgical intervention (excision, biopsy)",
+      "page_number": 2,
+      "evidence_text": "- Surgical intervention (excision, biopsy)"
+    },
+    {
+      "candidate_id": "candidate_11",
+      "category_hint": "condition",
+      "raw_name": "Essential Hypertension (Chronic, Confirmed)",
+      "page_number": 2,
+      "evidence_text": "# **Essential Hypertension (Chronic, Confirmed)**"
+    },
+    {
+      "candidate_id": "candidate_12",
+      "category_hint": "symptom",
+      "raw_name": "Intermittent blood pressure elevations",
+      "page_number": 2,
+      "evidence_text": "Intermittent blood pressure elevations are noted, but no explicit diagnosis is documented in excerpts."
+    },
+    {
+      "candidate_id": "candidate_13",
+      "category_hint": "condition",
+      "raw_name": "Chronic Intractable Migraine Without Aura (Episodic, Confirmed)",
+      "page_number": 2,
+      "evidence_text": "# **Chronic Intractable Migraine Without Aura (Episodic, Confirmed)**"
+    },
+    {
+      "candidate_id": "candidate_14",
+      "category_hint": "symptom",
+      "raw_name": "Recurrent headaches with sinus pain, nasal congestion, sore throat, facial swelling, photophobia, and cough",
+      "page_number": 2,
+      "evidence_text": "Recurrent headaches with sinus pain, nasal congestion, sore throat, facial swelling, photophobia, and cough, consistent with migraine or sinus-related symptoms."
+    },
+    {
+      "candidate_id": "candidate_15",
+      "category_hint": "condition",
+      "raw_name": "Breast cancer",
+      "page_number": 2,
+      "evidence_text": "Breast cancer in 2020 is the major adult event, with no chronic sequelae from early issues documented."
+    },
+    {
+      "candidate_id": "candidate_16",
+      "category_hint": "unknown",
+      "raw_name": "No documented history of Diabetes mellitus",
+      "page_number": 2,
+      "evidence_text": "There is no documented history of: - Diabetes mellitus"
+    },
+    {
+      "candidate_id": "candidate_17",
+      "category_hint": "unknown",
+      "raw_name": "No documented history of Chronic kidney disease",
+      "page_number": 2,
+      "evidence_text": "There is no documented history of: - Chronic kidney disease"
+    },
+    {
+      "candidate_id": "candidate_18",
+      "category_hint": "unknown",
+      "raw_name": "No documented history of Coronary artery disease",
+      "page_number": 2,
+      "evidence_text": "There is no documented history of: - Coronary artery disease"
+    },
+    {
+      "candidate_id": "candidate_19",
+      "category_hint": "unknown",
+      "raw_name": "No documented history of Autoimmune disorders",
+      "page_number": 2,
+      "evidence_text": "There is no documented history of: - Autoimmune disorders"
+    },
+    {
+      "candidate_id": "candidate_20",
+      "category_hint": "condition",
+      "raw_name": "breast cancer",
+      "page_number": 3,
+      "evidence_text": "History of breast cancer in remission"
+    },
+    {
+      "candidate_id": "candidate_21",
+      "category_hint": "condition",
+      "raw_name": "infections",
+      "page_number": 3,
+      "evidence_text": "Episodic infections and injuries"
+    },
+    {
+      "candidate_id": "candidate_22",
+      "category_hint": "medication",
+      "raw_name": "penicillin",
+      "page_number": 3,
+      "evidence_text": "Episodic antibiotics (penicillin, doxycycline) for infections"
+    },
+    {
+      "candidate_id": "candidate_23",
+      "category_hint": "medication",
+      "raw_name": "doxycycline",
+      "page_number": 3,
+      "evidence_text": "Episodic antibiotics (penicillin, doxycycline) for infections"
+    },
+    {
+      "candidate_id": "candidate_24",
+      "category_hint": "medication",
+      "raw_name": "acetaminophen",
+      "page_number": 3,
+      "evidence_text": "Analgesics (acetaminophen, meperidine) for pain"
+    },
+    {
+      "candidate_id": "candidate_25",
+      "category_hint": "medication",
+      "raw_name": "meperidine",
+      "page_number": 3,
+      "evidence_text": "Analgesics (acetaminophen, meperidine) for pain"
+    },
+    {
+      "candidate_id": "candidate_26",
+      "category_hint": "observation",
+      "raw_name": "vital signs",
+      "page_number": 3,
+      "evidence_text": "Vital signs tracked from infancy (normal growth)"
+    },
+    {
+      "candidate_id": "candidate_27",
+      "category_hint": "observation",
+      "raw_name": "CBC trends",
+      "page_number": 3,
+      "evidence_text": "Labs: CBC trends normal; later lipids, glucose variable but no abnormalities noted"
+    },
+    {
+      "candidate_id": "candidate_28",
+      "category_hint": "procedure",
+      "raw_name": "X-rays",
+      "page_number": 3,
+      "evidence_text": "Imaging: X-rays for fractures, mammography for breast cancer"
+    },
+    {
+      "candidate_id": "candidate_29",
+      "category_hint": "procedure",
+      "raw_name": "mammography",
+      "page_number": 3,
+      "evidence_text": "Imaging: X-rays for fractures, mammography for breast cancer"
+    },
+    {
+      "candidate_id": "candidate_30",
+      "category_hint": "unknown",
+      "raw_name": "no chronic therapy",
+      "page_number": 3,
+      "evidence_text": "No chronic therapy documented; no adherence issues noted"
+    },
+    {
+      "candidate_id": "candidate_31",
+      "category_hint": "unknown",
+      "raw_name": "no significant competing comorbidity",
+      "page_number": 3,
+      "evidence_text": "No significant competing comorbidity"
+    },
+    {
+      "candidate_id": "candidate_32",
+      "category_hint": "condition",
+      "raw_name": "stage 2 breast cancer",
+      "page_number": 4,
+      "evidence_text": "Cecilia Zemlak is a 58-year-old female with a history of stage 2 breast cancer managed surgically."
+    },
+    {
+      "candidate_id": "candidate_33",
+      "category_hint": "condition",
+      "raw_name": "episodic respiratory infections",
+      "page_number": 4,
+      "evidence_text": "alongside episodic respiratory infections and musculoskeletal injuries."
+    },
+    {
+      "candidate_id": "candidate_34",
+      "category_hint": "condition",
+      "raw_name": "musculoskeletal injuries",
+      "page_number": 4,
+      "evidence_text": "alongside episodic respiratory infections and musculoskeletal injuries."
+    },
+    {
+      "candidate_id": "candidate_35",
+      "category_hint": "unknown",
+      "raw_name": "no evidence of chronic progressive disease or complications",
+      "page_number": 4,
+      "evidence_text": "without evidence of chronic progressive disease or complications."
+    },
+    {
+      "candidate_id": "candidate_36",
+      "category_hint": "unknown",
+      "raw_name": "multiple pregnancies",
+      "page_number": 4,
+      "evidence_text": "Her history reflects multiple pregnancies."
+    },
+    {
+      "candidate_id": "candidate_37",
+      "category_hint": "unknown",
+      "raw_name": "low healthcare needs",
+      "page_number": 4,
+      "evidence_text": "low healthcare needs beyond acute events."
+    }
+  ],
+  "evaluation": {
+    "name_recall": 0.65,
+    "category_precision": 0.7692307692307693,
+    "counts": {
+      "candidates": 37,
+      "gold_facts": 20,
+      "matched_gold": 13,
+      "category_correct": 10
+    },
+    "missed_gold": [
+      {
+        "gold_fact_id": "CZ-02",
+        "name": "HER2 status",
+        "category": "observation"
+      },
+      {
+        "gold_fact_id": "CZ-03",
+        "name": "Oestrogen receptor (ER) status",
+        "category": "observation"
+      },
+      {
+        "gold_fact_id": "CZ-04",
+        "name": "Progesterone receptor (PR) status",
+        "category": "observation"
+      },
+      {
+        "gold_fact_id": "CZ-07",
+        "name": "Metastasis",
+        "category": "condition"
+      },
+      {
+        "gold_fact_id": "CZ-08",
+        "name": "Ongoing surveillance",
+        "category": "procedure"
+      },
+      {
+        "gold_fact_id": "CZ-14",
+        "name": "Recurrent headaches",
+        "category": "symptom"
+      },
+      {
+        "gold_fact_id": "CZ-18",
+        "name": "Preeclampsia",
+        "category": "condition"
+      }
+    ],
+    "matches": [
+      {
+        "candidate_id": "candidate_1",
+        "candidate_name": "Malignant Neoplasm of Breast",
+        "category_hint": "condition",
+        "gold_fact_id": "CZ-01",
+        "gold_name": "Malignant neoplasm of breast",
+        "gold_category": "condition",
+        "score": 1.01
+      },
+      {
+        "candidate_id": "candidate_6",
+        "candidate_name": "active smoking",
+        "category_hint": "observation",
+        "gold_fact_id": "CZ-09",
+        "gold_name": "Smoking",
+        "gold_category": "observation",
+        "score": 1.01
+      },
+      {
+        "candidate_id": "candidate_7",
+        "candidate_name": "alcoholism",
+        "category_hint": "observation",
+        "gold_fact_id": "CZ-10",
+        "gold_name": "Alcohol use disorder (documented as alcoholism)",
+        "gold_category": "observation",
+        "score": 1.01
+      },
+      {
+        "candidate_id": "candidate_10",
+        "candidate_name": "Surgical intervention (excision, biopsy)",
+        "category_hint": "procedure",
+        "gold_fact_id": "CZ-05",
+        "gold_name": "Surgical intervention (excision, biopsy)",
+        "gold_category": "procedure",
+        "score": 1.01
+      },
+      {
+        "candidate_id": "candidate_11",
+        "candidate_name": "Essential Hypertension (Chronic, Confirmed)",
+        "category_hint": "condition",
+        "gold_fact_id": "CZ-11",
+        "gold_name": "Essential hypertension",
+        "gold_category": "condition",
+        "score": 1.01
+      },
+      {
+        "candidate_id": "candidate_12",
+        "candidate_name": "Intermittent blood pressure elevations",
+        "category_hint": "symptom",
+        "gold_fact_id": "CZ-12",
+        "gold_name": "Blood pressure elevations",
+        "gold_category": "observation",
+        "score": 1.0
+      },
+      {
+        "candidate_id": "candidate_13",
+        "candidate_name": "Chronic Intractable Migraine Without Aura (Episodic, Confirmed)",
+        "category_hint": "condition",
+        "gold_fact_id": "CZ-13",
+        "gold_name": "Chronic intractable migraine without aura",
+        "gold_category": "condition",
+        "score": 1.01
+      },
+      {
+        "candidate_id": "candidate_14",
+        "candidate_name": "Recurrent headaches with sinus pain, nasal congestion, sore throat, facial swelling, photophobia, and cough",
+        "category_hint": "symptom",
+        "gold_fact_id": "CZ-15",
+        "gold_name": "Photophobia",
+        "gold_category": "symptom",
+        "score": 1.01
+      },
+      {
+        "candidate_id": "candidate_15",
+        "candidate_name": "Breast cancer",
+        "category_hint": "condition",
+        "gold_fact_id": "CZ-06",
+        "gold_name": "Breast cancer recurrence",
+        "gold_category": "condition",
+        "score": 1.01
+      },
+      {
+        "candidate_id": "candidate_16",
+        "candidate_name": "No documented history of Diabetes mellitus",
+        "category_hint": "unknown",
+        "gold_fact_id": "CZ-16",
+        "gold_name": "Diabetes mellitus",
+        "gold_category": "condition",
+        "score": 1.0
+      },
+      {
+        "candidate_id": "candidate_17",
+        "candidate_name": "No documented history of Chronic kidney disease",
+        "category_hint": "unknown",
+        "gold_fact_id": "CZ-17",
+        "gold_name": "Chronic kidney disease",
+        "gold_category": "condition",
+        "score": 1.0
+      },
+      {
+        "candidate_id": "candidate_22",
+        "candidate_name": "penicillin",
+        "category_hint": "medication",
+        "gold_fact_id": "CZ-19",
+        "gold_name": "Penicillin",
+        "gold_category": "medication",
+        "score": 1.01
+      },
+      {
+        "candidate_id": "candidate_29",
+        "candidate_name": "mammography",
+        "category_hint": "procedure",
+        "gold_fact_id": "CZ-20",
+        "gold_name": "Mammography",
+        "gold_category": "procedure",
+        "score": 1.01
+      }
+    ]
+  }
+}

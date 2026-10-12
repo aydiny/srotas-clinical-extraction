@@ -1,0 +1,333 @@
+{
+  "meta": {
+    "source_document": "Cecilia-Zemlak-summary.pdf",
+    "model": "meta-llama/llama-3.1-8b-instruct",
+    "provider": "openrouter",
+    "prompt_version": "clinical_candidate_discovery",
+    "candidate_count": 16,
+    "pages_failed": [
+      1,
+      3,
+      4
+    ],
+    "evidence_not_found": 4,
+    "attempts": [
+      {
+        "page_number": 1,
+        "status": "failed",
+        "error": "LengthFinishReasonError: Could not parse response content as the length limit was reached - CompletionUsage(completion_tokens=4096, prompt_tokens=637, total_tokens=4733, completion_tokens_details=CompletionTokensDetails(accepted_prediction_tokens=None, audio_tokens=0, reasoning_tokens=0, rejected_prediction_tokens=None, tex",
+        "candidates": 0,
+        "evidence_not_found": 0,
+        "elapsed_seconds": 29.039,
+        "usage": null
+      },
+      {
+        "page_number": 2,
+        "status": "ok",
+        "candidates": 16,
+        "evidence_not_found": 4,
+        "elapsed_seconds": 6.819,
+        "usage": {
+          "input_tokens": 530,
+          "cached_tokens": 0,
+          "output_tokens": 982,
+          "total_tokens": 1512
+        }
+      },
+      {
+        "page_number": 3,
+        "status": "failed",
+        "error": "LengthFinishReasonError: Could not parse response content as the length limit was reached - CompletionUsage(completion_tokens=4096, prompt_tokens=480, total_tokens=4576, completion_tokens_details=CompletionTokensDetails(accepted_prediction_tokens=None, audio_tokens=0, reasoning_tokens=0, rejected_prediction_tokens=None, tex",
+        "candidates": 0,
+        "evidence_not_found": 0,
+        "elapsed_seconds": 27.13,
+        "usage": null
+      },
+      {
+        "page_number": 4,
+        "status": "failed",
+        "error": "LengthFinishReasonError: Could not parse response content as the length limit was reached - CompletionUsage(completion_tokens=4096, prompt_tokens=302, total_tokens=4398, completion_tokens_details=CompletionTokensDetails(accepted_prediction_tokens=None, audio_tokens=0, reasoning_tokens=0, rejected_prediction_tokens=None, tex",
+        "candidates": 0,
+        "evidence_not_found": 0,
+        "elapsed_seconds": 27.541,
+        "usage": null
+      }
+    ],
+    "elapsed_seconds": 90.529,
+    "usage": {
+      "input_tokens": 530,
+      "cached_input_tokens": 0,
+      "output_tokens": 982,
+      "total_tokens": 1512
+    },
+    "timestamp_utc": "2026-10-12T14:17:38.063269+00:00"
+  },
+  "candidates": [
+    {
+      "candidate_id": "candidate_1",
+      "category_hint": "procedure",
+      "raw_name": "Surgical intervention (excision, biopsy)",
+      "page_number": 2,
+      "evidence_text": "Surgical intervention (excision, biopsy)"
+    },
+    {
+      "candidate_id": "candidate_2",
+      "category_hint": "condition",
+      "raw_name": "No documented recurrence or metastasis in follow-up",
+      "page_number": 2,
+      "evidence_text": "No documented recurrence or metastasis in follow-up"
+    },
+    {
+      "candidate_id": "candidate_3",
+      "category_hint": "procedure",
+      "raw_name": "Ongoing surveillance implied",
+      "page_number": 2,
+      "evidence_text": "Ongoing surveillance implied"
+    },
+    {
+      "candidate_id": "candidate_4",
+      "category_hint": "condition",
+      "raw_name": "The cancer appears managed without current active complications.",
+      "page_number": 2,
+      "evidence_text": "The cancer appears managed without current active complications."
+    },
+    {
+      "candidate_id": "candidate_5",
+      "category_hint": "condition",
+      "raw_name": "Essential Hypertension (Chronic, Confirmed)",
+      "page_number": 2,
+      "evidence_text": "Essential Hypertension (Chronic, Confirmed)"
+    },
+    {
+      "candidate_id": "candidate_6",
+      "category_hint": "symptom",
+      "raw_name": "Intermittent blood pressure elevations are noted",
+      "page_number": 2,
+      "evidence_text": "Intermittent blood pressure elevations are noted"
+    },
+    {
+      "candidate_id": "candidate_7",
+      "category_hint": "condition",
+      "raw_name": "Chronic Intractable Migraine Without Aura (Episodic, Confirmed)",
+      "page_number": 2,
+      "evidence_text": "Chronic Intractable Migraine Without Aura (Episodic, Confirmed)"
+    },
+    {
+      "candidate_id": "candidate_8",
+      "category_hint": "symptom",
+      "raw_name": "Recurrent headaches with sinus pain, nasal congestion, sore throat, facial swelling, photophobia, and cough",
+      "page_number": 2,
+      "evidence_text": "Recurrent headaches with sinus pain, nasal congestion, sore throat, facial swelling, photophobia, and cough"
+    },
+    {
+      "candidate_id": "candidate_9",
+      "category_hint": "condition",
+      "raw_name": "The record includes multiple pregnancies",
+      "page_number": 2,
+      "evidence_text": "The record includes multiple pregnancies"
+    },
+    {
+      "candidate_id": "candidate_10",
+      "category_hint": "condition",
+      "raw_name": "musculoskeletal injuries",
+      "page_number": 2,
+      "evidence_text": "musculoskeletal injuries"
+    },
+    {
+      "candidate_id": "candidate_11",
+      "category_hint": "condition",
+      "raw_name": "respiratory infections",
+      "page_number": 2,
+      "evidence_text": "respiratory infections"
+    },
+    {
+      "candidate_id": "candidate_12",
+      "category_hint": "condition",
+      "raw_name": "Breast cancer in 2020",
+      "page_number": 2,
+      "evidence_text": "Breast cancer in 2020"
+    },
+    {
+      "candidate_id": "candidate_13",
+      "category_hint": "condition",
+      "raw_name": "There is no documented history of: Diabetes mellitus",
+      "page_number": 2,
+      "evidence_text": "There is no documented history of: Diabetes mellitus"
+    },
+    {
+      "candidate_id": "candidate_14",
+      "category_hint": "condition",
+      "raw_name": "There is no documented history of: Chronic kidney disease",
+      "page_number": 2,
+      "evidence_text": "There is no documented history of: Chronic kidney disease"
+    },
+    {
+      "candidate_id": "candidate_15",
+      "category_hint": "condition",
+      "raw_name": "There is no documented history of: Coronary artery disease",
+      "page_number": 2,
+      "evidence_text": "There is no documented history of: Coronary artery disease"
+    },
+    {
+      "candidate_id": "candidate_16",
+      "category_hint": "condition",
+      "raw_name": "There is no documented history of: Autoimmune disorders",
+      "page_number": 2,
+      "evidence_text": "There is no documented history of: Autoimmune disorders"
+    }
+  ],
+  "evaluation": {
+    "name_recall": 0.5,
+    "category_precision": 0.9,
+    "counts": {
+      "candidates": 16,
+      "gold_facts": 20,
+      "matched_gold": 10,
+      "category_correct": 9
+    },
+    "missed_gold": [
+      {
+        "gold_fact_id": "CZ-01",
+        "name": "Malignant neoplasm of breast",
+        "category": "condition"
+      },
+      {
+        "gold_fact_id": "CZ-02",
+        "name": "HER2 status",
+        "category": "observation"
+      },
+      {
+        "gold_fact_id": "CZ-03",
+        "name": "Oestrogen receptor (ER) status",
+        "category": "observation"
+      },
+      {
+        "gold_fact_id": "CZ-04",
+        "name": "Progesterone receptor (PR) status",
+        "category": "observation"
+      },
+      {
+        "gold_fact_id": "CZ-09",
+        "name": "Smoking",
+        "category": "observation"
+      },
+      {
+        "gold_fact_id": "CZ-10",
+        "name": "Alcohol use disorder (documented as alcoholism)",
+        "category": "observation"
+      },
+      {
+        "gold_fact_id": "CZ-14",
+        "name": "Recurrent headaches",
+        "category": "symptom"
+      },
+      {
+        "gold_fact_id": "CZ-18",
+        "name": "Preeclampsia",
+        "category": "condition"
+      },
+      {
+        "gold_fact_id": "CZ-19",
+        "name": "Penicillin",
+        "category": "medication"
+      },
+      {
+        "gold_fact_id": "CZ-20",
+        "name": "Mammography",
+        "category": "procedure"
+      }
+    ],
+    "matches": [
+      {
+        "candidate_id": "candidate_1",
+        "candidate_name": "Surgical intervention (excision, biopsy)",
+        "category_hint": "procedure",
+        "gold_fact_id": "CZ-05",
+        "gold_name": "Surgical intervention (excision, biopsy)",
+        "gold_category": "procedure",
+        "score": 1.01
+      },
+      {
+        "candidate_id": "candidate_2",
+        "candidate_name": "No documented recurrence or metastasis in follow-up",
+        "category_hint": "condition",
+        "gold_fact_id": "CZ-07",
+        "gold_name": "Metastasis",
+        "gold_category": "condition",
+        "score": 1.01
+      },
+      {
+        "candidate_id": "candidate_3",
+        "candidate_name": "Ongoing surveillance implied",
+        "category_hint": "procedure",
+        "gold_fact_id": "CZ-08",
+        "gold_name": "Ongoing surveillance",
+        "gold_category": "procedure",
+        "score": 1.01
+      },
+      {
+        "candidate_id": "candidate_5",
+        "candidate_name": "Essential Hypertension (Chronic, Confirmed)",
+        "category_hint": "condition",
+        "gold_fact_id": "CZ-11",
+        "gold_name": "Essential hypertension",
+        "gold_category": "condition",
+        "score": 1.01
+      },
+      {
+        "candidate_id": "candidate_6",
+        "candidate_name": "Intermittent blood pressure elevations are noted",
+        "category_hint": "symptom",
+        "gold_fact_id": "CZ-12",
+        "gold_name": "Blood pressure elevations",
+        "gold_category": "observation",
+        "score": 1.0
+      },
+      {
+        "candidate_id": "candidate_7",
+        "candidate_name": "Chronic Intractable Migraine Without Aura (Episodic, Confirmed)",
+        "category_hint": "condition",
+        "gold_fact_id": "CZ-13",
+        "gold_name": "Chronic intractable migraine without aura",
+        "gold_category": "condition",
+        "score": 1.01
+      },
+      {
+        "candidate_id": "candidate_8",
+        "candidate_name": "Recurrent headaches with sinus pain, nasal congestion, sore throat, facial swelling, photophobia, and cough",
+        "category_hint": "symptom",
+        "gold_fact_id": "CZ-15",
+        "gold_name": "Photophobia",
+        "gold_category": "symptom",
+        "score": 1.01
+      },
+      {
+        "candidate_id": "candidate_12",
+        "candidate_name": "Breast cancer in 2020",
+        "category_hint": "condition",
+        "gold_fact_id": "CZ-06",
+        "gold_name": "Breast cancer recurrence",
+        "gold_category": "condition",
+        "score": 0.775
+      },
+      {
+        "candidate_id": "candidate_13",
+        "candidate_name": "There is no documented history of: Diabetes mellitus",
+        "category_hint": "condition",
+        "gold_fact_id": "CZ-16",
+        "gold_name": "Diabetes mellitus",
+        "gold_category": "condition",
+        "score": 1.01
+      },
+      {
+        "candidate_id": "candidate_14",
+        "candidate_name": "There is no documented history of: Chronic kidney disease",
+        "category_hint": "condition",
+        "gold_fact_id": "CZ-17",
+        "gold_name": "Chronic kidney disease",
+        "gold_category": "condition",
+        "score": 1.01
+      }
+    ]
+  }
+}

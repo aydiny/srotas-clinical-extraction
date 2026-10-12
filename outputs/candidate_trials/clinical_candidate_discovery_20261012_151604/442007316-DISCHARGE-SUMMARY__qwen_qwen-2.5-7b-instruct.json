@@ -1,0 +1,358 @@
+{
+  "meta": {
+    "source_document": "442007316-DISCHARGE-SUMMARY.pdf",
+    "model": "qwen/qwen-2.5-7b-instruct",
+    "provider": "openrouter",
+    "prompt_version": "clinical_candidate_discovery",
+    "candidate_count": 16,
+    "pages_failed": [],
+    "evidence_not_found": 0,
+    "attempts": [
+      {
+        "page_number": 1,
+        "status": "ok",
+        "candidates": 14,
+        "evidence_not_found": 0,
+        "elapsed_seconds": 8.833,
+        "usage": {
+          "input_tokens": 914,
+          "cached_tokens": 190,
+          "output_tokens": 952,
+          "total_tokens": 1866
+        }
+      },
+      {
+        "page_number": 2,
+        "status": "ok",
+        "candidates": 1,
+        "evidence_not_found": 0,
+        "elapsed_seconds": 1.832,
+        "usage": {
+          "input_tokens": 471,
+          "cached_tokens": 212,
+          "output_tokens": 161,
+          "total_tokens": 632
+        }
+      },
+      {
+        "page_number": 3,
+        "status": "ok",
+        "candidates": 1,
+        "evidence_not_found": 0,
+        "elapsed_seconds": 1.136,
+        "usage": {
+          "input_tokens": 870,
+          "cached_tokens": 212,
+          "output_tokens": 76,
+          "total_tokens": 946
+        }
+      },
+      {
+        "page_number": 4,
+        "status": "ok",
+        "candidates": 0,
+        "evidence_not_found": 0,
+        "elapsed_seconds": 0.4,
+        "usage": {
+          "input_tokens": 542,
+          "cached_tokens": 212,
+          "output_tokens": 10,
+          "total_tokens": 552
+        }
+      },
+      {
+        "page_number": 5,
+        "status": "ok",
+        "candidates": 0,
+        "evidence_not_found": 0,
+        "elapsed_seconds": 0.324,
+        "usage": {
+          "input_tokens": 504,
+          "cached_tokens": 212,
+          "output_tokens": 10,
+          "total_tokens": 514
+        }
+      }
+    ],
+    "elapsed_seconds": 12.527,
+    "usage": {
+      "input_tokens": 3301,
+      "cached_input_tokens": 1038,
+      "output_tokens": 1209,
+      "total_tokens": 4510
+    },
+    "timestamp_utc": "2026-10-12T14:20:18.454222+00:00"
+  },
+  "candidates": [
+    {
+      "candidate_id": "candidate_1",
+      "category_hint": "condition",
+      "raw_name": "LOWER OESOPHAGEAL HIATUS HERNIA",
+      "page_number": 1,
+      "evidence_text": "DIAGNOSIS: LOWER OESOPHAGEAL HIATUS HERNIA"
+    },
+    {
+      "candidate_id": "candidate_2",
+      "category_hint": "symptom",
+      "raw_name": "inability to swallow food",
+      "page_number": 1,
+      "evidence_text": "Patient came to the hospital with complaints of inability to swallow food and vomiting of undigested food particles for past 3 months."
+    },
+    {
+      "candidate_id": "candidate_3",
+      "category_hint": "symptom",
+      "raw_name": "vomiting of undigested food particles",
+      "page_number": 1,
+      "evidence_text": "Patient came to the hospital with complaints of inability to swallow food and vomiting of undigested food particles for past 3 months."
+    },
+    {
+      "candidate_id": "candidate_4",
+      "category_hint": "procedure",
+      "raw_name": "CT scan of chest and abdomen",
+      "page_number": 1,
+      "evidence_text": "CT scan of chest and abdomen done revealed, dialation of oesophagus with thin regular wall and air fluid level within, subcarinal oesophageal narrowing present small hiatus hernia."
+    },
+    {
+      "candidate_id": "candidate_5",
+      "category_hint": "condition",
+      "raw_name": "dialation of oesophagus with thin regular wall and air fluid level within",
+      "page_number": 1,
+      "evidence_text": "CT scan of chest and abdomen done revealed, dialation of oesophagus with thin regular wall and air fluid level within, subcarinal oesophageal narrowing present small hiatus hernia."
+    },
+    {
+      "candidate_id": "candidate_6",
+      "category_hint": "condition",
+      "raw_name": "subcarinal oesophageal narrowing",
+      "page_number": 1,
+      "evidence_text": "CT scan of chest and abdomen done revealed, dialation of oesophagus with thin regular wall and air fluid level within, subcarinal oesophageal narrowing present small hiatus hernia."
+    },
+    {
+      "candidate_id": "candidate_7",
+      "category_hint": "condition",
+      "raw_name": "small hiatus hernia",
+      "page_number": 1,
+      "evidence_text": "CT scan of chest and abdomen done revealed, dialation of oesophagus with thin regular wall and air fluid level within, subcarinal oesophageal narrowing present small hiatus hernia."
+    },
+    {
+      "candidate_id": "candidate_8",
+      "category_hint": "medication",
+      "raw_name": "antibiotics",
+      "page_number": 1,
+      "evidence_text": "Patient was treated conservatively with antibiotics, antiematics and ppi."
+    },
+    {
+      "candidate_id": "candidate_9",
+      "category_hint": "medication",
+      "raw_name": "antiematics",
+      "page_number": 1,
+      "evidence_text": "Patient was treated conservatively with antibiotics, antiematics and ppi."
+    },
+    {
+      "candidate_id": "candidate_10",
+      "category_hint": "medication",
+      "raw_name": "ppi",
+      "page_number": 1,
+      "evidence_text": "Patient was treated conservatively with antibiotics, antiematics and ppi."
+    },
+    {
+      "candidate_id": "candidate_11",
+      "category_hint": "procedure",
+      "raw_name": "endoscopy",
+      "page_number": 1,
+      "evidence_text": "Patient was advised endoscopy and dilatation of oesophagus with biopsy at a later stage"
+    },
+    {
+      "candidate_id": "candidate_12",
+      "category_hint": "procedure",
+      "raw_name": "dilatation of oesophagus",
+      "page_number": 1,
+      "evidence_text": "Patient was advised endoscopy and dilatation of oesophagus with biopsy at a later stage"
+    },
+    {
+      "candidate_id": "candidate_13",
+      "category_hint": "procedure",
+      "raw_name": "biopsy",
+      "page_number": 1,
+      "evidence_text": "Patient was advised endoscopy and dilatation of oesophagus with biopsy at a later stage"
+    },
+    {
+      "candidate_id": "candidate_14",
+      "category_hint": "procedure",
+      "raw_name": "follow up",
+      "page_number": 1,
+      "evidence_text": "ADVICE: FOLLOW UP AFTER 5 DAYS"
+    },
+    {
+      "candidate_id": "candidate_15",
+      "category_hint": "medication",
+      "raw_name": "5YP.ESET",
+      "page_number": 2,
+      "evidence_text": "(1-0-1) T.YEES D: (1-0-1) T.DIGIPEN: (1-0-1) T.ACILOC: (1-0-1) T.MUCYST: (0-0-1) T.NEFTRON: (1-0-1) T. AZ1TH RA L: (0-0-1) 5YP.LUPIZ1ME PLUS: 10ml 5YP.SUCRAFIL PLUS: 5ml"
+    },
+    {
+      "candidate_id": "candidate_16",
+      "category_hint": "condition",
+      "raw_name": "LOWER OESOPHAGEAL HIATUS HERNIA",
+      "page_number": 3,
+      "evidence_text": "DIAGNOSIS: LOWER OESOPHAGEAL HIATUS HERNIA"
+    }
+  ],
+  "evaluation": {
+    "name_recall": 0.55,
+    "category_precision": 0.8181818181818182,
+    "counts": {
+      "candidates": 16,
+      "gold_facts": 20,
+      "matched_gold": 11,
+      "category_correct": 9
+    },
+    "missed_gold": [
+      {
+        "gold_fact_id": "SM-CORE-03",
+        "name": "Vomiting of undigested food particles",
+        "category": "symptom"
+      },
+      {
+        "gold_fact_id": "SM-CORE-04",
+        "name": "Blood pressure",
+        "category": "observation"
+      },
+      {
+        "gold_fact_id": "SM-CORE-05",
+        "name": "Pulse rate",
+        "category": "observation"
+      },
+      {
+        "gold_fact_id": "SM-CORE-06",
+        "name": "Oxygen saturation",
+        "category": "observation"
+      },
+      {
+        "gold_fact_id": "SM-CORE-13",
+        "name": "Ability to swallow solid foods",
+        "category": "observation"
+      },
+      {
+        "gold_fact_id": "SM-CORE-17",
+        "name": "Total white blood cell count",
+        "category": "observation"
+      },
+      {
+        "gold_fact_id": "SM-CORE-18",
+        "name": "Haemoglobin",
+        "category": "observation"
+      },
+      {
+        "gold_fact_id": "SM-CORE-19",
+        "name": "Follow-up review",
+        "category": "procedure"
+      },
+      {
+        "gold_fact_id": "SM-CORE-20",
+        "name": "T. AZ1TH RA L",
+        "category": "medication"
+      }
+    ],
+    "matches": [
+      {
+        "candidate_id": "candidate_1",
+        "candidate_name": "LOWER OESOPHAGEAL HIATUS HERNIA",
+        "category_hint": "condition",
+        "gold_fact_id": "SM-CORE-01",
+        "gold_name": "Lower oesophageal hiatus hernia",
+        "gold_category": "condition",
+        "score": 1.01
+      },
+      {
+        "candidate_id": "candidate_2",
+        "candidate_name": "inability to swallow food",
+        "category_hint": "symptom",
+        "gold_fact_id": "SM-CORE-02",
+        "gold_name": "Inability to swallow food",
+        "gold_category": "symptom",
+        "score": 1.01
+      },
+      {
+        "candidate_id": "candidate_3",
+        "candidate_name": "vomiting of undigested food particles",
+        "category_hint": "symptom",
+        "gold_fact_id": "SM-CORE-14",
+        "gold_name": "Vomiting",
+        "gold_category": "symptom",
+        "score": 1.01
+      },
+      {
+        "candidate_id": "candidate_4",
+        "candidate_name": "CT scan of chest and abdomen",
+        "category_hint": "procedure",
+        "gold_fact_id": "SM-CORE-07",
+        "gold_name": "CT scan of chest and abdomen",
+        "gold_category": "procedure",
+        "score": 1.01
+      },
+      {
+        "candidate_id": "candidate_6",
+        "candidate_name": "subcarinal oesophageal narrowing",
+        "category_hint": "condition",
+        "gold_fact_id": "SM-CORE-09",
+        "gold_name": "Subcarinal oesophageal narrowing",
+        "gold_category": "observation",
+        "score": 1.0
+      },
+      {
+        "candidate_id": "candidate_8",
+        "candidate_name": "antibiotics",
+        "category_hint": "medication",
+        "gold_fact_id": "SM-CORE-10",
+        "gold_name": "Antibiotics",
+        "gold_category": "medication",
+        "score": 1.01
+      },
+      {
+        "candidate_id": "candidate_9",
+        "candidate_name": "antiematics",
+        "category_hint": "medication",
+        "gold_fact_id": "SM-CORE-11",
+        "gold_name": "Antiemetics",
+        "gold_category": "medication",
+        "score": 0.919
+      },
+      {
+        "candidate_id": "candidate_10",
+        "candidate_name": "ppi",
+        "category_hint": "medication",
+        "gold_fact_id": "SM-CORE-12",
+        "gold_name": "PPI",
+        "gold_category": "medication",
+        "score": 1.01
+      },
+      {
+        "candidate_id": "candidate_11",
+        "candidate_name": "endoscopy",
+        "category_hint": "procedure",
+        "gold_fact_id": "SM-CORE-15",
+        "gold_name": "Endoscopy",
+        "gold_category": "procedure",
+        "score": 1.01
+      },
+      {
+        "candidate_id": "candidate_12",
+        "candidate_name": "dilatation of oesophagus",
+        "category_hint": "procedure",
+        "gold_fact_id": "SM-CORE-08",
+        "gold_name": "Oesophageal dilatation",
+        "gold_category": "observation",
+        "score": 0.826
+      },
+      {
+        "candidate_id": "candidate_13",
+        "candidate_name": "biopsy",
+        "category_hint": "procedure",
+        "gold_fact_id": "SM-CORE-16",
+        "gold_name": "Biopsy",
+        "gold_category": "procedure",
+        "score": 1.01
+      }
+    ]
+  }
+}

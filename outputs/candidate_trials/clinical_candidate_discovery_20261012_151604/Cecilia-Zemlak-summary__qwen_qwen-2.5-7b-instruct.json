@@ -1,0 +1,510 @@
+{
+  "meta": {
+    "source_document": "Cecilia-Zemlak-summary.pdf",
+    "model": "qwen/qwen-2.5-7b-instruct",
+    "provider": "openrouter",
+    "prompt_version": "clinical_candidate_discovery",
+    "candidate_count": 39,
+    "pages_failed": [],
+    "evidence_not_found": 3,
+    "attempts": [
+      {
+        "page_number": 1,
+        "status": "ok",
+        "candidates": 5,
+        "evidence_not_found": 0,
+        "elapsed_seconds": 3.988,
+        "usage": {
+          "input_tokens": 635,
+          "cached_tokens": 5,
+          "output_tokens": 471,
+          "total_tokens": 1106
+        }
+      },
+      {
+        "page_number": 2,
+        "status": "ok",
+        "candidates": 19,
+        "evidence_not_found": 1,
+        "elapsed_seconds": 12.989,
+        "usage": {
+          "input_tokens": 511,
+          "cached_tokens": 202,
+          "output_tokens": 1629,
+          "total_tokens": 2140
+        }
+      },
+      {
+        "page_number": 3,
+        "status": "ok",
+        "candidates": 12,
+        "evidence_not_found": 2,
+        "elapsed_seconds": 5.828,
+        "usage": {
+          "input_tokens": 463,
+          "cached_tokens": 202,
+          "output_tokens": 640,
+          "total_tokens": 1103
+        }
+      },
+      {
+        "page_number": 4,
+        "status": "ok",
+        "candidates": 3,
+        "evidence_not_found": 0,
+        "elapsed_seconds": 2.355,
+        "usage": {
+          "input_tokens": 284,
+          "cached_tokens": 202,
+          "output_tokens": 237,
+          "total_tokens": 521
+        }
+      }
+    ],
+    "elapsed_seconds": 25.16,
+    "usage": {
+      "input_tokens": 1893,
+      "cached_input_tokens": 611,
+      "output_tokens": 2977,
+      "total_tokens": 4870
+    },
+    "timestamp_utc": "2026-10-12T14:18:03.262583+00:00"
+  },
+  "candidates": [
+    {
+      "candidate_id": "candidate_1",
+      "category_hint": "condition",
+      "raw_name": "multiple pregnancies",
+      "page_number": 1,
+      "evidence_text": "Cecilia Zemlak is a middle-aged female with a documented history of multiple pregnancies, musculoskeletal injuries, respiratory infections, and later breast cancer, managed primarily in outpatient settings with intermittent utilization of acute care services."
+    },
+    {
+      "candidate_id": "candidate_2",
+      "category_hint": "condition",
+      "raw_name": "musculoskeletal injuries",
+      "page_number": 1,
+      "evidence_text": "Cecilia Zemlak is a middle-aged female with a documented history of multiple pregnancies, musculoskeletal injuries, respiratory infections, and later breast cancer, managed primarily in outpatient settings with intermittent utilization of acute care services."
+    },
+    {
+      "candidate_id": "candidate_3",
+      "category_hint": "condition",
+      "raw_name": "respiratory infections",
+      "page_number": 1,
+      "evidence_text": "Cecilia Zemlak is a middle-aged female with a documented history of multiple pregnancies, musculoskeletal injuries, respiratory infections, and later breast cancer, managed primarily in outpatient settings with intermittent utilization of acute care services."
+    },
+    {
+      "candidate_id": "candidate_4",
+      "category_hint": "condition",
+      "raw_name": "breast cancer",
+      "page_number": 1,
+      "evidence_text": "Cecilia Zemlak is a middle-aged female with a documented history of multiple pregnancies, musculoskeletal injuries, respiratory infections, and later breast cancer, managed primarily in outpatient settings with intermittent utilization of acute care services."
+    },
+    {
+      "candidate_id": "candidate_5",
+      "category_hint": "condition",
+      "raw_name": "malignant neoplasm of breast (Chronic, Confirmed)",
+      "page_number": 1,
+      "evidence_text": "# **Malignant Neoplasm of Breast (Chronic, Confirmed)**\nThe patient carries a confirmed diagnosis of malignant neoplasm of breast (SNOMED CT 254837009), staged as 2 with positive HER2, ER, and PR status."
+    },
+    {
+      "candidate_id": "candidate_6",
+      "category_hint": "condition",
+      "raw_name": "Essential Hypertension (Chronic, Confirmed)",
+      "page_number": 2,
+      "evidence_text": "- Essential Hypertension (Chronic, Confirmed)"
+    },
+    {
+      "candidate_id": "candidate_7",
+      "category_hint": "condition",
+      "raw_name": "Chronic Intractable Migraine Without Aura (Episodic, Confirmed)",
+      "page_number": 2,
+      "evidence_text": "# **Chronic Intractable Migraine Without Aura (Episodic, Confirmed)**"
+    },
+    {
+      "candidate_id": "candidate_8",
+      "category_hint": "procedure",
+      "raw_name": "Surgical intervention (excision, biopsy)",
+      "page_number": 2,
+      "evidence_text": "- Surgical intervention (excision, biopsy) "
+    },
+    {
+      "candidate_id": "candidate_9",
+      "category_hint": "condition",
+      "raw_name": "No documented recurrence or metastasis in follow-up",
+      "page_number": 2,
+      "evidence_text": "- No documented recurrence or metastasis in follow-up"
+    },
+    {
+      "candidate_id": "candidate_10",
+      "category_hint": "condition",
+      "raw_name": "Breast cancer",
+      "page_number": 2,
+      "evidence_text": "Breast cancer in 2020 is the major adult event, with no chronic sequelae from early issues documented."
+    },
+    {
+      "candidate_id": "candidate_11",
+      "category_hint": "condition",
+      "raw_name": "Preeclampsia",
+      "page_number": 2,
+      "evidence_text": "The record includes multiple pregnancies (normal and complicated by preeclampsia, tubal pregnancy, miscarriage), musculoskeletal injuries (sprains, fractures of ankle, wrist, clavicle), respiratory infections (acute bronchitis, viral pharyngitis, sinusitis), and childhood normal development."
+    },
+    {
+      "candidate_id": "candidate_12",
+      "category_hint": "condition",
+      "raw_name": "Tubal pregnancy",
+      "page_number": 2,
+      "evidence_text": "The record includes multiple pregnancies (normal and complicated by preeclampsia, tubal pregnancy, miscarriage), musculoskeletal injuries (sprains, fractures of ankle, wrist, clavicle), respiratory infections (acute bronchitis, viral pharyngitis, sinusitis), and childhood normal development."
+    },
+    {
+      "candidate_id": "candidate_13",
+      "category_hint": "condition",
+      "raw_name": "Miscarriage",
+      "page_number": 2,
+      "evidence_text": "The record includes multiple pregnancies (normal and complicated by preeclampsia, tubal pregnancy, miscarriage), musculoskeletal injuries (sprains, fractures of ankle, wrist, clavicle), respiratory infections (acute bronchitis, viral pharyngitis, sinusitis), and childhood normal development."
+    },
+    {
+      "candidate_id": "candidate_14",
+      "category_hint": "condition",
+      "raw_name": "Sprains",
+      "page_number": 2,
+      "evidence_text": "The record includes multiple pregnancies (normal and complicated by preeclampsia, tubal pregnancy, miscarriage), musculoskeletal injuries (sprains, fractures of ankle, wrist, clavicle), respiratory infections (acute bronchitis, viral pharyngitis, sinusitis), and childhood normal development."
+    },
+    {
+      "candidate_id": "candidate_15",
+      "category_hint": "condition",
+      "raw_name": "Fractures of ankle",
+      "page_number": 2,
+      "evidence_text": "The record includes multiple pregnancies (normal and complicated by preeclampsia, tubal pregnancy, miscarriage), musculoskeletal injuries (sprains, fractures of ankle, wrist, clavicle), respiratory infections (acute bronchitis, viral pharyngitis, sinusitis), and childhood normal development."
+    },
+    {
+      "candidate_id": "candidate_16",
+      "category_hint": "condition",
+      "raw_name": "Fractures of wrist",
+      "page_number": 2,
+      "evidence_text": "The record includes multiple pregnancies (normal and complicated by preeclampsia, tubal pregnancy, miscarriage), musculoskeletal injuries (sprains, fractures of ankle, wrist, clavicle), respiratory infections (acute bronchitis, viral pharyngitis, sinusitis), and childhood normal development."
+    },
+    {
+      "candidate_id": "candidate_17",
+      "category_hint": "condition",
+      "raw_name": "Fractures of clavicle",
+      "page_number": 2,
+      "evidence_text": "The record includes multiple pregnancies (normal and complicated by preeclampsia, tubal pregnancy, miscarriage), musculoskeletal injuries (sprains, fractures of ankle, wrist, clavicle), respiratory infections (acute bronchitis, viral pharyngitis, sinusitis), and childhood normal development."
+    },
+    {
+      "candidate_id": "candidate_18",
+      "category_hint": "condition",
+      "raw_name": "Acute bronchitis",
+      "page_number": 2,
+      "evidence_text": "The record includes multiple pregnancies (normal and complicated by preeclampsia, tubal pregnancy, miscarriage), musculoskeletal injuries (sprains, fractures of ankle, wrist, clavicle), respiratory infections (acute bronchitis, viral pharyngitis, sinusitis), and childhood normal development."
+    },
+    {
+      "candidate_id": "candidate_19",
+      "category_hint": "condition",
+      "raw_name": "Viral pharyngitis",
+      "page_number": 2,
+      "evidence_text": "The record includes multiple pregnancies (normal and complicated by preeclampsia, tubal pregnancy, miscarriage), musculoskeletal injuries (sprains, fractures of ankle, wrist, clavicle), respiratory infections (acute bronchitis, viral pharyngitis, sinusitis), and childhood normal development."
+    },
+    {
+      "candidate_id": "candidate_20",
+      "category_hint": "condition",
+      "raw_name": "Sinusitis",
+      "page_number": 2,
+      "evidence_text": "The record includes multiple pregnancies (normal and complicated by preeclampsia, tubal pregnancy, miscarriage), musculoskeletal injuries (sprains, fractures of ankle, wrist, clavicle), respiratory infections (acute bronchitis, viral pharyngitis, sinusitis), and childhood normal development."
+    },
+    {
+      "candidate_id": "candidate_21",
+      "category_hint": "condition",
+      "raw_name": "No documented history of Diabetes mellitus",
+      "page_number": 2,
+      "evidence_text": "There is no documented history of: - Diabetes mellitus"
+    },
+    {
+      "candidate_id": "candidate_22",
+      "category_hint": "condition",
+      "raw_name": "No documented history of Chronic kidney disease",
+      "page_number": 2,
+      "evidence_text": "There is no documented history of: - Diabetes mellitus"
+    },
+    {
+      "candidate_id": "candidate_23",
+      "category_hint": "condition",
+      "raw_name": "No documented history of Coronary artery disease",
+      "page_number": 2,
+      "evidence_text": "There is no documented history of: - Diabetes mellitus"
+    },
+    {
+      "candidate_id": "candidate_24",
+      "category_hint": "condition",
+      "raw_name": "No documented history of Autoimmune disorders",
+      "page_number": 2,
+      "evidence_text": "There is no documented history of: - Diabetes mellitus"
+    },
+    {
+      "candidate_id": "candidate_25",
+      "category_hint": "medication",
+      "raw_name": "Episodic antibiotics (penicillin, doxycycline) for infections",
+      "page_number": 3,
+      "evidence_text": "- Episodic antibiotics (penicillin, doxycycline) for infections"
+    },
+    {
+      "candidate_id": "candidate_26",
+      "category_hint": "medication",
+      "raw_name": "Analgesics (acetaminophen, meperidine) for pain",
+      "page_number": 3,
+      "evidence_text": "- Analgesics (acetaminophen, meperidine) for pain"
+    },
+    {
+      "candidate_id": "candidate_27",
+      "category_hint": "condition",
+      "raw_name": "No chronic therapy documented; no adherence issues noted",
+      "page_number": 3,
+      "evidence_text": "- No chronic therapy documented; no adherence issues noted"
+    },
+    {
+      "candidate_id": "candidate_28",
+      "category_hint": "observation",
+      "raw_name": "Vital signs tracked from infancy (normal growth)",
+      "page_number": 3,
+      "evidence_text": "- Vital signs tracked from infancy (normal growth)"
+    },
+    {
+      "candidate_id": "candidate_29",
+      "category_hint": "observation",
+      "raw_name": "CBC trends normal",
+      "page_number": 3,
+      "evidence_text": "- Labs: CBC trends normal"
+    },
+    {
+      "candidate_id": "candidate_30",
+      "category_hint": "observation",
+      "raw_name": "Lipids, glucose variable but no abnormalities noted",
+      "page_number": 3,
+      "evidence_text": "- later lipids, glucose variable but no abnormalities noted"
+    },
+    {
+      "candidate_id": "candidate_31",
+      "category_hint": "procedure",
+      "raw_name": "X-rays for fractures",
+      "page_number": 3,
+      "evidence_text": "- Imaging: X-rays for fractures"
+    },
+    {
+      "candidate_id": "candidate_32",
+      "category_hint": "procedure",
+      "raw_name": "Mammography for breast cancer",
+      "page_number": 3,
+      "evidence_text": "- Imaging: mammography for breast cancer"
+    },
+    {
+      "candidate_id": "candidate_33",
+      "category_hint": "condition",
+      "raw_name": "History of breast cancer in remission",
+      "page_number": 3,
+      "evidence_text": "- History of breast cancer in remission"
+    },
+    {
+      "candidate_id": "candidate_34",
+      "category_hint": "condition",
+      "raw_name": "Episodic infections and injuries",
+      "page_number": 3,
+      "evidence_text": "- Episodic infections and injuries"
+    },
+    {
+      "candidate_id": "candidate_35",
+      "category_hint": "condition",
+      "raw_name": "No significant competing comorbidity",
+      "page_number": 3,
+      "evidence_text": "- No significant competing comorbidity"
+    },
+    {
+      "candidate_id": "candidate_36",
+      "category_hint": "condition",
+      "raw_name": "Stable status",
+      "page_number": 3,
+      "evidence_text": "- Stable status"
+    },
+    {
+      "candidate_id": "candidate_37",
+      "category_hint": "condition",
+      "raw_name": "stage 2 breast cancer",
+      "page_number": 4,
+      "evidence_text": "Cecilia Zemlak is a 58-year-old female with a history of stage 2 breast cancer managed surgically,"
+    },
+    {
+      "candidate_id": "candidate_38",
+      "category_hint": "symptom",
+      "raw_name": "episodic respiratory infections",
+      "page_number": 4,
+      "evidence_text": "Cecilia Zemlak is a 58-year-old female with a history of stage 2 breast cancer managed surgically, alongside episodic respiratory infections and musculoskeletal injuries,"
+    },
+    {
+      "candidate_id": "candidate_39",
+      "category_hint": "condition",
+      "raw_name": "musculoskeletal injuries",
+      "page_number": 4,
+      "evidence_text": "Cecilia Zemlak is a 58-year-old female with a history of stage 2 breast cancer managed surgically, alongside episodic respiratory infections and musculoskeletal injuries,"
+    }
+  ],
+  "evaluation": {
+    "name_recall": 0.6,
+    "category_precision": 0.9166666666666666,
+    "counts": {
+      "candidates": 39,
+      "gold_facts": 20,
+      "matched_gold": 12,
+      "category_correct": 11
+    },
+    "missed_gold": [
+      {
+        "gold_fact_id": "CZ-03",
+        "name": "Oestrogen receptor (ER) status",
+        "category": "observation"
+      },
+      {
+        "gold_fact_id": "CZ-04",
+        "name": "Progesterone receptor (PR) status",
+        "category": "observation"
+      },
+      {
+        "gold_fact_id": "CZ-08",
+        "name": "Ongoing surveillance",
+        "category": "procedure"
+      },
+      {
+        "gold_fact_id": "CZ-09",
+        "name": "Smoking",
+        "category": "observation"
+      },
+      {
+        "gold_fact_id": "CZ-10",
+        "name": "Alcohol use disorder (documented as alcoholism)",
+        "category": "observation"
+      },
+      {
+        "gold_fact_id": "CZ-12",
+        "name": "Blood pressure elevations",
+        "category": "observation"
+      },
+      {
+        "gold_fact_id": "CZ-14",
+        "name": "Recurrent headaches",
+        "category": "symptom"
+      },
+      {
+        "gold_fact_id": "CZ-15",
+        "name": "Photophobia",
+        "category": "symptom"
+      }
+    ],
+    "matches": [
+      {
+        "candidate_id": "candidate_4",
+        "candidate_name": "breast cancer",
+        "category_hint": "condition",
+        "gold_fact_id": "CZ-06",
+        "gold_name": "Breast cancer recurrence",
+        "gold_category": "condition",
+        "score": 1.01
+      },
+      {
+        "candidate_id": "candidate_5",
+        "candidate_name": "malignant neoplasm of breast (Chronic, Confirmed)",
+        "category_hint": "condition",
+        "gold_fact_id": "CZ-01",
+        "gold_name": "Malignant neoplasm of breast",
+        "gold_category": "condition",
+        "score": 1.01
+      },
+      {
+        "candidate_id": "candidate_6",
+        "candidate_name": "Essential Hypertension (Chronic, Confirmed)",
+        "category_hint": "condition",
+        "gold_fact_id": "CZ-11",
+        "gold_name": "Essential hypertension",
+        "gold_category": "condition",
+        "score": 1.01
+      },
+      {
+        "candidate_id": "candidate_7",
+        "candidate_name": "Chronic Intractable Migraine Without Aura (Episodic, Confirmed)",
+        "category_hint": "condition",
+        "gold_fact_id": "CZ-13",
+        "gold_name": "Chronic intractable migraine without aura",
+        "gold_category": "condition",
+        "score": 1.01
+      },
+      {
+        "candidate_id": "candidate_8",
+        "candidate_name": "Surgical intervention (excision, biopsy)",
+        "category_hint": "procedure",
+        "gold_fact_id": "CZ-05",
+        "gold_name": "Surgical intervention (excision, biopsy)",
+        "gold_category": "procedure",
+        "score": 1.01
+      },
+      {
+        "candidate_id": "candidate_9",
+        "candidate_name": "No documented recurrence or metastasis in follow-up",
+        "category_hint": "condition",
+        "gold_fact_id": "CZ-07",
+        "gold_name": "Metastasis",
+        "gold_category": "condition",
+        "score": 1.01
+      },
+      {
+        "candidate_id": "candidate_11",
+        "candidate_name": "Preeclampsia",
+        "category_hint": "condition",
+        "gold_fact_id": "CZ-18",
+        "gold_name": "Preeclampsia",
+        "gold_category": "condition",
+        "score": 1.01
+      },
+      {
+        "candidate_id": "candidate_21",
+        "candidate_name": "No documented history of Diabetes mellitus",
+        "category_hint": "condition",
+        "gold_fact_id": "CZ-16",
+        "gold_name": "Diabetes mellitus",
+        "gold_category": "condition",
+        "score": 1.01
+      },
+      {
+        "candidate_id": "candidate_22",
+        "candidate_name": "No documented history of Chronic kidney disease",
+        "category_hint": "condition",
+        "gold_fact_id": "CZ-17",
+        "gold_name": "Chronic kidney disease",
+        "gold_category": "condition",
+        "score": 1.01
+      },
+      {
+        "candidate_id": "candidate_25",
+        "candidate_name": "Episodic antibiotics (penicillin, doxycycline) for infections",
+        "category_hint": "medication",
+        "gold_fact_id": "CZ-19",
+        "gold_name": "Penicillin",
+        "gold_category": "medication",
+        "score": 1.01
+      },
+      {
+        "candidate_id": "candidate_32",
+        "candidate_name": "Mammography for breast cancer",
+        "category_hint": "procedure",
+        "gold_fact_id": "CZ-20",
+        "gold_name": "Mammography",
+        "gold_category": "procedure",
+        "score": 1.01
+      },
+      {
+        "candidate_id": "candidate_36",
+        "candidate_name": "Stable status",
+        "category_hint": "condition",
+        "gold_fact_id": "CZ-02",
+        "gold_name": "HER2 status",
+        "gold_category": "observation",
+        "score": 0.706
+      }
+    ]
+  }
+}
